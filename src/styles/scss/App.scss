@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  height: calc(100vh);
+  overflow: hidden;
+}
+
+.rival-website-app {
+  display: block;
+  height: 100%;
+
+  .app-root {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.rival-website-app-home {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.rival-website-app-home-bgimage {
+  height:100%;
+  position: relative;
+  top:0;
+  left:0;
+  background: url("/img/background-imgs/homebg.jpg");
+  filter:grayscale(100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-position:center;
+  opacity: 0.2;
+}
+
+.base-nav-bar {
+  height: 60px;
+  position: absolute;
+  width: calc(100% - 40px);
+  top: 0;
+  left: 0;
+  opacity: 1.0;
+  z-index: 500;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align:center;
+
+  .base-nav-bar-items {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    vertical-align: middle;
+    opacity: 1.0;
+    margin-top:5px;
+
+    .base-nav-bar-item {
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: black;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 500;
+      z-index: 400;
+
+      &:hover {
+        color: #D4AF37;
+        cursor: pointer;
+      }
+    }
+
+    .base-nav-bar-item:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 0px;
+      margin: auto;
+      background-color: transparent;
+      transition: width .3s ease, background-color .3s ease;
+    }
+    
+    .base-nav-bar-item:hover:after {
+      width: 100%;
+      background: #D4AF37;
+      transition: width .3s ease, background-color .3s ease;
+    }
+  }
+}
+
+.rival-website-app-home-main-content {
+  height: calc(100% - 60px);
+  width: 100%;
+  position: absolute;
+  top:60px;
+  left:0;
+  vertical-align: middle;
+  display:table;
+
+  .main-content-div {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display:table-cell;
+    vertical-align: middle;
+
+    .logo-image {
+      position: relative;
+      max-width: 80%;
+      max-height:60%;
+      display: block;
+      height:400px;
+      margin:auto;
+      opacity:1.0;
+      background: url("/img/Rlogo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+    .external-links-bar {
+      width:100%;
+      text-align:center;
+      padding-top:25px;
+    }
+
+    .smlogo {
+      padding:2px;
+      margin-left:5px;
+      margin-right:5px;
+      display:inline-block;
+      width:28px;
+      height:28px;
+    }
+
+    .logofb {
+      background-image: url("/img/icons/facebook_black.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+    .logofb:hover {
+      background-image: url("/img/icons/facebook_gold.png");
+      filter: invert(0%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+      cursor: pointer;
+    }
+
+    .logotwitter {
+      background-image: url("/img/icons/twitter_black.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+    .logotwitter:hover {
+      background-image: url("/img/icons/twitter_gold.png");
+      filter: invert(0%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+      cursor: pointer;
+    }
+
+    .logoemail {
+      background-image: url("/img/icons/email_black.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+    .logoemail:hover {
+      background-image: url("/img/icons/email_gold.png");
+      filter: invert(0%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+      cursor: pointer;
+    }
+
+
+    .logopointer{
+      background-image: url("/img/icons/pointer_black.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+    }
+
+    .logopointer:hover {
+      background-image: url("/img/icons/pointer_gold.png");
+      filter: invert(0%);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:center;
+      cursor: pointer;
+    }
+
+  }
+}

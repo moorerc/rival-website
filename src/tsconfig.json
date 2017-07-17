@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "declaration": false,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "es2015",
+            "es5"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "outDir": "../dist",
+        "removeComments": false,
+        "strict": false,
+        "stripInternal": true,
+        "target": "es5"
+    }
+}
