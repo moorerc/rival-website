@@ -7,6 +7,7 @@ import About from './pages/About';
 import News from './pages/News';
 import Results from './pages/Results';
 import Roster from './pages/Roster';
+import BadgeQuest from './pages/BadgeQuest';
 
 import configureStore from './store/configureStore';
 import { INITIAL_STATE } from './constants';
@@ -24,6 +25,7 @@ export class Root extends React.PureComponent<{}, {}> {
             <Route path="/news" component={News} />
             <Route path="/results" component={Results} />
             <Route path="/roster" component={Roster} />
+            <Route path="/badgequest" component={BadgeQuest} />
           </div>
         </Router >
       </Provider>
