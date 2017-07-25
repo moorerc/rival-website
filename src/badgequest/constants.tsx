@@ -97,9 +97,14 @@ export const USERS: User[] = [
       "image": "user_tlo.jpg",
       "badges": [
           {
-              "id":205,
-              "date_earned":"1499287201937",
-              "details":"MI Pod Leader"
+            "id":205,
+            "date_earned":"1499287201937",
+            "details":"MI Pod Leader"
+          },
+          {
+            "id": 204,
+            "date_earned":"1500355440000",
+            "details":"Impressive Impersonation"
           },
       ]
   },
@@ -120,6 +125,16 @@ export const USERS: User[] = [
       "name": "bubba",
       "image": "user_bubba.jpg",
       "badges": [
+        {
+          "id":208,
+          "date_earned":"1500832800000",
+          "details":"Ohio"
+        },
+        {
+          "id": 201,
+          "date_earned":"1500932340000",
+          "details":""
+        },
       ]
   },
   {
@@ -151,6 +166,11 @@ export const USERS: User[] = [
               "date_earned":"1499287201937",
               "details":"Co-Captain"
           },
+          {
+            "id":208,
+            "date_earned":"1500832800000",
+            "details":"Ohio"
+          },
       ]
   },
   {
@@ -162,6 +182,11 @@ export const USERS: User[] = [
               "id":205,
               "date_earned":"1499287201937",
               "details":"Treasurer"
+          },
+          {
+            "id":208,
+            "date_earned":"1500832800000",
+            "details":"Ohio"
           },
       ]
   },
@@ -196,6 +221,16 @@ export const USERS: User[] = [
               "date_earned":"1499287201937",
               "details":"Strength & Cond. Coach"
           },
+          {
+            "id":208,
+            "date_earned":"1500832800000",
+            "details":"Ohio"
+          },
+          {
+            "id":211,
+            "date_earned":"1500833940000",
+            "details":"Bubba zzz"
+          },
       ]
   },
   {
@@ -203,6 +238,16 @@ export const USERS: User[] = [
       "name": "sara scott",
       "image": "user_sarascott.jpg",
       "badges": [
+        {
+          "id": 204,
+          "date_earned":"1500903720000",
+          "details":"Traveler Trivia"
+        },
+        {
+          "id": 201,
+          "date_earned":"1500929880000",
+          "details":""
+        },
       ]
   },
   {
@@ -222,6 +267,21 @@ export const USERS: User[] = [
               "date_earned":"1499287201937",
               "details":"Spirit Captain"
           },
+          {
+            "id":208,
+            "date_earned":"1500907020000",
+            "details":"Massachusetts"
+          },
+          {
+            "id":208,
+            "date_earned":"1500908160000",
+            "details":"New Hampshire"
+          },
+          {
+          "id": 201,
+          "date_earned":"1500936540000",
+          "details":""
+        },
       ]
   },
   {
@@ -233,6 +293,16 @@ export const USERS: User[] = [
               "id":205,
               "date_earned":"1499287201937",
               "details":"Squoddballs Leader"
+          },
+          {
+            "id":208,
+            "date_earned":"1500680160000",
+            "details":"West Virginia"
+          },
+          {
+            "id":208,
+            "date_earned":"1500926760000",
+            "details":"Virginia"
           },
       ]
   },
@@ -359,5 +429,34 @@ export const BADGES: Badge[] = [
     "description": "Take a selfie with a sleeping teammate (during non-normal sleep hours) and post it to slack.",
     "created": "",
     "created_by": 8
+  },
+  {
+    "id": 212,
+    "title": "Snapchat Soulmates",
+    "image": "badge_ghost.png",
+    "description": "Achieve 'best friend' status (the smiling face or yellow heart emoji) on Snapchat with a teammate not in your pod! Post screenshot proof to slack channel. ",
+    "created": "",
+    "created_by": 15
+  },
+  {
+    "id": 213,
+    "title": "Fifty Plates",
+    "image": "badge_licenseplate.png",
+    "description": "Take a photo of / selfie with a state license plate and post it to slack. Individual credit only, no groups. After a state is claimed, nobody else can earn badge credit for that state.",
+    "created_by": 11
+  },
+  {
+    "id": 214,
+    "title": "Impressive Impersonation",
+    "image": "badge_drama.png",
+    "description": "Post a video impersonating a teammate in the slack channel. A single person can be impersonated an unlimited number of times (by different people), but you can only get credit for that person once. 20 sec minimum for badge credit.",
+    "created_by": 11
+  },
+  {
+    "id": 215,
+    "title": "Traveler Trivia",
+    "image": "badge_liberty.png",
+    "description": "Take a selfie with a piece of rival gear (showing the rival logo) at a recognizable landmark (think on the level of statue of liberty, not the campus library) and post it in the slack channel. In order to receive badge credit, a teammate will have to identify the landmark (first to identify by responding in the slack channel will also receive the badge). Badge can be earned 3 times as the traveler, and 3 times as the identifier.",
+    "created_by": 31
   },
 ];
