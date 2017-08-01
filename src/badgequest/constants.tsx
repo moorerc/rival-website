@@ -27,6 +27,31 @@ export const USERS: User[] = [
       "name": "ninja",
       "image": "user_ninja.jpg",
       "badges": [
+        {
+          "id":213,
+          "date_earned":"1501013400000",
+          "details":"New York"
+        },
+        {
+          "id":213,
+          "date_earned":"1501013460000",
+          "details":"South Carolina"
+        },
+        {
+          "id":213,
+          "date_earned":"1501013580000",
+          "details":"Maryland"
+        },
+        {
+          "id":208,
+          "date_earned":"1501451460000",
+          "details":"Michigan"
+        },
+        {
+          "id":210,
+          "date_earned":"1501557060000",
+          "details":"MI Bonding"
+        },
       ]
   },
   {
@@ -46,6 +71,16 @@ export const USERS: User[] = [
       "name": "champ",
       "image": "user_champ.jpg",
       "badges": [
+        {
+          "id":213,
+          "date_earned":"1501103640000",
+          "details":"Indiana"
+        },
+        {
+          "id":208,
+          "date_earned":"1500986640000",
+          "details":"Indiana"
+        },
       ]
   },
   {
@@ -53,6 +88,21 @@ export const USERS: User[] = [
       "name": "nitz",
       "image": "user_nitz.jpg",
       "badges": [
+        {
+          "id":213,
+          "date_earned":"1501001460000",
+          "details":"Texas"
+        },
+        {
+          "id":213,
+          "date_earned":"1501001520000",
+          "details":"Pennsylvania"
+        },
+        {
+          "id":213,
+          "date_earned":"1501018860000",
+          "details":"Illinois"
+        },
       ]
   },
   {
@@ -65,6 +115,36 @@ export const USERS: User[] = [
               "date_earned":"1499287201937",
               "details":"Co-Captain"
           },
+          {
+          "id":213,
+          "date_earned":"1501354920000",
+          "details":"Maine"
+        },
+        {
+          "id":213,
+          "date_earned":"1501276500000",
+          "details":"Nevada"
+        },
+        {
+          "id":212,
+          "date_earned":"1501107960000",
+          "details":"Sara Scott"
+        },
+        {
+          "id":201,
+          "date_earned":"1501095720000",
+          "details":""
+        },
+        {
+          "id":202,
+          "date_earned":"1501519560000",
+          "details":""
+        },
+        {
+          "id": 204,
+          "date_earned":"1501616040000",
+          "details":"Workin It"
+        },
       ]
   },
   {
@@ -72,11 +152,16 @@ export const USERS: User[] = [
       "name": "janine",
       "image": "user_janine.jpg",
       "badges": [
-          {
-              "id":205,
-              "date_earned":"1499287201937",
-              "details":"Co-Captain"
-          },
+        {
+            "id":205,
+            "date_earned":"1499287201937",
+            "details":"Co-Captain"
+        },
+        {
+          "id":213,
+          "date_earned":"1501350720000",
+          "details":"Missouri"
+        },
       ]
   },
   {
@@ -106,6 +191,21 @@ export const USERS: User[] = [
             "date_earned":"1500355440000",
             "details":"Impressive Impersonation"
           },
+          {
+            "id":213,
+            "date_earned":"1501354800000",
+            "details":"West Virginia"
+          },
+          {
+            "id":213,
+            "date_earned":"1501354860000",
+            "details":"Washington DC"
+          },
+          {
+            "id":212,
+            "date_earned":"1501294140000",
+            "details":"Sophie"
+          },
       ]
   },
   {
@@ -117,6 +217,21 @@ export const USERS: User[] = [
               "id":205,
               "date_earned":"1499287201937",
               "details":"Social Media Team"
+          },
+          {
+            "id":213,
+            "date_earned":"1501108680000",
+            "details":"Tennessee"
+          },
+          {
+            "id":213,
+            "date_earned":"1501108860000",
+            "details":"Massachusetts"
+          },
+          {
+            "id":201,
+            "date_earned":"1501521660000",
+            "details":""
           },
       ]
   },
@@ -134,6 +249,16 @@ export const USERS: User[] = [
           "id": 201,
           "date_earned":"1500932340000",
           "details":""
+        },
+        {
+          "id":213,
+          "date_earned":"1501467780000",
+          "details":"Utah"
+        },
+        {
+          "id":208,
+          "date_earned":"1501459080000",
+          "details":"Arizona"
         },
       ]
   },
@@ -154,6 +279,16 @@ export const USERS: User[] = [
       "name": "brittany",
       "image": "user_brittany.jpg",
       "badges": [
+        {
+          "id":208,
+          "date_earned":"1501451460000",
+          "details":"Michigan"
+        },
+        {
+          "id":210,
+          "date_earned":"1501557060000",
+          "details":"MI Bonding"
+        },
       ]
   },
   {
@@ -170,6 +305,16 @@ export const USERS: User[] = [
             "id":208,
             "date_earned":"1500832800000",
             "details":"Ohio"
+          },
+          {
+            "id":213,
+            "date_earned":"1501354800000",
+            "details":"California"
+          },
+          {
+            "id":214,
+            "date_earned":"1501294440000",
+            "details":"of Janine"
           },
       ]
   },
@@ -188,6 +333,31 @@ export const USERS: User[] = [
             "date_earned":"1500832800000",
             "details":"Ohio"
           },
+          {
+            "id":213,
+            "date_earned":"1500984300000",
+            "details":"Ohio"
+          },
+          {
+            "id":213,
+            "date_earned":"1500984300000",
+            "details":"Washington"
+          },
+          {
+            "id":212,
+            "date_earned":"1501122060000",
+            "details":"Viv"
+          },
+          {
+            "id":210,
+            "date_earned":"1501277520000",
+            "details":"Board Games with SS"
+          },
+          {
+            "id":207,
+            "date_earned":"1501333200000",
+            "details":"Zuchini Bread at SFI"
+          },
       ]
   },
   {
@@ -195,6 +365,26 @@ export const USERS: User[] = [
       "name": "talia",
       "image": "user_talia.jpg",
       "badges": [
+        {
+          "id":213,
+          "date_earned":"1501350480000",
+          "details":"Alabama"
+        },
+        {
+          "id":213,
+          "date_earned":"1501350480000",
+          "details":"Wisconsin"
+        },
+        {
+          "id":208,
+          "date_earned":"1501451460000",
+          "details":"Michigan"
+        },
+        {
+          "id":210,
+          "date_earned":"1501557060000",
+          "details":"MI Bonding"
+        },
       ]
   },
   {
@@ -231,6 +421,31 @@ export const USERS: User[] = [
             "date_earned":"1500833940000",
             "details":"Bubba zzz"
           },
+          {
+            "id":213,
+            "date_earned":"1501006560000",
+            "details":"Georgia"
+          },
+          {
+            "id":213,
+            "date_earned":"1501006680000",
+            "details":"New Jersey"
+          },
+          {
+            "id":213,
+            "date_earned":"1501006860000",
+            "details":"Arkansas"
+          },
+          {
+            "id":202,
+            "date_earned":"1501516020000",
+            "details":""
+          },
+          {
+            "id": 204,
+            "date_earned":"1501035780000",
+            "details":"Grueling Gauntlet"
+          },
       ]
   },
   {
@@ -248,6 +463,26 @@ export const USERS: User[] = [
           "date_earned":"1500929880000",
           "details":""
         },
+        {
+          "id":213,
+          "date_earned":"1501354740000",
+          "details":"Vermont"
+        },
+        {
+          "id":212,
+          "date_earned":"1501071240000",
+          "details":"Tots"
+        },
+        {
+          "id":210,
+          "date_earned":"1501277520000",
+          "details":"Board Games with Sophie"
+        },
+        {
+          "id":207,
+          "date_earned":"1501333200000",
+          "details":"Zuchini Bread at SFI"
+        },
       ]
   },
   {
@@ -255,6 +490,36 @@ export const USERS: User[] = [
       "name": "viv",
       "image": "user_viv.jpg",
       "badges": [
+        {
+          "id":213,
+          "date_earned":"1500987960000",
+          "details":"Minnesota"
+        },
+        {
+          "id":213,
+          "date_earned":"1500988320000",
+          "details":"Michigan"
+        },
+        {
+          "id":213,
+          "date_earned":"1500988380000",
+          "details":"Florida"
+        },
+        {
+          "id":208,
+          "date_earned":"1501451460000",
+          "details":"Michigan"
+        },
+        {
+          "id":212,
+          "date_earned":"1500987060000",
+          "details":"Sophie"
+        },
+        {
+          "id":210,
+          "date_earned":"1501557060000",
+          "details":"MI Bonding"
+        },
       ]
   },
   {
@@ -282,6 +547,26 @@ export const USERS: User[] = [
           "date_earned":"1500936540000",
           "details":""
         },
+        {
+          "id":213,
+          "date_earned":"1501350600000",
+          "details":"North Carolina"
+        },
+        {
+          "id":213,
+          "date_earned":"1501350900000",
+          "details":"Kentucky"
+        },
+        {
+          "id":208,
+          "date_earned":"1501451460000",
+          "details":"Michigan"
+        },
+        {
+          "id":210,
+          "date_earned":"1501557060000",
+          "details":"MI Bonding"
+        },
       ]
   },
   {
@@ -304,6 +589,22 @@ export const USERS: User[] = [
             "date_earned":"1500926760000",
             "details":"Virginia"
           },
+          {
+            "id":213,
+            "date_earned":"1500990600000",
+            "details":"Virginia"
+          },
+          {
+            "id":213,
+            "date_earned":"1501025220000",
+            "details":"New Hampshire"
+          },
+          {
+            "id":201,
+            "date_earned":"1501024680000",
+            "details":""
+          },
+        
       ]
   },
   {
@@ -458,5 +759,41 @@ export const BADGES: Badge[] = [
     "image": "badge_liberty.png",
     "description": "Take a selfie with a piece of rival gear (showing the rival logo) at a recognizable landmark (think on the level of statue of liberty, not the campus library) and post it in the slack channel. In order to receive badge credit, a teammate will have to identify the landmark (first to identify by responding in the slack channel will also receive the badge). Badge can be earned 3 times as the traveler, and 3 times as the identifier.",
     "created_by": 31
+  },
+  {
+    "id": 216,
+    "title": "Rusty Rampage",
+    "image": "badge_burger.png",
+    "description": "Snap a photo of a teammate eating unhealthy food (or really digging in to any food) and post it to slack. Can’t be at team dinners (ex: if we all get ice cream during a tourney or something).",
+    "created_by": 11
+  },
+  {
+    "id": 217,
+    "title": "Teammate Terror",
+    "image": "badge_scream.png",
+    "description": "Videotape yourself scaring a teammate and upload to slack.",
+    "created_by": 9
+  },
+  {
+    "id": 218,
+    "title": "Happy Historian",
+    "image": "badge_quill.png",
+    "description": "Share a success story of one of your teammates via slack - can be recounting a sick play they made at a practice or tournament, sharing the work they've put in to reach a goal, or describing another way that their effort shines through.",
+    "created": "",
+    "created_by": 14
+  },
+  {
+    "id": 219,
+    "title": "Grueling Gauntlet",
+    "image": "badge_gauntlet.png",
+    "description": "Complete 'The Gauntlet' fitness challenge and post your time and and a post-workout selfie to the slack channel for credit.",
+    "created_by": 32
+  },
+  {
+    "id": 220,
+    "title": "Workin It",
+    "image": "badge_work.png",
+    "description": "? by day, ultimate player by night. Post a selfie to slack of you arriving at work / at work / doing whatever you consider to be your day job. ",
+    "created_by": 8
   },
 ];
