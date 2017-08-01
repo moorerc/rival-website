@@ -1,0 +1,23 @@
+### Gradle ###
+/.gradle/
+/build/
+
+### immutables ###
+.factorypath
+
+### Mac OSX + Windows ###
+.DS_Store
+Thumbs.db
+
+### Node ###
+/node_modules/
+npm-debug.log
+
+/build/
+/dist/
+
+img/
+dist/app.css
+dist/app.js
+yarn-error.log
+node_modules/.yarn-integrity
