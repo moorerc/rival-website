@@ -103,6 +103,11 @@ export const USERS: User[] = [
           "date_earned":"1501018860000",
           "details":"Illinois"
         },
+        {
+          "id": 220,
+          "date_earned":"1501877880000",
+          "details":"Confined Space Entries"
+        },
       ]
   },
   {
@@ -145,6 +150,31 @@ export const USERS: User[] = [
           "date_earned":"1501616040000",
           "details":"Workin It"
         },
+        {
+          "id": 215,
+          "date_earned":"1501794240000",
+          "details":"Big Ben - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1501937940000",
+          "details":"221b Baker Street - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1502032620000",
+          "details":"Buckingham Palace - Traveler"
+        },
+        {
+          "id": 220,
+          "date_earned":"1501744680000",
+          "details":"Forward Deployed Engineer"
+        },
+        {
+          "id":210,
+          "date_earned":"1502486820000",
+          "details":"SS/Tots"
+        },
       ]
   },
   {
@@ -162,6 +192,11 @@ export const USERS: User[] = [
           "date_earned":"1501350720000",
           "details":"Missouri"
         },
+        {
+          "id":211,
+          "date_earned":"1501795440000",
+          "details":"Kristen zzz"
+        },
       ]
   },
   {
@@ -173,6 +208,11 @@ export const USERS: User[] = [
               "id":205,
               "date_earned":"1499287201937",
               "details":"Snack Captain"
+          },
+          {
+            "id":214,
+            "date_earned":"1502067060000",
+            "details":"as Sophie"
           },
       ]
   },
@@ -206,6 +246,16 @@ export const USERS: User[] = [
             "date_earned":"1501294140000",
             "details":"Sophie"
           },
+          {
+            "id":210,
+            "date_earned":"1502055000000",
+            "details":"TLo/Brittany"
+          },
+          {
+            "id":200,
+            "date_earned":"1501624800000",
+            "details":"Practice Survey"
+          },
       ]
   },
   {
@@ -233,6 +283,11 @@ export const USERS: User[] = [
             "date_earned":"1501521660000",
             "details":""
           },
+          {
+            "id":210,
+            "date_earned":"1501986180000",
+            "details":"Theiss/Zeus/Sophie/Gg"
+          },
       ]
   },
   {
@@ -240,11 +295,6 @@ export const USERS: User[] = [
       "name": "bubba",
       "image": "user_bubba.jpg",
       "badges": [
-        {
-          "id":208,
-          "date_earned":"1500832800000",
-          "details":"Ohio"
-        },
         {
           "id": 201,
           "date_earned":"1500932340000",
@@ -260,6 +310,21 @@ export const USERS: User[] = [
           "date_earned":"1501459080000",
           "details":"Arizona"
         },
+        {
+          "id": 215,
+          "date_earned":"1501635480000",
+          "details":"Grand Canyon - Traveler"
+        },
+        {
+          "id":208,
+          "date_earned":"1501971360000",
+          "details":"Arkansas"
+        },
+        {
+          "id":208,
+          "date_earned":"1501881840000",
+          "details":"New Mexico"
+        },
       ]
   },
   {
@@ -271,6 +336,21 @@ export const USERS: User[] = [
               "id":205,
               "date_earned":"1499287201937",
               "details":"Swag Captain"
+          },
+          {
+            "id": 215,
+            "date_earned":"1502032680000",
+            "details":"Buckingham Palace - Guesser"
+          },
+          {
+            "id":211,
+            "date_earned":"1502650140000",
+            "details":"TLo zzz"
+          },
+          {
+            "id":216,
+            "date_earned":"1502650200000",
+            "details":"Chelsea/Viv"
           },
       ]
   },
@@ -288,6 +368,11 @@ export const USERS: User[] = [
           "id":210,
           "date_earned":"1501557060000",
           "details":"MI Bonding"
+        },
+        {
+          "id":210,
+          "date_earned":"1502055000000",
+          "details":"TLo/Brittany"
         },
       ]
   },
@@ -315,6 +400,11 @@ export const USERS: User[] = [
             "id":214,
             "date_earned":"1501294440000",
             "details":"of Janine"
+          },
+          {
+            "id":201,
+            "date_earned":"1501889220000",
+            "details":""
           },
       ]
   },
@@ -358,6 +448,31 @@ export const USERS: User[] = [
             "date_earned":"1501333200000",
             "details":"Zuchini Bread at SFI"
           },
+          {
+            "id": 220,
+            "date_earned":"1501796520000",
+            "details":"Software Engineer"
+          },
+          {
+            "id":201,
+            "date_earned":"1502041020000",
+            "details":""
+          },
+          {
+            "id":211,
+            "date_earned":"1502573520000",
+            "details":"Viv zzz"
+          },
+          {
+            "id":210,
+            "date_earned":"1501986180000",
+            "details":"Theiss/Zeus/Sophie/Gg"
+          },
+          {
+            "id":218,
+            "date_earned":"1502311440000",
+            "details":"SS calls timeouts"
+          },
       ]
   },
   {
@@ -392,6 +507,26 @@ export const USERS: User[] = [
       "name": "chelsea",
       "image": "user_chelsea.jpg",
       "badges": [
+        {
+          "id": 215,
+          "date_earned":"1501638780000",
+          "details":"Grand Canyon - Guesser"
+        },
+        {
+          "id":213,
+          "date_earned":"1501945680000",
+          "details":"Rhode Island"
+        },
+        {
+          "id":213,
+          "date_earned":"1502294520000",
+          "details":"Iowa"
+        },
+        {
+          "id":210,
+          "date_earned":"1502054880000",
+          "details":"Viv/Hank/Chelsea"
+        },
       ]
   },
   {
@@ -399,6 +534,11 @@ export const USERS: User[] = [
       "name": "gg",
       "image": "user_gg.jpg",
       "badges": [
+        {
+          "id":210,
+          "date_earned":"1501986180000",
+          "details":"Theiss/Zeus/Sophie/Gg"
+        },
       ]
   },
   {
@@ -483,6 +623,51 @@ export const USERS: User[] = [
           "date_earned":"1501333200000",
           "details":"Zuchini Bread at SFI"
         },
+        {
+          "id": 215,
+          "date_earned":"1501794300000",
+          "details":"Big Ben - Guesser"
+        },
+        {
+          "id": 220,
+          "date_earned":"1501640820000",
+          "details":"Doctor Scott"
+        },
+        {
+          "id": 220,
+          "date_earned":"1502138640000",
+          "details":"Firefighter"
+        },
+        {
+          "id":201,
+          "date_earned":"1501722960000",
+          "details":""
+        },
+        {
+          "id":201,
+          "date_earned":"1501889220000",
+          "details":""
+        },
+        {
+          "id":211,
+          "date_earned":"1501640940000",
+          "details":"Kristen zzz"
+        },
+        {
+          "id":210,
+          "date_earned":"1502486820000",
+          "details":"SS/Tots"
+        },
+        {
+          "id":207,
+          "date_earned":"1502575200000",
+          "details":"Cookie Cake at Farm Practice"
+        },
+        {
+          "id": 204,
+          "date_earned":"1502637000000",
+          "details":"Carpool Conqueror"
+        },
       ]
   },
   {
@@ -519,6 +704,41 @@ export const USERS: User[] = [
           "id":210,
           "date_earned":"1501557060000",
           "details":"MI Bonding"
+        },
+        {
+          "id": 215,
+          "date_earned":"1501938960000",
+          "details":"221b Baker Street - Guesser"
+        },
+        {
+          "id": 220,
+          "date_earned":"1501699980000",
+          "details":"Robotic Poker"
+        },
+        {
+          "id":201,
+          "date_earned":"1501721940000",
+          "details":""
+        },
+        {
+          "id":201,
+          "date_earned":"1502325480000",
+          "details":""
+        },
+        {
+          "id":210,
+          "date_earned":"1502054880000",
+          "details":"Viv/Hank/Chelsea"
+        },
+        {
+          "id":200,
+          "date_earned":"1501776180000",
+          "details":"Van Packet Survey"
+        },
+        {
+          "id": 204,
+          "date_earned":"1502160120000",
+          "details":"Stellar Student"
         },
       ]
   },
@@ -567,6 +787,26 @@ export const USERS: User[] = [
           "date_earned":"1501557060000",
           "details":"MI Bonding"
         },
+        {
+          "id":201,
+          "date_earned":"1501721940000",
+          "details":""
+        },
+        {
+          "id":201,
+          "date_earned":"1501973280000",
+          "details":""
+        },
+        {
+          "id":201,
+          "date_earned":"1502205240000",
+          "details":""
+        },
+        {
+          "id":210,
+          "date_earned":"1502054880000",
+          "details":"Viv/Hank/Chelsea"
+        },
       ]
   },
   {
@@ -604,6 +844,11 @@ export const USERS: User[] = [
             "date_earned":"1501024680000",
             "details":""
           },
+          {
+            "id": 220,
+            "date_earned":"1501766640000",
+            "details":"Sports Biomechanical Engineer"
+          },
         
       ]
   },
@@ -628,6 +873,16 @@ export const USERS: User[] = [
               "id":205,
               "date_earned":"1499287201937",
               "details":"Coach"
+          },
+          {
+            "id":213,
+            "date_earned":"1501699860000",
+            "details":"New Mexico"
+          },
+          {
+            "id":210,
+            "date_earned":"1501986180000",
+            "details":"Theiss/Zeus/Sophie/Gg"
           },
       ]
   }
@@ -795,5 +1050,35 @@ export const BADGES: Badge[] = [
     "image": "badge_work.png",
     "description": "? by day, ultimate player by night. Post a selfie to slack of you arriving at work / at work / doing whatever you consider to be your day job. ",
     "created_by": 8
+  },
+  {
+    "id": 221,
+    "title": "Stellar Student",
+    "image": "badge_student.png",
+    "description": "Learn something (frisbee related or not) from a teammate. Demonstrate competency at said task and both people get points.",
+    "created_by": 32
+  },
+  {
+    "id": 222,
+    "title": "Carpool Conqueror",
+    "image": "badge_carpool.png",
+    "description": "Limited time only. Complete each the following set of tasks with your carpool on your drive to ESC, posting to slack as required.",
+    "created_by": 31
+  },
+  {
+    "id": 223,
+    "title": "Cheer Master",
+    "image": "badge_megaphone.png",
+    "description": "Come up with a new team cheer and share via slack.",
+    "created": "",
+    "created_by": 8
+  },
+  {
+    "id": 224,
+    "title": "Hydration",
+    "image": "badge_bottle.png",
+    "description": "Take a photo of yourself with your water bottle every day for 2 weeks straight and post it to slack.",
+    "created": "",
+    "created_by": 10
   },
 ];
