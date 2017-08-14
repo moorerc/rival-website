@@ -21,3 +21,4 @@ dist/app.css
 dist/app.js
 yarn-error.log
 node_modules/.yarn-integrity
+dist/index.html
