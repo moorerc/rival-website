@@ -191,6 +191,36 @@ export default class FiftyPlates extends React.PureComponent<{}, {}> {
 								"id": "US-IA",
 								"title": "Iowa",
 								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-CT",
+								"title": "Connecticut",
+								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-AZ",
+								"title": "Arizona",
+								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-OK",
+								"title": "Oklahoma",
+								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-KS",
+								"title": "Kansas",
+								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-HI",
+								"title": "Hawaii",
+								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-NE",
+								"title": "Nebraska",
+								"color": "rgba(75,216,181,0.8)"
 							},
 
 
@@ -200,23 +230,8 @@ export default class FiftyPlates extends React.PureComponent<{}, {}> {
 								"color": "rgba(75,216,181,0.8)"
 							},
 							{
-								"id": "US-AZ",
-								"title": "Arizona",
-								"color": "rgba(75,216,181,0.8)"
-							},
-							{
 								"id": "US-CO",
 								"title": "Colorado",
-								"color": "rgba(75,216,181,0.8)"
-							},
-                            {
-								"id": "US-CT",
-								"title": "Connecticut",
-								"color": "rgba(75,216,181,0.8)"
-							},
-							{
-								"id": "US-HI",
-								"title": "Hawaii",
 								"color": "rgba(75,216,181,0.8)"
 							},
 							{
@@ -227,11 +242,6 @@ export default class FiftyPlates extends React.PureComponent<{}, {}> {
 							{
 								"id": "US-ID",
 								"title": "Idaho",
-								"color": "rgba(75,216,181,0.8)"
-							},
-							{
-								"id": "US-KS",
-								"title": "Kansas",
 								"color": "rgba(75,216,181,0.8)"
 							},
 							{
@@ -249,19 +259,9 @@ export default class FiftyPlates extends React.PureComponent<{}, {}> {
 								"title": "North Dakota",
 								"color": "rgba(75,216,181,0.8)"
 							},
-                            {
-								"id": "US-NE",
-								"title": "Nebraska",
-								"color": "rgba(75,216,181,0.8)"
-							},
 							{
 								"id": "US-NM",
 								"title": "New Mexico",
-								"color": "rgba(75,216,181,0.8)"
-							},
-							{
-								"id": "US-OK",
-								"title": "Oklahoma",
 								"color": "rgba(75,216,181,0.8)"
 							},
 							{
