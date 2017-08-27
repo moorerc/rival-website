@@ -29,11 +29,6 @@ export const USERS: User[] = [
       "badges": [
         {
           "id":213,
-          "date_earned":"1501013400000",
-          "details":"New York"
-        },
-        {
-          "id":213,
           "date_earned":"1501013460000",
           "details":"South Carolina"
         },
@@ -43,14 +38,44 @@ export const USERS: User[] = [
           "details":"Maryland"
         },
         {
-          "id":208,
-          "date_earned":"1501451460000",
+          "id":213,
+          "date_earned":"1500988320000",
           "details":"Michigan"
         },
         {
           "id":210,
           "date_earned":"1501557060000",
           "details":"MI Bonding"
+        },
+        {
+          "id":213,
+          "date_earned":"1503421320000",
+          "details":"Hawaii"
+        },
+        {
+          "id":201,
+          "date_earned":"1503722760000",
+          "details":""
+        },
+        {
+          "id": 215,
+          "date_earned":"1503282180000",
+          "details":"Navy Pier - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503284520000",
+          "details":"Bean - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503093240000",
+          "details":"Sweetwater's Donuts - Traveler"
+        },
+        {
+          "id":211,
+          "date_earned":"1503197940000",
+          "details":"Harley zzz"
         },
       ]
   },
@@ -107,6 +132,11 @@ export const USERS: User[] = [
           "id": 220,
           "date_earned":"1501877880000",
           "details":"Confined Space Entries"
+        },
+        {
+          "id":211,
+          "date_earned":"1503197280000",
+          "details":"Harley zzz"
         },
       ]
   },
@@ -174,6 +204,31 @@ export const USERS: User[] = [
           "id":210,
           "date_earned":"1502486820000",
           "details":"SS/Tots"
+        },
+        {
+          "id":201,
+          "date_earned":"1503451140000",
+          "details":""
+        },
+        {
+          "id":210,
+          "date_earned":"1502926680000",
+          "details":"Game Night at Sophies!"
+        },
+        {
+          "id":210,
+          "date_earned":"1503418080000",
+          "details":"Ice Cream with SS/Sophie/Butts!"
+        },
+        {
+          "id":211,
+          "date_earned":"1503088260000",
+          "details":"Stevie zzz"
+        },
+        {
+          "id": 204,
+          "date_earned":"1503799560000",
+          "details":"Worm Wizard"
         },
       ]
   },
@@ -256,6 +311,46 @@ export const USERS: User[] = [
             "date_earned":"1501624800000",
             "details":"Practice Survey"
           },
+          {
+            "id":213,
+            "date_earned":"1503151560000",
+            "details":"Oklahoma"
+          },
+          {
+            "id":213,
+            "date_earned":"1503151560000",
+            "details":"Kansas"
+          },
+          {
+            "id": 215,
+            "date_earned":"1502997240000",
+            "details":"Willis Tower - Traveler"
+          },
+          {
+            "id": 215,
+            "date_earned":"1503282480000",
+            "details":"Navy Pier - Guesser"
+          },
+          {
+            "id":211,
+            "date_earned":"1503197940000",
+            "details":"Harley zzz"
+          },
+          {
+            "id":211,
+            "date_earned":"1503273060000",
+            "details":"Chelsea zzz"
+          },
+          {
+            "id":208,
+            "date_earned":"1503003780000",
+            "details":"Wisconsin"
+          },
+          {
+            "id":222,
+            "date_earned":"1503591660000",
+            "details":""
+          },
       ]
   },
   {
@@ -287,6 +382,16 @@ export const USERS: User[] = [
             "id":210,
             "date_earned":"1501986180000",
             "details":"Theiss/Zeus/Sophie/Gg"
+          },
+          {
+            "id":213,
+            "date_earned":"1502844420000",
+            "details":"Connecticut"
+          },
+          {
+            "id": 220,
+            "date_earned":"1503003840000",
+            "details":"Vet"
           },
       ]
   },
@@ -324,6 +429,16 @@ export const USERS: User[] = [
           "id":208,
           "date_earned":"1501881840000",
           "details":"New Mexico"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503284580000",
+          "details":"Bean - Guesser"
+        },
+        {
+          "id": 220,
+          "date_earned":"1502998380000",
+          "details":"Editor of Doctor Things"
         },
       ]
   },
@@ -374,6 +489,36 @@ export const USERS: User[] = [
           "date_earned":"1502055000000",
           "details":"TLo/Brittany"
         },
+        {
+          "id":213,
+          "date_earned":"1503097440000",
+          "details":"Arizona"
+        },
+        {
+          "id": 215,
+          "date_earned":"1502997240000",
+          "details":"Willis Tower - Traveler"
+        },
+        {
+          "id":211,
+          "date_earned":"1503197940000",
+          "details":"Harley zzz"
+        },
+        {
+          "id":211,
+          "date_earned":"1503273060000",
+          "details":"Chelsea zzz"
+        },
+        {
+          "id":208,
+          "date_earned":"1503003780000",
+          "details":"Wisconsin"
+        },
+        {
+          "id":222,
+          "date_earned":"1503591660000",
+          "details":""
+        },
       ]
   },
   {
@@ -405,6 +550,26 @@ export const USERS: User[] = [
             "id":201,
             "date_earned":"1501889220000",
             "details":""
+          },
+          {
+            "id":213,
+            "date_earned":"1501354620000",
+            "details":"New York"
+          },
+          {
+            "id":210,
+            "date_earned":"1502926680000",
+            "details":"Game Night at Sophies!"
+          },
+          {
+            "id": 204,
+            "date_earned":"1502798400000",
+            "details":"Active Commuter"
+          },
+          {
+            "id": 204,
+            "date_earned":"1503003600000",
+            "details":"Women and Songs"
           },
       ]
   },
@@ -473,6 +638,16 @@ export const USERS: User[] = [
             "date_earned":"1502311440000",
             "details":"SS calls timeouts"
           },
+          {
+            "id":213,
+            "date_earned":"1503153180000",
+            "details":"Nebraska"
+          },
+          {
+            "id":210,
+            "date_earned":"1502926680000",
+            "details":"Game Night at Sophies!"
+          },
       ]
   },
   {
@@ -499,6 +674,11 @@ export const USERS: User[] = [
           "id":210,
           "date_earned":"1501557060000",
           "details":"MI Bonding"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503093240000",
+          "details":"Sweetwater's Donuts - Traveler"
         },
       ]
   },
@@ -527,6 +707,16 @@ export const USERS: User[] = [
           "date_earned":"1502054880000",
           "details":"Viv/Hank/Chelsea"
         },
+        {
+          "id": 215,
+          "date_earned":"1503093240000",
+          "details":"Sweetwater's Donuts - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503286380000",
+          "details":"Chi Art Museum - Guesser"
+        },
       ]
   },
   {
@@ -538,6 +728,11 @@ export const USERS: User[] = [
           "id":210,
           "date_earned":"1501986180000",
           "details":"Theiss/Zeus/Sophie/Gg"
+        },
+        {
+          "id":210,
+          "date_earned":"1502926680000",
+          "details":"Game Night at Sophies!"
         },
       ]
   },
@@ -585,6 +780,16 @@ export const USERS: User[] = [
             "id": 204,
             "date_earned":"1501035780000",
             "details":"Grueling Gauntlet"
+          },
+          {
+            "id":201,
+            "date_earned":"1502883540000",
+            "details":""
+          },
+          {
+            "id":209,
+            "date_earned":"1503012660000",
+            "details":"Soup for Sophie! (and others)"
           },
       ]
   },
@@ -668,6 +873,41 @@ export const USERS: User[] = [
           "date_earned":"1502637000000",
           "details":"Carpool Conqueror"
         },
+        {
+          "id":210,
+          "date_earned":"1502926680000",
+          "details":"Game Night at Sophies!"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503093240000",
+          "details":"Sweetwater's Donuts - Guesser"
+        },
+        {
+          "id":211,
+          "date_earned":"1503020700000",
+          "details":"Sophie zzz"
+        },
+        {
+          "id":211,
+          "date_earned":"1503088260000",
+          "details":"Stevie zzz"
+        },
+        {
+          "id":216,
+          "date_earned":"1503096660000",
+          "details":"Harley/Kristen"
+        },
+        {
+          "id":207,
+          "date_earned":"1503061200000",
+          "details":"Banana Bread at ESC"
+        },
+        {
+          "id": 204,
+          "date_earned":"1503669600000",
+          "details":"Midseason Montage"
+        },
       ]
   },
   {
@@ -740,6 +980,26 @@ export const USERS: User[] = [
           "date_earned":"1502160120000",
           "details":"Stellar Student"
         },
+        {
+          "id": 215,
+          "date_earned":"1503282180000",
+          "details":"Navy Pier - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503284520000",
+          "details":"Bean - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503093240000",
+          "details":"Sweetwater's Donuts - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1502997300000",
+          "details":"Willis Tower - Guesser"
+        },
       ]
   },
   {
@@ -798,14 +1058,24 @@ export const USERS: User[] = [
           "details":""
         },
         {
-          "id":201,
-          "date_earned":"1502205240000",
-          "details":""
-        },
-        {
           "id":210,
           "date_earned":"1502054880000",
           "details":"Viv/Hank/Chelsea"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503282180000",
+          "details":"Navy Pier - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503284520000",
+          "details":"Bean - Traveler"
+        },
+        {
+          "id": 215,
+          "date_earned":"1503093240000",
+          "details":"Sweetwater's Donuts - Traveler"
         },
       ]
   },
@@ -861,6 +1131,11 @@ export const USERS: User[] = [
               "id":205,
               "date_earned":"1499287201937",
               "details":"Coach"
+          },
+          {
+            "id":201,
+            "date_earned":"1502925420000",
+            "details":""
           },
       ]
   },
@@ -1080,5 +1355,37 @@ export const BADGES: Badge[] = [
     "description": "Take a photo of yourself with your water bottle every day for 2 weeks straight and post it to slack.",
     "created": "",
     "created_by": 10
+  },
+  {
+    "id": 225,
+    "title": "Active Commuter",
+    "image": "badge_bus.png",
+    "description": "Take a photo of yourself walking, biking, or taking the bus to get somewhere you need to go.",
+    "created": "",
+    "created_by": 18
+  },
+  {
+    "id": 226,
+    "title": "Women and Songs",
+    "image": "badge_microphone.png",
+    "description": "Text/email/call/ or tag Harley on slack with an idea for the women and songs playlist. It will go to the Harley and Kristen Committee and if it passes: your song will be added to the playlist, you'll get the badge, and you can be a part of women's club.",
+    "created": "",
+    "created_by": 18
+  },
+  {
+    "id": 227,
+    "title": "Midseason Montage",
+    "image": "badge_camera.png",
+    "description": "Create a photo/video montage displaying 5+ things you are doing during the midseason break to prepare for the series. ",
+    "created": "",
+    "created_by": 31
+  },
+  {
+    "id": 228,
+    "title": "Worm Wizard",
+    "image": "badge_worm.png",
+    "description": "Submit a video to slack of yourself attempting to master the worm (the stretch, any variation of the dance move -- up to you).",
+    "created": "",
+    "created_by": 8
   },
 ];
