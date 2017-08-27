@@ -176,6 +176,21 @@ export default class FiftyPlates extends React.PureComponent<{}, {}> {
 								"id": "US-UT",
 								"title": "Utah",
 								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-NM",
+								"title": "New Mexico",
+								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-RI",
+								"title": "Rhode Island",
+								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-IA",
+								"title": "Iowa",
+								"color": "rgba(75,216,181,0.8)"
 							},
 
 
