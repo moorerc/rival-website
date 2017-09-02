@@ -89,6 +89,11 @@ export const USERS: User[] = [
               "date_earned":"1499287201937",
               "details":"Spirit Captain"
           },
+          {
+            "id":210,
+            "date_earned":"1504248120000",
+            "details":"Ladies 80s"
+          },
       ]
   },
   {
@@ -137,6 +142,11 @@ export const USERS: User[] = [
           "id":211,
           "date_earned":"1503197280000",
           "details":"Harley zzz"
+        },
+        {
+          "id":201,
+          "date_earned":"1504308000000",
+          "details":""
         },
       ]
   },
@@ -230,6 +240,26 @@ export const USERS: User[] = [
           "date_earned":"1503799560000",
           "details":"Worm Wizard"
         },
+        {
+          "id": 225,
+          "date_earned":"1503872340000",
+          "details":"Walking to Coffee Shop"
+        },
+        {
+          "id":201,
+          "date_earned":"1503964200000",
+          "details":""
+        },
+        {
+          "id":219,
+          "date_earned":"1504237980000",
+          "details":"6:09, 3:03, 1:29, 0:39, 6-7"
+        },
+        {
+          "id": 204,
+          "date_earned":"1504101660000",
+          "details":"Personality Pursuit"
+        },
       ]
   },
   {
@@ -252,6 +282,16 @@ export const USERS: User[] = [
           "date_earned":"1501795440000",
           "details":"Kristen zzz"
         },
+        {
+          "id":201,
+          "date_earned":"1504046460000",
+          "details":""
+        },
+        {
+          "id":210,
+          "date_earned":"1504248120000",
+          "details":"Ladies 80s"
+        },
       ]
   },
   {
@@ -268,6 +308,11 @@ export const USERS: User[] = [
             "id":214,
             "date_earned":"1502067060000",
             "details":"as Sophie"
+          },
+          {
+            "id":210,
+            "date_earned":"1504248120000",
+            "details":"Ladies 80s"
           },
       ]
   },
@@ -351,6 +396,21 @@ export const USERS: User[] = [
             "date_earned":"1503591660000",
             "details":""
           },
+          {
+            "id": 220,
+            "date_earned":"1504024320000",
+            "details":"Childhood Room Cleaner"
+          },
+          {
+            "id":208,
+            "date_earned":"1504107000000",
+            "details":"Pennsylvania"
+          },
+          {
+            "id":212,
+            "date_earned":"1504287900000",
+            "details":"Harley"
+          },
       ]
   },
   {
@@ -392,6 +452,16 @@ export const USERS: User[] = [
             "id": 220,
             "date_earned":"1503003840000",
             "details":"Vet"
+          },
+          {
+            "id":201,
+            "date_earned":"1504287780000",
+            "details":""
+          },
+          {
+            "id":210,
+            "date_earned":"1504248120000",
+            "details":"Ladies 80s"
           },
       ]
   },
@@ -440,6 +510,11 @@ export const USERS: User[] = [
           "date_earned":"1502998380000",
           "details":"Editor of Doctor Things"
         },
+        {
+          "id":213,
+          "date_earned":"1503936780000",
+          "details":"North Dakota"
+        },
       ]
   },
   {
@@ -466,6 +541,11 @@ export const USERS: User[] = [
             "id":216,
             "date_earned":"1502650200000",
             "details":"Chelsea/Viv"
+          },
+          {
+            "id": 204,
+            "date_earned":"1504046760000",
+            "details":"Epic Fail"
           },
       ]
   },
@@ -571,6 +651,16 @@ export const USERS: User[] = [
             "date_earned":"1503003600000",
             "details":"Women and Songs"
           },
+          {
+            "id":201,
+            "date_earned":"1504220580000",
+            "details":""
+          },
+          {
+            "id":210,
+            "date_earned":"1504248120000",
+            "details":"Ladies 80s"
+          },
       ]
   },
   {
@@ -647,6 +737,26 @@ export const USERS: User[] = [
             "id":210,
             "date_earned":"1502926680000",
             "details":"Game Night at Sophies!"
+          },
+          {
+            "id":216,
+            "date_earned":"1504298760000",
+            "details":"Janine"
+          },
+          {
+            "id": 225,
+            "date_earned":"1504266000000",
+            "details":"On the bus!"
+          },
+          {
+            "id":201,
+            "date_earned":"1504024200000",
+            "details":""
+          },
+          {
+            "id":201,
+            "date_earned":"1504371960000",
+            "details":""
           },
       ]
   },
@@ -733,6 +843,11 @@ export const USERS: User[] = [
           "id":210,
           "date_earned":"1502926680000",
           "details":"Game Night at Sophies!"
+        },
+        {
+          "id":210,
+          "date_earned":"1504248120000",
+          "details":"Ladies 80s"
         },
       ]
   },
@@ -908,6 +1023,16 @@ export const USERS: User[] = [
           "date_earned":"1503669600000",
           "details":"Midseason Montage"
         },
+        {
+          "id":213,
+          "date_earned":"1503870960000",
+          "details":"South Dakota"
+        },
+        {
+          "id":209,
+          "date_earned":"1504030260000",
+          "details":"Make tots get glasses!"
+        },
       ]
   },
   {
@@ -999,6 +1124,26 @@ export const USERS: User[] = [
           "id": 215,
           "date_earned":"1502997300000",
           "details":"Willis Tower - Guesser"
+        },
+        {
+          "id":216,
+          "date_earned":"1503860760000",
+          "details":"Chelsea"
+        },
+        {
+          "id":201,
+          "date_earned":"1504369620000",
+          "details":""
+        },
+        {
+          "id":211,
+          "date_earned":"1504018500000",
+          "details":"Stevie zzz"
+        },
+        {
+          "id":208,
+          "date_earned":"1504268340000",
+          "details":"Minnesota"
         },
       ]
   },
@@ -1385,6 +1530,38 @@ export const BADGES: Badge[] = [
     "title": "Worm Wizard",
     "image": "badge_worm.png",
     "description": "Submit a video to slack of yourself attempting to master the worm (the stretch, any variation of the dance move -- up to you).",
+    "created": "",
+    "created_by": 8
+  },
+  {
+    "id": 229,
+    "title": "Personality Pursuit",
+    "image": "badge_personality.png",
+    "description": "Understand yourself and your teammates a little bit more through a Myers-Briggs ish assessment (with a well done ui/ux).Take the free quiz at www.16personalities.com and post a screenshot of your results to slack!",
+    "created": "",
+    "created_by": 8
+  },
+  {
+    "id": 230,
+    "title": "Epic Fail",
+    "image": "badge_fail.png",
+    "description": "Describe a moment within the week in which you did not reach your goal. Ex: Carried too many things to the car in the morning and spilled coffee all over my pants.",
+    "created": "",
+    "created_by": 14
+  },
+  {
+    "id": 230,
+    "title": "Gold Star",
+    "image": "badge_goldstar.png",
+    "description": "",
+    "created": "",
+    "created_by": 31
+  },
+  {
+    "id": 231,
+    "title": "Neon Night",
+    "image": "badge_moon.png",
+    "description": "Limited time only! Attend the first pod of this week (week of 9/3) wearing neon attire (monday for aa, wednesday for cbus, wednesday at the latest for squodballs) and post a photo to slack!",
     "created": "",
     "created_by": 8
   },
