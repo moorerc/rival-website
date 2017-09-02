@@ -1553,7 +1553,7 @@ export const BADGES: Badge[] = [
     "id": 230,
     "title": "Gold Star",
     "image": "badge_goldstar.png",
-    "description": "",
+    "description": "Either get tots to say 'gold star' to you publicly (and post event description to slack), or post a screenshot from a conversation in which she says it to you.",
     "created": "",
     "created_by": 31
   },
