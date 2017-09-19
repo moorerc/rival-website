@@ -77,6 +77,26 @@ export const USERS: User[] = [
           "date_earned":"1503197940000",
           "details":"Harley zzz"
         },
+        {
+          "id":229,
+          "date_earned":"1504397940000",
+          "details":"ISFJ-A"
+        },
+        {
+          "id":210,
+          "date_earned":"1504493940000",
+          "details":"TLo/Brit/Ninja"
+        },
+        {
+          "id":210,
+          "date_earned":"1505101740000",
+          "details":"Hank/Viv/Talia/Ninja"
+        },
+        {
+          "id":231,
+          "date_earned":"1504569060000",
+          "details":""
+        },
       ]
   },
   {
@@ -93,6 +113,11 @@ export const USERS: User[] = [
             "id":210,
             "date_earned":"1504248120000",
             "details":"Ladies 80s"
+          },
+          {
+            "id":229,
+            "date_earned":"1504389600000",
+            "details":"INFP-T"
           },
       ]
   },
@@ -111,44 +136,59 @@ export const USERS: User[] = [
           "date_earned":"1500986640000",
           "details":"Indiana"
         },
+        {
+          "id":229,
+          "date_earned":"1504408980000",
+          "details":"ISFJ-T"
+        },
       ]
   },
   {
-      "id":20177,
-      "name": "nitz",
-      "image": "user_nitz.jpg",
-      "badges": [
-        {
-          "id":213,
-          "date_earned":"1501001460000",
-          "details":"Texas"
-        },
-        {
-          "id":213,
-          "date_earned":"1501001520000",
-          "details":"Pennsylvania"
-        },
-        {
-          "id":213,
-          "date_earned":"1501018860000",
-          "details":"Illinois"
-        },
-        {
-          "id": 220,
-          "date_earned":"1501877880000",
-          "details":"Confined Space Entries"
-        },
-        {
-          "id":211,
-          "date_earned":"1503197280000",
-          "details":"Harley zzz"
-        },
-        {
-          "id":201,
-          "date_earned":"1504308000000",
-          "details":""
-        },
-      ]
+    "id": 20177,
+    "name": "nitz",
+    "image": "user_nitz.jpg",
+    "badges": [
+      {
+        "id":213,
+        "date_earned":"1501001460000",
+        "details":"Texas"
+      },
+      {
+        "id":213,
+        "date_earned":"1501001520000",
+        "details":"Pennsylvania"
+      },
+      {
+        "id":213,
+        "date_earned":"1501018860000",
+        "details":"Illinois"
+      },
+      {
+        "id": 220,
+        "date_earned":"1501877880000",
+        "details":"Confined Space Entries"
+      },
+      {
+        "id":211,
+        "date_earned":"1503197280000",
+        "details":"Harley zzz"
+      },
+      {
+        "id":201,
+        "date_earned":"1504308000000",
+        "details":""
+      },
+      {
+        "id":229,
+        "date_earned":"1504820400000",
+        "details":"ISFJ-T"
+      },
+      {
+        "id": 204,
+        "date_earned":"1505651940000",
+        "details":"Eat Like Sophie"
+      },
+    ]
   },
   {
       "id":20178,
@@ -260,6 +300,31 @@ export const USERS: User[] = [
           "date_earned":"1504101660000",
           "details":"Personality Pursuit"
         },
+        {
+          "id":229,
+          "date_earned":"1504385460000",
+          "details":"INTJ-A"
+        },
+        {
+          "id":231,
+          "date_earned":"1504710240000",
+          "details":""
+        },
+        {
+          "id":224,
+          "date_earned":"1504750800000",
+          "details":""
+        },
+        {
+          "id": 225,
+          "date_earned":"1505405940000",
+          "details":"Walking to work"
+        },
+        {
+          "id":207,
+          "date_earned":"1505606400000",
+          "details":"Ds Bday Cake"
+        },
       ]
   },
   {
@@ -292,6 +357,26 @@ export const USERS: User[] = [
           "date_earned":"1504248120000",
           "details":"Ladies 80s"
         },
+        {
+          "id":229,
+          "date_earned":"1504449840000",
+          "details":"ENFJ-A"
+        },
+        {
+          "id":201,
+          "date_earned":"1504464000000",
+          "details":""
+        },
+        {
+          "id":231,
+          "date_earned":"1504751820000",
+          "details":""
+        },
+        {
+          "id": 220,
+          "date_earned":"1504908960000",
+          "details":"Third Grade Teacher"
+        },
       ]
   },
   {
@@ -313,6 +398,11 @@ export const USERS: User[] = [
             "id":210,
             "date_earned":"1504248120000",
             "details":"Ladies 80s"
+          },
+          {
+            "id":231,
+            "date_earned":"1504751820000",
+            "details":""
           },
       ]
   },
@@ -411,6 +501,46 @@ export const USERS: User[] = [
             "date_earned":"1504287900000",
             "details":"Harley"
           },
+          {
+            "id":229,
+            "date_earned":"1504385280000",
+            "details":"ISFP-A"
+          },
+          {
+            "id":210,
+            "date_earned":"1504493940000",
+            "details":"TLo/Brit/Ninja"
+          },
+          {
+            "id":231,
+            "date_earned":"1504569060000",
+            "details":""
+          },
+          {
+            "id": 225,
+            "date_earned":"1504970880000",
+            "details":"Walking to CVS for practice supplies"
+          },
+          {
+            "id": 232,
+            "date_earned":"1505430420000",
+            "details":""
+          },
+          {
+            "id":209,
+            "date_earned":"1505766900000",
+            "details":"Asian bakery snacks for tots (and others)"
+          },
+          {
+            "id":207,
+            "date_earned":"1505606400000",
+            "details":"Ds Bday Cake"
+          },
+          {
+            "id":226,
+            "date_earned":"1505570280000",
+            "details":""
+          },
       ]
   },
   {
@@ -462,6 +592,26 @@ export const USERS: User[] = [
             "id":210,
             "date_earned":"1504248120000",
             "details":"Ladies 80s"
+          },
+          {
+            "id":229,
+            "date_earned":"1504450500000",
+            "details":"ESFP-A"
+          },
+          {
+            "id":201,
+            "date_earned":"1505177580000",
+            "details":""
+          },
+          {
+            "id":231,
+            "date_earned":"1504751820000",
+            "details":""
+          },
+          {
+            "id":200,
+            "date_earned":"1504732920000",
+            "details":"Jules' Important Research"
           },
       ]
   },
@@ -515,6 +665,21 @@ export const USERS: User[] = [
           "date_earned":"1503936780000",
           "details":"North Dakota"
         },
+        {
+          "id":229,
+          "date_earned":"1504452780000",
+          "details":"INFP-T"
+        },
+        {
+          "id":201,
+          "date_earned":"1504464000000",
+          "details":""
+        },
+        {
+          "id":231,
+          "date_earned":"1504751820000",
+          "details":""
+        },
       ]
   },
   {
@@ -546,6 +711,16 @@ export const USERS: User[] = [
             "id": 204,
             "date_earned":"1504046760000",
             "details":"Epic Fail"
+          },
+          {
+            "id":229,
+            "date_earned":"1504466400000",
+            "details":"INFP-T"
+          },
+          {
+            "id": 220,
+            "date_earned":"1505437680000",
+            "details":""
           },
       ]
   },
@@ -597,6 +772,26 @@ export const USERS: User[] = [
         {
           "id":222,
           "date_earned":"1503591660000",
+          "details":""
+        },
+        {
+          "id":229,
+          "date_earned":"1504908720000",
+          "details":"ISFP-T"
+        },
+        {
+          "id":210,
+          "date_earned":"1504493940000",
+          "details":"TLo/Brit/Ninja"
+        },
+        {
+          "id":231,
+          "date_earned":"1504569060000",
+          "details":""
+        },
+        {
+          "id": 232,
+          "date_earned":"1505430420000",
           "details":""
         },
       ]
@@ -660,6 +855,26 @@ export const USERS: User[] = [
             "id":210,
             "date_earned":"1504248120000",
             "details":"Ladies 80s"
+          },
+          {
+            "id":229,
+            "date_earned":"1504391940000",
+            "details":"ESFJ-A"
+          },
+          {
+            "id":201,
+            "date_earned":"1504449540000",
+            "details":""
+          },
+          {
+            "id":231,
+            "date_earned":"1504751820000",
+            "details":""
+          },
+          {
+            "id":214,
+            "date_earned":"1504745580000",
+            "details":"as Sophie"
           },
       ]
   },
@@ -758,6 +973,31 @@ export const USERS: User[] = [
             "date_earned":"1504371960000",
             "details":""
           },
+          {
+            "id":229,
+            "date_earned":"1504448940000",
+            "details":"ISFP-T"
+          },
+          {
+            "id":231,
+            "date_earned":"1504751820000",
+            "details":""
+          },
+          {
+            "id": 204,
+            "date_earned":"1505083200000",
+            "details":"Dress Like Sophie Day"
+          },
+          {
+            "id":200,
+            "date_earned":"1504744800000",
+            "details":"Pre-Natties Practice Survey 1"
+          },
+          {
+            "id":200,
+            "date_earned":"1505349780000",
+            "details":"Pre-Natties Practice Survey 2"
+          },
       ]
   },
   {
@@ -789,6 +1029,26 @@ export const USERS: User[] = [
           "id": 215,
           "date_earned":"1503093240000",
           "details":"Sweetwater's Donuts - Traveler"
+        },
+        {
+          "id":229,
+          "date_earned":"1504578240000",
+          "details":"INTJ-A"
+        },
+        {
+          "id":210,
+          "date_earned":"1505101740000",
+          "details":"Hank/Viv/Talia/Ninja"
+        },
+        {
+          "id":231,
+          "date_earned":"1504569060000",
+          "details":""
+        },
+        {
+          "id": 232,
+          "date_earned":"1505430420000",
+          "details":""
         },
       ]
   },
@@ -827,6 +1087,11 @@ export const USERS: User[] = [
           "date_earned":"1503286380000",
           "details":"Chi Art Museum - Guesser"
         },
+        {
+          "id":229,
+          "date_earned":"1504466460000",
+          "details":"INFJ-T"
+        },
       ]
   },
   {
@@ -848,6 +1113,16 @@ export const USERS: User[] = [
           "id":210,
           "date_earned":"1504248120000",
           "details":"Ladies 80s"
+        },
+        {
+          "id":229,
+          "date_earned":"1504572300000",
+          "details":"ENFP-A"
+        },
+        {
+          "id":231,
+          "date_earned":"1504751820000",
+          "details":""
         },
       ]
   },
@@ -906,6 +1181,21 @@ export const USERS: User[] = [
             "date_earned":"1503012660000",
             "details":"Soup for Sophie! (and others)"
           },
+          {
+            "id":229,
+            "date_earned":"1504397400000",
+            "details":"INTJ-A"
+          },
+          {
+            "id":231,
+            "date_earned":"1504751820000",
+            "details":""
+          },
+          {
+            "id":207,
+            "date_earned":"1505606400000",
+            "details":"Ds Bday Cake"
+          },
       ]
   },
   {
@@ -922,11 +1212,6 @@ export const USERS: User[] = [
           "id": 201,
           "date_earned":"1500929880000",
           "details":""
-        },
-        {
-          "id":213,
-          "date_earned":"1501354740000",
-          "details":"Vermont"
         },
         {
           "id":212,
@@ -1032,6 +1317,26 @@ export const USERS: User[] = [
           "id":209,
           "date_earned":"1504030260000",
           "details":"Make tots get glasses!"
+        },
+        {
+          "id":229,
+          "date_earned":"1504915860000",
+          "details":"ESTJ-T"
+        },
+        {
+          "id":213,
+          "date_earned":"1504466640000",
+          "details":"Colorado"
+        },
+        {
+          "id":213,
+          "date_earned":"1504737600000",
+          "details":"Alaska"
+        },
+        {
+          "id":231,
+          "date_earned":"1504569060000",
+          "details":""
         },
       ]
   },
@@ -1145,6 +1450,26 @@ export const USERS: User[] = [
           "date_earned":"1504268340000",
           "details":"Minnesota"
         },
+        {
+          "id":229,
+          "date_earned":"1504387260000",
+          "details":"ESTJ"
+        },
+        {
+          "id":210,
+          "date_earned":"1505101740000",
+          "details":"Hank/Viv/Talia/Ninja"
+        },
+        {
+          "id":231,
+          "date_earned":"1504569060000",
+          "details":""
+        },
+        {
+          "id": 232,
+          "date_earned":"1505430420000",
+          "details":""
+        },
       ]
   },
   {
@@ -1222,6 +1547,16 @@ export const USERS: User[] = [
           "date_earned":"1503093240000",
           "details":"Sweetwater's Donuts - Traveler"
         },
+        {
+          "id":210,
+          "date_earned":"1505101740000",
+          "details":"Hank/Viv/Talia/Ninja"
+        },
+        {
+          "id":231,
+          "date_earned":"1504569060000",
+          "details":""
+        },
       ]
   },
   {
@@ -1264,7 +1599,16 @@ export const USERS: User[] = [
             "date_earned":"1501766640000",
             "details":"Sports Biomechanical Engineer"
           },
-        
+          {
+            "id":229,
+            "date_earned":"1504417380000",
+            "details":"INTP-T"
+          },
+          {
+            "id":231,
+            "date_earned":"1504751820000",
+            "details":""
+          },
       ]
   },
   {
@@ -1280,6 +1624,16 @@ export const USERS: User[] = [
           {
             "id":201,
             "date_earned":"1502925420000",
+            "details":""
+          },
+          {
+            "id":229,
+            "date_earned":"1504406340000",
+            "details":"INFJ-T"
+          },
+          {
+            "id": 220,
+            "date_earned":"1505309760000",
             "details":""
           },
       ]
@@ -1564,5 +1918,21 @@ export const BADGES: Badge[] = [
     "description": "Limited time only! Attend the first pod of this week (week of 9/3) wearing neon attire (monday for aa, wednesday for cbus, wednesday at the latest for squodballs) and post a photo to slack!",
     "created": "",
     "created_by": 8
+  },
+  {
+    "id": 232,
+    "title": "Dress Like Sophie Day",
+    "image": "badge_hoodie.png",
+    "description": "Limited time only! Attend the second pod of this week (week of 9/10) dressed like Sophie and post a photo to slack!",
+    "created": "",
+    "created_by": 20
+  },
+  {
+    "id": 233,
+    "title": "Eat Like Sophie",
+    "image": "badge_cookie.png",
+    "description": "Post a picture to slack with you being unreasonably messy with whatever you're eating.",
+    "created": "",
+    "created_by": 7 // nitz?
   },
 ];
