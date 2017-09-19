@@ -61,6 +61,16 @@ class BadgeQuest extends React.PureComponent<OwnProps & ConnectedProps & Connect
     return allBs;
   }
 
+  private totalBadgesEarned = () => {
+    let totalBs = 0;
+    _.forEach(USERS, function(user: User, key: any) {
+      _.forEach(user.badges, function(badgeearned: BadgesEarned, key: any) {
+        totalBs++;
+      });
+    });
+    return totalBs;
+  }
+
   private renderLeaderBoard = () => {
     const usersSorted: User[] = _.sortBy(USERS,"badges.length");
      _.reverse(usersSorted);
@@ -315,6 +325,7 @@ class BadgeQuest extends React.PureComponent<OwnProps & ConnectedProps & Connect
 
 
   private renderMainView = () => {
+    console.log(this.totalBadgesEarned());
     if (this.state.currentTab == "badge") {
       return this.renderBadgeView();
     }
