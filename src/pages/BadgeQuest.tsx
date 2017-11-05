@@ -74,6 +74,7 @@ class BadgeQuest extends React.PureComponent<OwnProps & ConnectedProps & Connect
   private renderLeaderBoard = () => {
     const usersSorted: User[] = _.sortBy(USERS,"badges.length");
      _.reverse(usersSorted);
+     console.log(this.totalBadgesEarned);
     return (
       <div className="panel panel-default" style={{"height":"90%", "overflow":"scroll"}}>
           <ul className="list-group">

@@ -97,6 +97,21 @@ export const USERS: User[] = [
           "date_earned":"1504569060000",
           "details":""
         },
+        {
+          "id": 225,
+          "date_earned":"1505998500000",
+          "details":"Bike"
+        },
+        {
+          "id": 225,
+          "date_earned":"1505998740000",
+          "details":"Bus"
+        },
+        {
+          "id":211,
+          "date_earned":"1506375120000",
+          "details":"Viv zzz"
+        },
       ]
   },
   {
@@ -140,6 +155,11 @@ export const USERS: User[] = [
           "id":229,
           "date_earned":"1504408980000",
           "details":"ISFJ-T"
+        },
+        {
+          "id":218,
+          "date_earned":"1506374460000",
+          "details":"Kristen being open constantly"
         },
       ]
   },
@@ -187,6 +207,36 @@ export const USERS: User[] = [
         "id": 204,
         "date_earned":"1505651940000",
         "details":"Eat Like Sophie"
+      },
+      {
+        "id":211,
+        "date_earned":"1506375120000",
+        "details":"Viv zzz"
+      },
+      {
+        "id":211,
+        "date_earned":"1507392060000",
+        "details":"Talia zzz"
+      },
+      {
+        "id":218,
+        "date_earned":"1506375180000",
+        "details":"Jennys sick bid"
+      },
+      {
+        "id":201,
+        "date_earned":"1507166100000",
+        "details":""
+      },
+      {
+        "id":235,
+        "date_earned":"1507478880000",
+        "details":"Thunder Remix"
+      },
+      {
+        "id":233,
+        "date_earned":"1507310460000",
+        "details":"Ice cream"
       },
     ]
   },
@@ -325,6 +375,26 @@ export const USERS: User[] = [
           "date_earned":"1505606400000",
           "details":"Ds Bday Cake"
         },
+        {
+          "id": 225,
+          "date_earned":"1506895260000",
+          "details":"Roller blading to track"
+        },
+        {
+          "id": 230,
+          "date_earned":"1506904980000",
+          "details":"Smoothie Spills"
+        },
+        {
+          "id":211,
+          "date_earned":"1506285900000",
+          "details":"TZ zzz"
+        },
+        {
+          "id":221,
+          "date_earned":"1506211740000",
+          "details":"Cookie Decorating - Teacher"
+        },
       ]
   },
   {
@@ -376,6 +446,21 @@ export const USERS: User[] = [
           "id": 220,
           "date_earned":"1504908960000",
           "details":"Third Grade Teacher"
+        },
+        {
+          "id": 225,
+          "date_earned":"1506828120000",
+          "details":"Bus"
+        },
+        {
+          "id": 225,
+          "date_earned":"1506637140000",
+          "details":"Walk - locked out"
+        },
+        {
+          "id": 230,
+          "date_earned":"1506650280000",
+          "details":"Chocolatey Clothing"
         },
       ]
   },
@@ -541,6 +626,51 @@ export const USERS: User[] = [
             "date_earned":"1505570280000",
             "details":""
           },
+          {
+            "id": 225,
+            "date_earned":"1505836920000",
+            "details":"Bus"
+          },
+          {
+            "id": 225,
+            "date_earned":"1507224480000",
+            "details":"Bus"
+          },
+          {
+            "id": 230,
+            "date_earned":"1505869080000",
+            "details":"Glass Door Disasters"
+          },
+          {
+            "id": 203,
+            "date_earned":"1506126780000",
+            "details":"Slow Hands Remix"
+          },
+          {
+            "id": 203,
+            "date_earned":"1507411800000",
+            "details":"Slow Phones"
+          },
+          {
+            "id":211,
+            "date_earned":"1506285900000",
+            "details":"TZ zzz"
+          },
+          {
+            "id":218,
+            "date_earned":"1506374100000",
+            "details":"Nitz 'being like Zeus'"
+          },
+          {
+            "id":235,
+            "date_earned":"1507258740000",
+            "details":"Throwdown Reps + Stanley"
+          },
+          {
+            "id":221,
+            "date_earned":"1506211740000",
+            "details":"Cookie Decorating - Student"
+          },
       ]
   },
   {
@@ -612,6 +742,36 @@ export const USERS: User[] = [
             "id":200,
             "date_earned":"1504732920000",
             "details":"Jules' Important Research"
+          },
+          {
+            "id": 230,
+            "date_earned":"1505869740000",
+            "details":"Almond Butter Explosions"
+          },
+          {
+            "id": 203,
+            "date_earned":"1506125640000",
+            "details":"Song ? 1"
+          },
+          {
+            "id": 203,
+            "date_earned":"1506125940000",
+            "details":"Song ? 2"
+          },
+          {
+            "id":218,
+            "date_earned":"1506374400000",
+            "details":"Tots Cutting Out of Cleats"
+          },
+          {
+            "id":218,
+            "date_earned":"1506374460000",
+            "details":"Ggs intense Ds"
+          },
+          {
+            "id": 232,
+            "date_earned":"1505852280000",
+            "details":""
           },
       ]
   },
@@ -722,6 +882,11 @@ export const USERS: User[] = [
             "date_earned":"1505437680000",
             "details":""
           },
+          {
+            "id":218,
+            "date_earned":"1506374100000",
+            "details":"Champs layout Ds"
+          },
       ]
   },
   {
@@ -792,6 +957,11 @@ export const USERS: User[] = [
         {
           "id": 232,
           "date_earned":"1505430420000",
+          "details":""
+        },
+        {
+          "id":201,
+          "date_earned":"1507118580000",
           "details":""
         },
       ]
@@ -875,6 +1045,51 @@ export const USERS: User[] = [
             "id":214,
             "date_earned":"1504745580000",
             "details":"as Sophie"
+          },
+          {
+            "id": 225,
+            "date_earned":"1505954400000",
+            "details":"Walking"
+          },
+          {
+            "id": 225,
+            "date_earned":"1505955060000",
+            "details":"Walking"
+          },
+          {
+            "id": 225,
+            "date_earned":"1507294020000",
+            "details":"Bus"
+          },
+          {
+            "id": 230,
+            "date_earned":"1506988740000",
+            "details":"Car Toppers - Phone Edition"
+          },
+          {
+            "id": 203,
+            "date_earned":"1506127740000",
+            "details":"Slow Hands Remix 2"
+          },
+          {
+            "id":211,
+            "date_earned":"1506893400000",
+            "details":"Sophie zzz"
+          },
+          {
+            "id":218,
+            "date_earned":"1506374160000",
+            "details":"Sophie Being Open"
+          },
+          {
+            "id":210,
+            "date_earned":"1505954880000",
+            "details":"La Croix with Tots"
+          },
+          {
+            "id":216,
+            "date_earned":"1507322760000",
+            "details":"Harley"
           },
       ]
   },
@@ -998,6 +1213,36 @@ export const USERS: User[] = [
             "date_earned":"1505349780000",
             "details":"Pre-Natties Practice Survey 2"
           },
+          {
+            "id": 225,
+            "date_earned":"1506082500000",
+            "details":"Walk to work"
+          },
+          {
+            "id": 225,
+            "date_earned":"1506828120000",
+            "details":"Bus"
+          },
+          {
+            "id": 230,
+            "date_earned":"1505868600000",
+            "details":"Forgotten Towel"
+          },
+          {
+            "id":233,
+            "date_earned":"1507310460000",
+            "details":"Ice cream"
+          },
+          {
+            "id": 232,
+            "date_earned":"1505852280000",
+            "details":""
+          },
+          {
+            "id": 220,
+            "date_earned":"1506701220000",
+            "details":"Babbysitter"
+          },
       ]
   },
   {
@@ -1092,6 +1337,21 @@ export const USERS: User[] = [
           "date_earned":"1504466460000",
           "details":"INFJ-T"
         },
+        {
+          "id": 203,
+          "date_earned":"1506126780000",
+          "details":"Slow Hands Remix"
+        },
+        {
+          "id":211,
+          "date_earned":"1506285900000",
+          "details":"TZ zzz"
+        },
+        {
+          "id":233,
+          "date_earned":"1506209100000",
+          "details":"Ice cream"
+        },
       ]
   },
   {
@@ -1122,6 +1382,16 @@ export const USERS: User[] = [
         {
           "id":231,
           "date_earned":"1504751820000",
+          "details":""
+        },
+        {
+          "id": 225,
+          "date_earned":"1506828120000",
+          "details":"Bus"
+        },
+        {
+          "id": 232,
+          "date_earned":"1505852280000",
           "details":""
         },
       ]
@@ -1195,6 +1465,16 @@ export const USERS: User[] = [
             "id":207,
             "date_earned":"1505606400000",
             "details":"Ds Bday Cake"
+          },
+          {
+            "id":211,
+            "date_earned":"1506203880000",
+            "details":"Kristen zzz"
+          },
+          {
+            "id": 232,
+            "date_earned":"1505852280000",
+            "details":""
           },
       ]
   },
@@ -1338,6 +1618,31 @@ export const USERS: User[] = [
           "date_earned":"1504569060000",
           "details":""
         },
+        {
+          "id": 225,
+          "date_earned":"1507324380000",
+          "details":"Walking"
+        },
+        {
+          "id": 230,
+          "date_earned":"1506954600000",
+          "details":"'Auto' Parking"
+        },
+        {
+          "id": 230,
+          "date_earned":"1507113600000",
+          "details":"Compost Critters"
+        },
+        {
+          "id": 203,
+          "date_earned":"1506116640000",
+          "details":"Slow Hands - The Original"
+        },
+        {
+          "id": 203,
+          "date_earned":"1507411800000",
+          "details":"Slow Phones"
+        },
       ]
   },
   {
@@ -1469,6 +1774,21 @@ export const USERS: User[] = [
           "id": 232,
           "date_earned":"1505430420000",
           "details":""
+        },
+        {
+          "id": 225,
+          "date_earned":"1505829960000",
+          "details":"Bus to work"
+        },
+        {
+          "id": 230,
+          "date_earned":"1505966340000",
+          "details":"Uncapped Bottle Throwing"
+        },
+        {
+          "id":211,
+          "date_earned":"1506374340000",
+          "details":"Hank zzz"
         },
       ]
   },
@@ -1607,6 +1927,31 @@ export const USERS: User[] = [
           {
             "id":231,
             "date_earned":"1504751820000",
+            "details":""
+          },
+          {
+            "id": 225,
+            "date_earned":"1507392420000",
+            "details":"Walking to practice"
+          },
+          {
+            "id": 203,
+            "date_earned":"1506127740000",
+            "details":"Slow Hands Remix 2"
+          },
+          {
+            "id":233,
+            "date_earned":"1506166260000",
+            "details":"Coffee"
+          },
+          {
+            "id":213,
+            "date_earned":"1505827380000",
+            "details":"Mississippi"
+          },
+          {
+            "id": 232,
+            "date_earned":"1505852280000",
             "details":""
           },
       ]
@@ -1904,14 +2249,6 @@ export const BADGES: Badge[] = [
     "created_by": 14
   },
   {
-    "id": 230,
-    "title": "Gold Star",
-    "image": "badge_goldstar.png",
-    "description": "Either get tots to say 'gold star' to you publicly (and post event description to slack), or post a screenshot from a conversation in which she says it to you.",
-    "created": "",
-    "created_by": 31
-  },
-  {
     "id": 231,
     "title": "Neon Night",
     "image": "badge_moon.png",
@@ -1935,4 +2272,21 @@ export const BADGES: Badge[] = [
     "created": "",
     "created_by": 7 // nitz?
   },
+  {
+    "id": 234,
+    "title": "The Ruler",
+    "image": "badge_ruler.png",
+    "description": "Complete this badge by taking a stab at the 2014 Club Nationals Rules Quiz. Email me your answers to the twelve multiple choice questions and get at least 70% correct for badge credit. ",
+    "created": "",
+    "created_by": 8
+  },  
+  {
+    "id": 235,
+    "title": "Gold Star",
+    "image": "badge_goldstar.png",
+    "description": "Either get tots to say 'gold star' to you publicly (and post event description to slack), or post a screenshot from a conversation in which she says it to you.",
+    "created": "",
+    "created_by": 31
+  },
+
 ];

@@ -236,6 +236,11 @@ export default class FiftyPlates extends React.PureComponent<{}, {}> {
 								"id": "US-CO",
 								"title": "Colorado",
 								"color": "rgba(75,216,181,0.8)"
+              },
+              {
+								"id": "US-MS",
+								"title": "Mississippi",
+								"color": "rgba(75,216,181,0.8)"
 							},
 
 							/*
@@ -247,11 +252,6 @@ export default class FiftyPlates extends React.PureComponent<{}, {}> {
 							{
 								"id": "US-ID",
 								"title": "Idaho",
-								"color": "rgba(75,216,181,0.8)"
-							},
-							{
-								"id": "US-MS",
-								"title": "Mississippi",
 								"color": "rgba(75,216,181,0.8)"
 							},
 							{
