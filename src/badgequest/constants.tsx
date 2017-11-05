@@ -134,6 +134,16 @@ export const USERS: User[] = [
             "date_earned":"1504389600000",
             "details":"INFP-T"
           },
+          {
+            "id":235,
+            "date_earned":"1508456400000",
+            "details":"phone hijacking"
+          },
+          {
+            "id":233,
+            "date_earned":"1508374680000",
+            "details":"Tacos"
+          },
       ]
   },
   {
@@ -160,6 +170,11 @@ export const USERS: User[] = [
           "id":218,
           "date_earned":"1506374460000",
           "details":"Kristen being open constantly"
+        },
+        {
+          "id":209,
+          "date_earned":"1508707920000",
+          "details":"Natties DD"
         },
       ]
   },
@@ -237,6 +252,21 @@ export const USERS: User[] = [
         "id":233,
         "date_earned":"1507310460000",
         "details":"Ice cream"
+      },
+      {
+        "id":234,
+        "date_earned":"1508173080000",
+        "details":""
+      },
+      {
+        "id": 230,
+        "date_earned":"1508270220000",
+        "details":"Suspect Brussels Sprouts"
+      },
+      {
+        "id":209,
+        "date_earned":"1508707920000",
+        "details":"Natties DD"
       },
     ]
   },
@@ -394,6 +424,31 @@ export const USERS: User[] = [
           "id":221,
           "date_earned":"1506211740000",
           "details":"Cookie Decorating - Teacher"
+        },
+        {
+          "id":207,
+          "date_earned":"1508018400000",
+          "details":"Mini Donuts"
+        },
+        {
+          "id": 230,
+          "date_earned":"1507682040000",
+          "details":"Dead Plants"
+        },
+        {
+          "id": 203,
+          "date_earned":"1507556820000",
+          "details":"Another Slow Hands Remix"
+        },
+        {
+          "id":221,
+          "date_earned":"1508249160000",
+          "details":"Fashion - Student"
+        },
+        {
+          "id":209,
+          "date_earned":"1508707920000",
+          "details":"Natties DD"
         },
       ]
   },
@@ -671,6 +726,31 @@ export const USERS: User[] = [
             "date_earned":"1506211740000",
             "details":"Cookie Decorating - Student"
           },
+          {
+            "id":235,
+            "date_earned":"1507679700000",
+            "details":"Stanley Shoutouts"
+          },
+          {
+            "id":234,
+            "date_earned":"1507563120000",
+            "details":""
+          },
+          {
+            "id":234,
+            "date_earned":"1507563120000",
+            "details":"bonus"
+          },
+          {
+            "id":216,
+            "date_earned":"1508683320000",
+            "details":"Janine"
+          },
+          {
+            "id":209,
+            "date_earned":"1508707920000",
+            "details":"Natties DD"
+          },
       ]
   },
   {
@@ -887,6 +967,11 @@ export const USERS: User[] = [
             "date_earned":"1506374100000",
             "details":"Champs layout Ds"
           },
+          {
+            "id":207,
+            "date_earned":"1508018400000",
+            "details":"Chocolate Covered Strawberries"
+          },
       ]
   },
   {
@@ -963,6 +1048,11 @@ export const USERS: User[] = [
           "id":201,
           "date_earned":"1507118580000",
           "details":""
+        },
+        {
+          "id":235,
+          "date_earned":"1508682840000",
+          "details":"phone hijacking"
         },
       ]
   },
@@ -1090,6 +1180,16 @@ export const USERS: User[] = [
             "id":216,
             "date_earned":"1507322760000",
             "details":"Harley"
+          },
+          {
+            "id":235,
+            "date_earned":"1508462220000",
+            "details":"phone hijacking"
+          },
+          {
+            "id": 220,
+            "date_earned":"1507644120000",
+            "details":""
           },
       ]
   },
@@ -1294,6 +1394,16 @@ export const USERS: User[] = [
           "id": 232,
           "date_earned":"1505430420000",
           "details":""
+        },
+        {
+          "id":235,
+          "date_earned":"1508602500000",
+          "details":"phone hijacking"
+        },
+        {
+          "id": 220,
+          "date_earned":"1508245500000",
+          "details":"Heavy Metal Expert"
         },
       ]
   },
@@ -1643,6 +1753,36 @@ export const USERS: User[] = [
           "date_earned":"1507411800000",
           "details":"Slow Phones"
         },
+        {
+          "id":235,
+          "date_earned":"1508380380000",
+          "details":"phone hijacking"
+        },
+        {
+          "id":234,
+          "date_earned":"1508163480000",
+          "details":""
+        },
+        {
+          "id":234,
+          "date_earned":"1508163480000",
+          "details":"bonus"
+        },
+        {
+          "id":218,
+          "date_earned":"1508165280000",
+          "details":"Chelsea Layout"
+        },
+        {
+          "id":214,
+          "date_earned":"1508188560000",
+          "details":"as Tots"
+        },
+        {
+          "id":221,
+          "date_earned":"1508249160000",
+          "details":"Fashion - Teacher"
+        },
       ]
   },
   {
@@ -1790,6 +1930,11 @@ export const USERS: User[] = [
           "date_earned":"1506374340000",
           "details":"Hank zzz"
         },
+        {
+          "id":235,
+          "date_earned":"1508083200000",
+          "details":"Delicious Roll"
+        },
       ]
   },
   {
@@ -1877,6 +2022,16 @@ export const USERS: User[] = [
           "date_earned":"1504569060000",
           "details":""
         },
+        {
+          "id":235,
+          "date_earned":"1508439600000",
+          "details":"iced coffee"
+        },
+        {
+          "id": 230,
+          "date_earned":"1508338080000",
+          "details":"Suspicious at Security"
+        },
       ]
   },
   {
@@ -1954,6 +2109,31 @@ export const USERS: User[] = [
             "date_earned":"1505852280000",
             "details":""
           },
+          {
+            "id":235,
+            "date_earned":"1507928460000",
+            "details":"Stanley Shoutouts"
+          },
+          {
+            "id":234,
+            "date_earned":"1508177640000",
+            "details":""
+          },
+          {
+            "id":234,
+            "date_earned":"1508177640000",
+            "details":"bonus"
+          },
+          {
+            "id":211,
+            "date_earned":"1508251920000",
+            "details":"Stevie zzz"
+          },
+          {
+            "id": 230,
+            "date_earned":"1508686680000",
+            "details":"Sleepy Tweets"
+          },
       ]
   },
   {
@@ -1981,6 +2161,11 @@ export const USERS: User[] = [
             "date_earned":"1505309760000",
             "details":""
           },
+          {
+            "id":211,
+            "date_earned":"1508464140000",
+            "details":"Harley zzz"
+          },
       ]
   },
   {
@@ -2002,6 +2187,16 @@ export const USERS: User[] = [
             "id":210,
             "date_earned":"1501986180000",
             "details":"Theiss/Zeus/Sophie/Gg"
+          },
+          {
+            "id":234,
+            "date_earned":"1508161560000",
+            "details":""
+          },
+          {
+            "id":234,
+            "date_earned":"1508161560000",
+            "details":"bonus"
           },
       ]
   }
