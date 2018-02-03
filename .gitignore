@@ -18,9 +18,9 @@ node_modules/*
 /build/
 /dist/
 
-img/
 dist/app.css
 dist/app.js
 yarn-error.log
 node_modules/.yarn-integrity
 dist/index.html
+yarn.lock
