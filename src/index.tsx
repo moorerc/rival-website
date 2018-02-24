@@ -1,12 +1,12 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import App from "./App";
+import registerServiceWorker from "./registerServiceWorker";
 
-import { Root } from './Root';
+import "./index.css";
 
-const renderRoot = (app: JSX.Element) => {
-  ReactDOM.render(app, document.getElementById('app'));
-};
-
-renderRoot((
-    <Root />
-  ));
+ReactDOM.render(
+  <App />,
+  document.getElementById("root") as HTMLElement,
+);
+registerServiceWorker();
