@@ -1,21 +1,16 @@
 import * as React from "react";
 import "./App.css";
-import { ConnectedHello } from "./components/Hello";
 
-const logo = require("./logo.svg");
+const logo = require("./RivalLogo_200.svg");
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <object data={logo} type="image/svg+xml" className="App-logo"></object>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <ConnectedHello />
       </div>
     );
   }

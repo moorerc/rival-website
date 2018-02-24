@@ -3,24 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/react-redux": "^5.0.15",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
-    "react-scripts-ts": "^2.13.0",
     "redoodle": "^2.3.2",
     "redux": "^3.7.2"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
+    "start-ts": "react-scripts-ts start",
+    "start": "npm-run-all -p watch-css start-ts",
+    "build-ts": "react-scripts-ts build",
+    "build": "npm-run-all build-css build-ts",
     "eject": "react-scripts-ts eject",
-    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "build-css": "node-less-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-less-chokidar src/ -o src/ --watch --recursive"
   },
   "devDependencies": {
     "@types/node": "^9.4.6",
     "@types/react": "^16.0.38",
     "@types/react-dom": "^16.0.4",
+    "@types/react-redux": "^5.0.15",
+    "less": "^3.0.1",
+    "node-less-chokidar": "^0.1.2",
+    "npm-run-all": "^4.1.2",
+    "react-scripts-ts": "^2.13.0",
     "typescript": "^2.7.2"
   }
 }
