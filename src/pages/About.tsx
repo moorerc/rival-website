@@ -8,7 +8,7 @@ export default class About extends React.Component {
   render() {
     return (
         <React.Fragment>
-            <BaseNavBar />
+            <BaseNavBar pageName="about" />
             <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
             <div className="rival-website-app-page">
                 About us. Coming Soon.

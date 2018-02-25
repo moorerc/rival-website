@@ -9,7 +9,7 @@ export default class Home extends React.Component {
   render() {
     return (
         <React.Fragment>
-            <BaseNavBar />
+            <BaseNavBar pageName="home" />
             <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
             <div className="rival-website-app-page">
                 <div className="rival-website-app-home-main-content">

@@ -16,9 +16,10 @@
     > .base-nav-bar-item {
         flex: 1;
         text-align: center;
-        margin: 10px 5px;
+        margin: 5px;
         display: flex;
         justify-content: center;
+        align-items: center;
 
         > .base-nav-bar-item-text {
             color: @black;
@@ -47,6 +48,11 @@
             margin: auto;
             background-color: transparent;
             transition: width .3s ease, background-color .3s ease;
+        }
+
+        > .base-nav-bar-item-image {
+            width: 60px;
+            height: 60px;
         }
     }
 }

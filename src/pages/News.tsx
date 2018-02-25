@@ -8,7 +8,7 @@ export default class News extends React.Component {
   render() {
     return (
         <React.Fragment>
-            <BaseNavBar />
+            <BaseNavBar pageName="news" />
             <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
             <div className="rival-website-app-page">
                 News. Coming Soon.

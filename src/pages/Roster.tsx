@@ -8,7 +8,7 @@ export default class Roster extends React.Component {
   render() {
     return (
         <React.Fragment>
-            <BaseNavBar />
+            <BaseNavBar pageName="roster" />
             <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
             <div className="rival-website-app-page">
                 Roster. Coming Soon.
