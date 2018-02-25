@@ -1,5 +1,12 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: calc(100vh);
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
 }
