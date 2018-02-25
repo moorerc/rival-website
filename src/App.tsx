@@ -1,29 +1,32 @@
 import * as React from "react";
-import "./App.css";
+import "./styles/App.css";
 
-import { Callout, Intent } from "@blueprintjs/core";
+import { BrowserRouter, Route } from "react-router-dom";
 
-class App extends React.Component {
+import About from "./pages/About";
+import Home from "./pages/Home";
+import News from "./pages/News";
+import Results from "./pages/Results";
+import Roster from "./pages/Roster";
+
+export default class App extends React.Component {
   render() {
     return (
       <div className="rival-website-app">
-        <div className="rival-website-app-home-bgimage" />
-        <div className="rival-website-app-page">
-            <div className="rival-website-app-home-main-content">
-                <div className="logo-image" />
-                <Callout
-                    className="construction-callout"
-                    title="Website Under Construction"
-                    intent={Intent.WARNING}
-                    icon={"build"}
-                >
-                    Website under construction Feb. 2018 - check back soon for updates!
-                </Callout>
-            </div>
-        </div>
+        <BrowserRouter>
+            <React.Fragment>
+                <Route exact={true} path="/" component={Home} />
+                <Route path="/results" component={Results} />
+                <Route path="/about" component={About} />
+                <Route path="/news" component={News} />
+                <Route path="/results" component={Results} />
+                <Route path="/roster" component={Roster} />
+            </React.Fragment>
+        </BrowserRouter>
       </div>
     );
   }
 }
 
-export default App;
+// <Route path="/badgequest" component={BadgeQuest} />
+// <Route path="/fiftyplates" component={FiftyPlates} />
