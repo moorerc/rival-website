@@ -3,13 +3,14 @@ import "../styles/App.css";
 
 import { Callout, Intent } from "@blueprintjs/core";
 import BaseNavBar from "../components/BaseNavBar";
+import PageBackgroundImage from "../components/PageBackgroundImage";
 
 export default class Home extends React.Component {
   render() {
     return (
         <React.Fragment>
             <BaseNavBar />
-            <div className="rival-website-app-home-bgimage" />
+            <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
             <div className="rival-website-app-page">
                 <div className="rival-website-app-home-main-content">
                     <div className="logo-image" />
