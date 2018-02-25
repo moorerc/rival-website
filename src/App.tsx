@@ -27,6 +27,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-// <Route path="/badgequest" component={BadgeQuest} />
-// <Route path="/fiftyplates" component={FiftyPlates} />
