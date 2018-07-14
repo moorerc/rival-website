@@ -1,0 +1,422 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.badgequest-page {
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    font-family: 'Oswald', sans-serif;
+
+    > .main-panel {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+        > .main-panel-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: 500;
+            flex: 0 0 auto;
+            margin-bottom: 10px;
+
+            .title-logo {
+                height:40px;
+                width:40px;
+                margin-right: 15px;
+                margin-top: 5px;
+            }
+        }
+
+        > .main-panel-controls {
+            flex: 0 0 auto;
+            margin: 10px 10px 0 10px;
+
+            .pt-active .pt-icon {
+                color: @rival-gold;
+            }
+        }
+
+        > .main-panel-content {
+            flex: 1 1 auto;
+            border: 1px solid @gray5;
+            margin: 10px;
+            border-radius: 5px;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    > .side-panel {
+        width: 30%;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+
+        > .side-panel-title {
+            height: 40px;
+            flex: 0 0 auto;
+            font-size: 24px;
+            font-weight: 500;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            text-transform: uppercase;
+        }
+
+        > .side-panel-content {
+            border: 1px solid @gray5;
+            border-radius: 5px;
+            flex: 1 1 auto;
+            overflow-y: scroll;
+
+            &.-split {
+                display: flex;
+                height: 100%;
+                flex-direction: row;
+                justify-content: center;
+
+                >.split-col {
+                    // flex: 1 1 auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0 5px;
+
+                    &.-right {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rbq-leaderboard-card {
+    border-bottom: 1px solid @gray5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+
+    > .leaderboard-card-image {
+        flex: 0 0 auto;
+        border: 3px solid @light-gray3;
+        height: 70px;
+        width: 70px;
+        border-radius:50%;
+    }
+
+    > .leaderboard-card-content {
+        flex: 1 0 auto;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+
+        > .title {
+            text-transform: uppercase;
+            padding-bottom: 3px;
+        }
+
+        > .subtitle {
+            border-top: 1px solid @light-gray3;
+            padding-top: 3px;
+            color: @gray3;
+            display: flex;
+            align-items: center;
+            font-weight: 200;
+            font-size: 12px;
+            text-transform: capitalize;
+
+            > .pt-icon {
+                margin-right: 5px;
+                color: @gray3;
+                font-size: 10px;
+                margin-top: 2px;
+            }
+        }
+    }
+
+    > .rbq-placement-tag  {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        .tag-logo {
+            height: 10px;
+            width: 10px;
+            margin-right: 5px;
+            filter: invert(100%);
+        }
+
+        > .pt-tag {
+            text-align: center;
+
+            &.-first {
+                background-color: @tag-gold;
+            }
+
+            &.-second {
+                background-color: @tag-silver;
+            }
+
+            &.-third {
+                background-color: @tag-bronze;
+            }
+        }
+    }
+}
+
+.rbq-leaderboard-card:hover {
+    background-color: @light-gray5;
+    cursor: pointer;
+}
+
+.rbq-individual-details-panel {
+
+    > .panel-header {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+
+        > .header-left {
+            flex: 0 0 auto;
+            margin-right: 20px;
+
+            .user-image {
+                height: 125px;
+                width: 125px;
+                border-radius: 50%;
+                border: 5px solid @gray5;
+            }
+        }
+
+        > .header-right {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                text-transform: uppercase;
+                padding-bottom: 5px;
+                border-bottom: 1px solid @light-gray3;
+                display: flex;
+                flex-direction: row;
+
+                .title-text {
+                    flex: 1 1 auto;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+
+            .description {
+                color: @gray1;
+                margin-top: 5px;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                > .pt-icon {
+                    margin-right: 5px;
+                    color: @gray1;
+                }
+            }
+        }
+    }
+
+    > .panel-body {
+        > .badge-icons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: @light-gray5;
+            border-top: 2px solid @light-gray3;
+            border-bottom: 2px solid @light-gray3;
+            padding: 10px 0;
+        }
+    }
+}
+
+.rbq-badge-card {
+    padding: 5px;
+
+    > .badge-image {
+        max-width: 80px;
+        border-radius: 50%;
+    }
+
+    > .badge-image:hover {
+        filter: opacity(50%);
+        -webkit-filter: opacity(50%);
+        cursor: pointer;
+    }
+}
+
+.rbq-empty-details-panel {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: @gray3;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -100px;
+
+    img {
+        height: 200px;
+        width: 200px;
+        filter: invert(80%);
+        margin: 40px;
+    }
+}
+
+.rbq-badge-details-panel {
+
+    > .panel-header {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+
+        > .header-left {
+            flex: 0 0 auto;
+            margin-right: 20px;
+
+            .badge-image {
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        > .header-right {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                text-transform: uppercase;
+                padding-bottom: 5px;
+                border-bottom: 1px solid @light-gray3;
+                display: flex;
+                flex-direction: row;
+
+                .player-image {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    margin-left: 5px;
+                }
+
+                .title-text {
+                    flex: 1 1 auto;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+                .created-by {
+                    flex: 0 0 auto;
+                    flex-direction: row;
+                    align-items: center;
+                    display: flex;
+                    font-size: 10px;
+                    color: @gray3;
+                }
+            }
+
+            .description {
+                color: @gray1;
+                margin-top: 5px;
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+
+    > .panel-body {
+        > .user-avatars {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: @light-gray5;
+            border-top: 2px solid @light-gray3;
+            border-bottom: 2px solid @light-gray3;
+            padding: 10px 0;
+        }
+
+        > .badges-earned-table {
+            border: 1px solid green;
+        }
+    }
+}
+
+
+.rbq-mini-user-avatar {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    margin: 3px;
+    position: relative;
+
+    > .user-avatar-image {
+        flex: 1 1 auto;
+        border-radius: 50%;
+        border: 3px solid @blue3;
+
+        &.-invalid {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            border: 3px solid @light-gray3;
+        }
+    }
+
+    > .user-avatar-tag {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        background-color: @blue3;
+    }
+}
+
+.rbq-mini-badge-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    margin: 3px;
+    position: relative;
+
+    > .badge-icon {
+        flex: 1 1 auto;
+        display: flex;
+        width: 100%;
+
+        &.-invalid {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);        }
+    }
+
+    > .badge-icon-tag {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        // background-color: @dark-gray4;
+    }
+}

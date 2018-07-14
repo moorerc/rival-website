@@ -1,0 +1,16 @@
+@import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    height: calc(100vh);
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+button:focus {outline:0;}

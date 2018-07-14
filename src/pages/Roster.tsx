@@ -1,13 +1,19 @@
 import * as React from "react";
-import BaseNavBar from '../components/BaseNavBar';
+import "../styles/App.css";
 
-export default class Roster extends React.PureComponent<{}, {}> {
+import BaseNavBar from "../components/BaseNavBar";
+import PageBackgroundImage from "../components/PageBackgroundImage";
+
+export default class Roster extends React.Component {
   render() {
     return (
-      <div className="rival-website-app-roster">
-        <BaseNavBar />
-        Under Construction 7/16/2017
-      </div>
+        <React.Fragment>
+            <BaseNavBar pageName="roster" />
+            <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
+            <div className="rival-website-app-page">
+                Roster. Coming Soon.
+            </div>
+        </React.Fragment>
     );
   }
-};
+}
