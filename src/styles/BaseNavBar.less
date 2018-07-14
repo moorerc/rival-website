@@ -1,7 +1,7 @@
 @import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
 @import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
 
-@rival-gold: #D4AF37;
+@import "./variables.less";
 
 .base-nav-bar {
     position: absolute;
@@ -53,6 +53,14 @@
         > .base-nav-bar-item-image {
             width: 60px;
             height: 60px;
+
+            svg circle{
+                stroke: yellow;
+            }
+
+            svg text {
+                fill: orange;
+            }
         }
     }
 }

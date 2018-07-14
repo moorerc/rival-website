@@ -22,6 +22,10 @@
     classnames "^2.2"
     tslib "^1.5.0"
 
+"@types/classnames@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.npmjs.org/@types/classnames/-/classnames-2.2.4.tgz#d3ee9ebf714aa34006707b8f4a58fd46b642305a"
+
 "@types/dom4@^2.0.0":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@types/dom4/-/dom4-2.0.0.tgz#00dc42fed6b36a7a6dabb8f7a9c9e678ee644e05"
@@ -873,6 +877,10 @@ clap@^1.0.9:
 classnames@^2.2, classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
 
 clean-css@4.1.x:
   version "4.1.9"

@@ -37,7 +37,7 @@ const NAV_BAR: NavBarItem[] = [
         type: "text",
     },
     {
-        image: "/img/RCircle.png",
+        image: "/img/RCircle.svg",
         key: "home",
         route: "/",
         showOnPage: (pageName: string) => pageName === "home" ? false : true,
@@ -62,6 +62,8 @@ const NAV_BAR: NavBarItem[] = [
 interface BaseNavBarProps {
     pageName: string;
 }
+
+// import * as homeIcon from "./RCircle.svg"; // tslint:disable-line:no-require-imports no-var-requires
 
 export default class BaseNavBar extends React.Component<BaseNavBarProps> {
     render() {
@@ -105,14 +107,31 @@ export default class BaseNavBar extends React.Component<BaseNavBarProps> {
         return (
             <Link
                 className="base-nav-bar-item-image"
-                style={{
-                    background: "url(" + navBarItem.image + ")",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                }}
+                // style={{
+                //     background: "url(" + navBarItem.image + ")",
+                //     backgroundPosition: "center",
+                //     backgroundRepeat: "no-repeat",
+                //     backgroundSize: "cover",
+                // }}
                 to={navBarItem.route}
-            />
+            >
+                {/* <span>{homeIcon}</span> */}
+                {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337.9 337.9">
+                    <text transform="translate(55.51 250.62)"
+                        font-size="220" fill="#231f20" font-family="Michroma, Michroma">R</text>
+                    <circle cx="308.66" cy="386.54" r="167.05" transform="translate(-322.63 113.88) rotate(-45)"
+                        fill="none" stroke="#231f20" stroke-miterlimit="10" stroke-width="3.79"/>
+                </svg> */}
+                                {/* <object
+                    className="item-image"
+                    type="image/svg+xml"
+                    data={navBarItem.image}
+                    width="60"
+                    height="60"
+                /> */}
+                {/* <img className="item-image" src={navBarItem.image} /> */}
+                {/* {homeIcon} */}
+            </Link>
         );
     }
 }
