@@ -1,10 +1,11 @@
 import { Icon } from "@blueprintjs/core";
 import * as _ from "lodash";
+import * as moment from "moment";
 import * as React from "react";
 
-import { Badges } from "../data/Badges";
+import { BadgeEarned, Badges, BADGES } from "../data/Badges";
 import { PLAYERS, Players } from "../data/Players";
-import { rbq2017BadgesActivated } from "../data/RBQ2017";
+import { rbq2018BadgesActivated } from "../data/RBQ2018";
 import { getBadgesEarnedForPlayer, numTimesUserEarnedBadge } from "./RBQHelpers";
 import RBQMiniBadgeIcon from "./RBQMiniBadgeIcon";
 
@@ -18,7 +19,7 @@ export default class RBQIndividualDetailsPanel extends React.Component<RBQIndivi
         const { player } = this.props;
         const imagesBase = "/img/roster-2018/headshots/rival2018_headshot_";
         const badgesEarned = getBadgesEarnedForPlayer(player);
-        const badgesActivated: Badges[] = rbq2017BadgesActivated;
+        const badgesActivated: Badges[] = rbq2018BadgesActivated;
 
         return (
             <div className="rbq-individual-details-panel">
@@ -60,70 +61,32 @@ export default class RBQIndividualDetailsPanel extends React.Component<RBQIndivi
                             />
                         ))}
                     </div>
+                    <div className="badges-earned-table pt-striped">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Badge</th>
+                                    <th>Date Earned</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {_.map(badgesEarned, (badgeEarned: BadgeEarned, key: any) => (
+                                    <tr key={key} className="badge-earned-row">
+                                        <td>
+                                        {
+                                            BADGES[badgeEarned.badge].title
+                                        }
+                                        </td>
+                                        <td>{moment(badgeEarned.date).format("MMM Do YYYY, h:mm a")}</td>
+                                        <td>{badgeEarned.notes || ""}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         );
     }
 }
-
-// return (
-//     <div className="rbq-badge-details-panel">
-//         <div className="panel-header">
-//             <div className="header-left">
-//                 <img
-//                     className="badge-image"
-//                     src={badgeImagesBase + BADGES[badge].image}
-//                 />
-//             </div>
-//             <div className="header-right">
-//                 <div className="title">
-//                     <div className="title-text">{BADGES[badge].title}</div>
-//                     <div className="created-by">
-//                         {"Created By: "}
-//                         <img
-//                             className="player-image"
-//                             src={playerImagesBase + BADGES[badge].createdBy + ".jpg"}
-//                         />
-//                     </div>
-//                 </div>
-//                 <div className="description">{BADGES[badge].description}</div>
-//             </div>
-//         </div>
-//         <div className="panel-body">
-//             <div className="user-avatars">
-//                 { _.map(roster.players, (player: Players, key: any) => (
-//                     <RBQMiniUserAvatar
-//                         player={player}
-//                         key={key}
-//                         count={numTimesUserEarnedBadge(player, badge)}
-//                     />
-//                 ))}
-//             </div>
-//             <div className="badges-earned-table">
-//                 <table className="pt-table">
-//                     <thead>
-//                         <tr>
-//                             <th>User</th>
-//                             <th>Date Earned</th>
-//                             <th>Notes</th>
-//                         </tr>
-//                     </thead>
-//                     <tbody>
-//                         {_.map(badgesEarned, (badgeEanred: BadgeEarned) => (
-//                             <tr>
-//                                 <td>
-//                                 {
-//                                     PLAYERS[badgeEanred.player].name.nickname
-//                                         || PLAYERS[badgeEanred.player].name.first
-//                                 }
-//                                 </td>
-//                                 <td>{badgeEanred.date}</td>
-//                                 <td>{badgeEanred.notes || ""}</td>
-//                             </tr>
-//                         ))}
-//                     </tbody>
-//                 </table>
-//             </div>
-//         </div>
-//     </div>
-// );

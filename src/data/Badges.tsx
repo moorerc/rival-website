@@ -9,6 +9,13 @@ export interface Badge {
     createdBy: Players;
 }
 
+export interface BadgeEarned {
+    badge: Badges;
+    player: Players;
+    date: string;
+    notes?: string;
+}
+
 export enum Badges {
     FIRST_RESPONDER = "FIRST_RESPONDER",
     BRIDGE_THE_GAP = "BRIDGE_THE_GAP",
@@ -61,6 +68,7 @@ export enum Badges {
     EPIC_FAIL = "EPIC_FAIL",
     DRESS_LIKE_SOPHIE_DAY = "DRESS_LIKE_SOPHIE_DAY",
     EAT_LIKE_SOPHIE = "EAT_LIKE_SOPHIE",
+    RISE_AND_SHINE = "RISE_AND_SHINE",
 }
 
 export const BADGES: {[key in Badges]: Badge} = {
@@ -97,7 +105,7 @@ export const BADGES: {[key in Badges]: Badge} = {
     "HI_FIVE": {
         "title": "Hi - Five",
         "image": "badge_hand.png",
-        "description": "Get to know your buddies and introduce them to the team. Post five unique facts about each of them to slack.",
+        "description": "Get to know your hogwarts housemates and introduce them to the team. Choose a housemate and post five unique/fun facts about them to slack.",
         "createdBy": Players.MOORE,
     },
     "PUMP_IT_UP": {
@@ -275,10 +283,16 @@ export const BADGES: {[key in Badges]: Badge} = {
         "createdBy": Players.MOORE,
     },
     "GOLD_STAR": {
+        "title": "Gold Star",
+        "image": "badge_goldstar.png",
+        "description": "Either get tots to say 'gold star' to you publicly (and post event description to slack), or post a screenshot from a conversation in which she says it to you.",
+        "createdBy": Players.SCOTT,
+    },
+    "RISE_AND_SHINE": {
         "title": "Rise and Shine",
         "image": "badge_alarm.png",
         "description": "Earned by taking a selfie upon waking up (and before getting out of bed) for five consecutive mornings and submitting the photos to slack.",
-        "createdBy": Players.SCOTT,
+        "createdBy": Players.BUTTS,
     },
     "ADULTING": {
         "title": "Adulting",

@@ -1,8 +1,8 @@
 import * as _ from "lodash";
+import * as moment from "moment";
 import * as React from "react";
-import { Badges, BADGES } from "../data/Badges";
+import { BadgeEarned, Badges, BADGES } from "../data/Badges";
 import { Players, PLAYERS } from "../data/Players";
-import { BadgeEarned } from "../data/RBQ2017";
 import { RIVAL_2018, Roster } from "../data/Roster";
 import { getBadgesEarnedForBadge, numTimesUserEarnedBadge } from "./RBQHelpers";
 import RBQMiniUserAvatar from "./RBQMiniUserAvatar";
@@ -53,8 +53,8 @@ export default class RBQBadgeDetailsPanel extends React.Component<RBQBadgeDetail
                             />
                         ))}
                     </div>
-                    <div className="badges-earned-table">
-                        <table className="pt-table">
+                    <div className="badges-earned-table pt-striped">
+                        <table>
                             <thead>
                                 <tr>
                                     <th>User</th>
@@ -63,15 +63,15 @@ export default class RBQBadgeDetailsPanel extends React.Component<RBQBadgeDetail
                                 </tr>
                             </thead>
                             <tbody>
-                                {_.map(badgesEarned, (badgeEanred: BadgeEarned) => (
-                                    <tr>
+                                {_.map(badgesEarned, (badgeEanred: BadgeEarned, key: any) => (
+                                    <tr key={key} className="badge-earned-row">
                                         <td>
                                         {
                                             PLAYERS[badgeEanred.player].name.nickname
                                                 || PLAYERS[badgeEanred.player].name.first
                                         }
                                         </td>
-                                        <td>{badgeEanred.date}</td>
+                                        <td>{moment(badgeEanred.date).format("MMM Do YYYY, h:mm a")}</td>
                                         <td>{badgeEanred.notes || ""}</td>
                                     </tr>
                                 ))}
