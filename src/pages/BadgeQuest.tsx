@@ -10,7 +10,7 @@ import RBQIndividualDetailsPanel from "../components/RBQIndividualDetailsPanel";
 import RBQLeaderboardCard from "../components/RBQLeaderboardCard";
 import { BADGES, Badges } from "../data/Badges";
 import { Players } from "../data/Players";
-import { rbq2017BadgesActivated } from "../data/RBQ2017";
+import { rbq2018BadgesActivated } from "../data/RBQ2018";
 import { RIVAL_2018, Roster } from "../data/Roster";
 import "../styles/BadgeQuest.css";
 
@@ -34,9 +34,10 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
 
     render() {
         const roster: Roster = RIVAL_2018;
-        const badgesActivated: Badges[] = rbq2017BadgesActivated;
+        const users: Players[] = _.concat(roster.players, roster.coaches);
+        const badgesActivated: Badges[] = rbq2018BadgesActivated;
 
-        const rosterLeaderboard = _.sortBy(roster.players, (player) => getBadgesEarnedForPlayer(player).length, "DESC");
+        const rosterLeaderboard = _.sortBy(users, (player) => getBadgesEarnedForPlayer(player).length, "DESC");
         return (
             <div className="badgequest-page">
                 <div className="side-panel -left">
@@ -88,7 +89,7 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
                     <div className="side-panel-content -split">
                         <div className="split-col">
                             { _.map(badgesActivated, (badge: Badges, index) => (
-                                (index % 2 !== 0) ? (
+                                (index % 2 === 0) ? (
                                     <RBQBadgeCard
                                         key={badge}
                                         badge={BADGES[badge]}
@@ -99,7 +100,7 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
                         </div>
                         <div className="split-col -right">
                             { _.map(badgesActivated, (badge: Badges, index) => (
-                                (index % 2 === 0) ? (
+                                (index % 2 !== 0) ? (
                                     <RBQBadgeCard
                                         key={badge}
                                         badge={BADGES[badge]}

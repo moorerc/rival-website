@@ -3,13 +3,17 @@
 import { Players } from "./Players";
 
 export interface Roster {
-    // coaches: [],
+    coaches: Players[];
     players: Players[];
     captains: Players[];
     link: string;
 }
 
 export const RIVAL_2015: Roster = {
+    coaches: [
+        Players.BALL,
+        Players.THEISS,
+    ],
     players: [
         Players.RAMSEY,
         Players.WETLI,
@@ -43,6 +47,10 @@ export const RIVAL_2015: Roster = {
 };
 
 export const RIVAL_2016: Roster = {
+    coaches: [
+        Players.BALL,
+        Players.THEISS,
+    ],
     players: [
         Players.JEZIERSKI,
         Players.LEYDEN,
@@ -78,6 +86,10 @@ export const RIVAL_2016: Roster = {
 };
 
 export const RIVAL_2017: Roster = {
+    coaches: [
+        Players.BALL,
+        Players.THEISS,
+    ],
     players: [
         Players.JANJIC,
         Players.MILLER,
@@ -111,6 +123,9 @@ export const RIVAL_2017: Roster = {
 };
 
 export const RIVAL_2018: Roster = {
+    coaches: [
+        Players.BALL,
+    ],
     players: [
         Players.HASKELL,
         Players.BARLOW,

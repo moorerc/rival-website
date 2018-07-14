@@ -2,10 +2,11 @@
 
 export interface Player {
     name: {first: string, last: string, nickname?: string};
-    jersey: number;
+    jersey?: number;
 }
 
 export enum Players {
+    BALL = "ball", // coach
     BACKUS = "backus",
     BARLOW = "barlow",
     BARTH = "barth",
@@ -50,6 +51,7 @@ export enum Players {
     SMIACH = "smiach",
     STEVA = "steva",
     // TAYLOR = "taylor",
+    THEISS = "theiss", // coach
     TORVINEN = "torvinen",
     TURNER = "turner",
     WALKER = "walker",
@@ -63,6 +65,7 @@ export enum Players {
 export const PLAYERS: {[key in Players]: Player} = {
 
     "backus": { name: {first: "Katie", last: "Backus", nickname: "Zeus"}, jersey: 12},
+    "ball": { name: {first: "DeAnna", last: "Ball"}},
     "barlow": { name: {first: "Molly", last: "Barlow"}, jersey: 3 },
     "barth": { name: {first: "Talia", last: "Barth"}, jersey: 22},
     "bova": { name: {first: "Daniela", last: "Bova"}, jersey: 15},
@@ -114,6 +117,7 @@ export const PLAYERS: {[key in Players]: Player} = {
     "steva": { name: {first: "Kristi", last: "Steva", nickname: "ChemE"}, jersey: 22},
 
     // "taylor": { name: {first: "Michelle", last: "Taylor", nickname: "Mosh"}, jersey: 0},
+    "theiss": { name: {first: "Andy", last: "Theiss"}},
     "torvinen": { name: {first: "Bailey", last: "Torvinen"}, jersey: 27},
     "turner": { name: {first: "Mary", last: "Turner"}, jersey: 21},
 

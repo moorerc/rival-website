@@ -13,11 +13,20 @@ export default class RBQBadgeCard extends React.Component<RBQBadgeCardProps> {
 
     return (
         <div className="rbq-badge-card" onClick={this.props.onClick}>
-            <img
+            <div
+                className="badge-image"
+                style={{
+                    background: "url(" + imagesBase + badge.image + ")",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                }}
+             />
+            {/* <img
                 className="badge-image"
                 src={imagesBase + badge.image}
                 onClick={this.props.onClick}
-            />
+            /> */}
         </div>
     );
   }

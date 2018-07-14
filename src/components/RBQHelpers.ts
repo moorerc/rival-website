@@ -1,11 +1,11 @@
 
 import * as _ from "lodash";
 
-import { Badges } from "../data/Badges";
+import { BadgeEarned, Badges } from "../data/Badges";
 import { Players } from "../data/Players";
-import { BadgeEarned, rbq2017BadgeEarned } from "../data/RBQ2017";
+import { rbq2018BadgeEarned } from "../data/RBQ2018";
 
-const BADGES_EARNED = rbq2017BadgeEarned;
+const BADGES_EARNED = rbq2018BadgeEarned;
 
 export function numTimesUserEarnedBadge(player: Players, badge: Badges) {
     let count = 0;

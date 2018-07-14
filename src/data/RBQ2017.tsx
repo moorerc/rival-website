@@ -18,6 +18,12 @@ export const rbq2017BadgesActivated: Badges[] = [
     Badges.REPORTING_FOR_DUTY,
     Badges.SUPERB_SUGGESTER,
     Badges.SWEATY_SELFIE,
+    Badges.PERSONALITY_PERSUIT,
+    Badges.HOMETOWN_HERO,
+    Badges.EAT_LIKE_SOPHIE,
+    Badges.DANCE_CHAIN,
+    Badges.ADULTING,
+    Badges.ANACONDA,
 ];
 
 export const rbq2017BadgeEarned: BadgeEarned[] = [
