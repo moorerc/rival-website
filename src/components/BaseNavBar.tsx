@@ -3,6 +3,8 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import "../styles/BaseNavBar.css";
 
+// import RivalLogoCircle from "/img/RivalLogoCircle.svg";
+
 interface NavBarItemBasic {
     key: string;
     route: string;
@@ -115,6 +117,7 @@ export default class BaseNavBar extends React.Component<BaseNavBarProps> {
                 // }}
                 to={navBarItem.route}
             >
+                {/* <RivalLogoCircle /> */}
                 {/* <span>{homeIcon}</span> */}
                 {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337.9 337.9">
                     <text transform="translate(55.51 250.62)"
@@ -130,6 +133,7 @@ export default class BaseNavBar extends React.Component<BaseNavBarProps> {
                     height="60"
                 /> */}
                 {/* <img className="item-image" src={navBarItem.image} /> */}
+                <img className="item-image" src="/img/RivalLogoCircle.svg" />
                 {/* {homeIcon} */}
             </Link>
         );
