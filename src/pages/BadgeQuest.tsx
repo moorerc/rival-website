@@ -127,6 +127,7 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
                     : <RBQEmptyDetailsPanel message="select a user from the panel on the left." />;
             case MainPanel.TEAM_STATS:
                 return <RBQEmptyDetailsPanel message="team stats coming soon!" />;
+                // return <RBQTeamStatsDetailsPanel />;
         }
     }
 

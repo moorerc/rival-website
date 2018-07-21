@@ -17,6 +17,7 @@ export default class RBQBadgeDetailsPanel extends React.Component<RBQBadgeDetail
         const badgeImagesBase = "/img/badgeimages/";
         const playerImagesBase = "/img/roster-2018/headshots/rival2018_headshot_";
         const roster: Roster = RIVAL_2018;
+        const users: Players[] = _.concat(roster.players, roster.coaches);
 
         const badgesEarned = getBadgesEarnedForBadge(badge);
 
@@ -45,7 +46,7 @@ export default class RBQBadgeDetailsPanel extends React.Component<RBQBadgeDetail
                 </div>
                 <div className="panel-body">
                     <div className="user-avatars">
-                        { _.map(roster.players, (player: Players, key: any) => (
+                        { _.map(users, (player: Players, key: any) => (
                             <RBQMiniUserAvatar
                                 player={player}
                                 key={key}

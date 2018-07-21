@@ -69,6 +69,10 @@ export enum Badges {
     DRESS_LIKE_SOPHIE_DAY = "DRESS_LIKE_SOPHIE_DAY",
     EAT_LIKE_SOPHIE = "EAT_LIKE_SOPHIE",
     RISE_AND_SHINE = "RISE_AND_SHINE",
+    CAN_COLLECTOR = "CAN_COLLECTOR",
+    REHAB_ROCKSTAR = "REHAB_ROCKSTAR",
+    WEEKLY_WELLNESS = "WEEKLY_WELLNESS",
+    TOP_TEN = "TOP_TEN",
 }
 
 export const BADGES: {[key in Badges]: Badge} = {
@@ -383,5 +387,29 @@ export const BADGES: {[key in Badges]: Badge} = {
         "image": "badge_cookie.png",
         "description": "Post a picture to slack with you being unreasonably messy with whatever you're eating.",
         "createdBy": Players.NITZ,
+    },
+    "CAN_COLLECTOR": {
+        "title": "Can Collector",
+        "image": "badge_can.png",
+        "description": "Post a picture to slack of you returning cans, separating your returnables, or bringing a bag of cans to practice to give to Tia.",
+        "createdBy": Players.ESPOSITO,
+    },
+    "REHAB_ROCKSTAR": {
+        "title": "Rehab Rockstar",
+        "image": "badge_stretch.png",
+        "description": "Taking care of your body is important. Post a picture to slack of you doing some extra prehab / rehab / pt / stretching / etc.",
+        "createdBy": Players.ESPOSITO,
+    },
+    "WEEKLY_WELLNESS": {
+        "title": "Weekly Wellness",
+        "image": "badge_wellness.png",
+        "description": "Take a selfie doing something (non-ultimate related) that helps keep you keep your head fresh, focused, and determined so you can approach the field as your best self!",
+        "createdBy": Players.CRAYCRAFT,
+    },
+    "TOP_TEN": {
+        "title": "Top Ten",
+        "image": "badge_topten.png",
+        "description": "Throw for ten minutes a day for ten consecutive days. Keep a log of your throwing times / partner and post to slack when you reach ten consecutive days to earn this badge.",
+        "createdBy": Players.KNOWLES,
     },
 };
