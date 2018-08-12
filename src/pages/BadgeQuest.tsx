@@ -8,6 +8,7 @@ import RBQEmptyDetailsPanel from "../components/RBQEmptyDetailsPanel";
 import { getBadgesEarnedForPlayer } from "../components/RBQHelpers";
 import RBQIndividualDetailsPanel from "../components/RBQIndividualDetailsPanel";
 import RBQLeaderboardCard from "../components/RBQLeaderboardCard";
+// import RBQTeamStatsDetailsPanel from "../components/RBQTeamStatsDetailsPanel";
 import { BADGES, Badges } from "../data/Badges";
 import { Players } from "../data/Players";
 import { rbq2018BadgesActivated } from "../data/RBQ2018";

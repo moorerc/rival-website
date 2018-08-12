@@ -73,6 +73,14 @@ export enum Badges {
     REHAB_ROCKSTAR = "REHAB_ROCKSTAR",
     WEEKLY_WELLNESS = "WEEKLY_WELLNESS",
     TOP_TEN = "TOP_TEN",
+    ICE_BUT_NICE = "ICE_BUT_NICE",
+    BOOK_CLUB = "BOOK_CLUB",
+    FANTASTIC_FUNDRAISER = "FANTASTIC_FUNDRAISER",
+    OUT_TOTSING_TOTS = "OUT_TOTSING_TOTS",
+    EXCESSIVE_EFFORT = "EXCESSIVE_EFFORT",
+    PORTRAIT_MODE = "PORTRAIT_MODE",
+    FILM_FANATIC = "FILM_FANATIC",
+    RULES_RECTIFIER = "RULES_RECTIFIER",
 }
 
 export const BADGES: {[key in Badges]: Badge} = {
@@ -411,5 +419,53 @@ export const BADGES: {[key in Badges]: Badge} = {
         "image": "badge_topten.png",
         "description": "Throw for ten minutes a day for ten consecutive days. Keep a log of your throwing times / partner and post to slack when you reach ten consecutive days to earn this badge.",
         "createdBy": Players.KNOWLES,
+    },
+    "ICE_BUT_NICE": {
+        "title": "Ice But Nice",
+        "image": "badge_ice.png",
+        "description": "Ice your teammate with a La Croix (this La Croix must be marked with ICE and your name). Photo evidence (of hiding and/or discovery) required. Act fast - this badge can only be earned once per flavor.",
+        "createdBy": Players.SCOTT,
+    },
+    "BOOK_CLUB": {
+        "title": "Book Club",
+        "image": "badge_worm.png",
+        "description": "Team book club of reading The Rosie Project by Graeme Simsion. To earn this badge post a picture of you reading it to slack and share a way that it relates to our team ;)",
+        "createdBy": Players.HARLEY,
+    },
+    "FANTASTIC_FUNDRAISER": {
+        "title": "Fantastic Fundraiser",
+        "image": "badge_piggy.png",
+        "description": "Post a picture to slack of you participating in a Rival fundraiser. Unlike all other badges, this badge will be retroactive (so posting evidence from prior fundraisers will also count). No credit for fundraisers that have their own badge (Ex: Can Collector)",
+        "createdBy": Players.KWEE,
+    },
+    "OUT_TOTSING_TOTS": {
+        "title": "Out Totsing Tots",
+        "image": "badge_robot.png",
+        "description": "Post a photo/description of yourself 'Out Totsing Tots'. Discretion for badge credit goes to Harley.",
+        "createdBy": Players.HARLEY,
+    },
+    "EXCESSIVE_EFFORT": {
+        "title": "Excessive Effort",
+        "image": "badge_rocket.png",
+        "description": "Earn this badge by putting in a ridiculous amount of effort into something for the team that isn’t necessarily ultimate related— like orchestrating a massive road rally or exhausting a work day to make a sorting. Post an explanation/evidence to slack for badge credit - on behalf of yourself, or on behalf of a teammate you think deserves credit.",
+        "createdBy": Players.FAZEKAS,
+    },
+    "PORTRAIT_MODE": {
+        "title": "Portrait Mode",
+        "image": "badge_insta.png",
+        "description": "Snap a great photo of your teammate on or off the field and submit a fun social media post idea about them. Badge credit if it’s good enough we use on social media! (as determined by Social Media Guru Janine)",
+        "createdBy": Players.HARLEY,
+    },
+    "FILM_FANATIC": {
+        "title": "Film Fanatic",
+        "image": "badge_film.png",
+        "description": "Watch some footage of one of our previous games (this season). Clip a small section with something strategically noteworthy (a time we implemented our sets particularly well/poor) and post the clip to slack.",
+        "createdBy": Players.MOORE,
+    },
+    "RULES_RECTIFIER": {
+        "title": "Rules Rectifier",
+        "image": "badge_ruler.png",
+        "description": "If there’s a game scenario you’re unclear on, look it up in the rules and slack out the clarification with rule section citation.",
+        "createdBy": Players.FAZEKAS,
     },
 };
