@@ -2,6 +2,7 @@ import * as React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import About from "./pages/About";
 import BadgeQuest from "./pages/BadgeQuest";
+import FiftyPlates from "./pages/FiftyPlates";
 import Home from "./pages/Home";
 import News from "./pages/News";
 import Results from "./pages/Results";
@@ -21,6 +22,7 @@ export default class App extends React.Component {
                         <Route path="/results" component={Results} />
                         <Route path="/roster" component={Roster} />
                         <Route path="/badgequest" component={BadgeQuest} />
+                        <Route path="/fiftyplates" component={FiftyPlates} />
                     </React.Fragment>
                 </BrowserRouter>
             </div>
