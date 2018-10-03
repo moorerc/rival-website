@@ -81,6 +81,14 @@ export enum Badges {
     PORTRAIT_MODE = "PORTRAIT_MODE",
     FILM_FANATIC = "FILM_FANATIC",
     RULES_RECTIFIER = "RULES_RECTIFIER",
+    INTO_IT = "INTO_IT",
+    INTEREST_INTERSECTION = "INTEREST_INTERSECTION",
+    GOSSIP_GALORE = "GOSSIP_GALORE",
+    CHILDHOOD_CHARM = "CHILDHOOD_CHARM",
+    BASIC_BADGE = "BASIC_BADGE",
+    TIE_DYE_BADGE = "TIE_DYE_BADGE",
+    POUTINE_AND_PLATES = "POUTINE_AND_PLATES",
+    FLATBALL_STANLEY = "FLATBALL_STANLEY",
 }
 
 export const BADGES: {[key in Badges]: Badge} = {
@@ -467,5 +475,53 @@ export const BADGES: {[key in Badges]: Badge} = {
         "image": "badge_ruler.png",
         "description": "If there’s a game scenario you’re unclear on, look it up in the rules and slack out the clarification with rule section citation.",
         "createdBy": Players.FAZEKAS,
+    },
+    "INTO_IT": {
+        "title": "Into It",
+        "image": "badge_like.png",
+        "description": "Share (via slack) something you're really into at the moment, but not frisbee-related - maybe a favorite song, new hobby, TV show, etc.",
+        "createdBy": Players.CRAYCRAFT,
+    },
+    "INTEREST_INTERSECTION": {
+        "title": "Interest Intersection",
+        "image": "badge_intersection.png",
+        "description": "Check out something your teammate is into (that they've earend an Into It badge for). Earn badge credit by posting a picture of yourself doing it - reading the book, trying the thing, etc. - to slack.",
+        "createdBy": Players.CRAYCRAFT,
+    },
+    "GOSSIP_GALORE": {
+        "title": "Gossip Galore",
+        "image": "badge_chat.png",
+        "description": "Hear about a story (must be this season / recent) of one of your teammates through the grapevine. Share the story via slack for badge credit.",
+        "createdBy": Players.HARLEY,
+    },
+    "CHILDHOOD_CHARM": {
+        "title": "Childhood Charm",
+        "image": "badge_baby.png",
+        "description": "Share a funny/cute photo or video of yourself as a child. This badge can be earned once for baby/toddler years, once for middle school age, and once for high school age. ",
+        "createdBy": Players.MOORE,
+    },
+    "BASIC_BADGE": {
+        "title": "Basic Badge",
+        "image": "badge_basic.png",
+        "description": "Participate in the basic theme for Austines Celebrity Pod the week of 9/17. Post photo evidence to slack.",
+        "createdBy": Players.LIN,
+    },
+    "TIE_DYE_BADGE": {
+        "title": "Tie Dye Badge",
+        "image": "badge_tiedye.png",
+        "description": "Participate in the tie dye theme for Graces Celebrity Pod the week of 10/1. Post photo evidence to slack.",
+        "createdBy": Players.DENNEY,
+    },
+    "POUTINE_AND_PLATES": {
+        "title": "Poutine and Plates",
+        "image": "badge_mapleleaf.png",
+        "description": "This is like Fifty Plates ... but for Canadian territories. Take a photo of / selfie with the license plate and post it to slack. After a territory is claimed, nobody else can earn badge credit for that territory.",
+        "createdBy": Players.DENNEY,
+    },
+    "FLATBALL_STANLEY": {
+        "title": "Flatball Stanley",
+        "image": "badge_disc.png",
+        "description": "Complete all the requirements of a propper handoff in the flatball stanley challenge (time requirements, slack messages, and handoff photo)",
+        "createdBy": Players.MOORE,
     },
 };

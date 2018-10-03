@@ -8,7 +8,7 @@ import RBQEmptyDetailsPanel from "../components/RBQEmptyDetailsPanel";
 import { getBadgesEarnedForPlayer } from "../components/RBQHelpers";
 import RBQIndividualDetailsPanel from "../components/RBQIndividualDetailsPanel";
 import RBQLeaderboardCard from "../components/RBQLeaderboardCard";
-// import RBQTeamStatsDetailsPanel from "../components/RBQTeamStatsDetailsPanel";
+import RBQTeamStatsDetailsPanel from "../components/RBQTeamStatsDetailsPanel";
 import { BADGES, Badges } from "../data/Badges";
 import { Players } from "../data/Players";
 import { rbq2018BadgesActivated } from "../data/RBQ2018";
@@ -127,8 +127,8 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
                     ? <RBQIndividualDetailsPanel player={this.state.selectedPlayer} placement={1} />
                     : <RBQEmptyDetailsPanel message="select a user from the panel on the left." />;
             case MainPanel.TEAM_STATS:
-                return <RBQEmptyDetailsPanel message="team stats coming soon!" />;
-                // return <RBQTeamStatsDetailsPanel />;
+                // return <RBQEmptyDetailsPanel message="team stats coming soon!" />;
+                return <RBQTeamStatsDetailsPanel />;
         }
     }
 
