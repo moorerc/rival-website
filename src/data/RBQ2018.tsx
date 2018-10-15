@@ -46,6 +46,8 @@ export const rbq2018BadgesActivated: Badges[] = [
     Badges.FLATBALL_STANLEY,
     Badges.TEAMMATE_TERROR,
     Badges.RAK,
+    Badges.HOMETOWN_HERO,
+    Badges.STELLAR_STUDENT,
 ];
 
 export const rbq2018BadgeEarned: BadgeEarned[] = [
@@ -519,5 +521,79 @@ export const rbq2018BadgeEarned: BadgeEarned[] = [
     { badge: Badges.SUPERB_SUGGESTER, player: Players.DENNEY, date: "Sep 23 2018 16:33:00 PDT", notes: "Poutine and Plates"},
     { badge: Badges.SUPERB_SUGGESTER, player: Players.DENNEY, date: "Oct 1 2018 5:46:00 PDT", notes: "Tie Dye"},
     { badge: Badges.SUPERB_SUGGESTER, player: Players.MOORE, date: "Oct 2 2018 9:06:00 PDT", notes: "Flatball Stanley"},
+
+    //
+    //
+    // Update 6
+    { badge: Badges.RAK, player: Players.BALL, date: "Oct 3 2018 4:47:00 PDT", notes: "Socks for Sophie"},
+    { badge: Badges.RAK, player: Players.KNOWLES, date: "Oct 11 2018 12:00:00 PDT", notes: "Taking griff to the park"},
+
+    { badge: Badges.BONDING_BADGE_BADGE, player: Players.FAZEKAS, date: "Oct 3 2018 15:51:00 PDT", notes: "Clev Dinner"},
+    { badge: Badges.BONDING_BADGE_BADGE, player: Players.JAVERSAK, date: "Oct 3 2018 15:51:00 PDT", notes: "Clev Dinner"},
+    { badge: Badges.BONDING_BADGE_BADGE, player: Players.LIN, date: "Oct 3 2018 15:51:00 PDT", notes: "Clev Dinner"},
+    { badge: Badges.BONDING_BADGE_BADGE, player: Players.CRAYCRAFT, date: "Oct 12 2018 5:52:00 PDT", notes: "Coffee Shop Workin"},
+    { badge: Badges.BONDING_BADGE_BADGE, player: Players.HARLEY, date: "Oct 12 2018 5:52:00 PDT", notes: "Coffee Shop Workin"},
+    { badge: Badges.BONDING_BADGE_BADGE, player: Players.MOORE, date: "Oct 12 2018 5:52:00 PDT", notes: "Coffee Shop Workin"},
+
+    { badge: Badges.PUMP_IT_UP, player: Players.HARLEY, date: "Oct 6 2018 6:25:00 PDT", notes: "Hand In My Pocket"},
+    { badge: Badges.PUMP_IT_UP, player: Players.LO, date: "Oct 6 2018 6:25:00 PDT", notes: "Hand In My Pocket"},
+    { badge: Badges.PUMP_IT_UP, player: Players.JAVERSAK, date: "Oct 6 2018 6:25:00 PDT", notes: "Hand In My Pocket"},
+    { badge: Badges.PUMP_IT_UP, player: Players.DENNEY, date: "Oct 6 2018 6:25:00 PDT", notes: "Hand In My Pocket"},
+    { badge: Badges.PUMP_IT_UP, player: Players.CRAYCRAFT, date: "Oct 11 2018 18:57:00 PDT", notes: ""},
+
+    { badge: Badges.INTO_IT, player: Players.NITZ, date: "Oct 3 2018 17:34:00 PDT", notes: "Beach Volleyball"},
+    { badge: Badges.INTO_IT, player: Players.SCOTT, date: "Oct 12 2018 14:49:00 PDT", notes: "Home Gardening"},
+    { badge: Badges.INTO_IT, player: Players.SCOTT, date: "Oct 13 2018 14:21:00 PDT", notes: "Lemon Tree"},
+
+    { badge: Badges.EPIC_FAIL, player: Players.DENNEY, date: "Oct 3 2018 18:30:00 PDT", notes: "Parking Job"},
+    { badge: Badges.EPIC_FAIL, player: Players.JAVERSAK, date: "Oct 6 2018 9:36:00 PDT", notes: "Impound Lot"},
+
+    { badge: Badges.CHILDHOOD_CHARM, player: Players.LO, date: "Oct 4 2018 11:26:00 PDT"},
+    { badge: Badges.CHILDHOOD_CHARM, player: Players.LO, date: "Oct 4 2018 12:19:00 PDT"},
+    { badge: Badges.CHILDHOOD_CHARM, player: Players.LO, date: "Oct 4 2018 12:19:00 PDT"},
+    { badge: Badges.CHILDHOOD_CHARM, player: Players.JAVERSAK, date: "Oct 4 2018 12:53:00 PDT"},
+    { badge: Badges.CHILDHOOD_CHARM, player: Players.JAVERSAK, date: "Oct 4 2018 12:53:00 PDT"},
+
+    { badge: Badges.TIE_DYE_BADGE, player: Players.SCOTT, date: "Oct 4 2018 16:44:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.GRIFFITH, date: "Oct 4 2018 16:44:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.KNOWLES, date: "Oct 4 2018 17:23:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.HASKELL, date: "Oct 4 2018 17:23:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.ESPOSITO, date: "Oct 4 2018 19:24:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.WEINERT, date: "Oct 4 2018 19:24:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.DENNEY, date: "Oct 4 2018 19:24:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.ZETTNER, date: "Oct 4 2018 19:24:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.BARTH, date: "Oct 4 2018 19:24:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.DUFFY, date: "Oct 4 2018 19:24:00 PDT"},
+    { badge: Badges.TIE_DYE_BADGE, player: Players.MOORE, date: "Oct 4 2018 19:49:00 PDT"},
+
+    { badge: Badges.ACTIVE_COMMUTER, player: Players.LO, date: "Oct 7 2018 14:51:00 PDT", notes: "walkin"},
+    { badge: Badges.ACTIVE_COMMUTER, player: Players.JAVERSAK, date: "Oct 5 2018 6:32:00 PDT", notes: "biking Harley to work"},
+
+    { badge: Badges.BORDER_PATROL, player: Players.DUFFY, date: "Oct 9 2018 4:55:00 PDT", notes: "Maryland"},
+    { badge: Badges.BORDER_PATROL, player: Players.DUFFY, date: "Oct 9 2018 4:55:00 PDT", notes: "Pennsylvania"},
+    { badge: Badges.BORDER_PATROL, player: Players.KWEE, date: "Oct 9 2018 12:33:00 PDT", notes: "Mexico"},
+    { badge: Badges.BORDER_PATROL, player: Players.WALKER, date: "Oct 11 2018 7:02:00 PDT", notes: "Vermont"},
+
+    { badge: Badges.TRAVELER_TRIVIA, player: Players.KNOWLES, date: "Oct 10 2018 11:11:00 PDT", notes: "Buckingham Palace - guesser"},
+    { badge: Badges.TRAVELER_TRIVIA, player: Players.SCOTT, date: "Oct 13 2018 8:02:00 PDT", notes: "Santa Monica Pier - traveler"},
+    { badge: Badges.TRAVELER_TRIVIA, player: Players.MOORE, date: "Oct 13 2018 8:02:00 PDT", notes: "Santa Monica Pier - guesser"},
+
+    { badge: Badges.WEEKLY_WELLNESS, player: Players.FAZEKAS, date: "Oct 9 2018 16:49:00 PDT", notes: "Steroids"},
+    { badge: Badges.FANTASTIC_FUNDRAISER, player: Players.ZETTNER, date: "Oct 9 2018 20:43:00 PDT", notes: "Nationals GoFundMe"},
+    { badge: Badges.POUTINE_AND_PLATES, player: Players.DENNEY, date: "Oct 10 2018 19:00:00 PDT", notes: "Ontario"},
+    { badge: Badges.HI_FIVE, player: Players.HARLEY, date: "Oct 5 2018 20:04:00 PDT", notes: "Introducing Sophie"},
+    { badge: Badges.RUSTY_RAMPAGE, player: Players.JAVERSAK, date: "Oct 6 2018 6:49:00 PDT", notes: "Tia + Cinnamon Roll"},
+    { badge: Badges.OUT_TOTSING_TOTS, player: Players.CRAYCRAFT, date: "Oct 7 2018 4:43:00 PDT", notes: "At the fields early"},
+    { badge: Badges.CAN_COLLECTOR, player: Players.PERRY, date: "Oct 7 2018 9:15:00 PDT"},
+
+    { badge: Badges.FLATBALL_STANLEY, player: Players.MOORE, date: "Oct 4 2018 7:19:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.KWEE, date: "Oct 5 2018 16:57:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.HASKELL, date: "Oct 6 2018 9:53:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.PRUITT, date: "Oct 7 2018 12:50:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.BARLOW, date: "Oct 7 2018 15:51:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.KNOWLES, date: "Oct 8 2018 11:17:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.CRAYCRAFT, date: "Oct 12 2018 11:18:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.HARLEY, date: "Oct 12 2018 16:52:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.SMIACH, date: "Oct 13 2018 11:14:00 PDT"},
 
 ];
