@@ -596,4 +596,30 @@ export const rbq2018BadgeEarned: BadgeEarned[] = [
     { badge: Badges.FLATBALL_STANLEY, player: Players.HARLEY, date: "Oct 12 2018 16:52:00 PDT"},
     { badge: Badges.FLATBALL_STANLEY, player: Players.SMIACH, date: "Oct 13 2018 11:14:00 PDT"},
 
+    //
+    //
+    // Update 5
+    { badge: Badges.CHILDHOOD_CHARM, player: Players.SMIACH, date: "Oct 15 2018 10:17:00 PDT"},
+
+    { badge: Badges.BONDING_BADGE_BADGE, player: Players.LIN, date: "Oct 15 2018 22:54:00 PDT", notes: "Austine/Tots Bubble Tea"},
+
+    { badge: Badges.HAPPY_HISTORIAN, player: Players.CRAYCRAFT, date: "Oct 16 2018 7:22:00 PDT", notes: "Janines Celebration"},
+    { badge: Badges.HAPPY_HISTORIAN, player: Players.KNOWLES, date: "Oct 16 2018 7:47:00 PDT", notes: "Nitz D"},
+    { badge: Badges.HAPPY_HISTORIAN, player: Players.KNOWLES, date: "Oct 16 2018 7:47:00 PDT", notes: "Brit D"},
+
+    { badge: Badges.ACTIVE_COMMUTER, player: Players.LO, date: "Oct 17 2018 7:32:00 PDT"},
+
+    { badge: Badges.REHAB_ROCKSTAR, player: Players.LO, date: "Oct 17 2018 7:32:00 PDT", notes: "split squats ftw"},
+
+    { badge: Badges.HI_FIVE, player: Players.FAZEKAS, date: "Oct 20 2018 11:40:00 PDT", notes: "Introducing Jenny"},
+
+    { badge: Badges.RUSTY_RAMPAGE, player: Players.SCOTT, date: "Oct 20 2018 12:05:00 PDT", notes: "TLo meatballs?"},
+    { badge: Badges.RUSTY_RAMPAGE, player: Players.LO, date: "Oct 21 2018 19:50:00 PDT", notes: "TZ pizza"},
+
+    { badge: Badges.SLEEPING_BEAUTY, player: Players.SCOTT, date: "Oct 21 2018 1:24:00 PDT", notes: "Kristen zzz"},
+    { badge: Badges.SLEEPING_BEAUTY, player: Players.NITZ, date: "Oct 21 2018 8:17:00 PDT", notes: "Talia zzz"},
+    { badge: Badges.SLEEPING_BEAUTY, player: Players.NITZ, date: "Oct 21 2018 8:17:00 PDT", notes: "Duffy zzz"},
+
+    { badge: Badges.FLATBALL_STANLEY, player: Players.PERRY, date: "Oct 15 2018 16:39:00 PDT"},
+    { badge: Badges.FLATBALL_STANLEY, player: Players.WALKER, date: "Oct 19 2018 7:38:00 PDT"},
 ];
