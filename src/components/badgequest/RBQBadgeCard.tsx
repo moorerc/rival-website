@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Badge } from "../data/Badges";
+import { Badge } from "../../data/Badges";
 
 interface RBQBadgeCardProps {
     badge: Badge;

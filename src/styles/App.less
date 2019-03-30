@@ -1,80 +1,78 @@
 @import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
 @import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
 
-
-// #root {
-//     display: flex;
-//     flex-direction: row;
-// }
-
 .rival-website-app {
   display: block;
   height: 100%;
   width: 100%;
-  min-width: 800px;
-
-
-//   &.-sidebar-visible {
-//     // width: 70%;
-//     border: 1
-//     }
 }
 
-.rival-website-app-page {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // border: 1px solid blue;
+.rival-website-page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.-mobile {
+    padding: 25px 25px;
+  }
 }
 
-// .rival-app-page-sidebar {
-//     width: 300px;
-//     border: 1px solid maroon;
-//     height: 100%;
-// }
-
-.rival-website-app-page-bgimage {
-    height:100%;
-    position: relative;
-    top:0;
-    left:0;
-    filter:grayscale(100%);
-    opacity: 0.2;
+.rival-website-page-bgimage {
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%);
+  opacity: 0.2;
 }
 
-.rival-website-app-home-main-content{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.rival-website-page.rival-home-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    > .construction-callout {
-        width: 60%;
-        min-width: 300px;
-        text-align: center;
-        font-size: 12px;
-
-        > .pt-callout-title {
-            text-align: center;
-        }
+  &.-mobile {
+    > .logo-image {
+      max-height: 30%;
     }
 
-    > .logo-image {
-        max-width: 80%;
-        max-height:60%;
-        display: block;
-        height:400px;
-        width: 400px;
-        background: url("/img/Rlogo.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position:center;
-        margin-bottom: 30px;
-      }
+    > .construction-callout {
+      font-size: 8px;
+      padding: 5px;
 
+      > .bp3-heading {
+        font-size: 10px;
+      }
+    }
+  }
+
+  > .construction-callout {
+    width: 60%;
+    min-width: 300px;
+    text-align: center;
+    font-size: 12px;
+
+    > .pt-callout-title {
+      text-align: center;
+    }
+  }
+
+  > .logo-image {
+    max-width: 80%;
+    max-height: 60%;
+    display: block;
+    height: 400px;
+    width: 400px;
+    background: url("/img/Rlogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 30px;
+  }
 }

@@ -3,9 +3,9 @@ import * as _ from "lodash";
 import * as moment from "moment";
 import * as React from "react";
 
-import { BadgeEarned, Badges, BADGES } from "../data/Badges";
-import { PLAYERS, Players } from "../data/Players";
-import { rbq2018BadgesActivated } from "../data/RBQ2018";
+import { BadgeEarned, Badges, BADGES } from "../../data/Badges";
+import { PLAYERS, Players } from "../../data/Players";
+import { rbq2018BadgesActivated } from "../../data/RBQ2018";
 import { getBadgesEarnedForPlayer, numTimesUserEarnedBadge } from "./RBQHelpers";
 import RBQMiniBadgeIcon from "./RBQMiniBadgeIcon";
 

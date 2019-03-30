@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { Card } from "@blueprintjs/core";
-import { rbq2018BadgeEarned } from "../data/RBQ2018";
+import { rbq2018BadgeEarned } from "../../data/RBQ2018";
 
 export default class RBQTeamStatsDetailsPanel extends React.Component<{}> {
 

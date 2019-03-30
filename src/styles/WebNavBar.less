@@ -1,0 +1,75 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.web-nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  > .web-nav-bar-item {
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > .web-nav-bar-item-text {
+      color: @black;
+      text-decoration: none;
+      font-size: 1.3em;
+      font-family: "PT Sans", sans-serif;
+      font-weight: 500;
+
+      &:hover {
+        color: @rival-gold;
+        cursor: pointer;
+      }
+
+      &:hover:after {
+        width: 100%;
+        background: @rival-gold;
+        transition: width 0.3s ease, background-color 0.3s ease;
+      }
+    }
+
+    > .web-nav-bar-item-text:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 0px;
+      margin: auto;
+      background-color: transparent;
+      transition: width 0.3s ease, background-color 0.3s ease;
+    }
+
+    > .web-nav-bar-item-image {
+      width: 60px;
+      height: 60px;
+
+      svg circle {
+        stroke: yellow;
+      }
+
+      svg text {
+        fill: orange;
+      }
+
+      path {
+        fill: green;
+      }
+    }
+
+    .item-image {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

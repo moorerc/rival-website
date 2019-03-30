@@ -1,28 +1,23 @@
 import * as React from "react";
-import "../styles/App.css";
+import "../../styles/App.css";
 
 import { Callout, Intent } from "@blueprintjs/core";
-import WebNavBar from "../components/navigation/WebNavBar";
-import PageBackgroundImage from "../components/basic/PageBackgroundImage";
 import { isMobile, isBrowser } from "react-device-detect";
-import MobileNavBar from "src/components/navigation/MobileNavBar";
 import * as classNames from "classnames";
 import { IconNames } from "@blueprintjs/icons";
+import PageBackgroundImage from "./PageBackgroundImage";
 
-export default class Home extends React.Component {
+export default class ConstructionPage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {!isMobile && <WebNavBar pageName="home" />}
         <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
         <div
           className={classNames("rival-website-page rival-home-page", {
             "-mobile": isMobile
           })}
         >
-          <div className="logo-image" />
           {this.renderConstructionCallout()}
-          {isMobile && <MobileNavBar pageName="home" />}
         </div>
       </React.Fragment>
     );
