@@ -1,9 +1,9 @@
 import * as _ from "lodash";
 import * as moment from "moment";
 import * as React from "react";
-import { BadgeEarned, Badges, BADGES } from "../data/Badges";
-import { Players, PLAYERS } from "../data/Players";
-import { RIVAL_2018, RosterList } from "../data/RosterList";
+import { BadgeEarned, Badges, BADGES } from "../../data/Badges";
+import { Players, PLAYERS } from "../../data/Players";
+import { RIVAL_2018, RosterList } from "../../data/RosterList";
 import { getBadgesEarnedForBadge, numTimesUserEarnedBadge } from "./RBQHelpers";
 import RBQMiniUserAvatar from "./RBQMiniUserAvatar";
 

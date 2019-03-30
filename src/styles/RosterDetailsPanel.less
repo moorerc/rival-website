@@ -4,20 +4,18 @@
 @import "./variables.less";
 
 .roster-details-panel {
-    // width: 40%;
-    // max-width: 400px;
     flex: 1 1 auto;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
     font-family: 'Oswald', sans-serif;
-    // transition: all 2s;
+    height: 100%;
 
     &.-shrunk {
-        flex-grow: 0;
         margin-bottom: 10px;
         cursor: pointer;
-        // transition: all 2s;
+        display: block;
+        flex: 0;
         
         .details-panel-card {
             padding: 10px;
@@ -29,8 +27,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
         
-
         .panel-header {
             font-size: 30px;   
             letter-spacing: 10px;

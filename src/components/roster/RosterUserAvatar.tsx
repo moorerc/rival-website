@@ -4,8 +4,8 @@ import * as React from "react";
 import "../styles/App.css";
 import "../styles/RosterUserAvatar.css";
 
-import { Players, Player } from "../data/Players";
-import { getImageUrlForPlayer, isPlayerACaptain, isPlayerACoach } from "./Helpers";
+import { Players, Player } from "../../data/Players";
+import { getImageUrlForPlayer, isPlayerACaptain, isPlayerACoach } from "../basic/Helpers";
 
 interface RosterUserAvatarProps {
     playerId: Players;

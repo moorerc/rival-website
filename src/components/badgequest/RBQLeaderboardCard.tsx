@@ -3,7 +3,7 @@ import * as React from "react";
 
 import { Icon, Tag } from "@blueprintjs/core";
 
-import { Players, PLAYERS } from "../data/Players";
+import { Players, PLAYERS } from "../../data/Players";
 import { getBadgesEarnedForPlayer } from "./RBQHelpers";
 
 interface RBQLeaderboardCardProps {

@@ -2,7 +2,7 @@ import { Tag } from "@blueprintjs/core";
 import * as classNames from "classnames";
 import * as React from "react";
 
-import { Badges, BADGES } from "../data/Badges";
+import { Badges, BADGES } from "../../data/Badges";
 
 interface RBQMiniBadgeIconProps {
     badge: Badges;

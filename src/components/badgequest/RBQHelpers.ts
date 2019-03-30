@@ -1,9 +1,9 @@
 
 import * as _ from "lodash";
 
-import { BadgeEarned, Badges } from "../data/Badges";
-import { Players } from "../data/Players";
-import { rbq2018BadgeEarned } from "../data/RBQ2018";
+import { BadgeEarned, Badges } from "../../data/Badges";
+import { Players } from "../../data/Players";
+import { rbq2018BadgeEarned } from "../../data/RBQ2018";
 
 const BADGES_EARNED = rbq2018BadgeEarned;
 

@@ -9,25 +9,16 @@
     display: flex;
     flex-direction: column;
     font-family: 'Oswald', sans-serif;
-    // transition: all 2s;
     margin-top: 5px;
+    height: 100%;
 
-    &.-shrunk {
-        // height: 0;
-        // // transition: all 2s;
-        // flex-grow: 0;
-        font-family: 'Oswald', sans-serif;
-        font-size: 12px;   
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        text-align: center;
-    }
 
     .details-panel-card {
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
         
 
         .panel-header {
@@ -63,6 +54,10 @@
             margin: 5px 0;
             padding: 5px 0;
             overflow-y: scroll;
+
+            .empty-bio {
+                color: @gray3;
+            }
 
             .panel-section-title {
                 display: flex;
@@ -167,57 +162,3 @@
         }
     }
 }
-
-// @import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
-// @import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
-
-// @import "./variables.less";
-
-// .player-details-panel {
-//     flex: 1 1 auto;
-//     display: flex;
-//     flex-direction: row;
-
-//     > .player-photo-panel {
-//         flex: 1 1 auto;
-//         margin-left: 10px;
-
-//         > .player-photo {
-//             width: 100%;
-//             height: 100%;
-//             text-align: center;
-//             background-position: center;
-//             background-repeat: no-repeat;
-//             background-size: cover;
-//             border-radius: 10px 0 0 10px;
-//         }
-//     }
-
-//     > .player-info-panel {
-//         width: 40%;
-//         max-width: 400px;
-//         margin-right: 10px;
-//         display: flex;
-//         flex-direction: column;
-//         position: relative;
-
-//         .info-panel-card {
-//             flex: 1 1 auto;
-//             border-radius: 0 10px 10px 0;
-//             border-left: 8px solid @rival-gold;
-//         }
-//     }
-
-//     .player-photo-headshot {
-//         height: 150px;
-//         width: 150px;
-//         border: 8px solid @rival-gold;
-//         border-radius: 50%;
-//         position: absolute;
-//         top: 20px;
-//         left: -75px;
-//         background-position: center;
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//     }
-// }

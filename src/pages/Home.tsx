@@ -2,8 +2,8 @@ import * as React from "react";
 import "../styles/App.css";
 
 import { Callout, Intent } from "@blueprintjs/core";
-import BaseNavBar from "../components/BaseNavBar";
-import PageBackgroundImage from "../components/PageBackgroundImage";
+import BaseNavBar from "../components/basic/BaseNavBar";
+import PageBackgroundImage from "../components/basic/PageBackgroundImage";
 
 export default class Home extends React.Component {
   render() {

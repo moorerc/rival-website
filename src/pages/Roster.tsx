@@ -4,15 +4,15 @@ import "../styles/Roster.css";
 
 import { Button } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
-import BaseNavBar from "../components/BaseNavBar";
-// import RBQMiniUserAvatar from "../components/RBQMiniUserAvatar";
+import BaseNavBar from "../components/basic/BaseNavBar";
+
 import * as _ from "lodash";
 import { Players, PLAYERS } from "../data/Players";
 import { RosterList, RIVAL_ROSTERS } from "../data/RosterList";
-import PlayerDetailsPanel from "src/components/PlayerDetailsPanel";
-import { getImageUrlForRoster, getImageUrlForPlayerAction } from "src/components/Helpers";
-import RosterUserAvatar from "src/components/RosterUserAvatar";
-import RosterDetailsPanel from "src/components/RosterDetailsPanel";
+import PlayerDetailsPanel from "src/components/roster/PlayerDetailsPanel";
+import { getImageUrlForRoster, getImageUrlForPlayerAction } from "src/components/basic/Helpers";
+import RosterUserAvatar from "src/components/roster/RosterUserAvatar";
+import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
 interface RosterPageState {
     currentlyViewing: RosterList;
     topPanelMode: TopPanelMode;
@@ -165,12 +165,11 @@ export default class Roster extends React.Component<RosterPageState> {
     return (
         <div className="info-panel">
             <RosterDetailsPanel roster={roster} shrunk={playerView} onSelectRoster={this.handleSelectRoster} />
-            <PlayerDetailsPanel shrunk={!playerView} player={player ? PLAYERS[player] : undefined} rosterId={roster.id} />
-            {/* {
+            {
                 playerView && player && (
-                    <PlayerDetailsPanel player={PLAYERS[player]} playerId={player} rosterId={roster.id} />
+                    <PlayerDetailsPanel player={PLAYERS[player]} rosterId={roster.id} />
                 )
-            } */}
+            }
         </div>
     );
   }

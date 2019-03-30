@@ -100,7 +100,7 @@ export default class RosterDetailsPanel extends React.Component<RosterDetailsPan
                         ? <Button className="footer-button" text="Roster Release" icon={<Icon icon={IconNames.MOBILE_VIDEO} iconSize={10} />} onClick={() => this.openLinkInNewTab(roster.rosterAnnounceLink || "")}/>
                         : undefined
                     }
-                    <Button className="footer-button" text="Sched/Results" icon={<Icon icon={IconNames.CALENDAR} iconSize={10}/>}>
+                    <Button className="footer-button" text="Sched/Results" icon={<Icon icon={IconNames.CALENDAR} iconSize={10}/>} disabled={true}>
                         <Link
                             className="base-nav-bar-item-text"
                             to={"/results"}
