@@ -15,6 +15,7 @@ import {
   getImageUrlForRoster,
   getImageUrlForPlayerAction
 } from "src/components/basic/Helpers";
+import ConstructionPage from "src/components/basic/ConstructionPage";
 import RosterUserAvatar from "src/components/roster/RosterUserAvatar";
 import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
 interface RosterPageState {
@@ -37,6 +38,10 @@ export default class Roster extends React.Component<RosterPageState> {
     const roster = this.state.currentlyViewing;
     const firstYear = roster === RIVAL_ROSTERS[0];
     const lastYear = roster === RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1];
+
+    if (isMobile) {
+      return <ConstructionPage />;
+    }
 
     return (
       <React.Fragment>
