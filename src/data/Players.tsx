@@ -85,7 +85,7 @@ export const PLAYERS: {[key in Players]: Player} = {
     "griffith": { name: {first: "Mal", last: "Griffith"}, jersey: 21},
     "harley": { name: {first: "Caitlin", last: "Harley"}, jersey: 18},
     "haskell": { name: {first: "Nancy", last: "Haskell"}, jersey: 2},
-    "henkin": { name: {first: "Hannah", last: "Hank", nickname: "Henkin"}, jersey: 37},
+    "henkin": { name: {first: "Hannah", last: "Henkin", nickname: "Hank"}, jersey: 37},
     "janjic": { name: {first: "Nina", last: "Janjic", nickname: "Ninja"}, jersey: 4},
     "javersak": { name: {first: "Iris", last: "Javersak"}, jersey: 99},
     "jezierski": { name: {first: "Sadie", last: "Jezierski"}, jersey: 1},
@@ -102,7 +102,7 @@ export const PLAYERS: {[key in Players]: Player} = {
     "miller": { name: {first: "Stevie", last: "Miller"}, jersey: 5},
     "moore": { name: {first: "Becky", last: "Moore", nickname: "Tots"}, jersey: 8},
 
-    "nitz": { name: {first: "Sara", last: "Nitz", nickname: "Nitz"}, jersey: 7},
+    "nitz": { name: {first: "Sara", last: "Nitz"}, jersey: 7},
     "noonan": { name: {first: "Amanda", last: "Noonan"}, jersey: 77},
     "perry": { name: {first: "Jenny", last: "Perry"}, jersey: 38},
     "pruitt": { name: {first: "Corinn", last: "Pruitt", nickname: "Champ"}, jersey: 6},

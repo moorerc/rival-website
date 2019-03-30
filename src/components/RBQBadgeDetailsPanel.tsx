@@ -3,7 +3,7 @@ import * as moment from "moment";
 import * as React from "react";
 import { BadgeEarned, Badges, BADGES } from "../data/Badges";
 import { Players, PLAYERS } from "../data/Players";
-import { RIVAL_2018, Roster } from "../data/Roster";
+import { RIVAL_2018, RosterList } from "../data/RosterList";
 import { getBadgesEarnedForBadge, numTimesUserEarnedBadge } from "./RBQHelpers";
 import RBQMiniUserAvatar from "./RBQMiniUserAvatar";
 
@@ -16,7 +16,7 @@ export default class RBQBadgeDetailsPanel extends React.Component<RBQBadgeDetail
         const { badge } = this.props;
         const badgeImagesBase = "/img/badgeimages/";
         const playerImagesBase = "/img/roster-2018/headshots/rival2018_headshot_";
-        const roster: Roster = RIVAL_2018;
+        const roster: RosterList = RIVAL_2018;
         const users: Players[] = _.concat(roster.players, roster.coaches);
 
         const badgesEarned = getBadgesEarnedForBadge(badge);
@@ -51,6 +51,7 @@ export default class RBQBadgeDetailsPanel extends React.Component<RBQBadgeDetail
                                 player={player}
                                 key={key}
                                 count={numTimesUserEarnedBadge(player, badge)}
+                                rosterId={roster.id}
                             />
                         ))}
                     </div>

@@ -1,0 +1,69 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+
+.roster-user-avatar {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    margin: 3px;
+    position: relative;
+
+    > .user-avatar-image {
+        flex: 1 1 auto;
+        border-radius: 50%;
+        border: 3px solid @rival-gold;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.-not-clickable {
+            cursor: default !important;
+        }
+
+        &.-invalid:not(:hover) {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            border: 3px solid @light-gray3;
+        }
+
+        &:hover {
+            border: 3px solid @rival-gold;
+            cursor: pointer;
+            
+            +.user-avatar-tag {
+                background-color: @rival-gold !important;
+            }
+        }
+    }
+
+    > .user-avatar-tag {
+        position: absolute;
+        text-align: center;
+        background-color: @rival-gold;
+        border-radius: 50%;
+
+        &.-bottom-right {
+            bottom: 0;
+            right: 0;
+            font-size: 9px;
+        }
+
+        &.-top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .bp3-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        &.-invalid {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+    }
+}

@@ -8,24 +8,32 @@ import News from "./pages/News";
 import Results from "./pages/Results";
 import Roster from "./pages/Roster";
 import "./styles/App.css";
+import * as classNames from "classnames";
 
 export default class App extends React.Component {
     render() {
+        // const isSidebarVisible = true;
+
         return (
-            <div className="rival-website-app">
-                <BrowserRouter>
-                    <React.Fragment>
-                        <Route exact={true} path="/" component={Home} />
-                        <Route path="/results" component={Results} />
-                        <Route path="/about" component={About} />
-                        <Route path="/news" component={News} />
-                        <Route path="/results" component={Results} />
-                        <Route path="/roster" component={Roster} />
-                        <Route path="/badgequest" component={BadgeQuest} />
-                        <Route path="/fiftyplates" component={FiftyPlates} />
-                    </React.Fragment>
-                </BrowserRouter>
-            </div>
+            <React.Fragment>
+                <div className={classNames("rival-website-app", {
+                    // "-sidebar-visible": isSidebarVisible
+                })}>
+                    <BrowserRouter>
+                        <React.Fragment>
+                            <Route exact={true} path="/" component={Home} />
+                            <Route path="/results" component={Results} />
+                            <Route path="/about" component={About} />
+                            <Route path="/news" component={News} />
+                            <Route path="/results" component={Results} />
+                            <Route path="/roster" component={Roster} />
+                            <Route path="/badgequest" component={BadgeQuest} />
+                            <Route path="/fiftyplates" component={FiftyPlates} />
+                        </React.Fragment>
+                    </BrowserRouter>
+                </div>
+                {/* <div className="rival-app-page-sidebar"></div> */}
+            </React.Fragment>
         );
     }
 }

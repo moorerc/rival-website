@@ -2,17 +2,18 @@ import { Tag } from "@blueprintjs/core";
 import * as classNames from "classnames";
 import * as React from "react";
 
-import { Players, PLAYERS } from "../data/Players";
+import { Players } from "../data/Players";
 
 interface RBQMiniUserAvatarProps {
     player: Players;
     count: number;
+    rosterId: string;
 }
 
 export default class RBQMiniUserAvatar extends React.Component<RBQMiniUserAvatarProps> {
   render() {
-    const { count, player } = this.props;
-    const imagesBase = "/img/roster-2018/headshots/rival2018_headshot_";
+    const { count, player, rosterId } = this.props;
+    const imagesBase = "/img/" + rosterId + "/headshots/" + rosterId + "_headshot_";
 
     return (
         <div className="rbq-mini-user-avatar">
@@ -21,10 +22,7 @@ export default class RBQMiniUserAvatar extends React.Component<RBQMiniUserAvatar
                     "-invalid": count < 1,
                 })}
                 style={{
-                    background: "url(" + imagesBase + PLAYERS[player].name.last.toLowerCase() + ".jpg" + ")",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
+                    backgroundImage: "url(" + imagesBase + player + ".jpg" + ")",
                 }}
             />
             {count > 1 && <Tag className="user-avatar-tag pt-round">{count}</Tag> }
