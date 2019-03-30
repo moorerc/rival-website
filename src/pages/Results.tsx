@@ -1,16 +1,31 @@
 import * as React from "react";
 import "../styles/App.css";
+import "../styles/Results.css";
 
-import PageBackgroundImage from "../components/basic/PageBackgroundImage";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
+import * as classNames from "classnames";
+import { isMobile } from "react-device-detect";
+import { NonIdealState } from "@blueprintjs/core";
+import { IconNames } from "@blueprintjs/icons";
 
 export default class Results extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <CombinedNavBar pageName="results" />
-        <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
-        <div className="rival-website-app-page">Results. Coming Soon.</div>
+        <div
+          className={classNames("rival-website-page rival-results-page", {
+            "-mobile": isMobile
+          })}
+        >
+          <CombinedNavBar pageName="results" />
+          <div className="results-page-body">
+            <NonIdealState
+              className="construction-empty-state"
+              title="Results. Coming soon."
+              icon={IconNames.BUILD}
+            />
+          </div>
+        </div>
       </React.Fragment>
     );
   }

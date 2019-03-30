@@ -9,6 +9,27 @@
 
   &.-mobile {
     padding: 0px;
+
+    > .roster-page-body {
+      margin: 0;
+    }
+
+    > .roster-page-body > .body-top > .section-side {
+      padding: 5px;
+    }
+
+    > .roster-page-body > .body-top > .section-middle {
+      max-width: 100%;
+
+      > .info-panel {
+        width: 100%;
+
+        > .roster-details-panel > .details-panel-card > .panel-header {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+      }
+    }
   }
 
   > .roster-page-body {
@@ -24,6 +45,14 @@
       width: 32px;
       border-radius: 50%;
       border: 1px solid @gray3;
+
+      &.-small {
+        height: 18px;
+        width: 18px;
+        padding: 4px;
+        min-height: 18px;
+        min-width: 18px;
+      }
     }
 
     > .body-top {
