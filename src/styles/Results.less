@@ -1,0 +1,21 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+.rival-results-page {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  justify-content: flex-start;
+
+  &.-mobile {
+    padding: 0px;
+
+    > .results-page-body {
+      margin: 0;
+    }
+  }
+
+  .results-page-body {
+    flex: 1 1 auto;
+  }
+}

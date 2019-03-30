@@ -2,10 +2,9 @@ import * as React from "react";
 import "../styles/App.css";
 import "../styles/Roster.css";
 
-import { Button } from "@blueprintjs/core";
+import { Button, Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 import { isMobile } from "react-device-detect";
-import WebNavBar from "../components/navigation/WebNavBar";
 
 import * as _ from "lodash";
 import { Players, PLAYERS } from "../data/Players";
@@ -15,9 +14,11 @@ import {
   getImageUrlForRoster,
   getImageUrlForPlayerAction
 } from "src/components/basic/Helpers";
-import ConstructionPage from "src/components/basic/ConstructionPage";
+// import ConstructionPage from "src/components/basic/ConstructionPage";
 import RosterUserAvatar from "src/components/roster/RosterUserAvatar";
 import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
+import * as classNames from "classnames";
+import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 interface RosterPageState {
   currentlyViewing: RosterList;
   topPanelMode: TopPanelMode;
@@ -39,44 +40,86 @@ export default class Roster extends React.Component<RosterPageState> {
     const firstYear = roster === RIVAL_ROSTERS[0];
     const lastYear = roster === RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1];
 
-    if (isMobile) {
-      return <ConstructionPage />;
-    }
-
     return (
       <React.Fragment>
-        <div className="rival-website-app-page rival-roster-page">
-          <WebNavBar pageName="roster" />
+        <div
+          className={classNames("rival-website-page rival-roster-page", {
+            "-mobile": isMobile
+          })}
+        >
+          <CombinedNavBar pageName="roster" />
           <div className="roster-page-body">
-            <div className="body-top">
-              <div className="section-side">
-                <Button
-                  className="roster-control-button"
-                  icon={IconNames.ARROW_LEFT}
-                  minimal={true}
-                  onClick={this.previousRoster}
-                  disabled={firstYear}
-                />
-              </div>
-              <div className="section-middle">
-                {!isMobile && this.renderImagePanel()}
-                {this.renderInfoPanel()}
-              </div>
-              <div className="section-side">
-                <Button
-                  className="roster-control-button"
-                  icon={IconNames.ARROW_RIGHT}
-                  minimal={true}
-                  onClick={this.nextRoster}
-                  disabled={lastYear}
-                />
-              </div>
-            </div>
-            <div className="body-bottom">
-              {this.renderPlayersSection()}
-              {this.renderOthersSection()}
-            </div>
+            {isMobile
+              ? this.renderMobileBody(firstYear, lastYear)
+              : this.renderBrowserBody(firstYear, lastYear)}
           </div>
+        </div>
+      </React.Fragment>
+    );
+  }
+
+  private renderMobileBody(firstYear: boolean, lastYear: boolean) {
+    return (
+      <React.Fragment>
+        <div className="body-top">
+          <div className="section-side">
+            <Button
+              className="roster-control-button -small"
+              icon={<Icon icon={IconNames.ARROW_LEFT} iconSize={8} />}
+              minimal={true}
+              onClick={this.previousRoster}
+              disabled={firstYear}
+            />
+          </div>
+          <div className="section-middle" />
+          <div className="section-side">
+            <Button
+              className="roster-control-button -small"
+              icon={<Icon icon={IconNames.ARROW_RIGHT} iconSize={8} />}
+              minimal={true}
+              onClick={this.nextRoster}
+              disabled={lastYear}
+            />
+          </div>
+        </div>
+        <div className="body-bottom">
+          {/* {this.renderPlayersSection()}
+          {this.renderOthersSection()} */}
+        </div>
+      </React.Fragment>
+    );
+  }
+
+  private renderBrowserBody(firstYear: boolean, lastYear: boolean) {
+    return (
+      <React.Fragment>
+        <div className="body-top">
+          <div className="section-side">
+            <Button
+              className="roster-control-button"
+              icon={IconNames.ARROW_LEFT}
+              minimal={true}
+              onClick={this.previousRoster}
+              disabled={firstYear}
+            />
+          </div>
+          <div className="section-middle">
+            {this.renderImagePanel()}
+            {this.renderInfoPanel()}
+          </div>
+          <div className="section-side">
+            <Button
+              className="roster-control-button"
+              icon={IconNames.ARROW_RIGHT}
+              minimal={true}
+              onClick={this.nextRoster}
+              disabled={lastYear}
+            />
+          </div>
+        </div>
+        <div className="body-bottom">
+          {this.renderPlayersSection()}
+          {this.renderOthersSection()}
         </div>
       </React.Fragment>
     );
