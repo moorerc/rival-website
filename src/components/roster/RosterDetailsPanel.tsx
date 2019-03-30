@@ -109,6 +109,7 @@ export default class RosterDetailsPanel extends React.Component<
                       player={PLAYERS[captain]}
                       rosterId={roster.id}
                       hideBadge={true}
+                      key={roster.id + "_" + captain}
                     />
                   ))}
                 </div>
@@ -122,6 +123,7 @@ export default class RosterDetailsPanel extends React.Component<
                       player={PLAYERS[coach]}
                       rosterId={roster.id}
                       hideBadge={true}
+                      key={roster.id + "_" + coach}
                     />
                   ))}
                 </div>
@@ -134,8 +136,10 @@ export default class RosterDetailsPanel extends React.Component<
                   <div className="title-divider" />
                 </div>
                 <div className="highlights-section-items">
-                  {roster.highlights.map(highlight => (
-                    <div className="highlight-item">{highlight}</div>
+                  {roster.highlights.map((highlight, index) => (
+                    <div className="highlight-item" key={index}>
+                      {highlight}
+                    </div>
                   ))}
                 </div>
               </div>

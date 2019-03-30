@@ -5,7 +5,6 @@ import "../styles/Roster.css";
 import { Button } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 import { isMobile } from "react-device-detect";
-import WebNavBar from "../components/navigation/WebNavBar";
 
 import * as _ from "lodash";
 import { Players, PLAYERS } from "../data/Players";
@@ -15,9 +14,11 @@ import {
   getImageUrlForRoster,
   getImageUrlForPlayerAction
 } from "src/components/basic/Helpers";
-import ConstructionPage from "src/components/basic/ConstructionPage";
+// import ConstructionPage from "src/components/basic/ConstructionPage";
 import RosterUserAvatar from "src/components/roster/RosterUserAvatar";
 import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
+import * as classNames from "classnames";
+import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 interface RosterPageState {
   currentlyViewing: RosterList;
   topPanelMode: TopPanelMode;
@@ -39,14 +40,23 @@ export default class Roster extends React.Component<RosterPageState> {
     const firstYear = roster === RIVAL_ROSTERS[0];
     const lastYear = roster === RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1];
 
-    if (isMobile) {
-      return <ConstructionPage />;
-    }
+    // if (isMobile) {
+    //   return (
+    //     <React.Fragment>
+    //       <MobileHeaderNavBar pageName="roster" />
+    //       <ConstructionPage />
+    //     </React.Fragment>
+    //   );
+    // }
 
     return (
       <React.Fragment>
-        <div className="rival-website-app-page rival-roster-page">
-          <WebNavBar pageName="roster" />
+        <div
+          className={classNames("rival-website-page rival-roster-page", {
+            "-mobile": isMobile
+          })}
+        >
+          <CombinedNavBar pageName="roster" />
           <div className="roster-page-body">
             <div className="body-top">
               <div className="section-side">
