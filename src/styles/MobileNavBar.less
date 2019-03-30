@@ -1,0 +1,22 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.mobile-nav-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 40%;
+  justify-content: space-evenly;
+  font-family: "Oswald", sans-serif;
+
+  .mobile-nav-bar-item {
+    display: flex;
+    margin: 5px 0;
+
+    > .nav-button {
+      flex: 1 1 auto;
+    }
+  }
+}

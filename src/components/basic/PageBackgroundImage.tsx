@@ -1,25 +1,26 @@
 import * as React from "react";
-import "../styles/App.css";
+import "../../styles/App.css";
 
 interface PageBackgroundImageProps {
-    backgroundImage: string;
+  backgroundImage: string;
 }
 
-export default class PageBackgroundImage extends React.Component<PageBackgroundImageProps> {
+export default class PageBackgroundImage extends React.Component<
+  PageBackgroundImageProps
+> {
   render() {
     return (
-        <React.Fragment>
-            <div
-                className="rival-website-app-page-bgimage"
-                style={{
-                    background: "url(" + this.props.backgroundImage + ")",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                }}
-
-            />
-        </React.Fragment>
+      <React.Fragment>
+        <div
+          className="rival-website-page-bgimage"
+          style={{
+            background: "url(" + this.props.backgroundImage + ")",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover"
+          }}
+        />
+      </React.Fragment>
     );
   }
 }
