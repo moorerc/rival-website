@@ -83,8 +83,8 @@ export default class Roster extends React.Component<RosterPageState> {
           </div>
         </div>
         <div className="body-bottom">
-          {this.renderPlayersSection()}
-          {this.renderOthersSection()}
+          {/* {this.renderPlayersSection()}
+          {this.renderOthersSection()} */}
         </div>
       </React.Fragment>
     );
