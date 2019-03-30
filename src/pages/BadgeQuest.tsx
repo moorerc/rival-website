@@ -12,7 +12,7 @@ import RBQTeamStatsDetailsPanel from "../components/RBQTeamStatsDetailsPanel";
 import { BADGES, Badges } from "../data/Badges";
 import { Players } from "../data/Players";
 import { rbq2018BadgesActivated } from "../data/RBQ2018";
-import { RIVAL_2018, Roster } from "../data/Roster";
+import { RIVAL_2018, RosterList } from "../data/RosterList";
 import "../styles/BadgeQuest.css";
 
 enum MainPanel {
@@ -34,7 +34,7 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
     };
 
     render() {
-        const roster: Roster = RIVAL_2018;
+        const roster: RosterList = RIVAL_2018;
         const users: Players[] = _.concat(roster.players, roster.coaches);
         const badgesActivated: Badges[] = rbq2018BadgesActivated;
 
