@@ -19,6 +19,7 @@ import RosterUserAvatar from "src/components/roster/RosterUserAvatar";
 import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
 import * as classNames from "classnames";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
+import PlayersList from "src/components/roster/PlayersList";
 interface RosterPageState {
   currentlyViewing: RosterList;
   topPanelMode: TopPanelMode;
@@ -83,6 +84,7 @@ export default class Roster extends React.Component<RosterPageState> {
           </div>
         </div>
         <div className="body-bottom">
+          <PlayersList rosterList={this.state.currentlyViewing} />
           {/* {this.renderPlayersSection()}
           {this.renderOthersSection()} */}
         </div>
