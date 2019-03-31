@@ -30,6 +30,10 @@
         }
       }
     }
+
+    > .roster-page-body > .body-bottom {
+      margin-top: 0px;
+    }
   }
 
   > .roster-page-body {
@@ -58,7 +62,8 @@
     > .body-top {
       display: flex;
       flex-direction: row;
-      height: 65%;
+      flex: 1 1 auto;
+      // height: 65%;
       justify-content: center;
       // align-items: center;
       padding: 30px 0;
@@ -104,13 +109,13 @@
     }
 
     > .body-bottom {
-      flex: 0 1 auto;
+      flex: 0 0 auto;
       height: 40%;
       flex-direction: column;
       display: flex;
-      justify-content: center;
       margin-top: 15px;
       align-items: center;
+      overflow-y: scroll;
 
       .players-section {
         display: flex;

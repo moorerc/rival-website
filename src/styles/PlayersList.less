@@ -1,0 +1,24 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+.players-list {
+  width: 100%;
+  padding: 10px;
+
+  .players-list-card {
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > .card-title {
+      flex: 1 1 auto;
+      font-family: "Oswald", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      color: @gray1;
+      letter-spacing: 1px;
+    }
+  }
+}
