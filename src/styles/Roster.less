@@ -1,6 +1,28 @@
 @import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
 @import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
 
+@import "./variables.less";
+
+.mobile-roster-select-menu {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+.mobile-roster-select-menu-popover {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+
+  .bp3-menu {
+    min-width: 113px;
+    margin-left: -5px;
+  }
+
+  .bp3-menu-item {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .rival-roster-page {
   display: flex;
   flex-direction: column;
@@ -12,6 +34,7 @@
 
     > .roster-page-body {
       margin: 0;
+      overflow-y: scroll;
     }
 
     > .roster-page-body > .body-top > .section-side {
@@ -33,6 +56,26 @@
 
     > .roster-page-body > .body-bottom {
       margin-top: 0px;
+    }
+
+    .mobile-roster-button-group {
+      border-bottom: 1px solid @light-gray3;
+      .bp3-button {
+        border-radius: 0;
+
+        .bp3-button-text {
+          font-family: "Oswald", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        &.bp3-active {
+          background-color: @white;
+          .bp3-icon {
+            color: @rival-gold;
+          }
+        }
+      }
     }
   }
 
@@ -115,7 +158,6 @@
       display: flex;
       margin-top: 15px;
       align-items: center;
-      overflow-y: scroll;
 
       .players-section {
         display: flex;

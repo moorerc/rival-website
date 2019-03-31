@@ -2,7 +2,15 @@ import * as React from "react";
 import "../styles/App.css";
 import "../styles/Roster.css";
 
-import { Button, Icon } from "@blueprintjs/core";
+import {
+  Button,
+  Icon,
+  ButtonGroup,
+  Popover,
+  Position,
+  Menu,
+  MenuItem
+} from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 import { isMobile } from "react-device-detect";
 
@@ -23,6 +31,7 @@ import PlayersList from "src/components/roster/PlayersList";
 interface RosterPageState {
   currentlyViewing: RosterList;
   topPanelMode: TopPanelMode;
+  rosterViewMode: RosterViewMode;
   selectedPlayer?: Players;
 }
 
@@ -30,10 +39,17 @@ enum TopPanelMode {
   "ROSTER_VIEW",
   "PLAYER_VIEW"
 }
+
+enum RosterViewMode {
+  "ROSTER_IMAGE",
+  "ROSTER_INFO",
+  "ROSTER_PLAYERS"
+}
 export default class Roster extends React.Component<RosterPageState> {
   state: RosterPageState = {
     currentlyViewing: RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1],
-    topPanelMode: TopPanelMode.ROSTER_VIEW
+    topPanelMode: TopPanelMode.ROSTER_VIEW,
+    rosterViewMode: RosterViewMode.ROSTER_IMAGE
   };
 
   render() {
@@ -59,32 +75,89 @@ export default class Roster extends React.Component<RosterPageState> {
     );
   }
 
+  private rosterSelectMenu() {
+    return (
+      <Menu>
+        {RIVAL_ROSTERS.map(roster => (
+          <MenuItem
+            text={roster.displayName}
+            onClick={() => this.handleSelectRoster(roster)}
+          />
+        ))}
+      </Menu>
+    );
+  }
+
   private renderMobileBody(firstYear: boolean, lastYear: boolean) {
+    const { rosterViewMode } = this.state;
     return (
       <React.Fragment>
-        <div className="body-top">
-          <div className="section-side">
+        <ButtonGroup
+          minimal={true}
+          fill={true}
+          className="mobile-roster-button-group"
+        >
+          <Popover
+            content={this.rosterSelectMenu()}
+            position={Position.BOTTOM}
+            minimal={true}
+            className="mobile-roster-select-menu"
+            popoverClassName="mobile-roster-select-menu-popover"
+          >
             <Button
-              className="roster-control-button -small"
-              icon={<Icon icon={IconNames.ARROW_LEFT} iconSize={8} />}
-              minimal={true}
-              onClick={this.previousRoster}
-              disabled={firstYear}
+              rightIcon={IconNames.CHEVRON_DOWN}
+              text={this.state.currentlyViewing.displayName}
             />
+          </Popover>
+          <Button
+            icon={IconNames.MEDIA}
+            onClick={() =>
+              this.changeRosterViewMode(RosterViewMode.ROSTER_IMAGE)
+            }
+            active={rosterViewMode === RosterViewMode.ROSTER_IMAGE}
+          />
+          <Button
+            icon={IconNames.INFO_SIGN}
+            onClick={() =>
+              this.changeRosterViewMode(RosterViewMode.ROSTER_INFO)
+            }
+            active={rosterViewMode === RosterViewMode.ROSTER_INFO}
+          />
+          <Button
+            icon={IconNames.PEOPLE}
+            onClick={() =>
+              this.changeRosterViewMode(RosterViewMode.ROSTER_PLAYERS)
+            }
+            active={rosterViewMode === RosterViewMode.ROSTER_PLAYERS}
+          />
+        </ButtonGroup>
+        {rosterViewMode === RosterViewMode.ROSTER_IMAGE && (
+          <div className="body-top">
+            <div className="section-side">
+              <Button
+                className="roster-control-button -small"
+                icon={<Icon icon={IconNames.ARROW_LEFT} iconSize={8} />}
+                minimal={true}
+                onClick={this.previousRoster}
+                disabled={firstYear}
+              />
+            </div>
+            <div className="section-middle" />
+            <div className="section-side">
+              <Button
+                className="roster-control-button -small"
+                icon={<Icon icon={IconNames.ARROW_RIGHT} iconSize={8} />}
+                minimal={true}
+                onClick={this.nextRoster}
+                disabled={lastYear}
+              />
+            </div>
           </div>
-          <div className="section-middle" />
-          <div className="section-side">
-            <Button
-              className="roster-control-button -small"
-              icon={<Icon icon={IconNames.ARROW_RIGHT} iconSize={8} />}
-              minimal={true}
-              onClick={this.nextRoster}
-              disabled={lastYear}
-            />
-          </div>
-        </div>
+        )}
         <div className="body-bottom">
-          <PlayersList rosterList={this.state.currentlyViewing} />
+          {rosterViewMode === RosterViewMode.ROSTER_PLAYERS && (
+            <PlayersList rosterList={this.state.currentlyViewing} />
+          )}
           {/* {this.renderPlayersSection()}
           {this.renderOthersSection()} */}
         </div>
@@ -319,5 +392,9 @@ export default class Roster extends React.Component<RosterPageState> {
       topPanelMode: TopPanelMode.PLAYER_VIEW,
       selectedPlayer: player
     });
+  };
+
+  private changeRosterViewMode = (mode: RosterViewMode) => {
+    this.setState({ rosterViewMode: mode });
   };
 }
