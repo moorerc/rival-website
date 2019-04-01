@@ -2,15 +2,7 @@ import * as React from "react";
 import "../styles/App.css";
 import "../styles/Roster.css";
 
-import {
-  Button,
-  Icon,
-  ButtonGroup,
-  Popover,
-  Position,
-  Menu,
-  MenuItem
-} from "@blueprintjs/core";
+import { Button } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 import { isMobile } from "react-device-detect";
 
@@ -22,12 +14,11 @@ import {
   getImageUrlForRoster,
   getImageUrlForPlayerAction
 } from "src/components/basic/Helpers";
-// import ConstructionPage from "src/components/basic/ConstructionPage";
 import RosterUserAvatar from "src/components/roster/RosterUserAvatar";
 import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
 import * as classNames from "classnames";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
-import PlayersList from "src/components/roster/PlayersList";
+import MobileRosterBody from "src/components/roster/MobileRosterBody";
 interface RosterPageState {
   currentlyViewing: RosterList;
   topPanelMode: TopPanelMode;
@@ -35,21 +26,22 @@ interface RosterPageState {
   selectedPlayer?: Players;
 }
 
-enum TopPanelMode {
+export enum TopPanelMode {
   "ROSTER_VIEW",
   "PLAYER_VIEW"
 }
 
-enum RosterViewMode {
-  "ROSTER_IMAGE",
-  "ROSTER_INFO",
-  "ROSTER_PLAYERS"
+export enum RosterViewMode {
+  // ROSTER_IMAGE = "ROSTER_IMAGE",
+  ROSTER_INFO = "ROSTER_INFO",
+  ROSTER_PLAYERS = "ROSTER_PLAYERS",
+  PLAYER_INFO = "PLAYER_INFO"
 }
 export default class Roster extends React.Component<RosterPageState> {
   state: RosterPageState = {
     currentlyViewing: RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1],
     topPanelMode: TopPanelMode.ROSTER_VIEW,
-    rosterViewMode: RosterViewMode.ROSTER_IMAGE
+    rosterViewMode: RosterViewMode.ROSTER_INFO
   };
 
   render() {
@@ -67,7 +59,7 @@ export default class Roster extends React.Component<RosterPageState> {
           <CombinedNavBar pageName="roster" />
           <div className="roster-page-body">
             {isMobile
-              ? this.renderMobileBody(firstYear, lastYear)
+              ? this.renderMobileBody()
               : this.renderBrowserBody(firstYear, lastYear)}
           </div>
         </div>
@@ -75,93 +67,17 @@ export default class Roster extends React.Component<RosterPageState> {
     );
   }
 
-  private rosterSelectMenu() {
+  private renderMobileBody() {
+    const { currentlyViewing, rosterViewMode } = this.state;
     return (
-      <Menu>
-        {RIVAL_ROSTERS.map(roster => (
-          <MenuItem
-            text={roster.displayName}
-            onClick={() => this.handleSelectRoster(roster)}
-          />
-        ))}
-      </Menu>
-    );
-  }
-
-  private renderMobileBody(firstYear: boolean, lastYear: boolean) {
-    const { rosterViewMode } = this.state;
-    return (
-      <React.Fragment>
-        <ButtonGroup
-          minimal={true}
-          fill={true}
-          className="mobile-roster-button-group"
-        >
-          <Popover
-            content={this.rosterSelectMenu()}
-            position={Position.BOTTOM}
-            minimal={true}
-            className="mobile-roster-select-menu"
-            popoverClassName="mobile-roster-select-menu-popover"
-          >
-            <Button
-              rightIcon={IconNames.CHEVRON_DOWN}
-              text={this.state.currentlyViewing.displayName}
-            />
-          </Popover>
-          <Button
-            icon={IconNames.MEDIA}
-            onClick={() =>
-              this.changeRosterViewMode(RosterViewMode.ROSTER_IMAGE)
-            }
-            active={rosterViewMode === RosterViewMode.ROSTER_IMAGE}
-          />
-          <Button
-            icon={IconNames.INFO_SIGN}
-            onClick={() =>
-              this.changeRosterViewMode(RosterViewMode.ROSTER_INFO)
-            }
-            active={rosterViewMode === RosterViewMode.ROSTER_INFO}
-          />
-          <Button
-            icon={IconNames.PEOPLE}
-            onClick={() =>
-              this.changeRosterViewMode(RosterViewMode.ROSTER_PLAYERS)
-            }
-            active={rosterViewMode === RosterViewMode.ROSTER_PLAYERS}
-          />
-        </ButtonGroup>
-        {rosterViewMode === RosterViewMode.ROSTER_IMAGE && (
-          <div className="body-top">
-            <div className="section-side">
-              <Button
-                className="roster-control-button -small"
-                icon={<Icon icon={IconNames.ARROW_LEFT} iconSize={8} />}
-                minimal={true}
-                onClick={this.previousRoster}
-                disabled={firstYear}
-              />
-            </div>
-            <div className="section-middle" />
-            <div className="section-side">
-              <Button
-                className="roster-control-button -small"
-                icon={<Icon icon={IconNames.ARROW_RIGHT} iconSize={8} />}
-                minimal={true}
-                onClick={this.nextRoster}
-                disabled={lastYear}
-              />
-            </div>
-          </div>
-        )}
-        <div className="body-bottom">
-          {rosterViewMode === RosterViewMode.ROSTER_PLAYERS && (
-            <PlayersList rosterList={this.state.currentlyViewing} />
-          )}
-          {/* {this.renderPlayersSection()}
-          {this.renderOthersSection()} */}
-        </div>
-      </React.Fragment>
+      <MobileRosterBody
+        roster={currentlyViewing}
+        rosterViewMode={rosterViewMode}
+        selectRoster={this.handleSelectRoster}
+        selectNextRoster={this.nextRoster}
+        selectPreviousRoster={this.previousRoster}
+        selectRosterViewMode={this.changeRosterViewMode}
+      />
     );
   }
 
@@ -323,47 +239,6 @@ export default class Roster extends React.Component<RosterPageState> {
       topPanelMode: TopPanelMode.ROSTER_VIEW
     });
   };
-
-  //   private renderTopPanelRosterView = () => {
-  //     const roster = this.state.currentlyViewing;
-  //     const rosterImage = getImageUrlForRoster(roster.id);
-
-  //     return (
-  //         <React.Fragment>
-  //             <div className="image-panel">
-  //                 <div
-  //                     className="roster-team-photo"
-  //                     style={{ backgroundImage: "url(" + rosterImage + ")"}}
-  //                 />
-  //             </div>
-  //             <RosterDetailsPanel roster={roster} />
-  //         </React.Fragment>
-  //     );
-  //   }
-
-  //   private renderTopPanelPlayerView = () => {
-  //     const roster = this.state.currentlyViewing;
-  //     const player = this.state.selectedPlayer;
-  //     // const playerImage = getImageUrlForPlayer(rosterId, playerId);
-
-  //     if (!player) {
-  //         return undefined;
-  //     }
-
-  //     const playerActionImage = getImageUrlForPlayerAction(roster.id, player);
-
-  //     return (
-  //         <React.Fragment>
-  //             <div className="image-panel">
-  //                 <div
-  //                     className="roster-team-photo"
-  //                     style={{ backgroundImage: "url(" + playerActionImage + ")"}}
-  //                 />
-  //             </div>
-  //             <PlayerDetailsPanel player={PLAYERS[player]} playerId={player} rosterId={roster.id} />
-  //         </React.Fragment>
-  //     );
-  //   }
 
   private nextRoster = () => {
     const index = _.findIndex(RIVAL_ROSTERS, this.state.currentlyViewing);
