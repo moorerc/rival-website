@@ -24,11 +24,11 @@ export default class PlayersList extends React.Component<PlayersListProps> {
             interactive={false}
             elevation={Elevation.ONE}
             className="players-list-card"
+            key={key}
           >
             <RosterUserAvatar
               playerId={player}
               player={PLAYERS[player]}
-              key={key}
               rosterId={this.props.rosterList.id}
               //   onClick={() => this.selectPlayer(player)}
               //   noColor={this.state.selectedPlayer !== player}
