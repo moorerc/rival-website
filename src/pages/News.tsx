@@ -24,6 +24,7 @@ export default class News extends React.Component {
               title="News. Coming soon."
               icon={IconNames.BUILD}
             />
+            {/* <a className="twitter-timeline" href="https://twitter.com/RivalUltimate?ref_src=twsrc%5Etfw" /> */}
           </div>
         </div>
       </React.Fragment>

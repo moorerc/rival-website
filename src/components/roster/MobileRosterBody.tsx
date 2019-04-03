@@ -22,15 +22,17 @@ import { RosterViewMode } from "src/pages/Roster";
 import PlayersList from "./PlayersList";
 import { getImageUrlForRoster, openLinkInNewTab } from "../basic/Helpers";
 import RosterUserAvatar from "./RosterUserAvatar";
-import { PLAYERS } from "src/data/Players";
+import { PLAYERS, Players } from "src/data/Players";
 
 interface MobileRosterBodyProps {
   roster: RosterList;
   rosterViewMode: RosterViewMode;
+  selectedPlayer?: Players;
   selectRoster: (roster: RosterList) => void;
   selectNextRoster: () => void;
   selectPreviousRoster: () => void;
   selectRosterViewMode: (rosterViewMode: RosterViewMode) => void;
+  selectPlayer: (player: Players) => void;
 }
 
 export default class MobileRosterBody extends React.Component<
@@ -54,17 +56,22 @@ export default class MobileRosterBody extends React.Component<
   }
 
   private renderContent() {
-    const { roster, rosterViewMode } = this.props;
+    const { roster, rosterViewMode, selectedPlayer } = this.props;
+    console.log(selectedPlayer);
 
     switch (rosterViewMode) {
       case RosterViewMode.ROSTER_PLAYERS:
-        return <PlayersList rosterList={roster} />;
+        return <PlayersList onSelectPlayer={this.props.selectPlayer} rosterList={roster} />;
       case RosterViewMode.ROSTER_INFO:
         return (
           <React.Fragment>
             {this.renderImagePanel()}
             {this.renderInfoPanel()}
           </React.Fragment>
+        );
+      case RosterViewMode.PLAYER_INFO:
+        return (
+          <div>player info view: {selectedPlayer ? PLAYERS[selectedPlayer].name.first : ""}</div>
         );
       default:
         return <div />;
@@ -107,8 +114,10 @@ export default class MobileRosterBody extends React.Component<
         />
         <Button
           icon={IconNames.PERSON}
+          onClick={() =>
+            this.props.selectRosterViewMode(RosterViewMode.PLAYER_INFO)
+          }
           active={rosterViewMode === RosterViewMode.PLAYER_INFO}
-          disabled={true}
         />
       </ButtonGroup>
     );
@@ -175,14 +184,6 @@ export default class MobileRosterBody extends React.Component<
       </div>
     );
   };
-
-  //   <div className="info-panel">
-  //     <RosterDetailsPanel
-  //       roster={roster}
-  //       shrunk={false}
-  //       onSelectRoster={selectRoster}
-  //     />
-  //   </div>
 
   private renderInfoPanel = () => {
     const { roster } = this.props;
