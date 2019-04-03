@@ -68,15 +68,17 @@ export default class Roster extends React.Component<RosterPageState> {
   }
 
   private renderMobileBody() {
-    const { currentlyViewing, rosterViewMode } = this.state;
+    const { currentlyViewing, rosterViewMode, selectedPlayer } = this.state;
     return (
       <MobileRosterBody
         roster={currentlyViewing}
         rosterViewMode={rosterViewMode}
+        selectedPlayer={selectedPlayer}
         selectRoster={this.handleSelectRoster}
         selectNextRoster={this.nextRoster}
         selectPreviousRoster={this.previousRoster}
         selectRosterViewMode={this.changeRosterViewMode}
+        selectPlayer={this.selectPlayer}
       />
     );
   }
@@ -263,9 +265,11 @@ export default class Roster extends React.Component<RosterPageState> {
   };
 
   private selectPlayer = (player: Players) => {
+    console.log(player);
     this.setState({
       topPanelMode: TopPanelMode.PLAYER_VIEW,
-      selectedPlayer: player
+      selectedPlayer: player,
+      rosterViewMode: RosterViewMode.PLAYER_INFO,
     });
   };
 

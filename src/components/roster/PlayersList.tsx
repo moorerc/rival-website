@@ -10,6 +10,7 @@ import { getDisplayNameForPlayer } from "../basic/Helpers";
 
 interface PlayersListProps {
   rosterList: RosterList;
+  onSelectPlayer: (player: Players) => void;
 }
 
 export default class PlayersList extends React.Component<PlayersListProps> {
@@ -25,13 +26,12 @@ export default class PlayersList extends React.Component<PlayersListProps> {
             elevation={Elevation.ONE}
             className="players-list-card"
             key={key}
+            onClick={() => this.props.onSelectPlayer(player)}
           >
             <RosterUserAvatar
               playerId={player}
               player={PLAYERS[player]}
               rosterId={this.props.rosterList.id}
-              //   onClick={() => this.selectPlayer(player)}
-              //   noColor={this.state.selectedPlayer !== player}
             />
             <div className="card-title">
               {getDisplayNameForPlayer(PLAYERS[player])}
