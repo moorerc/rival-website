@@ -23,7 +23,7 @@ interface RosterPageState {
   currentlyViewing: RosterList;
   topPanelMode: TopPanelMode;
   rosterViewMode: RosterViewMode;
-  selectedPlayer?: Players;
+  selectedPlayer: Players;
 }
 
 export enum TopPanelMode {
@@ -41,7 +41,8 @@ export default class Roster extends React.Component<RosterPageState> {
   state: RosterPageState = {
     currentlyViewing: RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1],
     topPanelMode: TopPanelMode.ROSTER_VIEW,
-    rosterViewMode: RosterViewMode.ROSTER_INFO
+    rosterViewMode: RosterViewMode.ROSTER_INFO,
+    selectedPlayer: RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1].players[0]
   };
 
   render() {
@@ -142,7 +143,6 @@ export default class Roster extends React.Component<RosterPageState> {
     const roster = this.state.currentlyViewing;
     const rows = _.chunk(roster.players, roster.players.length / 3);
     const topRow = rows[0];
-    // const middleRow = rows.length > 3 ? rows[2].concat(rows[3]) : rows[2];
     const middleRow =
       rows.length > 3
         ? rows[1].concat(rows[2].slice(0, rows[3].length))
@@ -162,7 +162,7 @@ export default class Roster extends React.Component<RosterPageState> {
               key={key}
               rosterId={roster.id}
               onClick={() => this.selectPlayer(player)}
-              noColor={this.state.selectedPlayer !== player}
+              noColor={this.state.selectedPlayer !== player || this.state.rosterViewMode !== RosterViewMode.PLAYER_INFO}
             />
           ))}
         </div>
@@ -237,7 +237,7 @@ export default class Roster extends React.Component<RosterPageState> {
   private handleSelectRoster = (roster: RosterList) => {
     this.setState({
       currentlyViewing: roster,
-      selectedPlayer: undefined,
+      selectedPlayer: roster.players[0],
       topPanelMode: TopPanelMode.ROSTER_VIEW
     });
   };
@@ -247,7 +247,7 @@ export default class Roster extends React.Component<RosterPageState> {
     if (index != undefined && index + 1 < RIVAL_ROSTERS.length) {
       this.setState({
         currentlyViewing: RIVAL_ROSTERS[index + 1],
-        selectedPlayer: undefined,
+        selectedPlayer: RIVAL_ROSTERS[index + 1].players[0],
         topPanelMode: TopPanelMode.ROSTER_VIEW
       });
     }
@@ -258,7 +258,7 @@ export default class Roster extends React.Component<RosterPageState> {
     if (index != undefined && index > 0) {
       this.setState({
         currentlyViewing: RIVAL_ROSTERS[index - 1],
-        selectedPlayer: undefined,
+        selectedPlayer: RIVAL_ROSTERS[index - 1].players[0],
         topPanelMode: TopPanelMode.ROSTER_VIEW
       });
     }

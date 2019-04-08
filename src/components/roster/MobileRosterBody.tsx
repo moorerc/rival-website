@@ -11,23 +11,25 @@ import {
   Icon,
   Card,
   Tag,
-  Intent
+  Intent,
+  Classes
 } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 
+import * as classNames from "classnames";
 import * as _ from "lodash";
 // import PlayersList from "src/components/roster/PlayersList";
 import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";
 import { RosterViewMode } from "src/pages/Roster";
 import PlayersList from "./PlayersList";
-import { getImageUrlForRoster, openLinkInNewTab } from "../basic/Helpers";
+import { getImageUrlForRoster, openLinkInNewTab, getImageUrlForPlayerAction, getDisplayNameForPlayer } from "../basic/Helpers";
 import RosterUserAvatar from "./RosterUserAvatar";
 import { PLAYERS, Players } from "src/data/Players";
 
 interface MobileRosterBodyProps {
   roster: RosterList;
   rosterViewMode: RosterViewMode;
-  selectedPlayer?: Players;
+  selectedPlayer: Players;
   selectRoster: (roster: RosterList) => void;
   selectNextRoster: () => void;
   selectPreviousRoster: () => void;
@@ -38,6 +40,7 @@ interface MobileRosterBodyProps {
 export default class MobileRosterBody extends React.Component<
   MobileRosterBodyProps
 > {
+
   render() {
     // const { roster } = this.props;
     // const firstYear = roster === RIVAL_ROSTERS[0];
@@ -56,8 +59,7 @@ export default class MobileRosterBody extends React.Component<
   }
 
   private renderContent() {
-    const { roster, rosterViewMode, selectedPlayer } = this.props;
-    console.log(selectedPlayer);
+    const { roster, rosterViewMode } = this.props;
 
     switch (rosterViewMode) {
       case RosterViewMode.ROSTER_PLAYERS:
@@ -71,7 +73,10 @@ export default class MobileRosterBody extends React.Component<
         );
       case RosterViewMode.PLAYER_INFO:
         return (
-          <div>player info view: {selectedPlayer ? PLAYERS[selectedPlayer].name.first : ""}</div>
+          <React.Fragment>
+            {this.renderPlayerImagePanel()}
+            {this.renderPlayerInfoPanel()}
+          </React.Fragment>
         );
       default:
         return <div />;
@@ -106,7 +111,7 @@ export default class MobileRosterBody extends React.Component<
           active={rosterViewMode === RosterViewMode.ROSTER_INFO}
         />
         <Button
-          icon={IconNames.PEOPLE}
+          icon={IconNames.PROPERTIES}
           onClick={() =>
             this.props.selectRosterViewMode(RosterViewMode.ROSTER_PLAYERS)
           }
@@ -182,6 +187,137 @@ export default class MobileRosterBody extends React.Component<
           style={{ backgroundImage: "url(" + imageUrl + ")" }}
         />
       </div>
+    );
+  };
+
+  private renderPlayerImagePanel = () => {
+    const { roster, selectedPlayer } = this.props;
+    let imageUrl = getImageUrlForPlayerAction(roster.id, selectedPlayer);
+
+    return (
+      <div className="image-panel -player">
+        <div
+          className="roster-team-photo"
+          style={{ backgroundImage: "url(" + imageUrl + ")" }}
+        />
+      </div>
+    );
+  };
+
+  private renderPlayerInfoPanel = () => {
+    const { selectedPlayer } = this.props;
+
+    return (
+      <React.Fragment>
+        <Card className={classNames("panel-section -title", Classes.ELEVATION_2)}>
+        {getDisplayNameForPlayer(PLAYERS[selectedPlayer])}
+        </Card>
+        <Card className="panel-section">
+          <div className="panel-section-title">
+            <div className="title-text">Basic Info</div>
+            <div className="title-divider" />
+          </div>
+          <div className="leadership-section">
+            <div className="section-label">Jersey Number:</div>
+            <div className="section-items">
+              <Tag
+                intent={Intent.NONE}
+                minimal={true}
+                className="section-tag"
+              >
+                {PLAYERS[selectedPlayer].jersey}
+              </Tag>
+            </div>
+          </div>
+          <div className="leadership-section">
+            <div className="section-label">Position:</div>
+            <div className="section-items">
+              <Tag
+                intent={Intent.PRIMARY}
+                minimal={true}
+                className="section-tag"
+              >
+                {"Unknown"}
+              </Tag>
+            </div>
+          </div>
+          <div className="leadership-section">
+            <div className="section-label">Years on Rival:</div>
+            <div className="section-items">
+              <Tag
+                intent={Intent.WARNING}
+                minimal={true}
+                className="section-tag"
+              >
+                {2015}
+              </Tag>
+              <Tag
+                intent={Intent.WARNING}
+                minimal={true}
+                className="section-tag"
+              >
+                {2016}
+              </Tag>
+              <Tag
+                intent={Intent.WARNING}
+                minimal={true}
+                className="section-tag"
+              >
+                {2017}
+              </Tag>
+              <Tag
+                intent={Intent.WARNING}
+                minimal={true}
+                className="section-tag"
+              >
+                {2018}
+              </Tag>
+            </div>
+          </div>
+        </Card>
+        <Card className="panel-section">
+          <div className="panel-section-title">
+            <div className="title-text">Fun Facts</div>
+            <div className="title-divider" />
+          </div>
+          <div className="leadership-section">
+            <div className="section-label">Profession:</div>
+            <div className="section-items">
+              <Tag
+                intent={Intent.NONE}
+                minimal={true}
+                className="section-tag"
+              >
+                Engineer
+              </Tag>
+            </div>
+          </div>
+          <div className="leadership-section">
+            <div className="section-label">Spirit Animal:</div>
+            <div className="section-items">
+              <Tag
+                intent={Intent.NONE}
+                minimal={true}
+                className="section-tag"
+              >
+                Gecko
+              </Tag>
+            </div>
+          </div>
+          <div className="leadership-section">
+            <div className="section-label">Autobiography Title:</div>
+            <div className="section-items">
+              <Tag
+                intent={Intent.NONE}
+                minimal={true}
+                className="section-tag"
+              >
+                Coming soon
+              </Tag>
+            </div>
+          </div>
+        </Card>
+      </React.Fragment>
     );
   };
 

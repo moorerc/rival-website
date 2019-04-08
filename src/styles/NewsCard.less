@@ -1,0 +1,64 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.news-card {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+
+    .card-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .news-type-icon {
+            background-color: @light-gray4;
+            color: @gray4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 10px;
+            border-radius: 3px 0 0 3px;
+        }
+    }
+
+    .card-right {
+        flex: 1 1 auto;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .title {
+            flex: 1 1 auto;
+            color: @dark-gray5;
+            font-size: 12px;
+            padding: 0 5px;
+        }
+
+        .divider {
+            background-color: @light-gray1;
+            height: 2px;
+            margin: 4px 0;
+        }
+
+        .subtitle {
+            flex: 1 1 auto;
+            color: @gray3;
+            font-size: 8px;
+            font-style: italic;
+            display: flex;
+            flex-direction: row;
+            padding: 0 5px;
+
+            .subtitle-left {
+                flex: 1 1 auto;
+            }
+        }
+    }
+}
