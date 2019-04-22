@@ -10,21 +10,21 @@ const GAMES_ESC_2015: Game[] = [
     date: "July 11 2015 10:45AM EST",
     score_us: 7,
     score_them: 11,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.HOTMETAL,
     date: "July 11 2015 12:30PM EST",
     score_us: 7,
     score_them: 11,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.UNDERGROUND,
     date: "July 11 2015 2:15PM EST",
     score_us: 9,
     score_them: 13,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.DISH,
@@ -55,35 +55,35 @@ const GAMES_MOTOWN_2015: Game[] = [
     date: "July 25 2015 10:40AM EST",
     score_us: 13,
     score_them: 2,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.NOTOROIOUSCLE,
     date: "July 25 2015 12:20PM EST",
     score_us: 13,
     score_them: 1,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.REVOLOUTION,
     date: "July 25 2015 2:00PM EST",
     score_us: 13,
     score_them: 2,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.REVOLOUTION,
     date: "July 26 2015 9:00AM EST",
     score_us: 15,
     score_them: 5,
-    type: GameType.BRACKET_PLAY
+    type: GameType.BRACKET
   },
   {
     opponent: Teams.NOTOROIOUSCLE,
     date: "July 26 2015 11:00AM EST",
     score_us: 15,
     score_them: 5,
-    type: GameType.BRACKET_PLAY
+    type: GameType.BRACKET
   }
 ];
 
@@ -93,42 +93,42 @@ const GAMES_HEAVYWEIGHTS_2015: Game[] = [
     date: "August 8, 2015 10:45AM CST",
     score_us: 13,
     score_them: 4,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.DISH,
     date: "August 8, 2015 12:30PM CST",
     score_us: 12,
     score_them: 8,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.REVOLOUTION,
     date: "August 8, 2015 2:15PM CST",
     score_us: 13,
     score_them: 4,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.HEIST,
     date: "August 8, 2015 4:00PM CST",
     score_us: 6,
     score_them: 13,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.NOTOROIOUSCLE,
     date: "August 9, 2015 9:00AM CST",
     score_us: 15,
     score_them: 1,
-    type: GameType.BRACKET_PLAY
+    type: GameType.BRACKET
   },
   {
     opponent: Teams.NEMESIS,
     date: "August 9, 2015 11:00AM CST",
     score_us: 10,
     score_them: 15,
-    type: GameType.BRACKET_PLAY
+    type: GameType.BRACKET
   },
   {
     opponent: Teams.SMALLBATCH,
@@ -145,28 +145,28 @@ const GAMES_SECTIONALS_2015: Game[] = [
     date: "August 29, 2015 10:50AM EST",
     score_us: 13,
     score_them: 5,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.BELLE,
     date: "August 29, 2015 12:40PM EST",
     score_us: 13,
     score_them: 7,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.DAYTON,
     date: "August 29, 2015 2:30PM EST",
     score_us: 13,
     score_them: 1,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.FLO,
     date: "August 29, 2015 4:20PM EST",
     score_us: 13,
     score_them: 2,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   }
 ];
 
@@ -176,47 +176,48 @@ const GAMES_REGIONALS_2015: Game[] = [
     date: "Sept 12, 2015 9:00AM EST",
     score_us: 13,
     score_them: 0,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.SPICYTUNA,
     date: "Sept 12, 2015 10:45AM EST",
     score_us: 13,
     score_them: 4,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.NEMESIS,
     date: "Sept 12, 2015 12:30PM EST",
     score_us: 8,
     score_them: 12,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.DISH,
     date: "Sept 12, 2015 4:00PM EST",
     score_us: 13,
     score_them: 9,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.NOTOROIOUSCLE,
     date: "Sept 13, 2015 9:45AM EST",
     score_us: 13,
     score_them: 4,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   },
   {
     opponent: Teams.BELLE,
     date: "Sept 13, 2015 11:30AM EST",
     score_us: 13,
     score_them: 6,
-    type: GameType.POOL_PLAY
+    type: GameType.POOL
   }
 ];
 
 export const TOURNAMENTS_2015: TournamentList = {
   "2015-bici": {
+    id: "2015-bici",
     name: "Beachfront Invitational",
     location: {
       city: "Joliet",
@@ -234,6 +235,7 @@ export const TOURNAMENTS_2015: TournamentList = {
     games: GAMES_BICI_2015
   },
   "2015-esc": {
+    id: "2015-esc",
     name: "Elite Select Challenge",
     location: {
       city: "Hilliard",
@@ -250,6 +252,7 @@ export const TOURNAMENTS_2015: TournamentList = {
     games: GAMES_ESC_2015
   },
   "2015-motown": {
+    id: "2015-motown",
     name: "Motown Throwdown",
     location: {
       city: "Sylvania",
@@ -266,6 +269,7 @@ export const TOURNAMENTS_2015: TournamentList = {
     games: GAMES_MOTOWN_2015
   },
   "2015-chc": {
+    id: "2015-chc",
     name: "Chicago Heavyweights",
     location: {
       city: "Rockford",
@@ -282,6 +286,7 @@ export const TOURNAMENTS_2015: TournamentList = {
     games: GAMES_HEAVYWEIGHTS_2015
   },
   "2015-sectionals": {
+    id: "2015-sectionals",
     name: "East Plains Sectionals",
     location: {
       city: "Versailles",
@@ -299,6 +304,7 @@ export const TOURNAMENTS_2015: TournamentList = {
     games: GAMES_SECTIONALS_2015
   },
   "2015-regionals": {
+    id: "2015-regionals",
     name: "Great Lakes Regionals",
     location: {
       city: "West Chester",

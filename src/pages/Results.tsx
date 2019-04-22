@@ -7,6 +7,7 @@ import * as classNames from "classnames";
 import { isMobile } from "react-device-detect";
 import { NonIdealState } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
+import MobileResultsBody from "src/components/results/MobileResultsBody";
 
 export default class Results extends React.Component {
   render() {
@@ -19,11 +20,15 @@ export default class Results extends React.Component {
         >
           <CombinedNavBar pageName="results" />
           <div className="results-page-body">
-            <NonIdealState
-              className="construction-empty-state"
-              title="Results. Coming soon."
-              icon={IconNames.BUILD}
-            />
+            {isMobile ? (
+              <MobileResultsBody />
+            ) : (
+              <NonIdealState
+                className="construction-empty-state"
+                title="Results. Coming soon."
+                icon={IconNames.BUILD}
+              />
+            )}
           </div>
         </div>
       </React.Fragment>

@@ -1,9 +1,9 @@
 import { Teams } from "./Teams";
 
 export enum GameType {
-  "POOL_PLAY",
-  "BRACKET_PLAY",
-  "CONSOLATION"
+  "POOL" = "POOL",
+  "BRACKET" = "BRACKET",
+  "CONSOLATION" = "CONSOLATION"
 }
 
 export interface Game {

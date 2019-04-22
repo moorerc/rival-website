@@ -2,6 +2,18 @@ import { RIVAL_ROSTERS } from "src/data/RosterList";
 import * as _ from "lodash";
 import { Player } from "src/data/Players";
 
+export function getImageUrlForOpponent(teamId: string) {
+  return "/img/team-logos/" + teamId + ".jpg";
+}
+
+export function getImageUrlForTournament(tournamentId: string) {
+  return "/img/tournament-logos/" + tournamentId + ".jpg";
+}
+
+export function getImageUrlForTournamentTeamPic(tournamentId: string) {
+  return "/img/tournament-team-pics/" + tournamentId + ".jpg";
+}
+
 export function getImageUrlForRoster(rosterId: string) {
   return "/img/" + rosterId + "/" + rosterId + ".jpg";
 }
