@@ -24,7 +24,6 @@ export default class App extends React.Component {
           <BrowserRouter>
             <React.Fragment>
               <Route exact={true} path="/" component={Home} />
-              <Route path="/results" component={Results} />
               <Route path="/about" component={About} />
               <Route path="/news" component={News} />
               <Route path="/results" component={Results} />
