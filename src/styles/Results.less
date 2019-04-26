@@ -1,6 +1,28 @@
 @import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
 @import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
 
+@import "./variables.less";
+
+.mobile-results-select-menu {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+
+.mobile-results-select-menu-popover {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+
+  .bp3-menu {
+    min-width: 113px;
+    margin-left: -5px;
+  }
+
+  .bp3-menu-item {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .rival-results-page {
   display: flex;
   flex-direction: column;
@@ -16,6 +38,31 @@
       display: flex;
       flex-direction: column;
       width: 100%;
+    }
+
+    .mobile-results-button-group {
+      border-bottom: 1px solid @light-gray3;
+      flex: 0 0 auto;
+      align-items: center;
+      padding: 2px;
+
+      .bp3-button {
+        border-radius: 0;
+
+        .bp3-button-text {
+          font-family: "Oswald", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          min-width: 70px;
+        }
+
+        &.bp3-active {
+          background-color: @white;
+          .bp3-icon {
+            color: @rival-gold;
+          }
+        }
+      }
     }
   }
 

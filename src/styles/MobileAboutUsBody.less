@@ -1,0 +1,63 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.mobile-about-us-body-scroll-container {
+  flex: 1 1 auto;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: @light-gray5;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  > .section {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .section-title {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 5px;
+
+      > .title {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: "Oswald", sans-serif;
+        color: @gray1;
+        margin: 0 10px;
+      }
+
+      > .spacer {
+        border-top: 1px solid @gray3;
+        flex: 1 1 auto;
+      }
+    }
+
+    > .section-text {
+      font-family: "Oswald", sans-serif;
+      color: @gray1;
+      font-size: 10px;
+      width: 90%;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+  .team-pic {
+    height: 180px;
+    width: 100%;
+    border-radius: 3px;
+    margin: 10px 0;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
