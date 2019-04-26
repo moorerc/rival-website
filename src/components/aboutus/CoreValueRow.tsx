@@ -16,7 +16,7 @@ export default class CoreValueRow extends React.Component<CoreValueRowProps> {
       return (
         <div className="core-value-row">
           <div
-            className="explanation-container"
+            className="explanation-container bp3-elevation-2"
             style={{
               color: coreValue.color,
               borderColor: coreValue.color
@@ -24,18 +24,21 @@ export default class CoreValueRow extends React.Component<CoreValueRowProps> {
           >
             {coreValue.explanation}
           </div>
-          <div
-            className="image"
-            style={{
-              // backgroundImage: `linear-gradient(${coreValue.color +
-              //   "50"}, ${coreValue.color +
-              //   "50"}), filter(url(/img/core-values/${coreValue.name.toLowerCase()}.jpg), grayscale(100%))`
-              backgroundImage: `url(/img/core-values/${coreValue.name.toLowerCase()}.jpg)`
-              // backgroundColor: "white",
-              // backgroundBlendMode: "multiply, lumniosity"
-            }}
-          />
-          <div className="image-overlay" />
+          <div className="image-container">
+            <div
+              className="image"
+              style={{
+                backgroundImage: `url(/img/core-values/${coreValue.name.toLowerCase()}.jpg)`
+              }}
+            />
+            <div
+              className="image-overlay"
+              style={{
+                backgroundImage: `linear-gradient(${coreValue.color +
+                  "50"}, ${coreValue.color + "50"})`
+              }}
+            />
+          </div>
           <div
             className="symbol"
             style={{
@@ -63,16 +66,23 @@ export default class CoreValueRow extends React.Component<CoreValueRowProps> {
         >
           <div className="-letter">{coreValue.name.toUpperCase()}</div>
         </div>
+        <div className="image-container">
+          <div
+            className="image"
+            style={{
+              backgroundImage: `url(/img/core-values/${coreValue.name.toLowerCase()}.jpg)`
+            }}
+          />
+          <div
+            className="image-overlay"
+            style={{
+              backgroundImage: `linear-gradient(${coreValue.color +
+                "70"}, ${coreValue.color + "70"})`
+            }}
+          />
+        </div>
         <div
-          className="image"
-          style={{
-            backgroundImage:
-              "url(/img/core-values/" + coreValue.name.toLowerCase() + ".jpg)",
-            backgroundColor: coreValue.color + "30"
-          }}
-        />
-        <div
-          className="explanation-container"
+          className="explanation-container bp3-elevation-2"
           style={{
             color: coreValue.color,
             borderColor: coreValue.color

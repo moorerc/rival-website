@@ -4,14 +4,15 @@
 @import "./variables.less";
 
 .core-value-row {
-  // border: 1px solid black;
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 10px;
+  min-height: 105px;
 
   > .symbol {
-    border: 1px solid blue;
+    // border-width: 2px;
+    // border-style: solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,13 +21,7 @@
     width: 8%;
 
     > .-letter {
-      // border: 1px solid blue;
-      // border-radius: 50%;
-      // height: 30px;
-      // width: 30px;
       text-align: center;
-      // line-height: 26px;
-
       transform: rotate(-90deg);
       letter-spacing: 1px;
       font-family: "Oswald", sans-serif;
@@ -38,20 +33,27 @@
     }
   }
 
-  > .image {
-    // border: 1px solid green;
+  > .image-container {
     flex: 0 0 auto;
-    width: 27%;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    // filter: grayscale(100%);
-  }
+    width: 34%;
+    position: relative;
 
-  > .image-overlay {
-    position: absolute;
-    width: 27%;
+    > .image {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%);
+    }
+
+    > .image-overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+    }
   }
 
   > .explanation-container {
@@ -59,10 +61,13 @@
     border-style: solid;
     flex: 1 1 auto;
     font-family: "Oswald", sans-serif;
-    font-size: 10px;
-    width: 65%;
+    font-size: 9px;
+    width: 58%;
     text-align: center;
     padding: 10px;
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
