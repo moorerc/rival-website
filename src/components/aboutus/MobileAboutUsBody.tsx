@@ -23,7 +23,7 @@ export default class MobileAboutUsBody extends React.Component<
               <span className="spacer" />
             </div>
             <div
-              className="team-pic"
+              className="team-pic bp3-elevation-2"
               style={{ backgroundImage: "url(/img/MeetRival.jpg)" }}
             />
             <div className="section-text">
