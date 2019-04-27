@@ -1,11 +1,11 @@
 import * as React from "react";
-import "../../styles/News.css";
 import "../../styles/MobileAboutUsBody.css";
 
 import * as _ from "lodash";
 import { CORE_VALUES } from "src/data/CoreValues";
 import CoreValueRow from "./CoreValueRow";
-// import { Card } from "@blueprintjs/core";
+import SocialMediaButton from "./SocialMediaButton";
+import TestimonialRow from "./TestimonialRow";
 
 interface MobileAboutUsBodyProps {}
 
@@ -31,9 +31,20 @@ export default class MobileAboutUsBody extends React.Component<
               Michigan/Ohio. Founded in 2015, as alumni from University of
               Michigan and The Ohio State University ... blah blah blah.
             </div>
+            <div className="testimonials">
+              <TestimonialRow
+                quote="hilarious and heartfelt. the must see comedy of the summer"
+                author="New York Times"
+              />
+              <TestimonialRow quote="iris loves me" author="Caitlin Harley" />
+              <TestimonialRow
+                quote="eh. this team is alright."
+                author="Sara Scott"
+              />
+            </div>
           </div>
           <div className="section">
-            <div className="section-title">
+            <div className="section-title -extra-spacing">
               <span className="spacer" />
               <span className="title">Our Core Values</span>
               <span className="spacer" />
@@ -51,6 +62,24 @@ export default class MobileAboutUsBody extends React.Component<
               <span className="spacer" />
               <span className="title">Get In Touch</span>
               <span className="spacer" />
+            </div>
+            <div className="social-media-links">
+              <SocialMediaButton
+                link="https://www.facebook.com/rivalultimate/"
+                image="/img/social-logos/facebook_gold.png"
+              />
+              <SocialMediaButton
+                link="https://twitter.com/RivalUltimate/"
+                image="/img/social-logos/twitter_gold.png"
+              />
+              <SocialMediaButton
+                link="https://www.instagram.com/rivalultimate/"
+                image="/img/social-logos/instagram_gold.png"
+              />
+              <SocialMediaButton
+                link="mailto:captains@rivalultimate.com"
+                image="/img/social-logos/email_gold.png"
+              />
             </div>
             <div className="section-text">
               Follow us on social media or contact our leadership team by
