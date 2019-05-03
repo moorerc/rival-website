@@ -1,6 +1,8 @@
 import { TypedAction } from "redoodle";
+import { RosterList } from "src/data/RosterList";
 
 export const PREFIX = "@rival-website";
 
-export const INCREMENT_ENTHUSIASM = TypedAction.define(`${PREFIX}//INCREMENT_ENTHUSIASM`)<{}>();
-export const DECREMENT_ENTHUSIASM = TypedAction.define(`${PREFIX}//DECREMENT_ENTHUSIASM`)<{}>();
+export const SELECT_ROSTER = TypedAction.define(`${PREFIX}//SELECT_ROSTER`)<
+  RosterList
+>();

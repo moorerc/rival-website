@@ -5,7 +5,7 @@ import { Card, Icon, Text } from "@blueprintjs/core";
 
 import * as _ from "lodash";
 import * as moment from "moment";
-import { NewsItem } from "src/data/news/News";
+import { NewsItem, NEWS_TYPE } from "src/data/news/News";
 import { IconNames } from "@blueprintjs/icons";
 
 interface NewsCardProps {
@@ -18,7 +18,14 @@ export default class NewsCard extends React.Component<NewsCardProps> {
     return (
       <Card className="news-card" elevation={1} onClick={this.handleOpenLink}>
         <div className="card-left">
-          <Icon className="news-type-icon" icon={IconNames.DOCUMENT} />
+          <Icon
+            className="news-type-icon"
+            icon={
+              newsItem.type === NEWS_TYPE.VIDEO
+                ? IconNames.VIDEO
+                : IconNames.DOCUMENT
+            }
+          />
         </div>
         <div className="card-right">
           <div className="title">

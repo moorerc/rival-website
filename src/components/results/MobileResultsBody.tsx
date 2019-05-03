@@ -47,7 +47,6 @@ export default class MobileResultsBody extends React.Component<
 
   private renderViewModeButtonGroup() {
     const { roster, searchString, showAll } = this.props;
-    console.log(showAll ? "All Results" : roster.displayName);
     return (
       <ButtonGroup
         minimal={true}

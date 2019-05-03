@@ -47,7 +47,6 @@ export function isPlayerACoach(rosterId: string, playerId: string) {
   if (!roster) {
     return false;
   }
-  // console.log(_.findIndex(roster.coaches, Players[playerId]));
   if (_.indexOf(roster.coaches, playerId) >= 0) {
     return true;
   } else {
