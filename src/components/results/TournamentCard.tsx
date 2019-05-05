@@ -30,13 +30,9 @@ export default class TournamentCard extends React.Component<
     const imageUrlTeamPic = getImageUrlForTournamentTeamPic(tournament.id);
 
     return (
-      <Card
-        className="tournament-card"
-        elevation={1}
-        onClick={this.handleOpenLink}
-      >
+      <Card className="tournament-card" elevation={1}>
         <div className="card-header">
-          <div className="image">
+          <div className="image" onClick={this.handleOpenLink}>
             <div
               className="tournamentLogo"
               style={{ backgroundImage: "url(" + imageUrl + ")" }}

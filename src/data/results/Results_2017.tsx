@@ -260,7 +260,7 @@ export const TOURNAMENTS_2017: TournamentList = {
       end: "July 9, 2017"
     },
     link: "https://play.usaultimate.org/events/TCT-Pro-Elite-Challenge-2017/",
-    result: undefined,
+    result: 13,
     sanctioned: true,
     games: GAMES_PEC_2017
   },
@@ -277,7 +277,7 @@ export const TOURNAMENTS_2017: TournamentList = {
       end: "July 30, 2017"
     },
     link: "https://play.usaultimate.org/events/TCT-Select-Flight-Invite-2017/",
-    result: undefined,
+    result: 1,
     sanctioned: true,
     games: GAMES_SFI_2017
   },
@@ -295,7 +295,7 @@ export const TOURNAMENTS_2017: TournamentList = {
     },
     link:
       "https://play.usaultimate.org/events/TCT-Elite-Select-Challenge-2017/",
-    result: undefined,
+    result: 10,
     sanctioned: true,
     games: GAMES_ESC_2017
   },
@@ -331,7 +331,7 @@ export const TOURNAMENTS_2017: TournamentList = {
     },
     link:
       "https://play.usaultimate.org/events/USA-Ultimate-National-Championships-2017/",
-    result: undefined,
+    result: 9,
     sanctioned: true,
     games: GAMES_NATIONALS_2017
   }

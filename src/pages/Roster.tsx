@@ -19,13 +19,29 @@ import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
 import * as classNames from "classnames";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 import MobileRosterBody from "src/components/roster/MobileRosterBody";
-interface RosterPageState {
-  currentlyViewing: RosterList;
-  topPanelMode: TopPanelMode;
-  rosterViewMode: RosterViewMode;
-  selectedPlayer: Players;
-}
+import { RouteComponentProps } from "react-router-dom";
+import { connect, Dispatch } from "react-redux";
+import { RootState } from "src/state/store";
+import { SELECT_ROSTER } from "src/state/actions";
 
+export namespace Roster {
+  export interface OwnProps extends RouteComponentProps {}
+  export interface StateProps {
+    selectedRoster: RosterList;
+  }
+
+  export interface ConnectedActions {
+    selectRoster: (roster: RosterList) => void;
+  }
+
+  export type Props = OwnProps & StateProps & ConnectedActions;
+
+  export interface State {
+    topPanelMode: TopPanelMode;
+    rosterViewMode: RosterViewMode;
+    selectedPlayer: Players;
+  }
+}
 export enum TopPanelMode {
   "ROSTER_VIEW",
   "PLAYER_VIEW"
@@ -37,16 +53,18 @@ export enum RosterViewMode {
   ROSTER_PLAYERS = "ROSTER_PLAYERS",
   PLAYER_INFO = "PLAYER_INFO"
 }
-export default class Roster extends React.Component<RosterPageState> {
-  state: RosterPageState = {
-    currentlyViewing: RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1],
-    topPanelMode: TopPanelMode.ROSTER_VIEW,
-    rosterViewMode: RosterViewMode.ROSTER_INFO,
-    selectedPlayer: RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1].players[0]
-  };
+class RosterInternal extends React.Component<Roster.Props, Roster.State> {
+  constructor(props: Roster.Props) {
+    super(props);
+    this.state = {
+      topPanelMode: TopPanelMode.ROSTER_VIEW,
+      rosterViewMode: RosterViewMode.ROSTER_INFO,
+      selectedPlayer: this.props.selectedRoster.players[0]
+    };
+  }
 
   render() {
-    const roster = this.state.currentlyViewing;
+    const roster = this.props.selectedRoster;
     const firstYear = roster === RIVAL_ROSTERS[0];
     const lastYear = roster === RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1];
 
@@ -69,14 +87,19 @@ export default class Roster extends React.Component<RosterPageState> {
   }
 
   private renderMobileBody() {
-    const { currentlyViewing, rosterViewMode, selectedPlayer } = this.state;
+    const { rosterViewMode, selectedPlayer } = this.state;
+    const { selectedRoster } = this.props;
+
     return (
       <MobileRosterBody
-        roster={currentlyViewing}
+        roster={selectedRoster}
         rosterViewMode={rosterViewMode}
+        viewResults={this.handleViewResults}
         selectedPlayer={selectedPlayer}
         selectRoster={this.handleSelectRoster}
         selectNextRoster={this.nextRoster}
+        selectNextPlayer={this.nextPlayer}
+        selectPreviousPlayer={this.previousPlayer}
         selectPreviousRoster={this.previousRoster}
         selectRosterViewMode={this.changeRosterViewMode}
         selectPlayer={this.selectPlayer}
@@ -120,7 +143,7 @@ export default class Roster extends React.Component<RosterPageState> {
   }
 
   private renderOthersSection = () => {
-    const roster = this.state.currentlyViewing;
+    const roster = this.props.selectedRoster;
     return (
       <div className="players-section">
         <div className="row">
@@ -140,7 +163,7 @@ export default class Roster extends React.Component<RosterPageState> {
   };
 
   private renderPlayersSection = () => {
-    const roster = this.state.currentlyViewing;
+    const roster = this.props.selectedRoster;
     const rows = _.chunk(roster.players, roster.players.length / 3);
     const topRow = rows[0];
     const middleRow =
@@ -162,7 +185,10 @@ export default class Roster extends React.Component<RosterPageState> {
               key={key}
               rosterId={roster.id}
               onClick={() => this.selectPlayer(player)}
-              noColor={this.state.selectedPlayer !== player || this.state.rosterViewMode !== RosterViewMode.PLAYER_INFO}
+              noColor={
+                this.state.selectedPlayer !== player ||
+                this.state.rosterViewMode !== RosterViewMode.PLAYER_INFO
+              }
             />
           ))}
         </div>
@@ -195,7 +221,7 @@ export default class Roster extends React.Component<RosterPageState> {
   };
 
   private renderImagePanel = () => {
-    const roster = this.state.currentlyViewing;
+    const roster = this.props.selectedRoster;
     const player = this.state.selectedPlayer;
 
     let imageUrl = "";
@@ -216,7 +242,7 @@ export default class Roster extends React.Component<RosterPageState> {
   };
 
   private renderInfoPanel = () => {
-    const roster = this.state.currentlyViewing;
+    const roster = this.props.selectedRoster;
     const player = this.state.selectedPlayer;
     const playerView = this.state.topPanelMode === TopPanelMode.PLAYER_VIEW;
 
@@ -236,44 +262,102 @@ export default class Roster extends React.Component<RosterPageState> {
 
   private handleSelectRoster = (roster: RosterList) => {
     this.setState({
-      currentlyViewing: roster,
       selectedPlayer: roster.players[0],
       topPanelMode: TopPanelMode.ROSTER_VIEW
     });
+    this.props.selectRoster(roster);
+  };
+
+  private nextPlayer = () => {
+    const roster = this.props.selectedRoster.players.concat(
+      this.props.selectedRoster.coaches
+    );
+    let i;
+    _.forEach(roster, (player, index) => {
+      if (player === this.state.selectedPlayer) {
+        i = index;
+      }
+    });
+
+    if (i != undefined && i + 1 < roster.length) {
+      this.setState({
+        selectedPlayer: roster[i + 1]
+      });
+    }
+  };
+
+  private previousPlayer = () => {
+    const roster = this.props.selectedRoster.players.concat(
+      this.props.selectedRoster.coaches
+    );
+    let i;
+    _.forEach(roster, (player, index) => {
+      if (player === this.state.selectedPlayer) {
+        i = index;
+      }
+    });
+
+    if (i != undefined && i - 1 >= 0) {
+      this.setState({
+        selectedPlayer: roster[i - 1]
+      });
+    }
   };
 
   private nextRoster = () => {
-    const index = _.findIndex(RIVAL_ROSTERS, this.state.currentlyViewing);
+    const index = _.findIndex(RIVAL_ROSTERS, this.props.selectedRoster);
     if (index != undefined && index + 1 < RIVAL_ROSTERS.length) {
       this.setState({
-        currentlyViewing: RIVAL_ROSTERS[index + 1],
         selectedPlayer: RIVAL_ROSTERS[index + 1].players[0],
         topPanelMode: TopPanelMode.ROSTER_VIEW
       });
+      this.props.selectRoster(RIVAL_ROSTERS[index + 1]);
     }
   };
 
   private previousRoster = () => {
-    const index = _.findIndex(RIVAL_ROSTERS, this.state.currentlyViewing);
+    const index = _.findIndex(RIVAL_ROSTERS, this.props.selectedRoster);
     if (index != undefined && index > 0) {
       this.setState({
-        currentlyViewing: RIVAL_ROSTERS[index - 1],
         selectedPlayer: RIVAL_ROSTERS[index - 1].players[0],
         topPanelMode: TopPanelMode.ROSTER_VIEW
       });
+      this.props.selectRoster(RIVAL_ROSTERS[index - 1]);
     }
   };
 
   private selectPlayer = (player: Players) => {
-    console.log(player);
     this.setState({
       topPanelMode: TopPanelMode.PLAYER_VIEW,
       selectedPlayer: player,
-      rosterViewMode: RosterViewMode.PLAYER_INFO,
+      rosterViewMode: RosterViewMode.PLAYER_INFO
     });
   };
 
   private changeRosterViewMode = (mode: RosterViewMode) => {
     this.setState({ rosterViewMode: mode });
   };
+
+  private handleViewResults = () => {
+    this.props.history.push("/results/");
+  };
 }
+
+const mapStateToProps = (state: RootState): Roster.StateProps => {
+  return {
+    selectedRoster: state.rivalWebsiteAppState.selectedRoster
+  };
+};
+
+const mapDispatchToProps = (
+  dispatch: Dispatch<RootState>
+): Roster.ConnectedActions => ({
+  selectRoster: (roster: RosterList) => {
+    dispatch(SELECT_ROSTER(roster));
+  }
+});
+
+export const Roster = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(RosterInternal);

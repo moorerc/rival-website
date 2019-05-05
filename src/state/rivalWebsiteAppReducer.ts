@@ -1,28 +1,27 @@
 import { Reducer, setWith, TypedReducer } from "redoodle";
-import { DECREMENT_ENTHUSIASM, INCREMENT_ENTHUSIASM } from "./actions";
+import { SELECT_ROSTER } from "./actions";
+import { RosterList, RIVAL_2018 } from "src/data/RosterList";
 
 export interface RivalWebsiteAppState {
-    enthusiasmLevel: number;
-    languageName: string;
+  selectedRoster: RosterList;
 }
 
 export const INITIAL_STATE: RivalWebsiteAppState = {
-    enthusiasmLevel: 1,
-    languageName: "world",
+  selectedRoster: RIVAL_2018
 };
 
-export const reduceRivalWebsiteAppState: Reducer<RivalWebsiteAppState> = TypedReducer.builder<RivalWebsiteAppState>()
-    .withHandler(INCREMENT_ENTHUSIASM.TYPE, (state: RivalWebsiteAppState) => {
-        return setWith(state, {
-                enthusiasmLevel: state.enthusiasmLevel + 1,
-            });
-    })
-    .withHandler(DECREMENT_ENTHUSIASM.TYPE, (state: RivalWebsiteAppState) => {
-        return setWith(state, {
-                enthusiasmLevel: state.enthusiasmLevel - 1,
-            });
-    })
-    .withDefaultHandler((state) => {
-        return state !== undefined ? state : INITIAL_STATE;
-    })
-    .build();
+export const reduceRivalWebsiteAppState: Reducer<
+  RivalWebsiteAppState
+> = TypedReducer.builder<RivalWebsiteAppState>()
+  .withHandler(
+    SELECT_ROSTER.TYPE,
+    (state: RivalWebsiteAppState, selectedRoster: RosterList) => {
+      return setWith(state, {
+        selectedRoster: selectedRoster
+      });
+    }
+  )
+  .withDefaultHandler(state => {
+    return state !== undefined ? state : INITIAL_STATE;
+  })
+  .build();

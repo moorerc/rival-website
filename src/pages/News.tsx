@@ -8,32 +8,46 @@ import * as classNames from "classnames";
 import * as _ from "lodash";
 import * as moment from "moment";
 import MobileNewsBody from "src/components/news/MobileNewsBody";
-import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";
+import { RosterList } from "src/data/RosterList";
 import { ALL_NEWS, NewsItem } from "src/data/news/News";
 import { NonIdealState } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
+import { RootState } from "src/state/store";
+import { Dispatch, connect } from "react-redux";
+import { SELECT_ROSTER } from "src/state/actions";
 
-interface NewsPageState {
-  roster: RosterList;
-  searchFilterString: string;
-  showAll: boolean;
+export namespace News {
+  export interface StateProps {
+    selectedRoster: RosterList;
+  }
+
+  export interface ConnectedActions {
+    selectRoster: (roster: RosterList) => void;
+  }
+
+  export type Props = StateProps & ConnectedActions;
+
+  export interface State {
+    searchFilterString: string;
+    showAll: boolean;
+  }
 }
 
-export default class News extends React.Component<NewsPageState> {
-  state: NewsPageState = {
-    roster: RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1],
+class NewsInternal extends React.Component<News.Props, News.State> {
+  state: News.State = {
     searchFilterString: "",
-    showAll: true
+    showAll: false
   };
 
   render() {
-    const { roster, searchFilterString, showAll } = this.state;
+    const { selectedRoster } = this.props;
+    const { searchFilterString, showAll } = this.state;
 
     let seasonNews = ALL_NEWS;
     if (!showAll) {
       seasonNews = _.filter(
         ALL_NEWS,
-        news => moment(news.date).year() === roster.year
+        news => moment(news.date).year() === selectedRoster.year
       );
     }
     const filteredNews = _.filter(seasonNews, news =>
@@ -54,7 +68,7 @@ export default class News extends React.Component<NewsPageState> {
             {isMobile ? (
               <MobileNewsBody
                 news={news}
-                roster={roster}
+                roster={selectedRoster}
                 selectRoster={this.handleSelectRoster}
                 changeSearchString={this.handleSearchChange}
                 searchString={searchFilterString}
@@ -76,9 +90,9 @@ export default class News extends React.Component<NewsPageState> {
 
   private handleSelectRoster = (roster: RosterList) => {
     this.setState({
-      roster,
       showAll: false
     });
+    this.props.selectRoster(roster);
   };
 
   private handleSearchChange = (searchFilterString: string) => {
@@ -93,3 +107,22 @@ export default class News extends React.Component<NewsPageState> {
     return moment(newsItem.date);
   }
 }
+
+const mapStateToProps = (state: RootState): News.StateProps => {
+  return {
+    selectedRoster: state.rivalWebsiteAppState.selectedRoster
+  };
+};
+
+const mapDispatchToProps = (
+  dispatch: Dispatch<RootState>
+): News.ConnectedActions => ({
+  selectRoster: (roster: RosterList) => {
+    dispatch(SELECT_ROSTER(roster));
+  }
+});
+
+export const News = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(NewsInternal);

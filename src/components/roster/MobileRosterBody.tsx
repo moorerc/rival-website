@@ -12,7 +12,8 @@ import {
   Card,
   Tag,
   Intent,
-  Classes
+  Classes,
+  Tooltip
 } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 
@@ -22,17 +23,28 @@ import * as _ from "lodash";
 import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";
 import { RosterViewMode } from "src/pages/Roster";
 import PlayersList from "./PlayersList";
-import { getImageUrlForRoster, openLinkInNewTab, getImageUrlForPlayerAction, getDisplayNameForPlayer } from "../basic/Helpers";
+import {
+  getImageUrlForRoster,
+  openLinkInNewTab,
+  getImageUrlForPlayerAction,
+  getDisplayNameForPlayer,
+  isPlayerACoach,
+  getYearsOnRival
+} from "../basic/Helpers";
 import RosterUserAvatar from "./RosterUserAvatar";
 import { PLAYERS, Players } from "src/data/Players";
+import MobileHeader from "../basic/MobileHeader";
 
 interface MobileRosterBodyProps {
   roster: RosterList;
   rosterViewMode: RosterViewMode;
   selectedPlayer: Players;
+  viewResults: () => void;
   selectRoster: (roster: RosterList) => void;
   selectNextRoster: () => void;
   selectPreviousRoster: () => void;
+  selectNextPlayer: () => void;
+  selectPreviousPlayer: () => void;
   selectRosterViewMode: (rosterViewMode: RosterViewMode) => void;
   selectPlayer: (player: Players) => void;
 }
@@ -40,6 +52,7 @@ interface MobileRosterBodyProps {
 export default class MobileRosterBody extends React.Component<
   MobileRosterBodyProps
 > {
+  private scrollContainerRef = React.createRef<HTMLDivElement>();
 
   render() {
     // const { roster } = this.props;
@@ -49,7 +62,10 @@ export default class MobileRosterBody extends React.Component<
     return (
       <React.Fragment>
         {this.renderViewModeButtonGroup()}
-        <div className="mobile-roster-body-scroll-container">
+        <div
+          className="mobile-roster-body-scroll-container"
+          ref={this.scrollContainerRef}
+        >
           {this.renderContent()}
         </div>
         {this.props.rosterViewMode === RosterViewMode.ROSTER_INFO &&
@@ -63,7 +79,12 @@ export default class MobileRosterBody extends React.Component<
 
     switch (rosterViewMode) {
       case RosterViewMode.ROSTER_PLAYERS:
-        return <PlayersList onSelectPlayer={this.props.selectPlayer} rosterList={roster} />;
+        return (
+          <PlayersList
+            onSelectPlayer={this.props.selectPlayer}
+            rosterList={roster}
+          />
+        );
       case RosterViewMode.ROSTER_INFO:
         return (
           <React.Fragment>
@@ -105,23 +126,32 @@ export default class MobileRosterBody extends React.Component<
         </Popover>
         <Button
           icon={IconNames.INFO_SIGN}
-          onClick={() =>
-            this.props.selectRosterViewMode(RosterViewMode.ROSTER_INFO)
-          }
+          onClick={() => {
+            this.props.selectRosterViewMode(RosterViewMode.ROSTER_INFO);
+            if (this.scrollContainerRef.current) {
+              this.scrollContainerRef.current.scrollTop = 0;
+            }
+          }}
           active={rosterViewMode === RosterViewMode.ROSTER_INFO}
         />
         <Button
           icon={IconNames.PROPERTIES}
-          onClick={() =>
-            this.props.selectRosterViewMode(RosterViewMode.ROSTER_PLAYERS)
-          }
+          onClick={() => {
+            this.props.selectRosterViewMode(RosterViewMode.ROSTER_PLAYERS);
+            if (this.scrollContainerRef.current) {
+              this.scrollContainerRef.current.scrollTop = 0;
+            }
+          }}
           active={rosterViewMode === RosterViewMode.ROSTER_PLAYERS}
         />
         <Button
           icon={IconNames.PERSON}
-          onClick={() =>
-            this.props.selectRosterViewMode(RosterViewMode.PLAYER_INFO)
-          }
+          onClick={() => {
+            this.props.selectRosterViewMode(RosterViewMode.PLAYER_INFO);
+            if (this.scrollContainerRef.current) {
+              this.scrollContainerRef.current.scrollTop = 0;
+            }
+          }}
           active={rosterViewMode === RosterViewMode.PLAYER_INFO}
         />
       </ButtonGroup>
@@ -156,7 +186,8 @@ export default class MobileRosterBody extends React.Component<
           icon={<Icon icon={IconNames.CALENDAR} iconSize={10} />}
           text="Sched/Results"
           className="footer-button"
-          disabled={true}
+          // disabled={true}
+          onClick={this.props.viewResults}
         />
       </ButtonGroup>
     );
@@ -169,7 +200,12 @@ export default class MobileRosterBody extends React.Component<
           <MenuItem
             key={roster.id}
             text={roster.displayName}
-            onClick={() => this.props.selectRoster(roster)}
+            onClick={() => {
+              this.props.selectRoster(roster);
+              if (this.scrollContainerRef.current) {
+                this.scrollContainerRef.current.scrollTop = 0;
+              }
+            }}
           />
         ))}
       </Menu>
@@ -183,7 +219,7 @@ export default class MobileRosterBody extends React.Component<
     return (
       <div className="image-panel">
         <div
-          className="roster-team-photo"
+          className={classNames("roster-team-photo", Classes.ELEVATION_2)}
           style={{ backgroundImage: "url(" + imageUrl + ")" }}
         />
       </div>
@@ -193,25 +229,53 @@ export default class MobileRosterBody extends React.Component<
   private renderPlayerImagePanel = () => {
     const { roster, selectedPlayer } = this.props;
     let imageUrl = getImageUrlForPlayerAction(roster.id, selectedPlayer);
+    const fullRoster = roster.players.concat(roster.coaches);
+    const firstPlayer = selectedPlayer === fullRoster[0];
+    const lastPlayer = selectedPlayer === fullRoster[fullRoster.length - 1];
 
     return (
-      <div className="image-panel -player">
+      <div className="mobile-player-image-panel">
+        <Button
+          className="roster-control-button -small -left"
+          icon={<Icon icon={IconNames.ARROW_LEFT} iconSize={10} />}
+          minimal={true}
+          onClick={this.props.selectPreviousPlayer}
+          disabled={firstPlayer}
+        />
         <div
-          className="roster-team-photo"
-          style={{ backgroundImage: "url(" + imageUrl + ")" }}
+          className={classNames("image-panel -player", {
+            "-vertical":
+              roster.year === 2015 ||
+              roster.year === 2016 ||
+              roster.year === 2017
+          })}
+        >
+          <div
+            className={classNames("roster-team-photo", Classes.ELEVATION_2)}
+            style={{ backgroundImage: "url(" + imageUrl + ")" }}
+          />
+        </div>
+        <Button
+          className="roster-control-button -small -right"
+          icon={<Icon icon={IconNames.ARROW_RIGHT} iconSize={10} />}
+          minimal={true}
+          onClick={this.props.selectNextPlayer}
+          disabled={lastPlayer}
         />
       </div>
     );
   };
 
   private renderPlayerInfoPanel = () => {
-    const { selectedPlayer } = this.props;
+    const { selectedPlayer, roster } = this.props;
+    const isCoach = isPlayerACoach(roster.id, selectedPlayer);
+    const yearsOnRival = getYearsOnRival(selectedPlayer);
 
     return (
       <React.Fragment>
-        <Card className={classNames("panel-section -title", Classes.ELEVATION_2)}>
-        {getDisplayNameForPlayer(PLAYERS[selectedPlayer])}
-        </Card>
+        <MobileHeader
+          title={getDisplayNameForPlayer(PLAYERS[selectedPlayer])}
+        />
         <Card className="panel-section">
           <div className="panel-section-title">
             <div className="title-text">Basic Info</div>
@@ -221,9 +285,16 @@ export default class MobileRosterBody extends React.Component<
             <div className="section-label">Jersey Number:</div>
             <div className="section-items">
               <Tag
-                intent={Intent.NONE}
+                intent={Intent.WARNING}
                 minimal={true}
                 className="section-tag"
+                icon={
+                  isCoach ? (
+                    <Icon icon={IconNames.CLIPBOARD} iconSize={10} />
+                  ) : (
+                    undefined
+                  )
+                }
               >
                 {PLAYERS[selectedPlayer].jersey}
               </Tag>
@@ -233,49 +304,31 @@ export default class MobileRosterBody extends React.Component<
             <div className="section-label">Position:</div>
             <div className="section-items">
               <Tag
-                intent={Intent.PRIMARY}
+                intent={Intent.WARNING}
                 minimal={true}
                 className="section-tag"
               >
-                {"Unknown"}
+                {PLAYERS[selectedPlayer].position}
               </Tag>
             </div>
           </div>
           <div className="leadership-section">
             <div className="section-label">Years on Rival:</div>
             <div className="section-items">
-              <Tag
-                intent={Intent.WARNING}
-                minimal={true}
-                className="section-tag"
-              >
-                {2015}
-              </Tag>
-              <Tag
-                intent={Intent.WARNING}
-                minimal={true}
-                className="section-tag"
-              >
-                {2016}
-              </Tag>
-              <Tag
-                intent={Intent.WARNING}
-                minimal={true}
-                className="section-tag"
-              >
-                {2017}
-              </Tag>
-              <Tag
-                intent={Intent.WARNING}
-                minimal={true}
-                className="section-tag"
-              >
-                {2018}
-              </Tag>
+              {_.map(yearsOnRival, year => (
+                <Tag
+                  intent={Intent.WARNING}
+                  minimal={true}
+                  className="section-tag"
+                  key={year}
+                >
+                  {year}
+                </Tag>
+              ))}
             </div>
           </div>
         </Card>
-        <Card className="panel-section">
+        {/* <Card className="panel-section">
           <div className="panel-section-title">
             <div className="title-text">Fun Facts</div>
             <div className="title-divider" />
@@ -283,11 +336,7 @@ export default class MobileRosterBody extends React.Component<
           <div className="leadership-section">
             <div className="section-label">Profession:</div>
             <div className="section-items">
-              <Tag
-                intent={Intent.NONE}
-                minimal={true}
-                className="section-tag"
-              >
+              <Tag intent={Intent.NONE} minimal={true} className="section-tag">
                 Engineer
               </Tag>
             </div>
@@ -295,11 +344,7 @@ export default class MobileRosterBody extends React.Component<
           <div className="leadership-section">
             <div className="section-label">Spirit Animal:</div>
             <div className="section-items">
-              <Tag
-                intent={Intent.NONE}
-                minimal={true}
-                className="section-tag"
-              >
+              <Tag intent={Intent.NONE} minimal={true} className="section-tag">
                 Gecko
               </Tag>
             </div>
@@ -307,16 +352,12 @@ export default class MobileRosterBody extends React.Component<
           <div className="leadership-section">
             <div className="section-label">Autobiography Title:</div>
             <div className="section-items">
-              <Tag
-                intent={Intent.NONE}
-                minimal={true}
-                className="section-tag"
-              >
+              <Tag intent={Intent.NONE} minimal={true} className="section-tag">
                 Coming soon
               </Tag>
             </div>
           </div>
-        </Card>
+        </Card> */}
       </React.Fragment>
     );
   };
@@ -326,6 +367,7 @@ export default class MobileRosterBody extends React.Component<
 
     return (
       <React.Fragment>
+        <MobileHeader title={roster.displayName} />
         <Card className="panel-section">
           <div className="panel-section-title">
             <div className="title-text">Season Results</div>
@@ -372,13 +414,15 @@ export default class MobileRosterBody extends React.Component<
             <div className="section-label">Captained by:</div>
             <div className="section-items">
               {roster.captains.map(captain => (
-                <RosterUserAvatar
-                  playerId={captain}
-                  player={PLAYERS[captain]}
-                  rosterId={roster.id}
-                  hideBadge={true}
-                  key={roster.id + "_" + captain}
-                />
+                <Tooltip content={getDisplayNameForPlayer(PLAYERS[captain])}>
+                  <RosterUserAvatar
+                    playerId={captain}
+                    player={PLAYERS[captain]}
+                    rosterId={roster.id}
+                    hideBadge={true}
+                    key={roster.id + "_" + captain}
+                  />
+                </Tooltip>
               ))}
             </div>
           </div>
@@ -386,13 +430,15 @@ export default class MobileRosterBody extends React.Component<
             <div className="section-label">Coached by:</div>
             <div className="section-items">
               {roster.coaches.map(coach => (
-                <RosterUserAvatar
-                  playerId={coach}
-                  player={PLAYERS[coach]}
-                  rosterId={roster.id}
-                  hideBadge={true}
-                  key={roster.id + "_" + coach}
-                />
+                <Tooltip content={getDisplayNameForPlayer(PLAYERS[coach])}>
+                  <RosterUserAvatar
+                    playerId={coach}
+                    player={PLAYERS[coach]}
+                    rosterId={roster.id}
+                    hideBadge={true}
+                    key={roster.id + "_" + coach}
+                  />
+                </Tooltip>
               ))}
             </div>
           </div>

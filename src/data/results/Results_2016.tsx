@@ -294,8 +294,8 @@ export const TOURNAMENTS_2016: TournamentList = {
       mapsLink: "https://goo.gl/maps/cXdAiVMp5iz"
     },
     date: {
-      start: "June 4, 2016",
-      end: "June 5, 2016"
+      start: "July 9, 2016",
+      end: "July 10, 2016"
     },
     link:
       "https://play.usaultimate.org/events/TCT-Elite-Select-Challenge-2016-Oshadega-Invite/",
@@ -313,7 +313,7 @@ export const TOURNAMENTS_2016: TournamentList = {
     },
     date: {
       start: "July 23, 2016",
-      end: "June 24, 2016"
+      end: "July 24, 2016"
     },
     link: "https://play.usaultimate.org/events/Heavyweights-2016/",
     result: 2,

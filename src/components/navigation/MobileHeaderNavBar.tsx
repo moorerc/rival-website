@@ -27,7 +27,7 @@ class MobileHeaderNavBar extends React.Component<MobileHeaderNavBarProps> {
         <div className="nav-bar-title" onClick={this.handleGoHome}>
           Rival Ultimate
         </div>
-        <img src="img/Rlogo.png" className="title-logo" />
+        <img src="img/Rlogo_gold.png" className="title-logo" />
       </div>
     );
   }

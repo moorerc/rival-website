@@ -1,0 +1,29 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.mobile-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+
+  //   &.-extra-spacing {
+  //     margin-bottom: 15px;
+  //   }
+
+  > .title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Oswald", sans-serif;
+    color: @gray1;
+    margin: 0 10px;
+  }
+
+  > .spacer {
+    border-top: 1px solid @gray3;
+    flex: 1 1 auto;
+  }
+}
