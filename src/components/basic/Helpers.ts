@@ -42,6 +42,24 @@ export function getImageUrlForPlayerAction(rosterId: string, playerId: string) {
   );
 }
 
+export function getYearsOnRival(playerId: string): number[] {
+  const yearsOnRival: number[] = [];
+  RIVAL_ROSTERS.forEach(rosterList => {
+    let played = false;
+    const rostFull = rosterList.players.concat(rosterList.coaches);
+    _.forEach(rostFull, player => {
+      if (player === playerId) {
+        played = true;
+      }
+    });
+    if (played) {
+      yearsOnRival.push(rosterList.year);
+    }
+  });
+
+  return yearsOnRival;
+}
+
 export function isPlayerACoach(rosterId: string, playerId: string) {
   const roster = _.find(RIVAL_ROSTERS, ["id", rosterId]);
   if (!roster) {

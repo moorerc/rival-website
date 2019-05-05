@@ -59,7 +59,7 @@ class RosterInternal extends React.Component<Roster.Props, Roster.State> {
     this.state = {
       topPanelMode: TopPanelMode.ROSTER_VIEW,
       rosterViewMode: RosterViewMode.ROSTER_INFO,
-      selectedPlayer: RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1].players[0]
+      selectedPlayer: this.props.selectedRoster.players[0]
     };
   }
 
@@ -98,6 +98,8 @@ class RosterInternal extends React.Component<Roster.Props, Roster.State> {
         selectedPlayer={selectedPlayer}
         selectRoster={this.handleSelectRoster}
         selectNextRoster={this.nextRoster}
+        selectNextPlayer={this.nextPlayer}
+        selectPreviousPlayer={this.previousPlayer}
         selectPreviousRoster={this.previousRoster}
         selectRosterViewMode={this.changeRosterViewMode}
         selectPlayer={this.selectPlayer}
@@ -264,6 +266,42 @@ class RosterInternal extends React.Component<Roster.Props, Roster.State> {
       topPanelMode: TopPanelMode.ROSTER_VIEW
     });
     this.props.selectRoster(roster);
+  };
+
+  private nextPlayer = () => {
+    const roster = this.props.selectedRoster.players.concat(
+      this.props.selectedRoster.coaches
+    );
+    let i;
+    _.forEach(roster, (player, index) => {
+      if (player === this.state.selectedPlayer) {
+        i = index;
+      }
+    });
+
+    if (i != undefined && i + 1 < roster.length) {
+      this.setState({
+        selectedPlayer: roster[i + 1]
+      });
+    }
+  };
+
+  private previousPlayer = () => {
+    const roster = this.props.selectedRoster.players.concat(
+      this.props.selectedRoster.coaches
+    );
+    let i;
+    _.forEach(roster, (player, index) => {
+      if (player === this.state.selectedPlayer) {
+        i = index;
+      }
+    });
+
+    if (i != undefined && i - 1 >= 0) {
+      this.setState({
+        selectedPlayer: roster[i - 1]
+      });
+    }
   };
 
   private nextRoster = () => {
