@@ -31,6 +31,7 @@ export default class MobileNavBar extends React.Component<MobileNavBarProps> {
                 className="nav-button"
                 text={navBarItem.title.toUpperCase()}
                 large={true}
+                minimal={true}
               />
             </Link>
           );

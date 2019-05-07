@@ -56,35 +56,33 @@ class NewsInternal extends React.Component<News.Props, News.State> {
     const news = _.reverse(_.sortBy(filteredNews, this.convertDate));
 
     return (
-      <React.Fragment>
-        <div
-          className={classNames("rival-website-page rival-news-page", {
-            "-mobile": isMobile
-          })}
-        >
-          <CombinedNavBar pageName="news" />
-          <div className="news-page-body">
-            {/* <a className="twitter-timeline" href="https://twitter.com/RivalUltimate?ref_src=twsrc%5Etfw" /> */}
-            {isMobile ? (
-              <MobileNewsBody
-                news={news}
-                roster={selectedRoster}
-                selectRoster={this.handleSelectRoster}
-                changeSearchString={this.handleSearchChange}
-                searchString={searchFilterString}
-                showAll={showAll}
-                changeShowAll={this.handleShowAll}
-              />
-            ) : (
-              <NonIdealState
-                className="construction-empty-state"
-                title="News. Coming soon."
-                icon={IconNames.BUILD}
-              />
-            )}
-          </div>
+      <div
+        className={classNames("rival-website-page rival-news-page", {
+          "-mobile": isMobile
+        })}
+      >
+        <CombinedNavBar pageName="news" />
+        <div className="news-page-body">
+          {/* <a className="twitter-timeline" href="https://twitter.com/RivalUltimate?ref_src=twsrc%5Etfw" /> */}
+          {isMobile ? (
+            <MobileNewsBody
+              news={news}
+              roster={selectedRoster}
+              selectRoster={this.handleSelectRoster}
+              changeSearchString={this.handleSearchChange}
+              searchString={searchFilterString}
+              showAll={showAll}
+              changeShowAll={this.handleShowAll}
+            />
+          ) : (
+            <NonIdealState
+              className="construction-empty-state"
+              title="News. Coming soon."
+              icon={IconNames.BUILD}
+            />
+          )}
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 

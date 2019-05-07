@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import About from "./pages/About";
 import BadgeQuest from "./pages/BadgeQuest";
 import FiftyPlates from "./pages/FiftyPlates";
-import Home from "./pages/Home";
+import HomeOG from "./pages/HomeOG";
 import { News } from "./pages/News";
 import { Results } from "./pages/Results";
 import { Roster } from "./pages/Roster";
@@ -23,7 +23,7 @@ export default class App extends React.Component {
         >
           <BrowserRouter>
             <React.Fragment>
-              <Route exact={true} path="/" component={Home} />
+              <Route exact={true} path="/" component={HomeOG} />
               <Route path="/about" component={About} />
               <Route path="/news" component={News} />
               <Route path="/results" component={Results} />

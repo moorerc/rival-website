@@ -414,13 +414,15 @@ export default class MobileRosterBody extends React.Component<
             <div className="section-label">Captained by:</div>
             <div className="section-items">
               {roster.captains.map(captain => (
-                <Tooltip content={getDisplayNameForPlayer(PLAYERS[captain])}>
+                <Tooltip
+                  key={roster.id + "_" + captain}
+                  content={getDisplayNameForPlayer(PLAYERS[captain])}
+                >
                   <RosterUserAvatar
                     playerId={captain}
                     player={PLAYERS[captain]}
                     rosterId={roster.id}
                     hideBadge={true}
-                    key={roster.id + "_" + captain}
                   />
                 </Tooltip>
               ))}
@@ -430,13 +432,15 @@ export default class MobileRosterBody extends React.Component<
             <div className="section-label">Coached by:</div>
             <div className="section-items">
               {roster.coaches.map(coach => (
-                <Tooltip content={getDisplayNameForPlayer(PLAYERS[coach])}>
+                <Tooltip
+                  key={roster.id + "_" + coach}
+                  content={getDisplayNameForPlayer(PLAYERS[coach])}
+                >
                   <RosterUserAvatar
                     playerId={coach}
                     player={PLAYERS[coach]}
                     rosterId={roster.id}
                     hideBadge={true}
-                    key={roster.id + "_" + coach}
                   />
                 </Tooltip>
               ))}
