@@ -1,0 +1,96 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.mobile-home-body {
+  // border: 1px solid blue;
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  //   overflow-y: scroll;
+  //   -webkit-overflow-scrolling: touch;
+  //   background-color: @light-gray5;
+
+  .mobile-home-page-pic {
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    // margin: 5px;
+    border: 3px solid white;
+    border-radius: 10px;
+  }
+
+  .row {
+    width: 100%;
+    // border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    &.-one {
+      height: 35%;
+    }
+
+    &.-two {
+      height: 30%;
+    }
+
+    &.-three {
+      height: 35%;
+    }
+
+    &.-oneB1 {
+      height: 50%;
+    }
+
+    &.-oneB2 {
+      height: 50%;
+    }
+
+    &.-threeA1 {
+      height: 50%;
+    }
+
+    &.-threeA2 {
+      height: 50%;
+    }
+  }
+
+  .col {
+    flex: 1 1 auto;
+    height: 100%;
+    // border: 1px solid cornflowerblue;
+    align-items: center;
+    justify-content: center;
+
+    &.-oneA {
+      width: 62%;
+    }
+
+    &.-oneB {
+      width: 38%;
+    }
+
+    &.-twoA {
+      width: 50%;
+    }
+
+    &.-twoB {
+      width: 50%;
+    }
+
+    &.-threeA {
+      width: 38%;
+    }
+
+    &.-threeB {
+      width: 62%;
+    }
+  }
+}

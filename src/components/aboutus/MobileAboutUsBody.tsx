@@ -28,8 +28,15 @@ export default class MobileAboutUsBody extends React.Component<
             />
             <div className="section-text">
               A nationally competitive women's ultimate team based out of
-              Michigan/Ohio. Founded in 2015, as alumni from University of
-              Michigan and The Ohio State University ... blah blah blah.
+              Michigan/Ohio. Founded in 2015, fusing alumni from University of
+              Michigan and The Ohio State University—the mitochondria of
+              midwestern college programs—and their contrasting life and play
+              styles, the program has evolved to be the destination for top
+              players across the region. As the pack continuously works to
+              disrupt the division, it never strays far from its roots in
+              unifying the dichotomies, bracketing elite drive and competitive
+              spirit within the ever necessary rag-tag goofiness and fresh
+              playfulness.
             </div>
             <div className="testimonials">
               <TestimonialRow
