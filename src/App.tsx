@@ -3,7 +3,6 @@ import { BrowserRouter, Route } from "react-router-dom";
 import About from "./pages/About";
 import BadgeQuest from "./pages/BadgeQuest";
 import FiftyPlates from "./pages/FiftyPlates";
-// import Home from "./pages/Home";
 import HomeOG from "./pages/HomeOG";
 import { News } from "./pages/News";
 import { Results } from "./pages/Results";
