@@ -9,6 +9,7 @@ import { Results } from "./pages/Results";
 import { Roster } from "./pages/Roster";
 import "./styles/App.css";
 import * as classNames from "classnames";
+import CoreValues from "./pages/CoreValues";
 
 export default class App extends React.Component {
   render() {
@@ -31,6 +32,7 @@ export default class App extends React.Component {
               <Route path="/roster" component={Roster} />
               <Route path="/badgequest" component={BadgeQuest} />
               <Route path="/fiftyplates" component={FiftyPlates} />
+              <Route path="/corevalues" component={CoreValues} />
             </React.Fragment>
           </BrowserRouter>
         </div>

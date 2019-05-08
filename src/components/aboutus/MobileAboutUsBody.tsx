@@ -41,10 +41,13 @@ export default class MobileAboutUsBody extends React.Component<
             <div className="testimonials">
               <TestimonialRow
                 quote="hilarious and heartfelt. the must see comedy of the summer"
-                author="New York Times"
+                author="*New York Times"
               />
               <TestimonialRow quote="iris loves me" author="Caitlin Harley" />
-              <TestimonialRow quote= "i just wanted to give this team 10 stars" author="Caitlin Harley" />
+              <TestimonialRow
+                quote="i just wanted to give this team 10 stars"
+                author="Caitlin Harley"
+              />
               <TestimonialRow
                 quote="eh. this team is alright."
                 author="Sara Scott"
