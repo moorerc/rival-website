@@ -71,6 +71,7 @@ export default class MobileResultsBody extends React.Component<
           leftIcon={IconNames.SEARCH}
           value={searchString}
           onChange={this.handleSearchChange}
+          onSubmit={() => {}}
           rightElement={
             searchString !== "" ? (
               <Button

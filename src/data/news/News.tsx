@@ -360,5 +360,26 @@ export const ALL_NEWS: NewsItem[] = [
     date: "Oct 21 2017",
     author: "Ultiworld",
     type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Rival 2018 - Our Greatest Show Yet!",
+    link: "https://youtu.be/UZMtA0p_E00",
+    date: "Jun 25 2018",
+    author: "Rival",
+    type: NEWS_TYPE.VIDEO
+  },
+  {
+    title: "Rival 2017 Roster",
+    link: "https://youtu.be/VyMhGNYJQjw",
+    date: "Jun 12 2017",
+    author: "Rival",
+    type: NEWS_TYPE.VIDEO
+  },
+  {
+    title: "Rival Ultimate - 2015 Recap",
+    link: "https://www.youtube.com/watch?v=zk1vjQJLNUE",
+    date: "Oct 11 2015",
+    author: "Rival",
+    type: NEWS_TYPE.VIDEO
   }
 ];
