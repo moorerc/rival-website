@@ -19,6 +19,7 @@ import * as moment from "moment";
 import { connect, Dispatch } from "react-redux";
 import { SELECT_ROSTER } from "src/state/actions";
 import { RootState } from "src/state/store";
+import { TEAMS } from "src/data/Teams";
 
 export namespace Results {
   export interface StateProps {
@@ -65,9 +66,23 @@ class ResultsInternal extends React.Component<Results.Props, Results.State> {
       );
     }
 
-    tournaments = _.filter(tournaments, tournament =>
-      tournament.name.toLowerCase().includes(searchFilterString.toLowerCase())
-    );
+    tournaments = _.filter(tournaments, tournament => {
+      const tournamentNameMatch = tournament.name
+        .toLowerCase()
+        .includes(searchFilterString.toLowerCase());
+      let opponentsNames = "";
+      tournament.games.forEach(
+        game =>
+          (opponentsNames =
+            opponentsNames +
+            TEAMS[game.opponent].displayNameOverride +
+            TEAMS[game.opponent].name)
+      );
+      const tournamentOpponentMatch = opponentsNames
+        .toLowerCase()
+        .includes(searchFilterString.toLowerCase());
+      return tournamentNameMatch || tournamentOpponentMatch;
+    });
 
     const sortedTournaments = _.reverse(
       _.sortBy(tournaments, tournament => moment(tournament.date.start))

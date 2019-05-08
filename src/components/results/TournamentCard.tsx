@@ -84,15 +84,22 @@ export default class TournamentCard extends React.Component<
             />
           </div> */}
         </div>
-        <div className="card-picture">
-          <div
-            className="tournamentTeamPic"
-            style={{ backgroundImage: "url(" + imageUrlTeamPic + ")" }}
-          />
-        </div>
+        {tournament.id !== "2016-esc" ? (
+          <div className="card-picture">
+            <div
+              className="tournamentTeamPic"
+              style={{ backgroundImage: "url(" + imageUrlTeamPic + ")" }}
+            />
+          </div>
+        ) : null}
         <div className="card-games">
           {tournament.games.map((game: Game) => {
             const imageUrl = getImageUrlForOpponent(game.opponent);
+            const opponentName = TEAMS[game.opponent].displayNameOverride
+              ? TEAMS[game.opponent].displayNameOverride
+              : TEAMS[game.opponent].location.city +
+                " " +
+                TEAMS[game.opponent].name;
             return (
               <div className="game-row" key={game.date}>
                 <div className="-left">
@@ -103,9 +110,7 @@ export default class TournamentCard extends React.Component<
                       style={{ backgroundImage: "url(" + imageUrl + ")" }}
                     />
                   </div>
-                  {TEAMS[game.opponent].location.city +
-                    " " +
-                    TEAMS[game.opponent].name}
+                  {opponentName}
                 </div>
                 <div className="-center">{GameType[game.type]}</div>
                 <div className="-right">
