@@ -7,6 +7,7 @@ export interface Team {
     state: string;
   };
   logo?: string;
+  displayNameOverride?: string;
 }
 
 export enum Teams {
@@ -87,7 +88,8 @@ export const TEAMS: { [key in Teams]: Team } = {
   dayton: {
     name: "Dayton Kraken",
     location: { city: "Dayton", state: "OH" },
-    logo: ""
+    logo: "",
+    displayNameOverride: "Dayton Kraken"
   },
   dish: { name: "Dish", location: { city: "Chicago", state: "IL" }, logo: "" },
   elevate: {
@@ -142,13 +144,15 @@ export const TEAMS: { [key in Teams]: Team } = {
   indyrogue: {
     name: "Indy Rogue",
     location: { city: "Indianapolis", state: "IN" },
-    logo: ""
+    logo: "",
+    displayNameOverride: "Indy Rogue"
   },
   ivy: { name: "Ivy", location: { city: "Portland", state: "OR" }, logo: "" },
   jackwagon: {
     name: "Jackwagon",
     location: { city: "Boulder/Denver", state: "CO" },
-    logo: ""
+    logo: "",
+    displayNameOverride: "Denver Jackwagon"
   },
 
   maeve: { name: "Maeve", location: { city: "Dallas", state: "TX" }, logo: "" },
@@ -156,7 +160,8 @@ export const TEAMS: { [key in Teams]: Team } = {
   mollybrown: {
     name: "Molly Brown",
     location: { city: "Denver/Boulder", state: "CO" },
-    logo: ""
+    logo: "",
+    displayNameOverride: "Denver Molly Brown"
   },
   nemesis: {
     name: "Nemesis",
@@ -177,7 +182,8 @@ export const TEAMS: { [key in Teams]: Team } = {
   phoenix: {
     name: "Phoenix",
     location: { city: "Durham", state: "NC" },
-    logo: ""
+    logo: "",
+    displayNameOverride: "North Carolina Phoenix"
   },
   pop: {
     name: "Pop",
@@ -191,7 +197,7 @@ export const TEAMS: { [key in Teams]: Team } = {
   },
   revoloution: {
     name: "RevoLOUtion",
-    location: { city: "", state: "" },
+    location: { city: "St. Louis", state: "MO" },
     logo: ""
   },
   riot: {
@@ -218,7 +224,8 @@ export const TEAMS: { [key in Teams]: Team } = {
   showdown: {
     name: "Showdown",
     location: { city: "Texas City", state: "TX" },
-    logo: ""
+    logo: "",
+    displayNameOverride: "Texas Showdown"
   },
   smallbatch: {
     name: "Small Batch",

@@ -26,7 +26,7 @@ export default class MobileAboutUsBody extends React.Component<
               className="team-pic bp3-elevation-2"
               style={{ backgroundImage: "url(/img/MeetRival.jpg)" }}
             />
-            <div className="section-text">
+            <div className="section-text about-us-blurb">
               A nationally competitive women's ultimate team based out of
               Michigan/Ohio. Founded in 2015, fusing alumni from University of
               Michigan and The Ohio State University—the mitochondria of
@@ -44,6 +44,7 @@ export default class MobileAboutUsBody extends React.Component<
                 author="New York Times"
               />
               <TestimonialRow quote="iris loves me" author="Caitlin Harley" />
+              <TestimonialRow quote= "i just wanted to give this team 10 stars" author="Caitlin Harley" />
               <TestimonialRow
                 quote="eh. this team is alright."
                 author="Sara Scott"
