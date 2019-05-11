@@ -1,97 +1,90 @@
-#title {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
 
-// .inputTable {
-//   /*border: 1px solid blue;
-//           padding:50px;*/
-// }
+@import "./variables.less";
 
-td {
-  margin: 20px;
-}
+.rival-core-values-page {
+  display: flex;
+  flex-direction: column;
 
-#canvas {
-  border: 4px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+  .page-title {
+    max-width: 500px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 
-#inputSet {
-  /*border:1px solid black;*/
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-  margin-bottom: 20px;
-}
+  #values-canvas {
+    border: 4px solid @dark-gray3;
+  }
 
-tr {
-  /*border: 1px solid green;*/
-}
+  .values-controls {
+    width: 400px;
+    // margin-left: auto;
+    // margin-right: auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 480px;
 
-.inputIcon img {
-  max-width: 40px;
-  max-height: 40px;
-  margin-right: 5px;
-  /*border:1px solid orange;*/
-}
+    .input-control {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 10px 0;
 
-.inputName {
-  padding: 10px;
-  /*border:1px solid purple;*/
-  font-family: "Michroma", sans-serif;
-}
+      .input-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 30px;
+          max-height: 30px;
+          margin-right: 5px;
+        }
+      }
 
-.inputSlider {
-  padding-left: 10px;
-  padding-right: 10px;
-  /*border: 1px solid blue;*/
-}
+      .input-name {
+        padding: 10px;
+        font-family: "Michroma", sans-serif;
+        text-transform: uppercase;
+        flex: 1 1 auto;
+      }
 
-.inputVal {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 14px;
-  /*border:1px solid orange;*/
-  text-align: center;
-  width: 55px;
-  padding: 5px;
-  border-radius: 5px;
-}
+      .input-value {
+        margin-left: 10px;
+        font-family: "Michroma", sans-serif;
+        width: 35px;
+        font-size: 10px;
+      }
 
-#brainVal {
-  color: rgba(0, 61, 167, 1);
-}
-#brainValOuter {
-  background-color: rgba(0, 61, 167, 0.5);
-}
-#effortVal {
-  color: rgba(181, 127, 0, 1);
-}
-#effortValOuter {
-  background-color: rgba(181, 127, 0, 0.5);
-}
-#skillVal {
-  color: rgba(121, 36, 47, 1);
-}
-#skillValOuter {
-  background-color: rgba(121, 36, 47, 0.5);
-}
-#triangleVal {
-  color: rgba(34, 93, 57, 1);
-}
-#characterValOuter {
-  background-color: rgba(34, 93, 57, 0.5);
-}
+      .input-slider {
+        width: 230px;
 
-.spacer {
-  height: 10px;
-  display: block;
+        &.brain {
+          .bp3-slider-progress.bp3-intent-primary {
+            background-color: @blue3;
+          }
+        }
+
+        &.effort {
+          .bp3-slider-progress.bp3-intent-primary {
+            background-color: @gold3;
+          }
+        }
+
+        &.skill {
+          .bp3-slider-progress.bp3-intent-primary {
+            background-color: @red3;
+          }
+        }
+
+        &.character {
+          .bp3-slider-progress.bp3-intent-primary {
+            background-color: @green3;
+          }
+        }
+      }
+    }
+  }
 }
