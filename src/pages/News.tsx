@@ -10,11 +10,10 @@ import * as moment from "moment";
 import MobileNewsBody from "src/components/news/MobileNewsBody";
 import { RosterList } from "src/data/RosterList";
 import { ALL_NEWS, NewsItem } from "src/data/news/News";
-import { NonIdealState } from "@blueprintjs/core";
-import { IconNames } from "@blueprintjs/icons";
 import { RootState } from "src/state/store";
 import { Dispatch, connect } from "react-redux";
 import { SELECT_ROSTER } from "src/state/actions";
+import NewsBody from "src/components/news/NewsBody";
 
 export namespace News {
   export interface StateProps {
@@ -75,10 +74,14 @@ class NewsInternal extends React.Component<News.Props, News.State> {
               changeShowAll={this.handleShowAll}
             />
           ) : (
-            <NonIdealState
-              className="construction-empty-state"
-              title="News. Coming soon."
-              icon={IconNames.BUILD}
+            <NewsBody
+              news={news}
+              roster={selectedRoster}
+              selectRoster={this.handleSelectRoster}
+              changeSearchString={this.handleSearchChange}
+              searchString={searchFilterString}
+              showAll={showAll}
+              changeShowAll={this.handleShowAll}
             />
           )}
         </div>

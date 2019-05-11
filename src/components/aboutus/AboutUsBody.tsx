@@ -8,10 +8,6 @@ import CoreValueRow from "./CoreValueRow";
 import SocialMediaLinks from "../basic/SocialMediaLinks";
 import TestimonialRow from "./TestimonialRow";
 import { IconNames } from "@blueprintjs/icons";
-// import TestimonialRow from "./TestimonialRow";
-// import CoreValueRow from "./CoreValueRow";
-// import { CORE_VALUES } from "src/data/CoreValues";
-// import SocialMediaLinks from "../basic/SocialMediaLinks";
 
 export interface Testimonial {
   quote: string;
