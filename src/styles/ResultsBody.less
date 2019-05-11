@@ -3,7 +3,7 @@
 
 @import "./variables.less";
 
-.news-body {
+.results-body {
   flex: 0 1 auto;
   width: 100%;
   height: 100%;
@@ -22,24 +22,79 @@
     border-bottom: 3px solid @light-gray1;
 
     > .top-left {
-      //   border: 1px solid blue;
       flex: 1 1 auto;
       display: flex;
       align-items: center;
       padding: 0 15px;
       flex-direction: column;
 
-      .mobile-home-body {
+      .tournament-card {
+        flex: 1 1 auto;
         width: 100%;
 
-        .mobile-home-page-pic {
-          border-color: @light-gray3;
+        .card-header > .image {
+          height: 50px;
+          width: 50px;
+          margin: 5px;
+        }
+
+        .card-header > .title > .name {
+          font-size: 14px;
+        }
+
+        .card-header > .title > .subtitle {
+          font-size: 10px;
+        }
+
+        .card-header > .rank {
+          border: 1px solid @light-gray3;
+          height: 35px;
+          width: 35px;
+          margin-right: 5px;
+
+          &.-first {
+            color: @tag-gold;
+            background-color: fade(@tag-gold, 15%);
+            border-color: @tag-gold;
+          }
+
+          &.-second {
+            color: @tag-silver;
+            background-color: fade(@tag-silver, 15%);
+            border-color: @tag-silver;
+          }
+
+          &.-third {
+            color: @tag-bronze;
+            background-color: fade(@tag-bronze, 15%);
+            border-color: @tag-bronze;
+          }
+        }
+
+        .card-picture {
+          height: 100%;
+        }
+
+        .card-games {
+          .game-row > .-left {
+            font-size: 12px;
+            letter-spacing: 1px;
+            min-width: 250px;
+          }
+          .game-row > .-left > .team-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+          }
+
+          .game-row > .-center {
+            font-size: 12px;
+          }
         }
       }
     }
 
     > .top-right {
-      //   border: 1px solid green;
       flex: 0 0 auto;
       width: 45%;
       height: 100%;
@@ -48,45 +103,13 @@
       flex-direction: column;
       align-items: center;
 
-      .news-results-card {
+      .results-body-card {
         width: 100%;
         padding: 0;
         flex: 1 1 auto;
         overflow-y: auto;
         border-radius: 0 0 3px 3px;
         margin-top: -2px;
-
-        .news-card {
-          border: 2px solid @white;
-          border-radius: 0;
-
-          &:hover {
-            cursor: pointer;
-            // background-color: @light-gray5;
-            background-color: #d4af3720;
-
-            .card-left .news-type-icon {
-              color: @rival-gold;
-              background-color: #d4af3730;
-            }
-
-            .card-right > .title {
-              color: @rival-gold;
-            }
-
-            .card-right > .subtitle {
-              color: #d4af3790;
-            }
-
-            .card-right .divider {
-              background-color: @rival-gold;
-            }
-          }
-        }
-
-        .news-card .card-left .news-type-icon {
-          border-radius: 0;
-        }
       }
 
       .news-body-search {
