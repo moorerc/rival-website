@@ -1,0 +1,135 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.news-body {
+  flex: 0 1 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .body-top {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: @light-gray3;
+    border-top: 3px solid @light-gray1;
+    border-bottom: 3px solid @light-gray1;
+
+    > .top-left {
+      //   border: 1px solid blue;
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      flex-direction: column;
+
+      .mobile-home-body {
+        width: 100%;
+
+        .mobile-home-page-pic {
+          border-color: @light-gray3;
+        }
+      }
+    }
+
+    > .top-right {
+      //   border: 1px solid green;
+      flex: 0 0 auto;
+      width: 45%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .news-results-card {
+        width: 100%;
+        padding: 0;
+        flex: 1 1 auto;
+        overflow-y: auto;
+        border-radius: 0 0 3px 3px;
+        margin-top: -2px;
+
+        .news-card {
+          border: 2px solid @white;
+          border-radius: 0;
+
+          &:hover {
+            cursor: pointer;
+            // background-color: @light-gray5;
+            background-color: #d4af3720;
+
+            .card-left .news-type-icon {
+              color: @rival-gold;
+              background-color: #d4af3730;
+            }
+
+            .card-right .divider {
+              background-color: @rival-gold;
+            }
+          }
+        }
+
+        .news-card .card-left .news-type-icon {
+          border-radius: 0;
+        }
+      }
+
+      .news-body-search {
+        flex: 1 1 auto;
+        height: 100%;
+        margin-right: -1px;
+
+        .bp3-input {
+          font-family: "Oswald", sans-serif;
+          font-size: 12px;
+          border-radius: 0 3px 0 0;
+          height: 33px;
+          box-shadow: none;
+          border: 1px solid @gray5;
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  .body-bottom {
+    min-height: 15%;
+  }
+
+  .section-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &.-extra-spacing {
+      margin-bottom: 25px;
+    }
+
+    > .title {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Oswald", sans-serif;
+      color: @gray1;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+
+    > .spacer {
+      border-top: 1px solid @gray3;
+      flex: 1 1 auto;
+      height: 0;
+    }
+  }
+}
