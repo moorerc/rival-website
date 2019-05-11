@@ -1,13 +1,17 @@
 import * as React from "react";
 import "../styles/App.css";
 
-import { Callout, Intent } from "@blueprintjs/core";
+// import { Callout, Intent } from "@blueprintjs/core";
 import WebNavBar from "../components/navigation/WebNavBar";
 import PageBackgroundImage from "../components/basic/PageBackgroundImage";
 import { isMobile, isBrowser } from "react-device-detect";
 import MobileNavBar from "src/components/navigation/MobileNavBar";
 import * as classNames from "classnames";
+// import { IconNames } from "@blueprintjs/icons";
+import SocialMediaLinks from "src/components/basic/SocialMediaLinks";
+import { Callout, Intent } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
+// import MobileHomeBody from "src/components/home/MobileHomeBody";
 
 export default class Home extends React.Component {
   render() {
@@ -21,8 +25,14 @@ export default class Home extends React.Component {
           })}
         >
           <div className="logo-image" />
-          {!isMobile && this.renderConstructionCallout()}
-          {isMobile && <MobileNavBar pageName="home" />}
+          {isMobile ? (
+            <MobileNavBar pageName="home" />
+          ) : (
+            <React.Fragment>
+              <SocialMediaLinks gold={false} large={true} hoverable={true} />
+              {this.renderConstructionCallout()}
+            </React.Fragment>
+          )}
         </div>
       </React.Fragment>
     );

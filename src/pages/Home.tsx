@@ -8,6 +8,7 @@ import * as classNames from "classnames";
 import { IconNames } from "@blueprintjs/icons";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 import MobileHomeBody from "src/components/home/MobileHomeBody";
+import SocialMediaLinks from "src/components/basic/SocialMediaLinks";
 
 export default class Home extends React.Component {
   render() {
@@ -19,9 +20,24 @@ export default class Home extends React.Component {
       >
         <CombinedNavBar pageName="home" />
         <div className="home-page-body">
-          {isMobile ? <MobileHomeBody /> : this.renderConstructionCallout()}
+          {isMobile
+            ? this.renderHomePageBodyMobile()
+            : this.renderHomePageBodyWeb()}
         </div>
       </div>
+    );
+  }
+
+  private renderHomePageBodyMobile() {
+    return <MobileHomeBody />;
+  }
+
+  private renderHomePageBodyWeb() {
+    return (
+      <React.Fragment>
+        {this.renderConstructionCallout()}
+        <SocialMediaLinks gold={false} />
+      </React.Fragment>
     );
   }
 
