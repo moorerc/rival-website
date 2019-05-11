@@ -5,8 +5,6 @@ import "../styles/Results.css";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 import * as classNames from "classnames";
 import { isMobile } from "react-device-detect";
-import { NonIdealState } from "@blueprintjs/core";
-import { IconNames } from "@blueprintjs/icons";
 import MobileResultsBody from "src/components/results/MobileResultsBody";
 import { RosterList } from "src/data/RosterList";
 import {
@@ -20,6 +18,7 @@ import { connect, Dispatch } from "react-redux";
 import { SELECT_ROSTER } from "src/state/actions";
 import { RootState } from "src/state/store";
 import { TEAMS } from "src/data/Teams";
+import ResultsBody from "src/components/results/ResultsBody";
 
 export namespace Results {
   export interface StateProps {
@@ -108,10 +107,14 @@ class ResultsInternal extends React.Component<Results.Props, Results.State> {
                 changeShowAll={this.handleShowAll}
               />
             ) : (
-              <NonIdealState
-                className="construction-empty-state"
-                title="Results. Coming soon."
-                icon={IconNames.BUILD}
+              <ResultsBody
+                tournaments={sortedTournaments}
+                roster={selectedRoster}
+                selectRoster={this.handleSelectRoster}
+                changeSearchString={this.handleSearchChange}
+                searchString={searchFilterString}
+                showAll={showAll}
+                changeShowAll={this.handleShowAll}
               />
             )}
           </div>
