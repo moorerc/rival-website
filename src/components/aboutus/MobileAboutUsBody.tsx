@@ -4,8 +4,8 @@ import "../../styles/MobileAboutUsBody.css";
 import * as _ from "lodash";
 import { CORE_VALUES } from "src/data/CoreValues";
 import CoreValueRow from "./CoreValueRow";
-import SocialMediaButton from "./SocialMediaButton";
 import TestimonialRow from "./TestimonialRow";
+import SocialMediaLinks from "../basic/SocialMediaLinks";
 
 interface MobileAboutUsBodyProps {}
 
@@ -44,7 +44,6 @@ export default class MobileAboutUsBody extends React.Component<
                 author="*New York Times"
               />
               <TestimonialRow quote="iris loves me" author="Caitlin Harley" />
-              <TestimonialRow quote= "i just wanted to give this team 10 stars" author="Caitlin Harley" />
               <TestimonialRow
                 quote="i just wanted to give this team 10 stars"
                 author="Caitlin Harley"
@@ -75,24 +74,7 @@ export default class MobileAboutUsBody extends React.Component<
               <span className="title">Get In Touch</span>
               <span className="spacer" />
             </div>
-            <div className="social-media-links">
-              <SocialMediaButton
-                link="https://www.facebook.com/rivalultimate/"
-                image="/img/social-logos/facebook_gold.png"
-              />
-              <SocialMediaButton
-                link="https://twitter.com/RivalUltimate/"
-                image="/img/social-logos/twitter_gold.png"
-              />
-              <SocialMediaButton
-                link="https://www.instagram.com/rivalultimate/"
-                image="/img/social-logos/instagram_gold.png"
-              />
-              <SocialMediaButton
-                link="mailto:captains@rivalultimate.com"
-                image="/img/social-logos/email_gold.png"
-              />
-            </div>
+            <SocialMediaLinks gold={true} />
             <div className="section-text">
               Follow us on social media or contact our leadership team by
               emailing captains@rivalultimate.com
