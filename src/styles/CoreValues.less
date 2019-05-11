@@ -7,6 +7,27 @@
   display: flex;
   flex-direction: column;
 
+  &.-mobile {
+    .page-title {
+      max-width: 80%;
+      margin: 15px 0;
+    }
+
+    .values-controls {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .input-name {
+      font-size: 8px;
+    }
+
+    .values-controls .input-control .input-slider {
+      width: 100px;
+    }
+  }
+
   .page-title {
     max-width: 500px;
     margin-top: 25px;

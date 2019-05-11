@@ -2,7 +2,7 @@ import * as React from "react";
 import "../styles/App.css";
 import "../styles/CoreValues.css";
 
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import * as classNames from "classnames";
 import { Slider } from "@blueprintjs/core";
 
@@ -16,8 +16,8 @@ export namespace CoreValues {
   }
 }
 
-const CANVAS_WIDTH = 500;
-const CANVAS_HEIGHT = 500;
+const CANVAS_WIDTH = isMobileOnly ? 350 : 500;
+const CANVAS_HEIGHT = isMobileOnly ? 350 : 500;
 const CANVAS_X = 0;
 const CANVAS_Y = 0;
 
@@ -26,7 +26,7 @@ const CANVAS_CENETR = {
   y: (CANVAS_Y + CANVAS_HEIGHT) / 2
 };
 
-const INITIAL_CIRCLE_VAL = 10;
+const INITIAL_CIRCLE_VAL = 50;
 const INITIAL_TRIANGLE_VAL = 50;
 
 export default class CoreValues extends React.Component<CoreValues.State> {
@@ -49,15 +49,15 @@ export default class CoreValues extends React.Component<CoreValues.State> {
     return (
       <div
         className={classNames("rival-website-page rival-core-values-page", {
-          "-mobile": isMobile
+          "-mobile": isMobileOnly
         })}
       >
         <img className="page-title" src="img/core-values/CoreValuesTitle.png" />
         <canvas
           ref={this.canvasRef}
           id="values-canvas"
-          width="500"
-          height="500"
+          width={CANVAS_WIDTH}
+          height={CANVAS_HEIGHT}
         />
         <div className="values-controls" id="inputSet">
           {this.renderInputControl(
