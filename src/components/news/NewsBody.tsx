@@ -2,7 +2,6 @@ import * as React from "react";
 import "../../styles/NewsBody.css";
 
 import * as _ from "lodash";
-import MobileHomeBody from "../home/MobileHomeBody";
 import {
   Card,
   NonIdealState,
@@ -18,6 +17,7 @@ import { NewsItem } from "src/data/news/News";
 import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";
 import { IconNames } from "@blueprintjs/icons";
 import NewsCard from "./NewsCard";
+import PhotoGrid from "./PhotoGrid";
 
 export namespace NewsBody {
   export interface Props {
@@ -29,17 +29,83 @@ export namespace NewsBody {
     changeSearchString: (searchString: string) => void;
     changeShowAll: (showAll: boolean) => void;
   }
+
+  export interface State {
+    selectedNewsItem: NewsItem | undefined;
+  }
 }
 
-export default class NewsBody extends React.Component<NewsBody.Props> {
+const PHOTO_GRID_IMAGES = {
+  all: {
+    imageA: "/img/photo-grids/all_2016_regionals.jpg",
+    imageB: "/img/photo-grids/all_2015_cookies.jpg",
+    imageC: "/img/photo-grids/all_2016_dance.jpg",
+    imageD: "/img/photo-grids/all_2016_practice.jpg",
+    imageE: "/img/photo-grids/all_2017_coaches.jpg",
+    imageF: "/img/photo-grids/all_2016_kristen.jpg",
+    imageG: "/img/photo-grids/all_2018_beach2.jpg"
+  },
+  "rival-2018": {
+    imageA: "/img/photo-grids/2018_harley.jpg",
+    imageB: "/img/photo-grids/2018_sara.jpg",
+    imageC: "/img/photo-grids/2018_dance.jpg",
+    imageD: "/img/photo-grids/2018_allstars2.jpg",
+    imageE: "/img/photo-grids/2018_cheer.jpg",
+    imageF: "/img/photo-grids/2018_iris.jpg",
+    imageG: "/img/photo-grids/2018_gryffindor.jpg"
+  },
+  "rival-2017": {
+    imageA: "/img/photo-grids/2017_huddle.jpg",
+    imageB: "/img/photo-grids/2017_roomies.jpg",
+    imageC: "/img/photo-grids/2017_captains.jpg",
+    imageD: "/img/photo-grids/2017_massage.jpg",
+    imageE: "/img/photo-grids/2017_balloons.jpg",
+    imageF: "/img/photo-grids/2017_slide.jpg",
+    imageG: "/img/photo-grids/2017_selfie.jpg"
+  },
+  "rival-2016": {
+    imageA: "/img/photo-grids/2016_hearts_3.jpg",
+    imageB: "/img/photo-grids/2016_limbo.jpg",
+    imageC: "/img/photo-grids/2016_captains.jpg",
+    imageD: "/img/photo-grids/2016_winning.jpg",
+    imageE: "/img/photo-grids/2016_practice.jpg",
+    imageF: "/img/photo-grids/2016_killin_it.jpg",
+    imageG: "/img/photo-grids/2016_stack.jpg"
+  },
+  "rival-2015": {
+    imageA: "/img/photo-grids/2015_team_beach.jpg",
+    imageB: "/img/photo-grids/2015_sand_rival.jpg",
+    imageC: "/img/photo-grids/2015_mich_beach.jpg",
+    imageD: "/img/photo-grids/2015_rival_practice.jpg",
+    imageE: "/img/photo-grids/2015_rival_highfive.jpg",
+    imageF: "/img/photo-grids/2015_is_janine.jpg",
+    imageG: "/img/photo-grids/2015_rival_sunset.jpg"
+  }
+};
+
+export default class NewsBody extends React.Component<
+  NewsBody.Props,
+  NewsBody.State
+> {
+  state: NewsBody.State = {
+    selectedNewsItem: undefined
+  };
+
   render() {
-    const { news } = this.props;
+    const { news, roster, showAll } = this.props;
+
+    const photoGridImages = showAll
+      ? PHOTO_GRID_IMAGES["all"]
+      : PHOTO_GRID_IMAGES[roster.id];
 
     return (
       <div className="news-body">
         <div className="body-top">
           <div className="top-left">
-            <MobileHomeBody />
+            {/* {this.state.selectedNewsItem ? (
+              <iframe src={this.state.selectedNewsItem.link} />
+            ) : ( */}
+            <PhotoGrid {...photoGridImages} />
           </div>
           <div className="top-right">
             <div className="section-title">
@@ -50,7 +116,11 @@ export default class NewsBody extends React.Component<NewsBody.Props> {
             {this.renderViewModeButtonGroup()}
             <Card className="news-results-card">
               {news.map((newsItem, index) => (
-                <NewsCard key={index} newsItem={newsItem} />
+                <NewsCard
+                  key={index}
+                  newsItem={newsItem}
+                  // onClick={() => this.handleSelectNewsItem(newsItem)}
+                />
               ))}
               {news.length === 0 && (
                 <NonIdealState
@@ -139,4 +209,8 @@ export default class NewsBody extends React.Component<NewsBody.Props> {
   private clearSearchString = () => {
     this.props.changeSearchString("");
   };
+
+  // private handleSelectNewsItem = (selectedNewsItem: NewsItem) => {
+  //   this.setState({ selectedNewsItem });
+  // };
 }
