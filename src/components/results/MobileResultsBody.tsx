@@ -13,7 +13,8 @@ import {
   InputGroup,
   Position,
   Menu,
-  MenuItem
+  MenuItem,
+  NonIdealState
 } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 
@@ -40,6 +41,13 @@ export default class MobileResultsBody extends React.Component<
           {_.map(tournaments, (tournament, index) => (
             <TournamentCard tournament={tournament} key={index} />
           ))}
+          {tournaments.length === 0 && (
+            <NonIdealState
+              icon={IconNames.DISABLE}
+              title="No Results"
+              description="Try a different search"
+            />
+          )}
         </div>
       </React.Fragment>
     );

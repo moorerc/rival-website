@@ -150,7 +150,7 @@ export default class AboutUsBody extends React.Component<
             </div>
             <div className="sponsors-logos">
               <img
-                src="img/sponsor-logos/otf.jpg"
+                src="img/sponsor-logos/otf.png"
                 className="sponsor-logo"
                 onClick={this.handleOpenOTF}
               />
