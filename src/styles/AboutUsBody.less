@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   //   margin: 15px;
+  // border: 2px solid orange;
 
   .body-top {
     display: flex;
@@ -22,10 +23,13 @@
     flex: 1 1 auto;
     justify-content: center;
     padding: 20px;
-    margin: 15px 0;
+    margin-top: 15px;
     background-color: @light-gray3;
     border-top: 3px solid @light-gray1;
     border-bottom: 3px solid @light-gray1;
+    align-items: flex-start;
+    height: 88%;
+    overflow-y: scroll;
 
     > .top-left {
       //   border: 1px solid blue;
@@ -50,8 +54,9 @@
   }
 
   .body-bottom {
-    min-height: 12%;
+    min-height: 80px;
     // border: 1px solid blue;
+    padding: 10px;
 
     .sponsors-container {
       // border: 1px solid orange;
@@ -73,6 +78,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin-bottom: 10px;
 
         .sponsor-logo {
           max-width: 100px;

@@ -10,7 +10,8 @@ import {
   Position,
   InputGroup,
   Menu,
-  MenuItem
+  MenuItem,
+  NonIdealState
 } from "@blueprintjs/core";
 import { RIVAL_ROSTERS, RosterList } from "src/data/RosterList";
 import { IconNames } from "@blueprintjs/icons";
@@ -72,6 +73,13 @@ export default class ResultsBody extends React.Component<
                   onClick={() => this.selectTournament(tournament)}
                 />
               ))}
+              {tournaments.length === 0 && (
+                <NonIdealState
+                  icon={IconNames.DISABLE}
+                  title="No Results"
+                  description="Try a different search"
+                />
+              )}
             </Card>
           </div>
         </div>

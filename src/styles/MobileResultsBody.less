@@ -13,6 +13,22 @@
   .tournament-card {
     margin: 15px;
   }
+
+  .bp3-non-ideal-state {
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #d4af3790;
+
+    .bp3-heading {
+      color: #d4af3790;
+    }
+
+    .bp3-icon {
+      color: #d4af3750;
+    }
+  }
 }
 
 .mobile-results-search {
@@ -21,5 +37,12 @@
   .bp3-input {
     font-family: "Oswald", sans-serif;
     font-size: 16px;
+    box-shadow: none;
+    border: 1px solid @gray5;
+    letter-spacing: 1px;
+
+    &:focus {
+      box-shadow: none;
+    }
   }
 }

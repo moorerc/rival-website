@@ -105,4 +105,38 @@
     background-size: cover;
     flex: 0 1 auto;
   }
+
+  .sponsors-container {
+    // border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .sponsors-text {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Oswald", sans-serif;
+      color: @gray1;
+      font-size: 8px;
+      margin: 10px 0;
+    }
+    .sponsors-logos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      .sponsor-logo {
+        max-width: 100px;
+        max-height: 40px;
+        margin: 0 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

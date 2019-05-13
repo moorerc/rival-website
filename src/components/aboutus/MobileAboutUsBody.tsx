@@ -80,8 +80,40 @@ export default class MobileAboutUsBody extends React.Component<
               emailing captains@rivalultimate.com
             </div>
           </div>
+          <div className="section">
+            <div className="section-title">
+              <span className="spacer" />
+              <span className="title">Proudly Sponsored By</span>
+              <span className="spacer" />
+            </div>
+            <div className="sponsors-container">
+              {/* <div className="sponsors-text">
+                Rival Ultimate Is Proudly Sponsored By
+              </div> */}
+              <div className="sponsors-logos">
+                <img
+                  src="img/sponsor-logos/otf.png"
+                  className="sponsor-logo"
+                  onClick={this.handleOpenOTF}
+                />
+                <img
+                  src="img/sponsor-logos/oshadega.png"
+                  className="sponsor-logo"
+                  onClick={this.handleOpenOshadega}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     );
   }
+
+  private handleOpenOTF = () => {
+    window.open("https://www.orangetheoryfitness.com/", "_blank");
+  };
+
+  private handleOpenOshadega = () => {
+    window.open("http://oshadega.com/", "_blank");
+  };
 }
