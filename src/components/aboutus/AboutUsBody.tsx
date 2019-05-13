@@ -143,8 +143,34 @@ export default class AboutUsBody extends React.Component<
             </div>
           </div>
         </div>
-        <div className="body-bottom" />
+        <div className="body-bottom">
+          <div className="sponsors-container">
+            <div className="sponsors-text">
+              Rival Ultimate Is Proudly Sponsored By
+            </div>
+            <div className="sponsors-logos">
+              <img
+                src="img/sponsor-logos/otf.jpg"
+                className="sponsor-logo"
+                onClick={this.handleOpenOTF}
+              />
+              <img
+                src="img/sponsor-logos/oshadega.png"
+                className="sponsor-logo"
+                onClick={this.handleOpenOshadega}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
+
+  private handleOpenOTF = () => {
+    window.open("https://www.orangetheoryfitness.com/", "_blank");
+  };
+
+  private handleOpenOshadega = () => {
+    window.open("http://oshadega.com/", "_blank");
+  };
 }

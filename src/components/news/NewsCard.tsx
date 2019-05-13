@@ -10,13 +10,18 @@ import { IconNames } from "@blueprintjs/icons";
 
 interface NewsCardProps {
   newsItem: NewsItem;
+  onClick?: () => void;
 }
 
 export default class NewsCard extends React.Component<NewsCardProps> {
   render() {
     const { newsItem } = this.props;
     return (
-      <Card className="news-card" elevation={1} onClick={this.handleOpenLink}>
+      <Card
+        className="news-card"
+        elevation={1}
+        onClick={this.props.onClick ? this.props.onClick : this.handleOpenLink}
+      >
         <div className="card-left">
           <Icon
             className="news-type-icon"
