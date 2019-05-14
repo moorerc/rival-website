@@ -32,13 +32,18 @@ interface MobileNewsBodyProps {
 export default class MobileNewsBody extends React.Component<
   MobileNewsBodyProps
 > {
+  private scrollContainerRef = React.createRef<any>();
+
   render() {
     const { news } = this.props;
 
     return (
       <React.Fragment>
         {this.renderViewModeButtonGroup()}
-        <div className="mobile-news-body-scroll-container">
+        <div
+          className="mobile-news-body-scroll-container"
+          ref={this.scrollContainerRef}
+        >
           {news.map((newsItem, index) => (
             <NewsCard key={index} newsItem={newsItem} />
           ))}
@@ -80,7 +85,7 @@ export default class MobileNewsBody extends React.Component<
           leftIcon={IconNames.SEARCH}
           value={searchString}
           onChange={this.handleSearchChange}
-          onSubmit={() => {}}
+          // onSubmit={this.handleSubmit}
           rightElement={
             searchString !== "" ? (
               <Button
@@ -100,26 +105,43 @@ export default class MobileNewsBody extends React.Component<
   private rosterSelectMenu() {
     return (
       <Menu>
-        <MenuItem
-          text="All News"
-          onClick={() => this.props.changeShowAll(true)}
-        />
+        <MenuItem text="All News" onClick={this.handleShowAll} />
         {RIVAL_ROSTERS.map(roster => (
           <MenuItem
             key={roster.id}
             text={roster.displayName}
-            onClick={() => this.props.selectRoster(roster)}
+            onClick={() => this.handleSelectRoster(roster)}
           />
         ))}
       </Menu>
     );
   }
 
+  private handleShowAll = () => {
+    this.props.changeShowAll(true);
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
+  };
+
+  private handleSelectRoster = (roster: RosterList) => {
+    this.props.selectRoster(roster);
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
+  };
+
   private handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.props.changeSearchString(event.target.value);
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
   };
 
   private clearSearchString = () => {
     this.props.changeSearchString("");
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
   };
 }

@@ -1,0 +1,313 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.roster-body {
+  flex: 0 1 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .body-top {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: @light-gray3;
+    border-top: 3px solid @light-gray1;
+    border-bottom: 3px solid @light-gray1;
+    overflow-y: auto;
+
+    > .top-left {
+      //   border: 1px solid blue;
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      flex-direction: column;
+      max-width: 700px;
+      //   margin-top: auto;
+      //   margin-bottom: auto;
+
+      .nav-outer-container {
+        width: 100%;
+        // border: 1px solid orange;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        > .outer-side {
+          flex: 0 0 auto;
+
+          &.-left {
+            margin-right: 5px;
+          }
+
+          &.-right {
+            margin-left: 5px;
+          }
+        }
+
+        > .middle {
+          flex: 1 1 auto;
+
+          > .roster-team-photo {
+            height: 350px;
+            width: 100%;
+            border-radius: 3px;
+            margin: 5px 0 10px 0;
+            text-align: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex: 0 1 auto;
+          }
+        }
+      }
+
+      .section {
+        // border: 1px solid maroon;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 15px 30px 15px;
+        align-items: center;
+
+        &.-factoid {
+          width: 85%;
+        }
+
+        .season-result-tag {
+          margin-left: 5px;
+          font-family: "Oswald", sans-serif;
+
+          &.bp3-intent-primary {
+            color: @rival-gold;
+            background-color: #d4af3740;
+          }
+        }
+      }
+
+      //   .season-results-card {
+      //     width: 100%;
+      //   }
+
+      //   .panel-section-title {
+      //     display: flex;
+      //     flex-direction: row;
+      //     align-items: center;
+      //     font-size: 10px;
+      //     text-transform: uppercase;
+      //     color: @gray5;
+      //     margin-bottom: 5px;
+      //     margin-left: 10px;
+      //     margin-right: 10px;
+      //     font-family: "Oswald", sans-serif;
+
+      //     .title-divider {
+      //       margin-left: 10px;
+      //       flex: 1 1 auto;
+      //       border-bottom: 1px solid @light-gray3;
+      //     }
+      //   }
+
+      //   .panel-section {
+      //     // margin: 10px 0;
+      //     // padding: 15px 10px 10px 10px;
+      //     // width: 100%;
+
+      //     &.-title {
+      //       padding: 10px;
+      //       text-align: center;
+      //       text-transform: uppercase;
+      //       letter-spacing: 2px;
+      //       margin-bottom: 10px;
+      //     }
+      //   }
+    }
+
+    > .top-right {
+      //   border: 1px solid green;
+      flex: 0 0 auto;
+      width: 45%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //   justify-content: center;
+
+      .players-section {
+        // border: 1px solid blue;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .roster-user-avatar {
+          width: 80px;
+          height: 80px;
+
+          > .user-avatar-image {
+            &:hover {
+              cursor: pointer !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .body-bottom {
+    min-height: 12%;
+  }
+
+  .section-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &.-extra-spacing {
+      margin-bottom: 25px;
+    }
+
+    &.-section-top-space {
+      margin-top: 15px;
+    }
+
+    > .title {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Oswald", sans-serif;
+      color: @gray1;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+
+    > .spacer {
+      border-top: 1px solid @gray3;
+      flex: 1 1 auto;
+      height: 0;
+    }
+  }
+
+  .section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //   border: 1px solid blue;
+
+    .highlight-item {
+      margin: 3px;
+      text-align: right;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: @gray3;
+    }
+  }
+
+  .roster-section-card {
+    flex: 1 1 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+
+    &.players-card {
+      overflow-y: scroll;
+
+      &.-no-padding {
+        padding: 0;
+      }
+    }
+
+    .roster-user-avatar {
+      width: 40px;
+      height: 40px;
+    }
+    .section-card-label {
+      flex: 1 1 auto;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Oswald", sans-serif;
+      color: @gray1;
+    }
+
+    .section-card-value {
+      flex: 0 1 auto;
+    }
+  }
+}
+
+.player-view-button-group {
+  width: 100.5%;
+  display: flex;
+  flex-direction: row;
+  .bp3-button {
+    &.player-view-button {
+      flex: 1 1 auto;
+      background-color: @white;
+      border: 1px solid @gray5;
+      border-radius: 0;
+    }
+  }
+}
+
+// .panel-section-content {
+//   display: flex;
+//   flex-direction: row;
+//   text-transform: uppercase;
+//   font-size: 10px;
+//   align-items: center;
+//   flex: 1 1 auto;
+//   margin: 5px 10px;
+//   justify-content: space-between;
+//   align-items: center;
+//   min-height: 30px;
+
+//   .section-label {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row;
+//     color: @gray3;
+//     font-family: "Oswald", sans-serif;
+
+//     .label-icon {
+//       margin-right: 3px;
+//     }
+//   }
+
+//   .section-items {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//   }
+
+//   .season-result-tag {
+//     margin-left: 5px;
+//     font-family: "Oswald", sans-serif;
+//   }
+
+//   .roster-user-avatar {
+//     width: 35px;
+//     height: 35px;
+
+//     .user-avatar-image {
+//       border: 2px solid @rival-gold;
+//     }
+//   }
+// }

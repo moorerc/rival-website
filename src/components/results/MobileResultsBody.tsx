@@ -31,13 +31,18 @@ interface MobileResultsBodyProps {
 export default class MobileResultsBody extends React.Component<
   MobileResultsBodyProps
 > {
+  private scrollContainerRef = React.createRef<any>();
+
   render() {
     const { tournaments } = this.props;
 
     return (
       <React.Fragment>
         {this.renderViewModeButtonGroup()}
-        <div className="mobile-results-body-scroll-container">
+        <div
+          className="mobile-results-body-scroll-container"
+          ref={this.scrollContainerRef}
+        >
           {_.map(tournaments, (tournament, index) => (
             <TournamentCard tournament={tournament} key={index} />
           ))}
@@ -107,18 +112,31 @@ export default class MobileResultsBody extends React.Component<
           <MenuItem
             key={roster.id}
             text={roster.displayName}
-            onClick={() => this.props.selectRoster(roster)}
+            onClick={() => this.handleSelectRoster(roster)}
           />
         ))}
       </Menu>
     );
   }
 
+  private handleSelectRoster = (roster: RosterList) => {
+    this.props.selectRoster(roster);
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
+  };
+
   private handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.props.changeSearchString(event.target.value);
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
   };
 
   private clearSearchString = () => {
     this.props.changeSearchString("");
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
   };
 }

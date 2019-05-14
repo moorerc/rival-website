@@ -138,33 +138,47 @@ export default class ResultsBody extends React.Component<
   private rosterSelectMenu() {
     return (
       <Menu>
-        <MenuItem
-          text="All Results"
-          onClick={() => this.props.changeShowAll(true)}
-        />
+        <MenuItem text="All Results" onClick={this.handleShowAll} />
         {RIVAL_ROSTERS.map(roster => (
           <MenuItem
             key={roster.id}
             text={roster.displayName}
-            onClick={() => this.props.selectRoster(roster)}
+            onClick={() => this.handleSelectRoster(roster)}
           />
         ))}
       </Menu>
     );
   }
 
+  private handleShowAll = () => {
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
+    this.props.changeShowAll(true);
+  };
+
+  private handleSelectRoster = (roster: RosterList) => {
+    this.props.selectRoster(roster);
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
+  };
+
   private handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.props.changeSearchString(event.target.value);
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
   };
 
   private clearSearchString = () => {
     this.props.changeSearchString("");
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
   };
 
   private selectTournament = (selectedTournament: Tournament) => {
     this.setState({ selectedTournament });
-    if (this.scrollContainerRef.current) {
-      this.scrollContainerRef.current.scrollTop = 0;
-    }
   };
 }
