@@ -39,17 +39,29 @@
       justify-content: center;
       padding: 0 15px;
       flex-direction: column;
+      margin-top: auto;
+      margin-bottom: auto;
     }
 
     > .top-right {
-      //   border: 1px solid green;
       flex: 0 0 auto;
       width: 45%;
-      padding: 10px;
+      padding: 0 10px 10px 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      > .section {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 15px 30px 15px;
+        align-items: center;
+      }
     }
   }
 
@@ -98,10 +110,14 @@
     flex-direction: row;
     width: 100%;
     align-items: center;
-    margin: 15px;
+    margin-bottom: 15px;
 
     &.-extra-spacing {
       margin-bottom: 25px;
+    }
+
+    &.-section-top-space {
+      margin-top: 15px;
     }
 
     > .title {

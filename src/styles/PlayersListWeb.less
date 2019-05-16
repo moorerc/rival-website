@@ -1,0 +1,58 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.players-list-web {
+  width: 100%;
+
+  .players-list-card {
+    padding: 5px 10px;
+    // margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid @light-gray3;
+    border-bottom: 1px solid @light-gray3;
+
+    .roster-user-avatar {
+      width: 60px !important;
+      height: 60px !important;
+
+      .user-avatar-image {
+        border-color: @light-gray3 !important;
+      }
+
+      .user-avatar-tag {
+        background-color: @gray3 !important;
+      }
+    }
+
+    &:hover {
+      border-top: 1px solid @rival-gold;
+      border-bottom: 1px solid @rival-gold;
+      background-color: #d4af3720;
+      cursor: pointer;
+
+      .user-avatar-image {
+        border-color: @rival-gold !important;
+      }
+      .user-avatar-tag {
+        background-color: @rival-gold !important;
+      }
+
+      > .card-title {
+        color: @rival-gold;
+      }
+    }
+
+    > .card-title {
+      flex: 1 1 auto;
+      font-family: "Oswald", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      color: @gray1;
+      letter-spacing: 1px;
+    }
+  }
+}

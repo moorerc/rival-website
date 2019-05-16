@@ -76,7 +76,7 @@ export default class AboutUsBody extends React.Component<
               className="team-pic bp3-elevation-2"
               style={{ backgroundImage: "url(/img/MeetRival.jpg)" }}
             />
-            <div className="section-title">
+            <div className="section-title -section-top-space">
               <span className="spacer" />
               <span className="title">Meet Rival</span>
               <span className="spacer" />
@@ -115,31 +115,35 @@ export default class AboutUsBody extends React.Component<
             </div>
           </div>
           <div className="top-right">
-            <div className="section-title">
-              <span className="spacer" />
-              <span className="title">Get In Touch</span>
-              <span className="spacer" />
-            </div>
-            <Card className="get-in-touch-section">
-              <SocialMediaLinks gold={true} hoverable={true} />
-              <div className="section-text">
-                Follow us on social media or contact our leadership team by
-                emailing captains@rivalultimate.com
+            <div className="section">
+              <div className="section-title">
+                <span className="spacer" />
+                <span className="title">Get In Touch</span>
+                <span className="spacer" />
               </div>
-            </Card>
-            <div className="section-title">
-              <span className="spacer" />
-              <span className="title">Our Core Values</span>
-              <span className="spacer" />
+              <Card className="get-in-touch-section">
+                <SocialMediaLinks gold={true} hoverable={true} />
+                <div className="section-text">
+                  Follow us on social media or contact our leadership team by
+                  emailing captains@rivalultimate.com
+                </div>
+              </Card>
             </div>
-            <div className="core-values-section">
-              {CORE_VALUES.map((coreValue, index) => (
-                <CoreValueRow
-                  key={index}
-                  coreValue={coreValue}
-                  reverse={index % 2 === 1}
-                />
-              ))}
+            <div className="section">
+              <div className="section-title">
+                <span className="spacer" />
+                <span className="title">Our Core Values</span>
+                <span className="spacer" />
+              </div>
+              <div className="core-values-section">
+                {CORE_VALUES.map((coreValue, index) => (
+                  <CoreValueRow
+                    key={index}
+                    coreValue={coreValue}
+                    reverse={index % 2 === 1}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

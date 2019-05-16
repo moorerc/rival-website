@@ -91,6 +91,8 @@ export default class NewsBody extends React.Component<
     selectedNewsItem: undefined
   };
 
+  private scrollContainerRef = React.createRef<any>();
+
   render() {
     const { news, roster, showAll } = this.props;
 
@@ -102,9 +104,6 @@ export default class NewsBody extends React.Component<
       <div className="news-body">
         <div className="body-top">
           <div className="top-left">
-            {/* {this.state.selectedNewsItem ? (
-              <iframe src={this.state.selectedNewsItem.link} />
-            ) : ( */}
             <PhotoGrid {...photoGridImages} />
           </div>
           <div className="top-right">
@@ -114,13 +113,9 @@ export default class NewsBody extends React.Component<
               <span className="spacer" />
             </div>
             {this.renderViewModeButtonGroup()}
-            <Card className="news-results-card">
+            <Card className="news-results-card" ref={this.scrollContainerRef}>
               {news.map((newsItem, index) => (
-                <NewsCard
-                  key={index}
-                  newsItem={newsItem}
-                  // onClick={() => this.handleSelectNewsItem(newsItem)}
-                />
+                <NewsCard key={index} newsItem={newsItem} />
               ))}
               {news.length === 0 && (
                 <NonIdealState
@@ -204,13 +199,15 @@ export default class NewsBody extends React.Component<
 
   private handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.props.changeSearchString(event.target.value);
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
   };
 
   private clearSearchString = () => {
     this.props.changeSearchString("");
+    if (this.scrollContainerRef.current) {
+      this.scrollContainerRef.current.scrollTop = 0;
+    }
   };
-
-  // private handleSelectNewsItem = (selectedNewsItem: NewsItem) => {
-  //   this.setState({ selectedNewsItem });
-  // };
 }
