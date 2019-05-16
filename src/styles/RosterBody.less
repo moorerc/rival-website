@@ -156,8 +156,16 @@
           width: 80px;
           height: 80px;
 
+          .user-avatar-tag {
+            font-family: "Oswald", sans-serif;
+            background-color: @gray3;
+          }
+
           > .user-avatar-image {
+            border-color: @light-gray3;
+
             &:hover {
+              border-color: @rival-gold;
               cursor: pointer !important;
             }
           }
@@ -167,7 +175,9 @@
   }
 
   .body-bottom {
-    min-height: 12%;
+    min-height: 80px;
+    // border: 1px solid blue;
+    padding: 10px;
   }
 
   .section-title {
@@ -227,6 +237,11 @@
     width: 100%;
     border-radius: 0 0 3px 3px;
 
+    &.last-card {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
     &.players-card {
       overflow-y: scroll;
 
@@ -251,12 +266,82 @@
       flex: 0 1 auto;
     }
   }
+
+  .player-info-section {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .info-section-top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .roster-control-button {
+        &.-small {
+          padding: 2px;
+        }
+
+        &.-right {
+          margin-left: 5px;
+          margin-right: 0;
+        }
+
+        &.-left {
+          margin-right: 5px;
+          margin-left: 0;
+        }
+      }
+
+      .image-panel {
+        flex: 1 1 auto;
+        margin-bottom: 15px;
+        height: 250px;
+
+        &.-vertical {
+          height: 320px;
+          max-width: 300px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        > .roster-team-photo {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .info-section-bottom {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+
+      .section-tag {
+        margin-left: 5px;
+        font-family: "Oswald", sans-serif;
+
+        &.bp3-intent-warning {
+          color: @rival-gold;
+          background-color: #d4af3740;
+        }
+      }
+    }
+  }
 }
 
 .player-view-button-group {
   width: 100.5%;
   display: flex;
   flex-direction: row;
+  background-color: @white;
+
   .bp3-button {
     &.player-view-button {
       flex: 1 1 auto;
@@ -265,49 +350,71 @@
       border-radius: 0;
     }
   }
+
+  .bp3-button {
+    .bp3-button-text {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      min-width: 70px;
+    }
+
+    &.bp3-active {
+      // background: none;
+      border-color: @rival-gold;
+      background-color: #d4af3730;
+      .bp3-icon {
+        color: @rival-gold;
+      }
+    }
+  }
 }
 
-// .panel-section-content {
-//   display: flex;
-//   flex-direction: row;
-//   text-transform: uppercase;
-//   font-size: 10px;
-//   align-items: center;
-//   flex: 1 1 auto;
-//   margin: 5px 10px;
-//   justify-content: space-between;
-//   align-items: center;
-//   min-height: 30px;
+.roster-view-button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  // background-color: @white;
+  margin-top: 15px;
+  border: none;
 
-//   .section-label {
-//     display: flex;
-//     align-items: center;
-//     flex-direction: row;
-//     color: @gray3;
-//     font-family: "Oswald", sans-serif;
+  .bp3-button {
+    &.roster-view-button {
+      flex: 1 1 auto;
+      // background-color: @light-gray1;
+      border: 1px solid @gray5;
+      border-radius: 0;
 
-//     .label-icon {
-//       margin-right: 3px;
-//     }
-//   }
+      &:hover {
+        background-color: transparent;
+        border-color: @rival-gold;
+        .bp3-button-text {
+          color: @rival-gold;
+        }
 
-//   .section-items {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//   }
+        .bp3-icon {
+          color: @rival-gold;
+        }
+      }
+    }
+  }
 
-//   .season-result-tag {
-//     margin-left: 5px;
-//     font-family: "Oswald", sans-serif;
-//   }
+  .bp3-button {
+    .bp3-button-text {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      // min-width: 70px;
+      font-size: 12px;
+    }
 
-//   .roster-user-avatar {
-//     width: 35px;
-//     height: 35px;
-
-//     .user-avatar-image {
-//       border: 2px solid @rival-gold;
-//     }
-//   }
-// }
+    &.bp3-active {
+      // background: none;
+      border-color: @rival-gold;
+      background-color: #d4af3730;
+      .bp3-icon {
+        color: @rival-gold;
+      }
+    }
+  }
+}
