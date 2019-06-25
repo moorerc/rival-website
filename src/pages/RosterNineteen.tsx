@@ -9,7 +9,8 @@ import RosterNineteenBody from "src/components/roster-nineteen/RosterNineteenBod
 import { Link } from "react-router-dom";
 import {
   Playlist,
-  PLAYLISTS
+  PLAYLISTS,
+  RIVAL_2019_PLAYLIST
 } from "src/data/roster-nineteen/RosterNinteenData";
 import RosterNineteenMobileBody from "src/components/roster-nineteen/RotserNinteenMobileBody";
 import { ProgressBar, Icon } from "@blueprintjs/core";
