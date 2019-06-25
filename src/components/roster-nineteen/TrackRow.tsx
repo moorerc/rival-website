@@ -26,7 +26,9 @@ export default class TrackRow extends React.Component<TrackRow.Props> {
             onClick={this.handleClickTrack}
           />
         </div>
-        <div className="table-col col-track -center">{track.artist.jersey}</div>
+        <div className="table-col col-track -center">
+          {track.artist.jersey === undefined ? "C" : track.artist.jersey}
+        </div>
         <div className="table-col col-title">{track.title}</div>
         <div className="table-col col-artist">
           {getDisplayNameForPlayer(track.artist)}

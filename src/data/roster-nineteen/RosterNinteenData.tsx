@@ -49,7 +49,7 @@ export const THE_ONES_THAT_GOT_AWAY: Playlist = {
 
 export const FRESH_FINDS: Playlist = {
   title: "Fresh Finds",
-  description: "[description]",
+  description: "Fresh music every year, from local gigs to the big stage",
   image: "playlist_freshfinds.jpg",
   trackList: [
     {
@@ -73,7 +73,7 @@ export const FRESH_FINDS: Playlist = {
 
 export const KIDS_BOP_19: Playlist = {
   title: "Kidz Bop 19",
-  description: "[description]",
+  description: "Family-friendly sing-a-longs for the developing minds",
   image: "playlist_kidzbop19.jpg",
   trackList: [
     {
@@ -97,13 +97,14 @@ export const KIDS_BOP_19: Playlist = {
 
 export const LADIES_EIGHTIES: Playlist = {
   title: "Ladies 80s",
-  description: "[description]",
+  description: "Groovy beats for a memorable night on the dancefloor",
   image: "playlist_ladieseighties.jpg",
   trackList: [
     {
-      title: "",
+      title: "Lady Marmalade",
       artist: PLAYERS[Players.WALKER],
-      link: ""
+      link:
+        "https://open.spotify.com/track/7GQqj9jRtDkMp8zByehXQI?si=jQXn74V2RJirNKOWCI73XQ"
     },
     {
       title: "Walking On Sunshine",
@@ -118,14 +119,16 @@ export const LADIES_EIGHTIES: Playlist = {
         "https://open.spotify.com/track/0UAEHlFR79k9CJvknSGUNf?si=haBZXVj5RN-SrGQn4VFFMA"
     },
     {
-      title: "",
+      title: "What a Feeling",
       artist: PLAYERS[Players.SCHRODER],
-      link: ""
+      link:
+        "https://open.spotify.com/track/0aAR5HogGoT68EWFbyRFqx?si=6lPWISQQSWayIzPqgHz5dA"
     },
     {
-      title: "",
+      title: "Girls Just Wanna Have Fun",
       artist: PLAYERS[Players.SOPER],
-      link: ""
+      link:
+        "https://open.spotify.com/track/4y1LsJpmMti1PfRQV9AWWe?si=bPllCWuWR7i6Dbs5Svpm5g"
     },
     {
       title: "Sweet Dreams (Are Made of This)",
@@ -142,15 +145,16 @@ export const THIS_IS_PITBULL: Playlist = {
   image: "playlist_thisispitbull.jpg",
   trackList: [
     {
-      title: "",
+      title: "Wild Wild Love",
       artist: PLAYERS[Players.MENDOZA],
-      link: ""
+      link:
+        "https://open.spotify.com/track/2J4Alm5zUad4hB5bY2HhtV?context=spotify%3Aplaylist%3A37i9dQZF1DXcfXDjovoEpj&si=YLmjqhgzTUCwPzhcJ77kMA"
     },
     {
-      title: "Timber",
+      title: "I Know You want Me (Calle Ocho)",
       artist: PLAYERS[Players.LEHMAN],
       link:
-        "https://open.spotify.com/track/3cHyrEgdyYRjgJKSOiOtcS?si=Q23W29xZTBqehxJ7iELKbw"
+        "https://open.spotify.com/track/5RzFJd6W40SDTyZkX6xx45?context=spotify%3Aplaylist%3A37i9dQZF1DXcfXDjovoEpj&si=BOOIcw2OQVuXckvYCPc8hw"
     },
     {
       title: "International Love",
@@ -159,12 +163,13 @@ export const THIS_IS_PITBULL: Playlist = {
         "https://open.spotify.com/track/62zFEHfAYl5kdHYOivj4BC?si=JxLVxcnJTfOL8WJt2sZx2g"
     },
     {
-      title: "",
+      title: "Hotel Room Service",
       artist: PLAYERS[Players.BENDER],
-      link: ""
+      link:
+        "https://open.spotify.com/track/6Rb0ptOEjBjPPQUlQtQGbL?context=spotify%3Aplaylist%3A37i9dQZF1DXcfXDjovoEpj&si=ME1ihtbKRhagr_0Ja8DhNA"
     },
     {
-      title: "",
+      title: "Messin' Around",
       artist: PLAYERS[Players.KNOWLES],
       link:
         "https://open.spotify.com/track/2moTY9zKAZkRsODU4TUXY6?si=IibVa52VSaW15qC9qjhQzA"
@@ -174,7 +179,7 @@ export const THIS_IS_PITBULL: Playlist = {
 
 export const THIS_IS_PAVAROTTI: Playlist = {
   title: "This Is: Pavarotti",
-  description: "[description]",
+  description: "An unforgettable voice always chasing the spotlight",
   image: "playlist_thisispavarotti.jpg",
   trackList: [
     {
@@ -187,7 +192,7 @@ export const THIS_IS_PAVAROTTI: Playlist = {
 
 export const EMO_FOREVER: Playlist = {
   title: "Emo Forever",
-  description: "[description]",
+  description: "Emo anthems for the middle school spirits",
   image: "playlist_emoforever.jpg",
   trackList: [
     {
@@ -205,7 +210,7 @@ export const EMO_FOREVER: Playlist = {
 
 export const MORNING_COMMUTE: Playlist = {
   title: "Morning Commute",
-  description: "[description]",
+  description: "Brought to you buy solo artists always on the road",
   image: "playlist_morningcommute.jpg",
   trackList: [
     {
@@ -249,7 +254,7 @@ export const MORNING_COMMUTE: Playlist = {
 
 export const HIT_REWIND: Playlist = {
   title: "Hit Rewind",
-  description: "[description]",
+  description: "Vintage hits from your record player days",
   image: "playlist_hitrewind.jpg",
   trackList: [
     {
@@ -275,7 +280,8 @@ export const HIT_REWIND: Playlist = {
 
 export const NEW_BOOTS: Playlist = {
   title: "New Boots",
-  description: "[description]",
+  description:
+    "Leading the new generation in boots that were never made just for walking",
   image: "playlist_newboots.jpg",
   trackList: [
     {
@@ -293,7 +299,7 @@ export const NEW_BOOTS: Playlist = {
 
 export const CHILL_HITS: Playlist = {
   title: "Chill Hits",
-  description: "[description]",
+  description: "Kick back and relax to these calming melodies",
   image: "playlist_chillhits.jpg",
   trackList: [
     {
@@ -337,7 +343,7 @@ export const CHILL_HITS: Playlist = {
 
 export const NATURE_SOUNDS: Playlist = {
   title: "Nature Sounds",
-  description: "[description]",
+  description: "Return to the harmonies of the wilderness wherever you may be",
   image: "playlist_naturesounds.jpg",
   trackList: [
     {
@@ -363,6 +369,12 @@ export const NATURE_SOUNDS: Playlist = {
       link: "https://open.spotify.com/track/58mFu3oIpBa0HLNeJIxsw3"
     },
     {
+      title: "Ain't No Mountain High Enough",
+      artist: PLAYERS[Players.BENDER],
+      link:
+        "https://open.spotify.com/track/7tqhbajSfrz2F7E1Z75ASX?si=lclaOOYIQYG6WO8cYHZuGQ"
+    },
+    {
       title: "This Land is Your Land",
       artist: PLAYERS[Players.SCOTT],
       link: "https://open.spotify.com/track/7CNaYAdLyi86kofGafReiT"
@@ -372,7 +384,7 @@ export const NATURE_SOUNDS: Playlist = {
 
 export const SECRET_LIFE_OF_PETS: Playlist = {
   title: "Offficial Soundtrack: Secret Life of Pets",
-  description: "[description]",
+  description: "Never go anywhere without your furry friends on your mind",
   image: "playlist_secretlifeofpets.jpg",
   trackList: [
     {
@@ -463,6 +475,12 @@ export const STUDY_BREAK: Playlist = {
       title: "Daddy Lessons",
       artist: PLAYERS[Players.GORDON],
       link: "https://open.spotify.com/track/71OvX5NNLrmz7rpq1ANTQn"
+    },
+    {
+      title: "School's Out",
+      artist: PLAYERS[Players.BENDER],
+      link:
+        "https://open.spotify.com/track/5Z8EDau8uNcP1E8JvmfkZe?si=WBXmtEiiQ8iEeRanE5iEEg"
     }
   ]
 };
@@ -545,25 +563,21 @@ export const PLAYLISTS: Playlist[] = [
 
 export const HEAVY_ROTATION: Category = {
   title: "Your heavy rotation",
-  description: "description",
   playlists: [NEW_BOOTS, HIT_REWIND]
 };
 
 export const FRESH_NEW_MUSIC: Category = {
   title: "Fresh new music",
-  description: "description",
   playlists: [THE_ONES_THAT_GOT_AWAY, FRESH_FINDS]
 };
 
 export const YEARS_IN_REWIND: Category = {
   title: "Years in rewind",
-  description: "",
   playlists: [ALL_TIME_HITS, LADIES_EIGHTIES, HAPPY_BIRTHDAY]
 };
 
 export const MORE_OF_WHAT_YOU_LIKE: Category = {
   title: "More of what you like",
-  description: "",
   playlists: [
     KIDS_BOP_19,
     THIS_IS_PAVAROTTI,
@@ -582,5 +596,6 @@ export const CATEGORIES: Category[] = [
   HEAVY_ROTATION,
   FRESH_NEW_MUSIC,
   YEARS_IN_REWIND,
+  RECENTLY_PLAYED,
   MORE_OF_WHAT_YOU_LIKE
 ];

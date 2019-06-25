@@ -132,12 +132,18 @@ export default class RosterNineteenMobileBody extends React.Component<
   private renderPlaylistView = () => {
     const { playlist } = this.props;
 
+    const sortedTracks = _.sortBy(
+      playlist.trackList,
+      track => track.artist.jersey
+    );
+
     return (
       <div className="mobile-playlist-view">
         <div className="top-buttons-container">
           <Icon
             icon={IconNames.CHEVRON_LEFT}
             onClick={() => this.handleChangeMode(RosterNineteenMode.LIST)}
+            iconSize={20}
           />
         </div>
         <div className="playlist-scroll-container">
@@ -147,8 +153,9 @@ export default class RosterNineteenMobileBody extends React.Component<
             isSelected={false}
             onClick={() => {}}
           />
+          <div className="playlist-desc">{playlist.description}</div>
           <div className="mobile-tracks-list">
-            {playlist.trackList.map((track, index) => (
+            {sortedTracks.map((track, index) => (
               <TrackRowMobile key={"track_" + index} track={track} />
             ))}
           </div>

@@ -53,7 +53,10 @@ export default class TrackRowMobile extends React.Component<
           <div className="track-artist">
             {getDisplayNameForPlayer(track.artist)}
             <Icon className="artist-dot" icon={IconNames.DOT} iconSize={6} />
-            <span>Track {track.artist.jersey}</span>
+            <span>
+              Track{" "}
+              {track.artist.jersey === undefined ? "C" : track.artist.jersey}
+            </span>
           </div>
         </span>
       </div>

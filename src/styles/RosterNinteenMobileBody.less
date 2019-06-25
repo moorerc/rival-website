@@ -26,8 +26,8 @@
     .category-title {
       text-align: center;
       color: @white;
-      font-family: "Proxima Nova";
-      font-size: 12px;
+      font-family: "proxima_nova_altbold";
+      font-size: 16px;
     }
 
     .category-description {
@@ -111,7 +111,7 @@
   .top-buttons-container {
     flex: 0 0 auto;
     width: 100%;
-    padding: 5px 10px;
+    padding: 10px 10px 0 10px;
   }
 
   .playlist-scroll-container {
@@ -124,18 +124,25 @@
     display: flex;
     flex-direction: column;
 
+    .playlist-desc {
+      color: @spot-gray;
+      font-family: "Proxima Nova";
+      font-size: 10px;
+      margin-bottom: 15px;
+    }
+
     .album-cover {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
 
       .album-cover-title {
         text-align: center;
         margin-top: 15px;
         color: @white;
-        font-family: "Proxima Nova";
-        font-size: 14px;
+        font-family: "proxima_nova_ltsemibold";
+        font-size: 16px;
       }
     }
   }
@@ -150,7 +157,7 @@
 }
 
 .mobile-tracks-list {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -160,6 +167,7 @@
     padding: 10px 15px;
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
 
     .row-top {
       flex: 0 1 auto;
