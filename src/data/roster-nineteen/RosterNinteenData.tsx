@@ -210,7 +210,7 @@ export const EMO_FOREVER: Playlist = {
 
 export const MORNING_COMMUTE: Playlist = {
   title: "Morning Commute",
-  description: "Brought to you buy solo artists always on the road",
+  description: "Brought to you by solo artists always on the road",
   image: "playlist_morningcommute.jpg",
   trackList: [
     {
@@ -428,6 +428,29 @@ export const HAPPY_BIRTHDAY: Playlist = {
       artist: PLAYERS[Players.PRUITT],
       link:
         "https://open.spotify.com/track/01lewSOj9ZaXplh9TpNKL4?si=1_w8DqyJSIasUU_7fvMfjQ"
+    },
+    {
+      title: "Birthday",
+      artist: PLAYERS[Players.PRUITT],
+      link: "https://open.spotify.com/track/1ABegtCPBMMJaMpfDyATjE"
+    },
+    {
+      title: "Birthday Cake",
+      artist: PLAYERS[Players.PRUITT],
+      link:
+        "https://open.spotify.com/track/4EfN6bixdOOgoLYR5C4cWo?si=RhHQHnGGR9O-9I6SG5uAsQ"
+    },
+    {
+      title: "Birthday",
+      artist: PLAYERS[Players.PRUITT],
+      link:
+        "https://open.spotify.com/track/345HZXxfL8S8HkVzytD1Pw?si=qQmYM3MGSdGcuWkNrUUwvw"
+    },
+    {
+      title: "It's My Birthday",
+      artist: PLAYERS[Players.PRUITT],
+      link:
+        "https://open.spotify.com/track/1pNcUexH7BdMFWFaxV3ltq?si=e6mx9nR6QIyoTxttrhn4qg"
     }
   ]
 };
