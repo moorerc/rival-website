@@ -192,6 +192,52 @@ export const RIVAL_2018: RosterList = {
   year: 2018
 };
 
+export const RIVAL_2019: RosterList = {
+  displayName: "Rival 2019",
+  id: "rival-2019",
+  coaches: [Players.BALL],
+  players: [
+    Players.SOPER,
+    Players.BENDER,
+    Players.CONERLY,
+    Players.MILLER,
+    Players.PRUITT,
+    Players.NITZ,
+    Players.MOORE,
+    Players.WALKER,
+    Players.SMIACH,
+    Players.LO,
+    Players.FLEMING,
+    Players.YEE,
+    Players.WRIGHT,
+    Players.MENDOZA,
+    Players.HARLEY,
+    Players.SOTER,
+    Players.KNOWLES,
+    Players.LEHMAN,
+    Players.GORDON,
+    Players.SCHRODER,
+    Players.FAZEKAS,
+    Players.SCOTT,
+    Players.PAINE,
+    Players.PERRY,
+    Players.DUFFY,
+    Players.HECHT,
+    Players.JAVERSAK
+  ],
+  captains: [Players.PRUITT, Players.WALKER, Players.WRIGHT, Players.FAZEKAS],
+  link:
+    "https://play.usaultimate.org/teams/events/Eventteam/?TeamId=1whbAH5IJ0aIw05oRZf5pJnmjoIXrRSBXE6WZhbExiQ%3d",
+  results: {
+    wins: 0,
+    losses: 0,
+    finish: ""
+  },
+  highlights: [],
+  rosterAnnounceLink: "www.rivalultimate.com/roster2019",
+  year: 2019
+};
+
 export const RIVAL_ROSTERS: RosterList[] = [
   RIVAL_2015,
   RIVAL_2016,

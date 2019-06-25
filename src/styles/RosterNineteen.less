@@ -1,0 +1,223 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.roster-nineteen-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: @spot-bg;
+  color: @spot-gray;
+
+  &.-mobile {
+    padding: 0px;
+
+    > .roster-nineteen-page-header {
+      height: 40px;
+      min-height: 40px;
+
+      .roster-logo-image {
+        height: 40px;
+      }
+
+      .rival-logo-image {
+        height: 25px;
+        margin-right: 10px;
+      }
+    }
+
+    > .roster-nineteen-page-footer {
+      height: 60px;
+    }
+
+    // > .roster-nineteen-page-body {
+    //   margin: 0;
+    //   display: flex;
+    //   flex-direction: column;
+    //   width: 100%;
+    // }
+  }
+
+  > .roster-nineteen-page-header {
+    // border: 1px solid green;
+    height: 80px;
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: @spot-bg-light;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    .web-nav-bar-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .roster-logo-image {
+      height: 80px;
+    }
+
+    .rival-logo-image {
+      height: 40px;
+      margin-right: 20px;
+    }
+
+    .horizontal-spacer {
+      flex: 1 1 auto;
+    }
+  }
+
+  > .roster-nineteen-page-body {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    // margin: 15px;
+    // border: 1px solid blue;
+  }
+
+  > .roster-nineteen-page-footer {
+    // border: 1px solid orange;
+    height: 100px;
+    flex: 0 0 auto;
+    width: 100%;
+    background-color: @spot-bg-light;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .duration-marker {
+      font-family: "Proxima Nova";
+      margin: 0 10px;
+    }
+
+    .main-track-title {
+      margin-top: 5px;
+      font-family: "Proxima Nova";
+      color: @white;
+    }
+
+    .main-track-artist {
+      color: @spot-gray;
+      margin-left: 5px;
+    }
+
+    .controls-bar-mobile {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      width: 100%;
+
+      .progress-bar {
+        width: 100%;
+
+        .bp3-progress-bar {
+          border-radius: 0px;
+
+          .bp3-progress-meter {
+            background-color: @white;
+            border-radius: 0px;
+          }
+        }
+      }
+
+      .main-controls {
+        width: 100%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .control-icon {
+          margin: 0 10px;
+
+          &.-heart {
+            color: @spot-green;
+          }
+
+          &.-play {
+            border: 1px solid @white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: @white;
+            margin-left: 2px;
+          }
+        }
+
+        .title {
+          flex: 1 1 auto;
+          font-family: "Proxima Nova";
+          color: @white;
+          text-align: center;
+          font-size: 12px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          .title-icon {
+            flex: 0 0 auto;
+            margin-left: 2px;
+            margin-right: 0;
+          }
+
+          .main-track-artist {
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+
+    .controls-bar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .control-icon {
+        margin: 0 15px;
+
+        &.-play {
+          border: 1px solid @light-gray1;
+          border-radius: 50%;
+          width: 26px;
+          height: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 1px;
+          color: @light-gray1;
+
+          .bp3-icon {
+            margin-left: 2px;
+          }
+
+          &:hover {
+            border: 2px solid @white;
+            width: 28px;
+            height: 28px;
+            margin: 0;
+            cursor: pointer;
+            color: @white;
+          }
+        }
+      }
+    }
+
+    .progress-bar {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
