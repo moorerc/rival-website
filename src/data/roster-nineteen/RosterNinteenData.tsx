@@ -254,7 +254,8 @@ export const MORNING_COMMUTE: Playlist = {
 
 export const HIT_REWIND: Playlist = {
   title: "Hit Rewind",
-  description: "Vintage hits from your record player days",
+  description:
+    "Still leading the charts, vintage hits from your record player days",
   image: "playlist_hitrewind.jpg",
   trackList: [
     {

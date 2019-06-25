@@ -145,6 +145,7 @@ class RosterNineteenInternal extends React.Component<
               className="control-icon -heart"
               icon={IconNames.HEART}
               iconSize={14}
+              onClick={() => this.selectPlaylist(RIVAL_2019_PLAYLIST)}
             />
             <div className="title">
               Moving Up the Charts
