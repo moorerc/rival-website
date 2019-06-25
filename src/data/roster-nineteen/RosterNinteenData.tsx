@@ -421,7 +421,7 @@ export const HAPPY_BIRTHDAY: Playlist = {
 
 export const STUDY_BREAK: Playlist = {
   title: "Study Break",
-  description: "[description]",
+  description: "The perfect tunes to keep your focus",
   image: "playlist_studybreak.jpg",
   trackList: [
     {
@@ -469,7 +469,8 @@ export const STUDY_BREAK: Playlist = {
 
 export const ALL_TIME_HITS: Playlist = {
   title: "All Time Hits",
-  description: "[description]",
+  description:
+    "Throughout the years: started on the charts, stayed on the charts.",
   image: "playlist_alltimehits.jpg",
   trackList: [
     {
@@ -515,10 +516,10 @@ export const ALL_TIME_HITS: Playlist = {
         "https://open.spotify.com/track/3DKpA54hrFIdPN6AtL9HXa?si=AzL3N1pLREa1V_bppAwbCA"
     },
     {
-      title: "I'm A Believer",
+      title: "Centerfield",
       artist: PLAYERS[Players.BALL],
       link:
-        "https://open.spotify.com/track/1RC5Mb0VhnlhnMlFDnrvE0?si=_JCCJb0IQGeFt18PwmiSvg"
+        "https://open.spotify.com/track/2iRfjwzPsooCskZrrlsgcC?si=XkWxtL_YS4WFC8IYuelV_A"
     }
   ]
 };
