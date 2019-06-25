@@ -8,7 +8,7 @@ import { Playlist } from "src/data/roster-nineteen/RosterNinteenData";
 export namespace AlbumCover {
   export interface Props {
     playlist: Playlist;
-    includeTitle: boolean;
+    includeFullTitle?: boolean;
     isSelected: boolean;
     onClick: (playlist: Playlist) => void;
   }
@@ -16,7 +16,7 @@ export namespace AlbumCover {
 
 export default class AlbumCover extends React.Component<AlbumCover.Props> {
   render() {
-    const { playlist, isSelected, onClick } = this.props;
+    const { playlist, isSelected, onClick, includeFullTitle } = this.props;
 
     return (
       <div
@@ -33,7 +33,8 @@ export default class AlbumCover extends React.Component<AlbumCover.Props> {
         />
         <div
           className={classNames("album-cover-title", {
-            "-long-title": playlist.title.length > 20
+            "-long-title": playlist.title.length > 20,
+            "-include-full-title": includeFullTitle
           })}
         >
           {playlist.title}

@@ -73,6 +73,19 @@
       color: @white;
       font-family: "Proxima Nova";
       font-size: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 130px;
+
+      &.-long-title {
+        margin-top: 7px;
+        font-size: 12px;
+      }
+
+      &.-include-full-title {
+        width: 100%;
+      }
     }
   }
 }

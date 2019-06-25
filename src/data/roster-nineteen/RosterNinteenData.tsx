@@ -542,28 +542,177 @@ export const ALL_TIME_HITS: Playlist = {
   ]
 };
 
+export const RIVAL_2019_PLAYLIST: Playlist = {
+  title: "Favorites",
+  description: "Introducing Rival 2019!",
+  image: "playlist_favorites.jpg",
+  trackList: [
+    {
+      title: "",
+      artist: PLAYERS[Players.SOPER],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.BENDER],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.CONERLY],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.MILLER],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.PRUITT],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.NITZ],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.MOORE],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.WALKER],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.SMIACH],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.LO],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.FLEMING],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.YEE],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.WRIGHT],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.MENDOZA],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.HARLEY],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.SOTER],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.KNOWLES],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.LEHMAN],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.GORDON],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.SCHRODER],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.FAZEKAS],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.SCOTT],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.PAINE],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.PERRY],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.DUFFY],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.HECHT],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.JAVERSAK],
+      link: ""
+    },
+    {
+      title: "",
+      artist: PLAYERS[Players.BALL],
+      link: ""
+    }
+  ]
+};
+
 export const PLAYLISTS: Playlist[] = [
+  RIVAL_2019_PLAYLIST,
+  NEW_BOOTS,
+  HIT_REWIND,
   THE_ONES_THAT_GOT_AWAY,
   FRESH_FINDS,
-  KIDS_BOP_19,
+  ALL_TIME_HITS,
   LADIES_EIGHTIES,
-  THIS_IS_PITBULL,
+  HAPPY_BIRTHDAY,
+  KIDS_BOP_19,
   THIS_IS_PAVAROTTI,
   EMO_FOREVER,
   MORNING_COMMUTE,
-  HIT_REWIND,
-  NEW_BOOTS,
+  STUDY_BREAK,
+  THIS_IS_PITBULL,
   CHILL_HITS,
   NATURE_SOUNDS,
-  SECRET_LIFE_OF_PETS,
-  HAPPY_BIRTHDAY,
-  STUDY_BREAK,
-  ALL_TIME_HITS
+  SECRET_LIFE_OF_PETS
 ];
 
 export const HEAVY_ROTATION: Category = {
   title: "Your heavy rotation",
-  playlists: [NEW_BOOTS, HIT_REWIND]
+  playlists: [RIVAL_2019_PLAYLIST, NEW_BOOTS, HIT_REWIND]
 };
 
 export const FRESH_NEW_MUSIC: Category = {

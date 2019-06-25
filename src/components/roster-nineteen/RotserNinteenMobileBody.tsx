@@ -5,7 +5,8 @@ import "../../styles/RosterNinteenMobileBody.css";
 import * as _ from "lodash";
 import {
   Playlist,
-  CATEGORIES
+  CATEGORIES,
+  RIVAL_2019_PLAYLIST
 } from "src/data/roster-nineteen/RosterNinteenData";
 import AlbumCover from "./AlbumCover";
 // import { Tabs, Tab } from "@blueprintjs/core";
@@ -115,7 +116,6 @@ export default class RosterNineteenMobileBody extends React.Component<
                 {category.playlists.map((p, index) => (
                   <AlbumCover
                     playlist={p}
-                    includeTitle={true}
                     isSelected={false}
                     onClick={this.handleSelectPlaylist}
                     key={"playlist_" + index}
@@ -149,14 +149,18 @@ export default class RosterNineteenMobileBody extends React.Component<
         <div className="playlist-scroll-container">
           <AlbumCover
             playlist={playlist}
-            includeTitle={true}
+            includeFullTitle={true}
             isSelected={false}
             onClick={() => {}}
           />
           <div className="playlist-desc">{playlist.description}</div>
           <div className="mobile-tracks-list">
             {sortedTracks.map((track, index) => (
-              <TrackRowMobile key={"track_" + index} track={track} />
+              <TrackRowMobile
+                key={"track_" + index}
+                track={track}
+                specialTrack={playlist === RIVAL_2019_PLAYLIST}
+              />
             ))}
           </div>
         </div>

@@ -10,26 +10,33 @@ import { IconNames } from "@blueprintjs/icons";
 export namespace TrackRow {
   export interface Props {
     track: Track;
+    specialTrack?: boolean;
   }
 }
 
 export default class TrackRow extends React.Component<TrackRow.Props> {
   render() {
-    const { track } = this.props;
+    const { track, specialTrack } = this.props;
 
     return (
       <div className="tracks-table-row table-row">
         <div className="table-col col-play">
-          <Icon
-            className="play-icon"
-            icon={IconNames.PLAY}
-            onClick={this.handleClickTrack}
-          />
+          {!specialTrack ? (
+            <Icon
+              className="play-icon"
+              icon={IconNames.PLAY}
+              onClick={this.handleClickTrack}
+            />
+          ) : (
+            <Icon className="heart-icon" icon={IconNames.HEART} />
+          )}
         </div>
         <div className="table-col col-track -center">
           {track.artist.jersey === undefined ? "C" : track.artist.jersey}
         </div>
-        <div className="table-col col-title">{track.title}</div>
+        {specialTrack !== true && (
+          <div className="table-col col-title">{track.title}</div>
+        )}
         <div className="table-col col-artist">
           {getDisplayNameForPlayer(track.artist)}
         </div>

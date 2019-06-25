@@ -8,7 +8,8 @@ import { IconNames } from "@blueprintjs/icons";
 import TrackRow from "./TrackRow";
 import {
   Playlist,
-  PLAYLISTS
+  PLAYLISTS,
+  RIVAL_2019_PLAYLIST
 } from "src/data/roster-nineteen/RosterNinteenData";
 import AlbumCover from "./AlbumCover";
 
@@ -35,6 +36,8 @@ export default class RosterNineteenBody extends React.Component<
       playlist.trackList,
       track => track.artist.jersey
     );
+
+    const specialTrack = playlist === RIVAL_2019_PLAYLIST;
 
     return (
       <div className="roster-nineteen-body">
@@ -73,13 +76,19 @@ export default class RosterNineteenBody extends React.Component<
                     <Icon className="play-icon" icon={IconNames.PLAY} />
                   </div>
                   <div className="table-col col-track">Track</div>
-                  <div className="table-col col-title">Title</div>
+                  {!specialTrack && (
+                    <div className="table-col col-title">Title</div>
+                  )}
                   <div className="table-col col-artist">Artist</div>
                   {/* <div className="table-col col-duration">Dur</div> */}
                 </div>
                 <div className="tracks-table-body">
                   {sortedTracks.map((track, index) => (
-                    <TrackRow key={"track_" + index} track={track} />
+                    <TrackRow
+                      key={"track_" + index}
+                      track={track}
+                      specialTrack={specialTrack}
+                    />
                   ))}
                 </div>
               </div>
@@ -99,7 +108,6 @@ export default class RosterNineteenBody extends React.Component<
           {PLAYLISTS.map((p, index) => (
             <AlbumCover
               playlist={p}
-              includeTitle={true}
               isSelected={p === playlist}
               onClick={this.props.selectPlaylist}
               key={"playlist_" + index}
