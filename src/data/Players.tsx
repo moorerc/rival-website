@@ -11,10 +11,12 @@ export enum Players {
   BACKUS = "backus",
   BARLOW = "barlow",
   BARTH = "barth",
+  BENDER = "bender",
   BOVA = "bova",
   BUTTS = "butts",
   CHU = "chu",
   COLAVINCENZO = "colavincenzo",
+  CONERLY = "conerly",
   CRAYCRAFT = "craycraft",
   // DELAVE = "delave",
   DENNEY = "denney",
@@ -22,34 +24,43 @@ export enum Players {
   ESPOSITO = "esposito",
   FAZEKAS = "fazekas",
   FICEK = "ficek",
+  FLEMING = "fleming",
   FRANKE = "franke",
+  GORDON = "gordon",
   GRIFFITH = "griffith",
   HARLEY = "harley",
   HASKELL = "haskell",
+  HECHT = "hecht",
   HENKIN = "henkin",
   JANJIC = "janjic",
   JAVERSAK = "javersak",
   JEZIERSKI = "jezierski",
   KNOWLES = "knowles",
   KWEE = "kwee",
+  LEHMAN = "lehman",
   LEYDEN = "leyden",
   LIN = "lin",
   LO = "lo",
   LONGMIRE = "longmire",
   MAST = "mast",
   MCCLOSKEY = "mccloskey",
+  MENDOZA = "mendoza",
   MILLER = "miller",
   MOORE = "moore",
   NITZ = "nitz",
   NOONAN = "noonan",
+  PAINE = "paine",
   PERRY = "perry",
   PRUITT = "pruitt",
   RAMSEY = "ramsey",
   RUNZO = "runzo",
   // SANPEDRO = "san pedro",
+  SCHRODER = "schroder",
   SCOTT = "scott",
   SIMON = "simon",
   SMIACH = "smiach",
+  SOTER = "soter",
+  SOPER = "soper",
   STEVA = "steva",
   // TAYLOR = "taylor",
   THEISS = "theiss", // coach
@@ -59,6 +70,7 @@ export enum Players {
   WEINERT = "weinert",
   WETLI = "wetli",
   WRIGHT = "wright",
+  YEE = "yee",
   ZETTNER = "zettner",
   ZHU = "zhu"
 }
@@ -86,6 +98,11 @@ export const PLAYERS: { [key in Players]: Player } = {
     jersey: 22,
     position: Position.HANDLER
   },
+  bender: {
+    name: { first: "Lucy", last: "Bender" },
+    jersey: 2,
+    position: Position.CUTTER
+  },
   bova: {
     name: { first: "Daniela", last: "Bova" },
     jersey: 15,
@@ -106,6 +123,11 @@ export const PLAYERS: { [key in Players]: Player } = {
     name: { first: "Emma", last: "Colavincenzo", nickname: "Bubba" },
     jersey: 13,
     position: Position.CUTTER
+  },
+  conerly: {
+    name: { first: "Grace", last: "Conerly" },
+    jersey: 3,
+    position: Position.HANDLER
   },
   craycraft: {
     name: { first: "Sarah", last: "Craycraft", nickname: "Jules" },
@@ -139,9 +161,19 @@ export const PLAYERS: { [key in Players]: Player } = {
     jersey: 28,
     position: Position.CUTTER
   },
+  fleming: {
+    name: { first: "Maddie", last: "Fleming" },
+    jersey: 13,
+    position: Position.CUTTER
+  },
   franke: {
     name: { first: "Lauren", last: "Franke" },
     jersey: 17,
+    position: Position.CUTTER
+  },
+  gordon: {
+    name: { first: "Meg", last: "Gordon" },
+    jersey: 27,
     position: Position.CUTTER
   },
   griffith: {
@@ -157,6 +189,11 @@ export const PLAYERS: { [key in Players]: Player } = {
   haskell: {
     name: { first: "Nancy", last: "Haskell" },
     jersey: 2,
+    position: Position.CUTTER
+  },
+  hecht: {
+    name: { first: "Zoe", last: "Hecht" },
+    jersey: 83,
     position: Position.CUTTER
   },
   henkin: {
@@ -190,6 +227,11 @@ export const PLAYERS: { [key in Players]: Player } = {
     jersey: 23,
     position: Position.HANDLER
   },
+  lehman: {
+    name: { first: "Elizabeth", last: "Lehman", nickname: "Libby" },
+    jersey: 22,
+    position: Position.CUTTER
+  },
   leyden: {
     name: { first: "Ashley", last: "Leyden" },
     jersey: 2,
@@ -221,6 +263,11 @@ export const PLAYERS: { [key in Players]: Player } = {
     jersey: 30,
     position: Position.HANDLER
   },
+  mendoza: {
+    name: { first: "Lilly", last: "Mendoza", nickname: "Kermit" },
+    jersey: 16,
+    position: Position.CUTTER
+  },
   miller: {
     name: { first: "Stevie", last: "Miller" },
     jersey: 5,
@@ -240,6 +287,11 @@ export const PLAYERS: { [key in Players]: Player } = {
   noonan: {
     name: { first: "Amanda", last: "Noonan" },
     jersey: 77,
+    position: Position.CUTTER
+  },
+  paine: {
+    name: { first: "Kari", last: "Paine" },
+    jersey: 37,
     position: Position.CUTTER
   },
   perry: {
@@ -265,6 +317,11 @@ export const PLAYERS: { [key in Players]: Player } = {
   },
 
   // "san pedro": { name: {first: "Sarah", last: "San Pedro"}, jersey: 0},
+  schroder: {
+    name: { first: "Emmy", last: "Schroder", nickname: "Mantis" },
+    jersey: 28,
+    position: Position.CUTTER
+  },
   scott: {
     name: { first: "Sara", last: "Scott" },
     jersey: 31,
@@ -279,6 +336,16 @@ export const PLAYERS: { [key in Players]: Player } = {
     name: { first: "Kristen", last: "Smiach" },
     jersey: 10,
     position: Position.CUTTER
+  },
+  soter: {
+    name: { first: "Laura", last: "Soter" },
+    jersey: 19,
+    position: Position.CUTTER
+  },
+  soper: {
+    name: { first: "Paige", last: "Soper", nickname: "Diddy" },
+    jersey: 0,
+    position: Position.HANDLER
   },
   steva: {
     name: { first: "Kristi", last: "Steva", nickname: "ChemE" },
@@ -319,6 +386,11 @@ export const PLAYERS: { [key in Players]: Player } = {
     name: { first: "Brittany", last: "Wright" },
     jersey: 15,
     position: Position.CUTTER
+  },
+  yee: {
+    name: { first: "Sharon", last: "Yee" },
+    jersey: 14,
+    position: Position.HANDLER
   },
 
   zettner: {

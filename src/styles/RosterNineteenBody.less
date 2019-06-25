@@ -1,0 +1,278 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.roster-nineteen-body {
+  flex: 0 1 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  //   border: 1px solid yellow;
+
+  > .body-top {
+    background-color: @spot-black;
+    // border: 1px solid cornflowerblue;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .side-nav {
+      padding: 0 20px;
+
+      .roster-control-button {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        border: 1px solid @light-gray1;
+        background-color: @spot-black;
+        margin: 1px;
+
+        .bp3-icon {
+          color: @light-gray1;
+        }
+
+        &:not(.bp3-disabled) {
+          &:hover {
+            height: 36px;
+            width: 36px;
+            border: 2px solid @white;
+            .bp3-icon {
+              color: @white;
+            }
+
+            margin: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .content {
+      //   border: 1px solid yellow;
+      padding: 20px 0;
+      height: 100%;
+      flex: 1 1 auto;
+      display: flex;
+    }
+
+    .content-left {
+      //   border: 1px solid white;
+      display: flex;
+      flex: 0 1 auto;
+      height: 100%;
+      width: 45%;
+      //   margin-right: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-right: 10px;
+
+      .playlist-cover-container {
+        // border: 1px solid blue;
+        // height: 350px;
+        height: 100%;
+        width: 100%;
+        max-height: 400px;
+        max-width: 400px;
+        width: 100%;
+        // border-radius: 3px;
+        // margin: 5px 0 10px 0;
+        // text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex: 0 1 auto;
+
+        .album-cover-image {
+        }
+      }
+    }
+
+    .playlist-text {
+      margin-bottom: 25px;
+      //   border: 1px solid orange;
+      width: 100%;
+      font-family: "Proxima Nova";
+
+      .playlist-title-header {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 10px;
+        // font-family: "Proxima Nova";
+      }
+
+      .playlist-title {
+        font-size: 34px;
+        color: @white;
+        // font-family: "Proxima Nova";
+      }
+
+      .playlist-description {
+        font-size: 12px;
+      }
+    }
+
+    .content-right {
+      //   border: 1px soild gray;
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      font-family: "Proxima Nova";
+
+      .tracks-table {
+        // border: 1px solid blue;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+      }
+
+      .tracks-table-body {
+        // border: 1px solid green;
+        overflow-y: scroll;
+      }
+
+      .table-row {
+        border-bottom: 1px solid @spot-bg-light;
+        display: flex;
+        flex-direction: row;
+        color: @white;
+
+        &.tracks-table-header {
+          color: @spot-gray;
+          text-transform: uppercase;
+          font-size: 12px;
+          letter-spacing: 2px;
+          padding-bottom: 5px;
+        }
+
+        &.tracks-table-row {
+          padding: 8px 0;
+          align-items: center;
+
+          &:hover {
+            background-color: @spot-bg-light;
+
+            .col-play {
+              visibility: visible;
+            }
+          }
+        }
+
+        .col-play {
+          flex: 0 0 auto;
+          padding-left: 10px;
+          padding-right: 10px;
+          visibility: hidden;
+
+          .play-icon {
+            border: 1px solid @light-gray1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            height: 24px;
+            width: 24px;
+            padding-left: 2px;
+            background-color: @spot-black;
+            margin: 1px;
+            color: @light-gray1;
+
+            &:hover {
+              border: 2px solid @white;
+              height: 26px;
+              width: 26px;
+              cursor: pointer;
+              margin: 0;
+              color: @white;
+            }
+          }
+        }
+
+        .col-title {
+          flex: 1 1 auto;
+          margin-left: 10px;
+        }
+
+        .col-artist {
+          width: 200px;
+        }
+
+        .col-duration {
+          width: 100px;
+          color: @spot-gray;
+        }
+
+        .col-track {
+          // margin-left: 10px;
+          width: 70px;
+          color: @spot-gray;
+
+          &.-center {
+            // text-align: center;
+            padding-left: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  > .body-bottom {
+    // border: 1px solid orange;
+    flex: 0 0 auto;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: center;
+    margin: 0 20px;
+
+    :first-child {
+      padding-left: 0 !important;
+    }
+
+    .album-cover {
+      padding: 10px;
+      margin: 10px;
+
+      :hover {
+        cursor: pointer;
+      }
+
+      &.-is-selected {
+        border-bottom: 3px solid @spot-green;
+      }
+
+      .album-cover-image {
+        height: 150px;
+        width: 150px;
+        // border-radius: 3px;
+        // margin: 5px 0 10px 0;
+        // text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .album-cover-title {
+        text-align: center;
+        margin-top: 5px;
+        font-family: "Proxima Nova";
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 150px;
+
+        &.-long-title {
+          margin-top: 7px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
