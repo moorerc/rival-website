@@ -108,7 +108,7 @@ export default class RosterNineteenMobileBody extends React.Component<
       <React.Fragment>
         {CATEGORIES.map(category => {
           return (
-            <div className="category-container">
+            <div className="category-container" key={category.title}>
               <div className="category-title">{category.title}</div>
               <div className="category-description">{category.description}</div>
               <div className="playlists-container">
