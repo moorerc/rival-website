@@ -84,14 +84,12 @@ export default class TournamentCard extends React.Component<
             />
           </div> */}
         </div>
-        {tournament.id !== "2016-esc" ? (
-          <div className="card-picture">
-            <div
-              className="tournamentTeamPic"
-              style={{ backgroundImage: "url(" + imageUrlTeamPic + ")" }}
-            />
-          </div>
-        ) : null}
+        <div className="card-picture">
+          <div
+            className="tournamentTeamPic"
+            style={{ backgroundImage: "url(" + imageUrlTeamPic + ")" }}
+          />
+        </div>
         <div className="card-games">
           {tournament.games.map((game: Game) => {
             const imageUrl = getImageUrlForOpponent(game.opponent);

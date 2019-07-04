@@ -3,6 +3,7 @@ import { Game } from "./Games";
 import { TOURNAMENTS_2016 } from "./results/Results_2016";
 import { TOURNAMENTS_2017 } from "./results/Results_2017";
 import { TOURNAMENTS_2018 } from "./results/Results_2018";
+import { TOURNAMENTS_2019 } from "./results/Results_2019";
 
 export interface Tournament {
   id: string;
@@ -30,5 +31,6 @@ export const ALL_TOURNAMENTS: TournamentList[] = [
   TOURNAMENTS_2015,
   TOURNAMENTS_2016,
   TOURNAMENTS_2017,
-  TOURNAMENTS_2018
+  TOURNAMENTS_2018,
+  TOURNAMENTS_2019
 ];
