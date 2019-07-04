@@ -153,7 +153,7 @@ export const RIVAL_2018: RosterList = {
   players: [
     Players.HASKELL,
     Players.BARLOW,
-    Players.MILLER,
+    // Players.MILLER,
     Players.PRUITT,
     Players.NITZ,
     Players.MOORE,
@@ -231,10 +231,10 @@ export const RIVAL_2019: RosterList = {
   results: {
     wins: 0,
     losses: 0,
-    finish: ""
+    finish: "TBD"
   },
   highlights: [],
-  rosterAnnounceLink: "www.rivalultimate.com/roster2019",
+  rosterAnnounceLink: "http://www.rivalultimate.com/roster2019",
   year: 2019
 };
 
@@ -242,5 +242,6 @@ export const RIVAL_ROSTERS: RosterList[] = [
   RIVAL_2015,
   RIVAL_2016,
   RIVAL_2017,
-  RIVAL_2018
+  RIVAL_2018,
+  RIVAL_2019
 ];

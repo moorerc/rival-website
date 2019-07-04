@@ -265,7 +265,8 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
               "-vertical":
                 roster.year === 2015 ||
                 roster.year === 2016 ||
-                roster.year === 2017
+                roster.year === 2017 ||
+                roster.year === 2019
             })}
           >
             <div
@@ -404,14 +405,16 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
         >
           {roster.results.losses}
         </Tag>
-        <Tag
-          intent={Intent.PRIMARY}
-          minimal={true}
-          className="season-result-tag"
-          //   large={true}
-        >
-          {roster.results.finish}
-        </Tag>
+        {roster.results.finish !== "" && (
+          <Tag
+            intent={Intent.PRIMARY}
+            minimal={true}
+            className="season-result-tag"
+            //   large={true}
+          >
+            {roster.results.finish}
+          </Tag>
+        )}
       </div>
     );
   }

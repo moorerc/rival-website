@@ -46,7 +46,7 @@ export default class RosterUserAvatar extends React.Component<
             <Icon icon={isCoach ? "clipboard" : "star"} iconSize={10} />
           </Tag>
         )}
-        {!hideBadge && player.jersey && (
+        {!hideBadge && player.jersey !== undefined && (
           <Tag
             className={classNames("user-avatar-tag", {
               "-invalid": noColor,

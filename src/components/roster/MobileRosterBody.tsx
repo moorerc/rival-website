@@ -247,7 +247,8 @@ export default class MobileRosterBody extends React.Component<
             "-vertical":
               roster.year === 2015 ||
               roster.year === 2016 ||
-              roster.year === 2017
+              roster.year === 2017 ||
+              roster.year === 2019
           })}
         >
           <div

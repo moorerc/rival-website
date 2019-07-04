@@ -45,6 +45,15 @@ const PHOTO_GRID_IMAGES = {
     imageF: "/img/photo-grids/all_2016_kristen.jpg",
     imageG: "/img/photo-grids/all_2018_beach2.jpg"
   },
+  "rival-2019": {
+    imageA: "/img/photo-grids/2019_cbuspod.jpg",
+    imageB: "/img/photo-grids/2019_yam.jpg",
+    imageC: "/img/photo-grids/2019_gflag.jpg",
+    imageD: "/img/photo-grids/2019_tflag.jpg",
+    imageE: "/img/photo-grids/2019_lflag.jpg",
+    imageF: "/img/photo-grids/2019_iriswhiteboard.jpg",
+    imageG: "/img/photo-grids/2019_stark.jpg"
+  },
   "rival-2018": {
     imageA: "/img/photo-grids/2018_harley.jpg",
     imageB: "/img/photo-grids/2018_sara.jpg",

@@ -381,5 +381,19 @@ export const ALL_NEWS: NewsItem[] = [
     date: "Oct 11 2015",
     author: "Rival",
     type: NEWS_TYPE.VIDEO
+  },
+  {
+    title: "Rival 2019 Roster Release",
+    link: "http://www.rivalultimate.com/roster2019",
+    date: "June 25, 2019",
+    author: "Rival",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Columbus Rival 2019 Roster",
+    link: "https://ultiworld.com/livewire/columbus-rival-2019-roster/",
+    date: "June 26, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
   }
 ];
