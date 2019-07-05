@@ -230,7 +230,7 @@ export const PLAYERS: { [key in Players]: Player } = {
   lehman: {
     name: { first: "Libby", last: "Lehman" },
     jersey: 22,
-    position: Position.CUTTER
+    position: Position.HANDLER
   },
   leyden: {
     name: { first: "Ashley", last: "Leyden" },
