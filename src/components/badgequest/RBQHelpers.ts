@@ -16,10 +16,9 @@ export function numTimesUserEarnedBadge(player: Players, badge: Badges) {
   return count;
 }
 
-export function getBadgesEarnedForBadge(badge: Badges) {
+export function getBadgesEarnedForBadge(badge: Badges): BadgeEarned[] {
   const sortedBadgesEarned = _.groupBy(BADGES_EARNED, "badge");
-  // console.log(sortedBadgesEarned); // tslint:disable-line:no-console
-  return sortedBadgesEarned[badge];
+  return sortedBadgesEarned[badge] || [];
 }
 
 export function getBadgesEarnedForPlayer(player: Players) {
