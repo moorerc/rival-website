@@ -1,0 +1,104 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.rbq-mobile-details-panel {
+  .details-panel-content {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+
+    &.-no-top-margin {
+      margin: 0 10px 10px 10px;
+    }
+
+    .mobile-header {
+      .title {
+        color: @gray5;
+      }
+
+      .spacer {
+        border-top: 1px solid @gray5;
+      }
+    }
+  }
+
+  .icons-bucket {
+    border: 1px dashed @gray5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: @white;
+    padding: 10px 0;
+  }
+
+  .rbq-mini-user-avatar {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    margin: 3px;
+    position: relative;
+
+    > .user-avatar-image {
+      flex: 1 1 auto;
+      border-radius: 50%;
+      border: 3px solid @blue3;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &.-invalid {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        border: 3px solid @light-gray3;
+      }
+    }
+
+    > .user-avatar-tag {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      background-color: @blue3;
+    }
+  }
+
+  .earned-details {
+    margin-top: 20px;
+  }
+
+  .badges-earned-table {
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    margin-top: 5px;
+
+    table {
+      border: 1px dashed @gray5;
+      flex: 1 0 auto;
+      border-radius: 5px;
+      border-spacing: 0px;
+      border-collapse: collapse;
+      background-color: @white;
+
+      td {
+        border-bottom: 1px solid @gray5;
+        padding: 5px;
+        font-size: 10px;
+        text-align: center;
+        color: @gray1;
+        font-weight: 300;
+      }
+
+      th {
+        border-bottom: 1px solid @gray3;
+        padding: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+    }
+  }
+}

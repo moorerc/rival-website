@@ -1,0 +1,183 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.rbq-mobile-home {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+
+  .mobile-home-header {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: @white;
+    border: 1px solid @gray3;
+    border-radius: 3px;
+
+    .header-logo {
+      height: 80px;
+      width: 80px;
+      flex: 0 0 auto;
+    }
+
+    .header-main {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      margin-left: 15px;
+
+      .title {
+        text-align: center;
+        border-bottom: 1px solid @gray3;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: @dark-gray3;
+        padding-bottom: 5px;
+      }
+
+      .subtitle {
+        padding: 5px 5px 0px 5px;
+        color: @gray3;
+        text-align: center;
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-align: justify;
+      }
+    }
+  }
+
+  .mobile-header {
+    .title {
+      color: @gray5;
+    }
+
+    .spacer {
+      border-top: 1px solid @gray5;
+    }
+  }
+
+  .last-updated {
+    text-align: center;
+    color: @gray5;
+    font-style: italic !important;
+    text-transform: uppercase;
+    font-size: 8px;
+  }
+
+  .home-section {
+    margin: 20px 0;
+  }
+
+  .quick-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    .quick-stat {
+      background-color: @white;
+      border: 1px dashed @gray5;
+      padding: 15px;
+      font-size: 24px;
+      color: @gray3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .stat-title {
+        text-transform: uppercase;
+        color: @dark-gray3;
+        font-size: 10px;
+      }
+
+      .stat-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+      }
+
+      .quick-stat-icon {
+        color: @light-gray3;
+        display: flex;
+        align-items: center;
+        margin-right: 7px;
+        margin-top: 2px;
+      }
+
+      .current-leader-image {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .history-year {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+
+    .history-title {
+      flex: 0 0 auto;
+      text-transform: uppercase;
+      color: @gray1;
+      font-size: 12px;
+    }
+
+    .history-stats {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+
+      .quick-stat {
+        background-color: @white;
+        border: 1px dashed @gray5;
+        padding: 5px;
+        font-size: 14px;
+        color: @gray3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .stat-title {
+          text-transform: uppercase;
+          color: @dark-gray3;
+          font-size: 10px;
+        }
+
+        .stat-content {
+          display: flex;
+          flex-direction: row;
+          margin: 0 5px;
+        }
+
+        .quick-stat-icon {
+          color: @gray3;
+          display: flex;
+          align-items: center;
+          margin-right: 7px;
+          margin-top: 2px;
+        }
+
+        .current-leader-image {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+
+          &.-historical {
+            margin: 0 3px;
+          }
+        }
+      }
+    }
+  }
+}

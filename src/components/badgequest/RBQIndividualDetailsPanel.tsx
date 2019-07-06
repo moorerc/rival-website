@@ -64,7 +64,7 @@ export default class RBQIndividualDetailsPanel extends React.Component<
               />
             ))}
           </div>
-          <div className="badges-earned-table pt-striped">
+          <div className="badges-earned-table bp3-striped">
             <table>
               <thead>
                 <tr>

@@ -53,7 +53,7 @@ export class RBQMobileBadgeList extends React.Component<
                   </span>
                 </React.Fragment>
               }
-              subtitleRight={<span>View Details</span>}
+              subtitleRight={<span>Quick Details</span>}
               imageUrl={getImageUrlForBadge(b)}
               noBorder={true}
               detailsContent={

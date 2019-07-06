@@ -49,8 +49,10 @@ interface BadgeQuestState {
 export default class BadgeQuest extends React.Component<BadgeQuestState> {
   state: BadgeQuestState = {
     mainPanel: MainPanel.TEAM_STATS,
-    selectedTab: RBQTab.DETAILS,
-    detailsView: RBQDetailsView.DETAILS_BADGE
+    selectedTab: RBQTab.HOME,
+    detailsView: RBQDetailsView.DETAILS_BADGE,
+    selectedBadge: rbq2018BadgesActivated[0],
+    selectedPlayer: RBQ_ROSTER.players[0]
   };
 
   render() {
@@ -207,7 +209,6 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
   };
 
   private selectPlayer = (player: Players) => {
-    console.log("select player");
     this.setState({
       selectedPlayer: player,
       mainPanel: MainPanel.INDIVIDUAL_DETAILS,

@@ -50,6 +50,8 @@ export const rbq2018BadgesActivated: Badges[] = [
   Badges.STELLAR_STUDENT
 ];
 
+export const rbq2018LastUpdated: string = "Jul 1 2019 15:00:00 PDT";
+
 export const rbq2018BadgeEarned: BadgeEarned[] = [
   // Update 0
   {

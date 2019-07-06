@@ -5,8 +5,8 @@ import { Players, PLAYERS } from "src/data/Players";
 import { getBadgesEarnedForPlayer } from "./RBQHelpers";
 import RBQMobileListItemCard from "./RBQMobileListItemCard";
 import {
-  getInformalDisplayNameForPlayer,
-  getImageUrlForPlayer
+  getImageUrlForPlayer,
+  getDisplayNameForPlayer
 } from "../basic/Helpers";
 import { RBQ_ROSTER } from "src/pages/BadgeQuest";
 import { Icon } from "@blueprintjs/core";
@@ -40,7 +40,7 @@ export class RBQMobileLeaderboard extends React.Component<
           return (
             <RBQMobileListItemCard
               key={key}
-              title={getInformalDisplayNameForPlayer(PLAYERS[p])}
+              title={getDisplayNameForPlayer(PLAYERS[p])}
               subtitle={
                 <React.Fragment>
                   <span className="stat-segment">
