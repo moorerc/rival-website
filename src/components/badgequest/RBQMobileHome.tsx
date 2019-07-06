@@ -4,7 +4,11 @@ import "../../styles/RBQMobileHome.css";
 import MobileHeader from "../basic/MobileHeader";
 import { Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
-import { rbq2018BadgeEarned, rbq2018LastUpdated } from "src/data/rbq/RBQ2018";
+import {
+  rbq2018BadgeEarned,
+  rbq2018LastUpdated,
+  rbq2018BadgesRecentlyReleased
+} from "src/data/rbq/RBQ2018";
 import { Players } from "src/data/Players";
 import { RBQ_ROSTER } from "src/pages/BadgeQuest";
 import { getBadgesEarnedForPlayer } from "./RBQHelpers";
@@ -13,11 +17,13 @@ import {
   getImageUrlForPlayer
 } from "../basic/Helpers";
 import * as moment from "moment";
+import RBQMiniBadgeIcon from "./RBQMiniBadgeIcon";
+import { Badges } from "src/data/rbq/Badges";
 
 export namespace RBQMobileHome {
   export interface Props {
-    // roster: RosterList;
-    // selectPlayer: (player: Players) => void;
+    selectPlayer: (player: Players) => void;
+    selectBadge: (badge: Badges) => void;
   }
 }
 
@@ -29,7 +35,6 @@ export class RBQMobileHome extends React.Component<RBQMobileHome.Props> {
       player => getBadgesEarnedForPlayer(player).length,
       "DESC"
     );
-    console.log(rosterLeaderboard);
     let participatedCount = 0;
     users.forEach(user => {
       if (getBadgesEarnedForPlayer(user).length > 0) {
@@ -93,9 +98,23 @@ export class RBQMobileHome extends React.Component<RBQMobileHome.Props> {
                 <img
                   className="current-leader-image"
                   src={getLatestImageUrlForPlayer(currentLeader)}
+                  onClick={() => this.props.selectPlayer(currentLeader)}
                 />
               </span>
             </div>
+          </div>
+        </div>
+        <div className="home-section">
+          <MobileHeader title="Recently Added" />
+          <div className="recent-badges">
+            {rbq2018BadgesRecentlyReleased.map(recentBadge => (
+              <RBQMiniBadgeIcon
+                key={recentBadge}
+                badge={recentBadge}
+                count={1}
+                onClick={() => this.props.selectBadge(recentBadge)}
+              />
+            ))}
           </div>
         </div>
         <div className="home-section rbq-history">

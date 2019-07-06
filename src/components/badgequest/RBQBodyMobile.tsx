@@ -78,7 +78,12 @@ export default class RBQBodyMobile extends React.Component<
           />
         );
       case RBQTab.HOME:
-        return <RBQMobileHome />;
+        return (
+          <RBQMobileHome
+            selectBadge={this.handleSelectBadge}
+            selectPlayer={this.handleSelectPlayer}
+          />
+        );
       default:
         return null;
     }

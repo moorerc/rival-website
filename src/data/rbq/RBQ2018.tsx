@@ -51,6 +51,15 @@ export const rbq2018BadgesActivated: Badges[] = [
 ];
 
 export const rbq2018LastUpdated: string = "Jul 1 2019 15:00:00 PDT";
+export const rbq2018BadgesRecentlyReleased: Badges[] = [
+  Badges.TEAMMATE_TERROR,
+  Badges.RAK,
+  Badges.HOMETOWN_HERO,
+  Badges.STELLAR_STUDENT,
+  Badges.TIE_DYE_BADGE,
+  Badges.POUTINE_AND_PLATES,
+  Badges.FLATBALL_STANLEY
+];
 
 export const rbq2018BadgeEarned: BadgeEarned[] = [
   // Update 0
