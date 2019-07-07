@@ -1,8 +1,5 @@
 import * as React from "react";
 import "../../styles/MobileHeader.css";
-
-import * as _ from "lodash";
-
 interface MobileHeaderProps {
   title: string;
 }

@@ -5,12 +5,13 @@ import * as React from "react";
 
 import { BadgeEarned, Badges, BADGES } from "../../data/rbq/Badges";
 import { PLAYERS, Players } from "../../data/Players";
-import { rbq2018BadgesActivated } from "../../data/rbq/RBQ2018";
 import {
   getBadgesEarnedForPlayer,
   numTimesUserEarnedBadge
 } from "./RBQHelpers";
 import RBQMiniBadgeIcon from "./RBQMiniBadgeIcon";
+import { getImageUrlForPlayer } from "../basic/Helpers";
+import { BADGES_ACTIVATED_THIS_SEASON, RBQ_ROSTER } from "src/data/rbq/RBQData";
 
 interface RBQIndividualDetailsPanelProps {
   player: Players;
@@ -22,9 +23,8 @@ export default class RBQIndividualDetailsPanel extends React.Component<
 > {
   render() {
     const { player } = this.props;
-    const imagesBase = "/img/roster-2018/headshots/rival2018_headshot_";
     const badgesEarned = getBadgesEarnedForPlayer(player);
-    const badgesActivated: Badges[] = rbq2018BadgesActivated;
+    const badgesActivated: Badges[] = BADGES_ACTIVATED_THIS_SEASON;
 
     return (
       <div className="rbq-individual-details-panel">
@@ -32,9 +32,7 @@ export default class RBQIndividualDetailsPanel extends React.Component<
           <div className="header-left">
             <img
               className="user-image"
-              src={
-                imagesBase + PLAYERS[player].name.last.toLowerCase() + ".jpg"
-              }
+              src={getImageUrlForPlayer(RBQ_ROSTER.id, player)}
             />
           </div>
           <div className="header-right">
@@ -64,7 +62,7 @@ export default class RBQIndividualDetailsPanel extends React.Component<
               />
             ))}
           </div>
-          <div className="badges-earned-table pt-striped">
+          <div className="badges-earned-table bp3-striped">
             <table>
               <thead>
                 <tr>

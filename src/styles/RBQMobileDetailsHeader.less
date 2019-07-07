@@ -1,0 +1,154 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.rbq-mobile-details-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+
+  &.-no-bottom-padding {
+    padding: 10px 10px 0 10px;
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    background-color: @white;
+    padding: 10px;
+    border: 1px solid @gray5;
+    border-radius: 3px;
+
+    .selected-item-image {
+      width: 70px;
+      height: 70px;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+
+      &.-player-image {
+        border-radius: 50%;
+        border: 3px solid @light-gray3;
+      }
+    }
+
+    .main-content-area {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      align-content: center;
+      justify-content: center;
+
+      .title {
+        text-transform: uppercase;
+        padding-bottom: 3px;
+        color: @dark-gray5;
+        letter-spacing: 1px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .main {
+          flex: 1 1 auto;
+        }
+
+        .right {
+          flex: 0 0 auto;
+          color: @gray3;
+          font-weight: 200;
+          font-size: 11px;
+          display: flex;
+          align-items: center;
+          text-transform: none;
+
+          .created-by-image {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .subtitle {
+        border-top: 1px solid @gray5;
+        padding-top: 3px;
+        color: @gray3;
+        display: flex;
+        align-items: center;
+        font-weight: 200;
+        font-size: 12px;
+        text-transform: capitalize;
+
+        .stat-segment {
+          margin-right: 8px;
+          display: flex;
+          align-items: center;
+
+          > .bp3-icon {
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-header {
+    .title {
+      color: @gray5;
+    }
+
+    .spacer {
+      border-top: 1px solid @gray5;
+    }
+  }
+
+  .description-container {
+    background-color: @white;
+    padding: 10px;
+    color: @gray1;
+    font-weight: 300;
+    font-size: 11px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    // background-color: @light-gray5;
+    border: 1px dashed @gray5;
+    letter-spacing: 1px;
+  }
+
+  .card-tag {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    .tag-logo {
+      height: 10px;
+      width: 10px;
+      margin-right: 5px;
+      filter: invert(100%);
+    }
+
+    > .bp3-tag {
+      text-align: center;
+
+      &.-first {
+        background-color: @tag-gold;
+      }
+
+      &.-second {
+        background-color: @tag-silver;
+      }
+
+      &.-third {
+        background-color: @tag-bronze;
+      }
+    }
+  }
+}

@@ -1,6 +1,11 @@
 import { RIVAL_ROSTERS } from "src/data/RosterList";
 import * as _ from "lodash";
 import { Player } from "src/data/Players";
+import { Badge } from "src/data/rbq/Badges";
+
+export function getImageUrlForBadge(badge: Badge) {
+  return "/img/badgeimages/" + badge.image;
+}
 
 export function getImageUrlForOpponent(teamId: string) {
   return "/img/team-logos/" + teamId + ".jpg";
@@ -16,6 +21,29 @@ export function getImageUrlForTournamentTeamPic(tournamentId: string) {
 
 export function getImageUrlForRoster(rosterId: string) {
   return "/img/" + rosterId + "/" + rosterId + ".jpg";
+}
+
+export function getLatestImageUrlForPlayer(playerId: string) {
+  let lastRosterId = "";
+
+  RIVAL_ROSTERS.forEach(roster => {
+    const rostFull = roster.players.concat(roster.coaches);
+    _.forEach(rostFull, player => {
+      if (player === playerId) {
+        lastRosterId = roster.id;
+      }
+    });
+  });
+
+  return (
+    "/img/" +
+    lastRosterId +
+    "/headshots/" +
+    lastRosterId +
+    "_headshot_" +
+    playerId +
+    ".jpg"
+  );
 }
 
 export function getImageUrlForPlayer(rosterId: string, playerId: string) {
@@ -91,6 +119,13 @@ export function getDisplayNameForPlayer(player: Player) {
     );
   }
   return player.name.first + " " + player.name.last;
+}
+
+export function getInformalDisplayNameForPlayer(player: Player) {
+  if (player.name.nickname) {
+    return player.name.nickname;
+  }
+  return player.name.first;
 }
 
 export function openLinkInNewTab(url: string) {

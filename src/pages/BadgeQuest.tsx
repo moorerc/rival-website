@@ -11,9 +11,15 @@ import RBQLeaderboardCard from "../components/badgequest/RBQLeaderboardCard";
 import RBQTeamStatsDetailsPanel from "../components/badgequest/RBQTeamStatsDetailsPanel";
 import { BADGES, Badges } from "../data/rbq/Badges";
 import { Players } from "../data/Players";
-import { rbq2018BadgesActivated } from "../data/rbq/RBQ2018";
-import { RIVAL_2018, RosterList } from "../data/RosterList";
+import { isMobile } from "react-device-detect";
 import "../styles/BadgeQuest.css";
+import * as classNames from "classnames";
+import RBQBodyMobile from "src/components/badgequest/RBQBodyMobile";
+import {
+  BADGES_ACTIVATED_THIS_SEASON,
+  RBQ_ROSTER,
+  RBQ_TITLE
+} from "src/data/rbq/RBQData";
 
 enum MainPanel {
   "INDIVIDUAL_DETAILS",
@@ -21,21 +27,71 @@ enum MainPanel {
   "BADGE_DETAILS"
 }
 
+export enum RBQTab {
+  "HOME",
+  "LEADERBOARD",
+  "BADGES",
+  "DETAILS"
+}
+
+export enum RBQDetailsView {
+  "DETAILS_BADGE",
+  "DETAILS_PLAYER"
+}
+
 interface BadgeQuestState {
   mainPanel: MainPanel;
+  selectedTab: RBQTab;
+  detailsView: RBQDetailsView;
   selectedBadge?: Badges;
   selectedPlayer?: Players;
 }
 
 export default class BadgeQuest extends React.Component<BadgeQuestState> {
   state: BadgeQuestState = {
-    mainPanel: MainPanel.TEAM_STATS
+    mainPanel: MainPanel.TEAM_STATS,
+    selectedTab: RBQTab.HOME,
+    detailsView: RBQDetailsView.DETAILS_BADGE,
+    selectedBadge: BADGES_ACTIVATED_THIS_SEASON[0],
+    selectedPlayer: RBQ_ROSTER.players[0]
   };
 
   render() {
-    const roster: RosterList = RIVAL_2018;
+    const {
+      selectedTab,
+      selectedBadge,
+      selectedPlayer,
+      detailsView
+    } = this.state;
+
+    return (
+      <div
+        className={classNames("badgequest-page", {
+          "-mobile": isMobile
+        })}
+      >
+        {isMobile ? (
+          <RBQBodyMobile
+            roster={RBQ_ROSTER}
+            selectedTab={selectedTab}
+            selectedBadge={selectedBadge}
+            selectedPlayer={selectedPlayer}
+            detailsView={detailsView}
+            selectTab={this.selectTab}
+            selectPlayer={this.selectPlayer}
+            selectBadge={this.selectBadge}
+          />
+        ) : (
+          this.renderWebBody()
+        )}
+      </div>
+    );
+  }
+
+  private renderWebBody = () => {
+    const roster = RBQ_ROSTER;
     const users: Players[] = _.concat(roster.players, roster.coaches);
-    const badgesActivated: Badges[] = rbq2018BadgesActivated;
+    const badgesActivated: Badges[] = BADGES_ACTIVATED_THIS_SEASON;
 
     const rosterLeaderboard = _.sortBy(
       users,
@@ -43,7 +99,7 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
       "DESC"
     );
     return (
-      <div className="badgequest-page">
+      <React.Fragment>
         <div className="side-panel -left">
           <div className="side-panel-title">Leaderboard</div>
           <div className="side-panel-content">
@@ -63,10 +119,13 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
         <div className="main-panel">
           <div className="main-panel-title">
             <img src="img/Rlogo.png" className="title-logo" />
-            Badge Quest 2018
+            {RBQ_TITLE}
           </div>
           <div className="main-panel-controls">
-            <ButtonGroup fill={true}>
+            <ButtonGroup
+              fill={true}
+              className="main-panel-controls-button-group"
+            >
               <Button
                 icon="user"
                 onClick={() =>
@@ -74,18 +133,21 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
                 }
                 text="Individual Details"
                 active={this.state.mainPanel === MainPanel.INDIVIDUAL_DETAILS}
+                className="main-panel-controls-button"
               />
               <Button
                 icon="pulse"
                 onClick={() => this.changeMainPanel(MainPanel.TEAM_STATS)}
                 text="Team Stats"
                 active={this.state.mainPanel === MainPanel.TEAM_STATS}
+                className="main-panel-controls-button"
               />
               <Button
                 icon="badge"
                 onClick={() => this.changeMainPanel(MainPanel.BADGE_DETAILS)}
                 text="Badge Details"
                 active={this.state.mainPanel === MainPanel.BADGE_DETAILS}
+                className="main-panel-controls-button"
               />
             </ButtonGroup>
           </div>
@@ -118,9 +180,9 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
-  }
+  };
 
   private renderMainPanel = () => {
     switch (this.state.mainPanel) {
@@ -140,9 +202,12 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
           <RBQEmptyDetailsPanel message="select a user from the panel on the left." />
         );
       case MainPanel.TEAM_STATS:
-        // return <RBQEmptyDetailsPanel message="team stats coming soon!" />;
         return <RBQTeamStatsDetailsPanel />;
     }
+  };
+
+  private selectTab = (tab: RBQTab) => {
+    this.setState({ selectedTab: tab });
   };
 
   private changeMainPanel = (panel: MainPanel) => {
@@ -152,11 +217,18 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
   private selectPlayer = (player: Players) => {
     this.setState({
       selectedPlayer: player,
-      mainPanel: MainPanel.INDIVIDUAL_DETAILS
+      mainPanel: MainPanel.INDIVIDUAL_DETAILS,
+      detailsView: RBQDetailsView.DETAILS_PLAYER,
+      selectedTab: RBQTab.DETAILS
     });
   };
 
   private selectBadge = (badge: Badges) => {
-    this.setState({ selectedBadge: badge, mainPanel: MainPanel.BADGE_DETAILS });
+    this.setState({
+      selectedBadge: badge,
+      mainPanel: MainPanel.BADGE_DETAILS,
+      detailsView: RBQDetailsView.DETAILS_BADGE,
+      selectedTab: RBQTab.DETAILS
+    });
   };
 }

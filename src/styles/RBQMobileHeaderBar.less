@@ -1,0 +1,30 @@
+@import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+
+@import "./variables.less";
+
+.rbq-mobile-header-bar {
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid @light-gray3;
+  min-height: 41px;
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .title {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .title-logo {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+  }
+}
