@@ -5,14 +5,13 @@ import * as React from "react";
 
 import { BadgeEarned, Badges, BADGES } from "../../data/rbq/Badges";
 import { PLAYERS, Players } from "../../data/Players";
-import { rbq2018BadgesActivated } from "../../data/rbq/RBQ2018";
 import {
   getBadgesEarnedForPlayer,
   numTimesUserEarnedBadge
 } from "./RBQHelpers";
 import RBQMiniBadgeIcon from "./RBQMiniBadgeIcon";
 import { getImageUrlForPlayer } from "../basic/Helpers";
-import { RBQ_ROSTER } from "src/pages/BadgeQuest";
+import { BADGES_ACTIVATED_THIS_SEASON, RBQ_ROSTER } from "src/data/rbq/RBQData";
 
 interface RBQIndividualDetailsPanelProps {
   player: Players;
@@ -25,7 +24,7 @@ export default class RBQIndividualDetailsPanel extends React.Component<
   render() {
     const { player } = this.props;
     const badgesEarned = getBadgesEarnedForPlayer(player);
-    const badgesActivated: Badges[] = rbq2018BadgesActivated;
+    const badgesActivated: Badges[] = BADGES_ACTIVATED_THIS_SEASON;
 
     return (
       <div className="rbq-individual-details-panel">

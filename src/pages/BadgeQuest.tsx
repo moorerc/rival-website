@@ -11,14 +11,15 @@ import RBQLeaderboardCard from "../components/badgequest/RBQLeaderboardCard";
 import RBQTeamStatsDetailsPanel from "../components/badgequest/RBQTeamStatsDetailsPanel";
 import { BADGES, Badges } from "../data/rbq/Badges";
 import { Players } from "../data/Players";
-import { rbq2018BadgesActivated } from "../data/rbq/RBQ2018";
-import { RIVAL_2018, RosterList } from "../data/RosterList";
 import { isMobile } from "react-device-detect";
 import "../styles/BadgeQuest.css";
 import * as classNames from "classnames";
 import RBQBodyMobile from "src/components/badgequest/RBQBodyMobile";
-
-export const RBQ_ROSTER: RosterList = RIVAL_2018;
+import {
+  BADGES_ACTIVATED_THIS_SEASON,
+  RBQ_ROSTER,
+  RBQ_TITLE
+} from "src/data/rbq/RBQData";
 
 enum MainPanel {
   "INDIVIDUAL_DETAILS",
@@ -51,7 +52,7 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
     mainPanel: MainPanel.TEAM_STATS,
     selectedTab: RBQTab.HOME,
     detailsView: RBQDetailsView.DETAILS_BADGE,
-    selectedBadge: rbq2018BadgesActivated[0],
+    selectedBadge: BADGES_ACTIVATED_THIS_SEASON[0],
     selectedPlayer: RBQ_ROSTER.players[0]
   };
 
@@ -90,7 +91,7 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
   private renderWebBody = () => {
     const roster = RBQ_ROSTER;
     const users: Players[] = _.concat(roster.players, roster.coaches);
-    const badgesActivated: Badges[] = rbq2018BadgesActivated;
+    const badgesActivated: Badges[] = BADGES_ACTIVATED_THIS_SEASON;
 
     const rosterLeaderboard = _.sortBy(
       users,
@@ -118,7 +119,7 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
         <div className="main-panel">
           <div className="main-panel-title">
             <img src="img/Rlogo.png" className="title-logo" />
-            Badge Quest 2018
+            {RBQ_TITLE}
           </div>
           <div className="main-panel-controls">
             <ButtonGroup

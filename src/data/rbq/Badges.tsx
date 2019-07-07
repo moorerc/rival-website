@@ -103,7 +103,7 @@ export const BADGES: { [key in Badges]: Badge } = {
     title: "Bridge the Gap",
     image: "badge_chat.png",
     description:
-      "Skype with a teammate not in your relative location (squad group). Take a mid-hangout screenshot and post it to slack.",
+      "Video chat with a teammate not in your relative location (squad group). Take a mid-hangout screenshot and post it to slack.",
     createdBy: Players.MOORE
   },
   SWEATY_SELFIE: {
@@ -131,14 +131,14 @@ export const BADGES: { [key in Badges]: Badge } = {
     title: "Hi - Five",
     image: "badge_hand.png",
     description:
-      "Get to know your hogwarts housemates and introduce them to the team. Choose a housemate and post five unique/fun facts about them to slack.",
+      "Get to know your team housemates and introduce them to the team. Choose a housemate from your GoT house and post five unique/fun facts about them to slack.",
     createdBy: Players.MOORE
   },
   PUMP_IT_UP: {
     title: "Pump It Up",
     image: "badge_headphones.png",
     description:
-      "Take a video of yourself lip-syncing to your favorite pump up song and post it to slack. (min length 10 second)",
+      "Take a video of yourself lip-syncing to your favorite (pump up) song and post it to slack. (min length 8 second)",
     createdBy: Players.MOORE
   },
   SUPERB_SUGGESTER: {
@@ -165,7 +165,7 @@ export const BADGES: { [key in Badges]: Badge } = {
     title: "Throwin' Around Trophy",
     image: "badge_trophy.png",
     description:
-      "Throw with each member of our team for a minimum of one uninterrupted 15 min segment. Keep a log of when you threw with who and submit to tots for approval.",
+      "Throw with each member of our team for a minimum of one uninterrupted 10 min segment. Keep a log of when you threw with who and submit to tots for approval.",
     createdBy: Players.MOORE
   },
   HAPPY_HISTORIAN: {

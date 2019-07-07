@@ -4,13 +4,7 @@ import "../../styles/RBQMobileHome.css";
 import MobileHeader from "../basic/MobileHeader";
 import { Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
-import {
-  rbq2018BadgeEarned,
-  rbq2018LastUpdated,
-  rbq2018BadgesRecentlyReleased
-} from "src/data/rbq/RBQ2018";
 import { Players } from "src/data/Players";
-import { RBQ_ROSTER } from "src/pages/BadgeQuest";
 import { getBadgesEarnedForPlayer } from "./RBQHelpers";
 import {
   getLatestImageUrlForPlayer,
@@ -19,6 +13,12 @@ import {
 import * as moment from "moment";
 import RBQMiniBadgeIcon from "./RBQMiniBadgeIcon";
 import { Badges } from "src/data/rbq/Badges";
+import {
+  BADGES_EARNED_THIS_SEASON,
+  RBQ_LAST_UPDATED,
+  BADGES_RECENTLY_RELEASED,
+  RBQ_ROSTER
+} from "src/data/rbq/RBQData";
 
 export namespace RBQMobileHome {
   export interface Props {
@@ -60,7 +60,7 @@ export class RBQMobileHome extends React.Component<RBQMobileHome.Props> {
           </div>
         </div>
         <div className="last-updated">
-          Last updated {moment(rbq2018LastUpdated).fromNow()}
+          Last updated {moment(RBQ_LAST_UPDATED).fromNow()}
         </div>
         <div className="home-section">
           <MobileHeader title="Overview" />
@@ -73,7 +73,7 @@ export class RBQMobileHome extends React.Component<RBQMobileHome.Props> {
                   icon={IconNames.BADGE}
                   iconSize={24}
                 />
-                {rbq2018BadgeEarned.length}
+                {BADGES_EARNED_THIS_SEASON.length}
               </span>
             </div>
             <div className="quick-stat">
@@ -104,19 +104,21 @@ export class RBQMobileHome extends React.Component<RBQMobileHome.Props> {
             </div>
           </div>
         </div>
-        <div className="home-section">
-          <MobileHeader title="Recently Added" />
-          <div className="recent-badges">
-            {rbq2018BadgesRecentlyReleased.map(recentBadge => (
-              <RBQMiniBadgeIcon
-                key={recentBadge}
-                badge={recentBadge}
-                count={1}
-                onClick={() => this.props.selectBadge(recentBadge)}
-              />
-            ))}
+        {BADGES_RECENTLY_RELEASED.length > 0 && (
+          <div className="home-section">
+            <MobileHeader title="Recently Added" />
+            <div className="recent-badges">
+              {BADGES_RECENTLY_RELEASED.map(recentBadge => (
+                <RBQMiniBadgeIcon
+                  key={recentBadge}
+                  badge={recentBadge}
+                  count={1}
+                  onClick={() => this.props.selectBadge(recentBadge)}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
         <div className="home-section rbq-history">
           <MobileHeader title="History" />
           <div className="history-year">

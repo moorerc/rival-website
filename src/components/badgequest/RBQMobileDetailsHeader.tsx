@@ -16,8 +16,9 @@ import {
   getBadgesEarnedForPlayer
 } from "./RBQHelpers";
 import { Players, PLAYERS } from "src/data/Players";
-import { RBQDetailsView, RBQ_ROSTER } from "src/pages/BadgeQuest";
+import { RBQDetailsView } from "src/pages/BadgeQuest";
 import * as classNames from "classnames";
+import { RBQ_ROSTER } from "src/data/rbq/RBQData";
 
 export namespace RBQMobileDetailsHeader {
   export interface Props {

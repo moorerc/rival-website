@@ -6,6 +6,7 @@ import { Icon, Tag } from "@blueprintjs/core";
 import { Players, PLAYERS } from "../../data/Players";
 import { getBadgesEarnedForPlayer } from "./RBQHelpers";
 import "../../styles/RBQLeaderboardCard.css";
+import { getLatestImageUrlForPlayer } from "../basic/Helpers";
 
 interface RBQLeaderboardCardProps {
   player: Players;
@@ -18,7 +19,6 @@ export default class RBQLeaderboardCard extends React.Component<
 > {
   render() {
     const { placement, player } = this.props;
-    const imagesBase = "/img/rival-2018/headshots/rival-2018_headshot_";
     const badgesEarned = getBadgesEarnedForPlayer(player);
 
     return (
@@ -26,12 +26,7 @@ export default class RBQLeaderboardCard extends React.Component<
         <div
           className="leaderboard-card-image"
           style={{
-            background:
-              "url(" +
-              imagesBase +
-              PLAYERS[player].name.last.toLowerCase() +
-              ".jpg" +
-              ")",
+            background: "url(" + getLatestImageUrlForPlayer(player) + ")",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover"

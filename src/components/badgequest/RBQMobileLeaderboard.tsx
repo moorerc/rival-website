@@ -8,9 +8,9 @@ import {
   getImageUrlForPlayer,
   getDisplayNameForPlayer
 } from "../basic/Helpers";
-import { RBQ_ROSTER } from "src/pages/BadgeQuest";
 import { Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
+import { RBQ_ROSTER } from "src/data/rbq/RBQData";
 
 export namespace RBQMobileLeaderboard {
   export interface Props {

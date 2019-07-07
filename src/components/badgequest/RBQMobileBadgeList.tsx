@@ -1,7 +1,6 @@
 import * as _ from "lodash";
 import * as React from "react";
 import { Badges, BADGES } from "src/data/rbq/Badges";
-import { rbq2018BadgesActivated } from "src/data/rbq/RBQ2018";
 import RBQMobileListItemCard from "./RBQMobileListItemCard";
 import {
   getImageUrlForBadge,
@@ -10,6 +9,7 @@ import {
 import { getBadgesEarnedForBadge } from "./RBQHelpers";
 import { Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
+import { BADGES_ACTIVATED_THIS_SEASON } from "src/data/rbq/RBQData";
 
 export namespace RBQMobileBadgeList {
   export interface Props {
@@ -21,7 +21,7 @@ export class RBQMobileBadgeList extends React.Component<
   RBQMobileBadgeList.Props
 > {
   render() {
-    const badgesActivated: Badges[] = rbq2018BadgesActivated;
+    const badgesActivated: Badges[] = BADGES_ACTIVATED_THIS_SEASON;
 
     return (
       <React.Fragment>

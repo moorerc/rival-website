@@ -3,7 +3,7 @@ import * as React from "react";
 import { Badges, BadgeEarned, BADGES } from "src/data/rbq/Badges";
 import { Players, PLAYERS } from "src/data/Players";
 import { RBQMobileDetailsHeader } from "./RBQMobileDetailsHeader";
-import { RBQDetailsView, RBQ_ROSTER } from "src/pages/BadgeQuest";
+import { RBQDetailsView } from "src/pages/BadgeQuest";
 import MobileHeader from "../basic/MobileHeader";
 import RBQMiniUserAvatar from "./RBQMiniUserAvatar";
 import {
@@ -13,8 +13,8 @@ import {
 } from "./RBQHelpers";
 import "../../styles/RBQMobileDetailsPanel.css";
 import * as moment from "moment";
-import { rbq2018BadgesActivated } from "src/data/rbq/RBQ2018";
 import RBQMiniBadgeIcon from "./RBQMiniBadgeIcon";
+import { BADGES_ACTIVATED_THIS_SEASON, RBQ_ROSTER } from "src/data/rbq/RBQData";
 
 export namespace RBQMobileDetailsPanel {
   export interface Props {
@@ -126,7 +126,7 @@ export class RBQMobileDetailsPanel extends React.Component<
       return null;
     }
 
-    const badgesActivated: Badges[] = rbq2018BadgesActivated;
+    const badgesActivated: Badges[] = BADGES_ACTIVATED_THIS_SEASON;
     const badgesEarned = getBadgesEarnedForPlayer(selectedPlayer);
 
     return (
