@@ -33,11 +33,16 @@
     justify-content: center;
     background-color: @white;
     padding: 10px 0;
+
+    .rbq-mini-badge-icon {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .rbq-mini-user-avatar {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     display: flex;
     margin: 3px;
     position: relative;
@@ -70,6 +75,20 @@
     margin-top: 20px;
   }
 
+  .no-badges-earned {
+    background-color: @white;
+    padding: 10px;
+    color: @gray1;
+    font-weight: 300;
+    font-size: 11px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    // background-color: @light-gray5;
+    border: 1px dashed @gray5;
+    letter-spacing: 1px;
+  }
+
   .badges-earned-table {
     display: flex;
     font-family: "Oswald", sans-serif;
@@ -82,6 +101,7 @@
       border-spacing: 0px;
       border-collapse: collapse;
       background-color: @white;
+      width: 100%;
 
       td {
         border-bottom: 1px solid @gray5;

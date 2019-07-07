@@ -121,7 +121,10 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
             Badge Quest 2018
           </div>
           <div className="main-panel-controls">
-            <ButtonGroup fill={true}>
+            <ButtonGroup
+              fill={true}
+              className="main-panel-controls-button-group"
+            >
               <Button
                 icon="user"
                 onClick={() =>
@@ -129,18 +132,21 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
                 }
                 text="Individual Details"
                 active={this.state.mainPanel === MainPanel.INDIVIDUAL_DETAILS}
+                className="main-panel-controls-button"
               />
               <Button
                 icon="pulse"
                 onClick={() => this.changeMainPanel(MainPanel.TEAM_STATS)}
                 text="Team Stats"
                 active={this.state.mainPanel === MainPanel.TEAM_STATS}
+                className="main-panel-controls-button"
               />
               <Button
                 icon="badge"
                 onClick={() => this.changeMainPanel(MainPanel.BADGE_DETAILS)}
                 text="Badge Details"
                 active={this.state.mainPanel === MainPanel.BADGE_DETAILS}
+                className="main-panel-controls-button"
               />
             </ButtonGroup>
           </div>
@@ -195,7 +201,6 @@ export default class BadgeQuest extends React.Component<BadgeQuestState> {
           <RBQEmptyDetailsPanel message="select a user from the panel on the left." />
         );
       case MainPanel.TEAM_STATS:
-        // return <RBQEmptyDetailsPanel message="team stats coming soon!" />;
         return <RBQTeamStatsDetailsPanel />;
     }
   };

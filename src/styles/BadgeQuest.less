@@ -27,7 +27,7 @@
       height: 70px;
       text-transform: uppercase;
       font-size: 40px;
-      font-weight: 500;
+      font-weight: 400;
       flex: 0 0 auto;
       margin-bottom: 10px;
 
@@ -48,6 +48,10 @@
       }
 
       .bp3-active .bp3-icon {
+        color: @rival-gold;
+      }
+
+      .bp3-active .bp3-button-text {
         color: @rival-gold;
       }
     }
@@ -73,7 +77,7 @@
       height: 40px;
       flex: 0 0 auto;
       font-size: 24px;
-      font-weight: 500;
+      font-weight: 400;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -226,7 +230,7 @@
 
         .title-text {
           flex: 1 1 auto;
-          font-weight: 700;
+          font-weight: 400;
           font-size: 20px;
         }
       }
@@ -282,6 +286,7 @@
         th {
           border-bottom: 1px solid @gray3;
           padding: 5px;
+          font-weight: 400;
         }
       }
     }
@@ -294,7 +299,6 @@
   padding: 5%;
 
   display: flex;
-  margin-bottom: 90%;
 
   > .badge-image {
     flex: 1 1 auto;
@@ -366,7 +370,7 @@
 
         .title-text {
           flex: 1 1 auto;
-          font-weight: 700;
+          font-weight: 400;
           font-size: 20px;
         }
 
@@ -424,6 +428,7 @@
         th {
           border-bottom: 1px solid @gray3;
           padding: 5px;
+          font-weight: 400;
         }
       }
     }
@@ -485,5 +490,41 @@
     right: 0;
     text-align: center;
     // background-color: @dark-gray4;
+  }
+}
+
+.main-panel-controls-button-group {
+  width: 100.5%;
+  display: flex;
+  flex-direction: row;
+  background-color: @white;
+  min-height: 30px;
+
+  .bp3-button {
+    &.main-panel-controls-button {
+      flex: 1 1 auto;
+      background-color: @white;
+      border: 1px solid @gray5;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  .bp3-button {
+    .bp3-button-text {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      min-width: 70px;
+    }
+
+    &.bp3-active {
+      // background: none;
+      border-color: @rival-gold;
+      background-color: #d4af3730;
+      .bp3-icon {
+        color: @rival-gold;
+      }
+    }
   }
 }

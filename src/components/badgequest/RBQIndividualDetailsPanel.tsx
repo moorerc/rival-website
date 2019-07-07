@@ -11,6 +11,8 @@ import {
   numTimesUserEarnedBadge
 } from "./RBQHelpers";
 import RBQMiniBadgeIcon from "./RBQMiniBadgeIcon";
+import { getImageUrlForPlayer } from "../basic/Helpers";
+import { RBQ_ROSTER } from "src/pages/BadgeQuest";
 
 interface RBQIndividualDetailsPanelProps {
   player: Players;
@@ -22,7 +24,6 @@ export default class RBQIndividualDetailsPanel extends React.Component<
 > {
   render() {
     const { player } = this.props;
-    const imagesBase = "/img/roster-2018/headshots/rival2018_headshot_";
     const badgesEarned = getBadgesEarnedForPlayer(player);
     const badgesActivated: Badges[] = rbq2018BadgesActivated;
 
@@ -32,9 +33,7 @@ export default class RBQIndividualDetailsPanel extends React.Component<
           <div className="header-left">
             <img
               className="user-image"
-              src={
-                imagesBase + PLAYERS[player].name.last.toLowerCase() + ".jpg"
-              }
+              src={getImageUrlForPlayer(RBQ_ROSTER.id, player)}
             />
           </div>
           <div className="header-right">

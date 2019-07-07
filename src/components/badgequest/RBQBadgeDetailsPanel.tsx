@@ -6,6 +6,8 @@ import { Players, PLAYERS } from "../../data/Players";
 import { RIVAL_2018, RosterList } from "../../data/RosterList";
 import { getBadgesEarnedForBadge, numTimesUserEarnedBadge } from "./RBQHelpers";
 import RBQMiniUserAvatar from "./RBQMiniUserAvatar";
+import { getImageUrlForPlayer } from "../basic/Helpers";
+import { RBQ_ROSTER } from "src/pages/BadgeQuest";
 
 interface RBQBadgeDetailsPanelProps {
   badge: Badges;
@@ -17,7 +19,6 @@ export default class RBQBadgeDetailsPanel extends React.Component<
   render() {
     const { badge } = this.props;
     const badgeImagesBase = "/img/badgeimages/";
-    const playerImagesBase = "/img/roster-2018/headshots/rival2018_headshot_";
     const roster: RosterList = RIVAL_2018;
     const users: Players[] = _.concat(roster.players, roster.coaches);
 
@@ -39,7 +40,10 @@ export default class RBQBadgeDetailsPanel extends React.Component<
                 {"Created By: "}
                 <img
                   className="player-image"
-                  src={playerImagesBase + BADGES[badge].createdBy + ".jpg"}
+                  src={getImageUrlForPlayer(
+                    RBQ_ROSTER.id,
+                    BADGES[badge].createdBy
+                  )}
                 />
               </div>
             </div>

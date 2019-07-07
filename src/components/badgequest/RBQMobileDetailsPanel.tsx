@@ -78,31 +78,41 @@ export class RBQMobileDetailsPanel extends React.Component<
           </div>
           <span className="earned-details">
             <MobileHeader title="Details" />
-            <div className="badges-earned-table">
-              <table>
-                <thead>
-                  <tr>
-                    <th>User</th>
-                    <th>Date Earned</th>
-                    <th>Notes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {_.map(badgesEarned, (badgeEanred: BadgeEarned, key: any) => (
-                    <tr key={key} className="badge-earned-row">
-                      <td>
-                        {PLAYERS[badgeEanred.player].name.nickname ||
-                          PLAYERS[badgeEanred.player].name.first}
-                      </td>
-                      <td>
-                        {moment(badgeEanred.date).format("MMM Do YYYY, h:mm a")}
-                      </td>
-                      <td>{badgeEanred.notes || ""}</td>
+            {badgesEarned.length === 0 && (
+              <div className="no-badges-earned">Badge has not been earned</div>
+            )}
+            {badgesEarned.length > 0 && (
+              <div className="badges-earned-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>User</th>
+                      <th>Date Earned</th>
+                      <th>Notes</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </thead>
+                  <tbody>
+                    {_.map(
+                      badgesEarned,
+                      (badgeEanred: BadgeEarned, key: any) => (
+                        <tr key={key} className="badge-earned-row">
+                          <td>
+                            {PLAYERS[badgeEanred.player].name.nickname ||
+                              PLAYERS[badgeEanred.player].name.first}
+                          </td>
+                          <td>
+                            {moment(badgeEanred.date).format(
+                              "MMM Do YYYY, h:mm a"
+                            )}
+                          </td>
+                          <td>{badgeEanred.notes || ""}</td>
+                        </tr>
+                      )
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </span>
         </span>
       </React.Fragment>
