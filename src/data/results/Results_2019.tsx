@@ -1,7 +1,58 @@
 import { TournamentList } from "../Tournaments";
-import { Game } from "../Games";
+import { Game, GameType } from "../Games";
+import { Teams } from "../Teams";
 
-const GAMES_PEC_2019: Game[] = [];
+const GAMES_PEC_2019: Game[] = [
+  {
+    opponent: Teams.SIXERS,
+    date: "July 13, 2019 8:00AM MST",
+    score_us: 8,
+    score_them: 13,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.OZONE,
+    date: "July 13, 2019 10:00AM MST",
+    score_us: 13,
+    score_them: 10,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.WICKED,
+    date: "July 13, 2019 12:00PM MST",
+    score_us: 13,
+    score_them: 8,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.GRIT,
+    date: "July 14, 2019 7:40AM MST",
+    score_us: 13,
+    score_them: 6,
+    type: GameType.BRACKET
+  },
+  {
+    opponent: Teams.SCHWA,
+    date: "July 14, 2019 9:00AM MST",
+    score_us: 9,
+    score_them: 10,
+    type: GameType.BRACKET
+  },
+  {
+    opponent: Teams.PHOENIX,
+    date: "July 14, 2019 10:45AM MST",
+    score_us: 9,
+    score_them: 13,
+    type: GameType.CONSOLATION
+  },
+  {
+    opponent: Teams.SHOWDOWN,
+    date: "July 14, 2019 12:30PM MST",
+    score_us: 8,
+    score_them: 7,
+    type: GameType.CONSOLATION
+  }
+];
 
 const GAMES_SFI_EAST_2019: Game[] = [];
 
@@ -25,7 +76,7 @@ export const TOURNAMENTS_2019: TournamentList = {
       end: "July 14, 2019"
     },
     link: "https://play.usaultimate.org/events/TCT-Pro-Elite-Challenge-2019/",
-    result: undefined,
+    result: 7,
     sanctioned: true,
     games: GAMES_PEC_2019
   },

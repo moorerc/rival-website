@@ -6,7 +6,7 @@ import { Players, PLAYERS } from "../../data/Players";
 import { RosterList } from "../../data/RosterList";
 import { getBadgesEarnedForBadge, numTimesUserEarnedBadge } from "./RBQHelpers";
 import RBQMiniUserAvatar from "./RBQMiniUserAvatar";
-import { getImageUrlForPlayer } from "../basic/Helpers";
+import { getLatestImageUrlForPlayer } from "../basic/Helpers";
 import { RBQ_ROSTER } from "src/data/rbq/RBQData";
 
 interface RBQBadgeDetailsPanelProps {
@@ -40,10 +40,7 @@ export default class RBQBadgeDetailsPanel extends React.Component<
                 {"Created By: "}
                 <img
                   className="player-image"
-                  src={getImageUrlForPlayer(
-                    RBQ_ROSTER.id,
-                    BADGES[badge].createdBy
-                  )}
+                  src={getLatestImageUrlForPlayer(BADGES[badge].createdBy)}
                 />
               </div>
             </div>
