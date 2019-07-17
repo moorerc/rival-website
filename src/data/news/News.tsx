@@ -395,5 +395,45 @@ export const ALL_NEWS: NewsItem[] = [
     date: "June 26, 2019",
     author: "Ultiworld",
     type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Club Season Primer 2019: Women’s Division",
+    link:
+      "https://ultiworld.com/2019/07/10/club-season-primer-2019-womens-division/",
+    date: "July 10, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Club Season Primer 2019: Women’s Division",
+    link:
+      "https://ultiworld.com/2019/07/10/club-season-primer-2019-womens-division/",
+    date: "July 10, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Pro-Elite Challenge 2019: Day One Recap (Women’s)",
+    link:
+      "https://ultiworld.com/2019/07/14/pro-elite-challenge-2019-day-one-recap-womens/",
+    date: "July 14, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Pro-Elite Challenge 2019: Tournament Preview (Women’s)",
+    link:
+      "https://ultiworld.com/2019/07/12/pro-elite-challenge-2019-tournament-preview-womens/",
+    date: "July 12, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "2019 Women’s Club Preseason Power Rankings",
+    link:
+      "https://ultiworld.com/2019/07/12/2019-womens-club-preseason-power-rankings/",
+    date: "July 12, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
   }
 ];
