@@ -88,7 +88,12 @@ export enum Badges {
   BASIC_BADGE = "BASIC_BADGE",
   TIE_DYE_BADGE = "TIE_DYE_BADGE",
   POUTINE_AND_PLATES = "POUTINE_AND_PLATES",
-  FLATBALL_STANLEY = "FLATBALL_STANLEY"
+  FLATBALL_STANLEY = "FLATBALL_STANLEY",
+  GUESS_WHO = "GUESS_WHO",
+  SECRET_ENCOURAGEMENT_FAIRY = "SECRET_ENCOURAGEMENT_FAIRY",
+  DANCING_QUEEN = "DANCING_QUEEN",
+  WIZARDS_UNITE = "WIZARDS_UNITE",
+  MAKEUP_MASTER = "MAKEUP_MASTER"
 }
 
 export const BADGES: { [key in Badges]: Badge } = {
@@ -593,5 +598,40 @@ export const BADGES: { [key in Badges]: Badge } = {
     description:
       "Complete all the requirements of a propper handoff in the flatball stanley challenge (time requirements, slack messages, and handoff photo)",
     createdBy: Players.MOORE
+  },
+  GUESS_WHO: {
+    title: "Guess Who?",
+    image: "badge_drama.png",
+    description:
+      "Take a pic/video of yourself imitating another teammate and post to slack. First one to correctly guess who you are imitating also gets a badge! Badge can be earned 3 times as the imitator, and 3 times as the identifier.",
+    createdBy: Players.SCOTT
+  },
+  SECRET_ENCOURAGEMENT_FAIRY: {
+    title: "Secret Encouragement Fairy",
+    image: "badge_wand.png",
+    description:
+      "Leave a small encouraging note in a teammates bag at practice or during a tournament without them noticing. Signature should be anonymous. Privately email tots with a picture of your secret mission being accomplished for badge credit.",
+    createdBy: Players.WALKER
+  },
+  WIZARDS_UNITE: {
+    title: "Wizards Unite!",
+    image: "badge_harrypotter.png",
+    description:
+      "Submit a screenshot to slack which proves that you have reached level 10 on Harry Potter Wizards Unite. (Badge can also be earned at level 20 and level 30).",
+    createdBy: Players.DUFFY
+  },
+  MAKEUP_MASTER: {
+    title: "Makeup Master",
+    image: "badge_lips.png",
+    description:
+      "Being the best looking team takes some effort. Create a makeup or hairstyle tutorial to help the team look stylin (ex: eye black) and post a video to slack. Note: You do not get credit for acting solely as a model in the video.",
+    createdBy: Players.JAVERSAK
+  },
+  DANCING_QUEEN: {
+    title: "Dancing Queen",
+    image: "badge_dance.png",
+    description:
+      "Take a video of you and another teammate(s) coordinated dancing (for at least 10 seconds) and post to slack. Groups may not exceed 6 players. Only one post needed for all participants badge credit.",
+    createdBy: Players.YEE
   }
 };
