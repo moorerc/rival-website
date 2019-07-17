@@ -23,6 +23,7 @@ export enum Teams {
   FLO = "flo",
   FRENZY = "frenzy",
   GREENMEANSGO = "greenmeansgo",
+  GRIT = "grit",
   HEISTX = "heist-x",
   HEISTY = "heist-y",
   HEIST = "heist",
@@ -107,6 +108,11 @@ export const TEAMS: { [key in Teams]: Team } = {
   frenzy: {
     name: "Frenzy",
     location: { city: "Chicago", state: "IL" },
+    logo: ""
+  },
+  grit: {
+    name: "Grit",
+    location: { city: "Washington DC", state: "" },
     logo: ""
   },
   greenmeansgo: {
