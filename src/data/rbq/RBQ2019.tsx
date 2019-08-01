@@ -1030,6 +1030,12 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
   {
     badge: Badges.CHILDHOOD_CHARM,
     player: Players.BENDER,
+    date: "Jul 23 2019 11:57:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.PERRY,
     date: "Jul 23 2019 15:48:00 EDT",
     notes: "Soulmate - Mack"
   },
