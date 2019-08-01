@@ -229,8 +229,8 @@ export const RIVAL_2019: RosterList = {
   link:
     "https://play.usaultimate.org/teams/events/Eventteam/?TeamId=1whbAH5IJ0aIw05oRZf5pJnmjoIXrRSBXE6WZhbExiQ%3d",
   results: {
-    wins: 0,
-    losses: 0,
+    wins: 10,
+    losses: 3,
     finish: "TBD"
   },
   highlights: [],
