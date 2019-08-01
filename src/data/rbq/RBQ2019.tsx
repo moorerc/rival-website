@@ -23,22 +23,36 @@ export const rbq2019BadgesActivated: Badges[] = [
   Badges.SNAPCHAT_SOULMATES,
   Badges.EPIC_FAIL,
   Badges.RULES_RECTIFIER,
-  Badges.CHILDHOOD_CHARM
+  Badges.CHILDHOOD_CHARM,
   // Update 2
+  Badges.EMAIL_SUNSHINE,
+  Badges.UP_DOG,
+  Badges.RIVANIMALS,
+  Badges.SLEEP_TIGHT,
+  Badges.CELEBRITY_CHEF,
+  Badges.PAPARAZZI,
+  Badges.HAPPY_HISTORIAN,
+  Badges.BORDER_PATROL,
+  Badges.TRAVELER_TRIVIA,
+  Badges.WORKIN_IT,
+  Badges.WEEKLY_WELLNESS,
+  Badges.FILM_FANATIC
 ];
 
-export const rbq2019LastUpdated: string = "Jul 16 2019 20:00:00 PDT";
+export const rbq2019LastUpdated: string = "Jul 29 2019 22:00:00 PDT";
 export const rbq2019BadgesRecentlyReleased: Badges[] = [
-  Badges.GUESS_WHO,
-  Badges.SECRET_ENCOURAGEMENT_FAIRY,
-  Badges.WIZARDS_UNITE,
-  Badges.MAKEUP_MASTER,
-  Badges.DANCING_QUEEN,
-  Badges.SLEEPING_BEAUTY,
-  Badges.SNAPCHAT_SOULMATES,
-  Badges.EPIC_FAIL,
-  Badges.RULES_RECTIFIER,
-  Badges.CHILDHOOD_CHARM
+  Badges.EMAIL_SUNSHINE,
+  Badges.UP_DOG,
+  Badges.RIVANIMALS,
+  Badges.SLEEP_TIGHT,
+  Badges.CELEBRITY_CHEF,
+  Badges.PAPARAZZI,
+  Badges.HAPPY_HISTORIAN,
+  Badges.BORDER_PATROL,
+  Badges.TRAVELER_TRIVIA,
+  Badges.WORKIN_IT,
+  Badges.WEEKLY_WELLNESS,
+  Badges.FILM_FANATIC
 ];
 
 export const rbq2019BadgesEarned: BadgeEarned[] = [
@@ -447,5 +461,884 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
     player: Players.JAVERSAK,
     date: "Jul 14 2019 20:26:00 PDT",
     notes: "Makeup Master"
+  },
+  // Update 2
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.CONERLY,
+    date: "Jul 17 2019 11:45:00 EDT",
+    notes: "Parking Ticket"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.MENDOZA,
+    date: "Jul 17 2019 11:57:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.JAVERSAK,
+    date: "Jul 17 2019 11:57:00 EDT",
+    notes: "Soulmate - Sophie"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.BENDER,
+    date: "Jul 17 2019 12:09:00 EDT",
+    notes: "Moutain Sun Brewery - Lucy/Stevie"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.MILLER,
+    date: "Jul 17 2019 12:09:00 EDT",
+    notes: "Moutain Sun Brewery - Lucy/Stevie"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.MOORE,
+    date: "Jul 17 2019 12:12:00 EDT",
+    notes: "SS"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.BENDER,
+    date: "Jul 17 2019 12:15:00 EDT",
+    notes: "Soulmate - Sophie"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.BENDER,
+    date: "Jul 17 2019 12:33:00 EDT",
+    notes: "Summer League Wipeout"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.CONERLY,
+    date: "Jul 17 2019 12:41:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.SOPER,
+    date: "Jul 17 2019 12:46:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.SOPER,
+    date: "Jul 17 2019 12:53:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.SOPER,
+    date: "Jul 17 2019 12:53:00 EDT",
+    notes: "Middle School Years"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.LO,
+    date: "Jul 17 2019 12:47:00 EDT",
+    notes: "Soulmate - Soter"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.CONERLY,
+    date: "Jul 17 2019 12:54:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.PAINE,
+    date: "Jul 17 2019 12:56:00 EDT",
+    notes: "Parking Wrong Direction"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.YEE,
+    date: "Jul 17 2019 12:57:00 EDT",
+    notes: "Middle School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.YEE,
+    date: "Jul 17 2019 13:02:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.YEE,
+    date: "Jul 17 2019 13:04:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.MENDOZA,
+    date: "Jul 17 2019 13:11:00 EDT",
+    notes: "Middle School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.MENDOZA,
+    date: "Jul 17 2019 13:11:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.SOTER,
+    date: "Jul 17 2019 13:35:00 EDT",
+    notes: "Soulmate - TLo"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.SOTER,
+    date: "Jul 17 2019 13:35:00 EDT",
+    notes: "Soulmate - Maddie"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.KNOWLES,
+    date: "Jul 17 2019 14:03:00 EDT",
+    notes: "Soulmate - Iris"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.KNOWLES,
+    date: "Jul 17 2019 14:03:00 EDT",
+    notes: "Soulmate - Zoe"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.KNOWLES,
+    date: "Jul 17 2019 14:03:00 EDT",
+    notes: "Soulmate - Kermit"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.SOTER,
+    date: "Jul 17 2019 14:31:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.SOTER,
+    date: "Jul 17 2019 14:31:00 EDT",
+    notes: "Middle School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.SOTER,
+    date: "Jul 17 2019 14:32:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.MENDOZA,
+    date: "Jul 17 2019 17:20:00 EDT"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.SCHRODER,
+    date: "Jul 17 2019 18:22:00 EDT"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.KNOWLES,
+    date: "Jul 17 2019 19:03:00 EDT"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.GORDON,
+    date: "Jul 17 2019 19:39:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.GORDON,
+    date: "Jul 17 2019 19:49:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.LEHMAN,
+    date: "Jul 17 2019 21:09:00 EDT"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.JAVERSAK,
+    date: "Jul 17 2019 21:10:00 EDT"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.PERRY,
+    date: "Jul 17 2019 21:26:00 EDT"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.NITZ,
+    date: "Jul 17 2019 21:34:00 EDT"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.PERRY,
+    date: "Jul 17 2019 21:35:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.PERRY,
+    date: "Jul 17 2019 21:35:00 EDT",
+    notes: "Middle School Years"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.PAINE,
+    date: "Jul 17 2019 253:00 EDT"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.MOORE,
+    date: "Jul 17 2019 22:32:00 EDT"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.SOTER,
+    date: "Jul 18 2019 15:00:00 EDT"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.MENDOZA,
+    date: "Jul 18 2019 18:03:00 EDT"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.GORDON,
+    date: "Jul 18 2019 20:01:00 EDT",
+    notes: "Submit - Diddy"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.LO,
+    date: "Jul 18 2019 20:01:00 EDT",
+    notes: "Guesser - Diddy"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.LEHMAN,
+    date: "Jul 18 2019 20:29:00 EDT"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.PAINE,
+    date: "Jul 19 2019 11:03:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.GORDON,
+    date: "Jul 19 2019 12:08:00 EDT",
+    notes: "Middle School Years"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.JAVERSAK,
+    date: "Jul 18 2019 17:12:00 EDT"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.JAVERSAK,
+    date: "Jul 19 2019 17:17:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.JAVERSAK,
+    date: "Jul 19 2019 17:17:00 EDT",
+    notes: "Middle School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.JAVERSAK,
+    date: "Jul 19 2019 17:17:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.YEE,
+    date: "Jul 19 2019 18:02:00 EDT",
+    notes: "Win the fields"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.SCOTT,
+    date: "Jul 19 2019 21:10:00 EDT",
+    notes: "Track Workout - SS/Kristen/Tots"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.SMIACH,
+    date: "Jul 19 2019 21:10:00 EDT",
+    notes: "Track Workout - SS/Kristen/Tots"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.MOORE,
+    date: "Jul 19 2019 21:10:00 EDT",
+    notes: "Track Workout - SS/Kristen/Tots"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.SCOTT,
+    date: "Jul 19 2019 21:46:00 EDT",
+    notes: "w/ TLo"
+  },
+  {
+    badge: Badges.HI_FIVE,
+    player: Players.SCHRODER,
+    date: "Jul 20 2019 11:24:00 EDT",
+    notes: "Introducing Grace"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.SWEATY_SELFIE,
+  //   player: Players.SCHRODER,
+  //   date: "Jul 20 2019 12:24:00 EDT"
+  // },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.SOPER,
+    date: "Jul 20 2019 12:28:00 EDT"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.SCOTT,
+    date: "Jul 20 2019 13:53:00 EDT",
+    notes: "Sophie ZZZ"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.MOORE,
+    date: "Jul 20 2019 14:17:00 EDT",
+    notes: "Sophie ZZZ"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.PAINE,
+    date: "Jul 20 2019 15:09:00 EDT",
+    notes: "Brit ZZZ"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.YEE,
+    date: "Jul 20 2019 22:12:00 EDT",
+    notes: "Grace ZZZ"
+  },
+  {
+    badge: Badges.SNACK_ATTACK,
+    player: Players.LEHMAN,
+    date: "Jul 21 2019 7:39:00 EDT",
+    notes: "Banana Bread"
+  },
+  {
+    badge: Badges.SNACK_ATTACK,
+    player: Players.SCOTT,
+    date: "Jul 21 2019 12:38:00 EDT",
+    notes: "Cookies"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.WRIGHT,
+    date: "Jul 21 2019 14:18:00 EDT",
+    notes: "Kari ZZZ"
+  },
+  {
+    badge: Badges.SNACK_ATTACK,
+    player: Players.JAVERSAK,
+    date: "Jul 21 2019 14:35:00 EDT",
+    notes: "Watermelon"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.SOPER,
+    date: "Jul 21 2019 14:46:00 EDT",
+    notes: "w/ DeAnna"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.SCOTT,
+    date: "Jul 21 2019 15:01:00 EDT",
+    notes: "w/ Diddy"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.MOORE,
+    date: "Jul 21 2019 15:02:00 EDT",
+    notes: "w/ Diddy/Tots/TLo"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.SOPER,
+    date: "Jul 21 2019 15:04:00 EDT",
+    notes: "w/ SS/Tots/TLo"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.LO,
+    date: "Jul 21 2019 15:07:00 EDT",
+    notes: "w/ SS/TLo"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.PERRY,
+    date: "Jul 21 2019 15:53:00 EDT",
+    notes: "High School Years"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.CHILDHOOD_CHARM,
+  //   player: Players.PERRY,
+  //   date: "Jul 21 2019 15:53:00 EDT",
+  //   notes: "Baby/Toddler Years"
+  // },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.YEE,
+    date: "Jul 21 2019 16:01:00 EDT",
+    notes: "Libby ZZZ"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.SCOTT,
+    date: "Jul 21 2019 16:07:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.SCOTT,
+    date: "Jul 21 2019 17:39:00 EDT",
+    notes: "Stay With Me"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.LO,
+    date: "Jul 21 2019 17:39:00 EDT",
+    notes: "Stay With Me"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.SOPER,
+    date: "Jul 21 2019 17:41:00 EDT"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.KNOWLES,
+    date: "Jul 21 2019 18:47:00 EDT",
+    notes: "Grace Zzz"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.PERRY,
+    date: "Jul 21 2019 20:32:00 EDT",
+    notes: "Jersey sizes"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.CONERLY,
+    date: "Jul 21 2019 22:20:00 EDT",
+    notes: "Sophie Zzz"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.MENDOZA,
+    date: "Jul 22 2019 9:04:00 EDT",
+    notes: "Submit - Janine"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.PERRY,
+    date: "Jul 22 2019 9:04:00 EDT",
+    notes: "Guesser - Janine"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.SOTER,
+    date: "Jul 22 2019 13:33:00 EDT",
+    notes: "Soulmate - Iris"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.JAVERSAK,
+    date: "Jul 22 2019 14:25:00 EDT",
+    notes: "Soulmate - Maddie"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.JAVERSAK,
+    date: "Jul 22 2019 14:25:00 EDT",
+    notes: "Soulmate - Soter"
+  },
+  {
+    badge: Badges.HI_FIVE,
+    player: Players.MOORE,
+    date: "Jul 22 2019 15:33:00 EDT",
+    notes: "Introducing Kari"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.SCOTT,
+    date: "Jul 22 2019 21:22:00 EDT",
+    notes: "Monopoly - SS/Sophie/Kristen"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.BONDING_BADGE_BADGE,
+  //   player: Players.KNOWLES,
+  //   date: "Jul 22 2019 21:22:00 EDT",
+  //   notes: "Monopoly - SS/Sophie/Kristen"
+  // },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.SMIACH,
+    date: "Jul 22 2019 21:22:00 EDT",
+    notes: "Monopoly - SS/Sophie/Kristen"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.LO,
+    date: "Jul 23 2019 12:16:00 EDT",
+    notes: "Soulmates - Iris"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.SNAPCHAT_SOULMATES,
+  //   player: Players.LO,
+  //   date: "Jul 23 2019 12:16:00 EDT",
+  //   notes: "Soulmates - Soter"
+  // },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.LO,
+    date: "Jul 23 2019 12:16:00 EDT",
+    notes: "Soulmates - Maddie"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.SOPER,
+    date: "Jul 23 2019 1:17:00 EDT",
+    notes: "Cleaing up pee"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.BENDER,
+    date: "Jul 23 2019 15:48:00 EDT",
+    notes: "Soulmate - Mack"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.PERRY,
+    date: "Jul 23 2019 20:50:00 EDT",
+    notes: "Geocaching fail"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.PERRY,
+    date: "Jul 23 2019 21:16:00 EDT",
+    notes: "Geocaching - Jenny/Tots"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.MOORE,
+    date: "Jul 23 2019 21:16:00 EDT",
+    notes: "Geocaching - Jenny/Tots"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.SOTER,
+    date: "Jul 24 2019 3:46:00 EDT"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.SOTER,
+    date: "Jul 24 2019 8:16:00 EDT",
+    notes: "Conference Googling"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SCOTT,
+    date: "Jul 24 2019 8:20:00 EDT",
+    notes: "Submit - Tots"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.WRIGHT,
+    date: "Jul 24 2019 8:20:00 EDT",
+    notes: "Guesser - Tots"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.HARLEY,
+    date: "Jul 24 2019 8:27:00 EDT"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SCOTT,
+    date: "Jul 24 2019 9:23:00 EDT",
+    notes: "Submit - Kristen"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.PERRY,
+    date: "Jul 24 2019 9:23:00 EDT",
+    notes: "Guesser - Kristen"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.LO,
+    date: "Jul 24 2019 10:50:00 EDT"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.WALKER,
+    date: "Jul 24 2019 11:10:00 EDT",
+    notes: "Submit - Jenny"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.FLEMING,
+    date: "Jul 24 2019 11:10:00 EDT",
+    notes: "Guesser - Jenny"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.WALKER,
+    date: "Jul 24 2019 12:25:00 EDT",
+    notes: "Tan and Plan - Janine/Stevie/Tots"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.MILLER,
+    date: "Jul 24 2019 12:25:00 EDT",
+    notes: "Tan and Plan - Janine/Stevie/Tots"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.MOORE,
+    date: "Jul 24 2019 12:25:00 EDT",
+    notes: "Tan and Plan - Janine/Stevie/Tots"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.KNOWLES,
+    date: "Jul 25 2019 13:18:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SOPER,
+    date: "Jul 25 2019 16:02:00 EDT",
+    notes: "Submit - Maddie"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.JAVERSAK,
+    date: "Jul 25 2019 16:02:00 EDT",
+    notes: "Guesser - Maddie"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.MOORE,
+    date: "Jul 25 2019 16:22:00 EDT",
+    notes: "Submit - SS"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.KNOWLES,
+    date: "Jul 25 2019 16:22:00 EDT",
+    notes: "Guesser - SS"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SOPER,
+    date: "Jul 25 2019 16:02:00 EDT",
+    notes: "Submit - Maddie"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.SWEATY_SELFIE,
+  //   player: Players.SOPER,
+  //   date: "Jul 25 2019 19:59:00 EDT"
+  // },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.SCHRODER,
+    date: "Jul 26 2019 8:34:00 EDT",
+    notes: "Coffee Spill"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.PERRY,
+    date: "Jul 26 2019 9:58:00 EDT",
+    notes: "Locked Out"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.CONERLY,
+    date: "Jul 26 2019 17:51:00 EDT"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.MENDOZA,
+    date: "Jul 26 2019 19:23:00 EDT",
+    notes: "Sweaty Date"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.GORDON,
+    date: "Jul 26 2019 21:16:00 EDT",
+    notes: "HSM"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.WRIGHT,
+    date: "Jul 26 2019 21:16:00 EDT",
+    notes: "HSM"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.NITZ,
+    date: "Jul 26 2019 21:16:00 EDT",
+    notes: "HSM"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.PERRY,
+    date: "Jul 26 2019 21:16:00 EDT",
+    notes: "HSM"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.SCOTT,
+    date: "Jul 26 2019 21:19:00 EDT",
+    notes: "Kristen Zzz"
+  },
+  {
+    badge: Badges.SNACK_ATTACK,
+    player: Players.BENDER,
+    date: "Jul 27 2019 8:48:00 EDT",
+    notes: "Gatorade Powder"
+  },
+  {
+    badge: Badges.SNACK_ATTACK,
+    player: Players.SCHRODER,
+    date: "Jul 27 2019 8:57:00 EDT",
+    notes: "Gummies"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.JAVERSAK,
+    date: "Jul 27 2019 9:04:00 EDT",
+    notes: "Sharon Zzz"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.LO,
+    date: "Jul 27 2019 18:05:00 EDT",
+    notes: "Chia Pepper"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.WALKER,
+    date: "Jul 27 2019 22:50:00 EDT",
+    notes: "Sunscreen Coverage"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.SOTER,
+    date: "Jul 28 2019 7:01:00 EDT",
+    notes: "Water Bottle"
+  },
+  {
+    badge: Badges.SNACK_ATTACK,
+    player: Players.SCOTT,
+    date: "Jul 28 2019 19:45:00 EDT",
+    notes: "Cookies"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.SCOTT,
+    date: "Jul 28 2019 21:14:00 EDT",
+    notes: "Harley Zzz"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.BALL,
+    date: "Jul 29 2019 7:53:00 EDT",
+    notes: "Login Text"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.WALKER,
+    date: "Jul 29 2019 11:46:00 EDT",
+    notes: "Team Shower - Janine/Sophie"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.BONDING_BADGE_BADGE,
+  //   player: Players.KNOWLES,
+  //   date: "Jul 29 2019 11:46:00 EDT",
+  //   notes: "Team Shower - Janine/Sophie"
+  // },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.JAVERSAK,
+    date: "Jul 29 2019 18:23:00 EDT",
+    notes: "Cleveland Bonding - Iris/Libby"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.LEHMAN,
+    date: "Jul 29 2019 18:23:00 EDT",
+    notes: "Cleveland Bonding - Iris/Libby"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.DUFFY,
+    date: "Jul 29 2019 20:27:00 EDT"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.WALKER,
+    date: "Jul 7 2019 19:23:00 EDT",
+    notes: "Email Sunshine"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.DUFFY,
+    date: "Jul 11 2019 16:26:00 EDT",
+    notes: "UpDog"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.SOTER,
+    date: "Jul 22 2019 13:45:00 EDT",
+    notes: "Rivanimals"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.NITZ,
+    date: "Jul 22 2019 8:27:00 EDT",
+    notes: "Sleep Tight"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.CONERLY,
+    date: "Jul 17 2019 12:24:00 EDT",
+    notes: "Celebrity Chef"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.SCOTT,
+    date: "Jul 17 2019 12:24:00 EDT",
+    notes: "Paparazzi"
   }
 ];
