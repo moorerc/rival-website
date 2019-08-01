@@ -44,7 +44,7 @@ export default class ResultsBody extends React.Component<
   constructor(props: ResultsBody.Props) {
     super(props);
     this.state = {
-      selectedTournament: this.props.tournaments[0]
+      selectedTournament: this.props.tournaments[3] // sfi east
     };
   }
 

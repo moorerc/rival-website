@@ -54,7 +54,50 @@ const GAMES_PEC_2019: Game[] = [
   }
 ];
 
-const GAMES_SFI_EAST_2019: Game[] = [];
+const GAMES_SFI_EAST_2019: Game[] = [
+  {
+    opponent: Teams.INDYROGUE,
+    date: "July 27, 2019 10:50PM EST",
+    score_us: 13,
+    score_them: 5,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.REBELLION,
+    date: "July 27, 2019 12:40PM EST",
+    score_us: 13,
+    score_them: 2,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.SALTY,
+    date: "July 27, 2019 2:30PM EST",
+    score_us: 13,
+    score_them: 4,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.BENT,
+    date: "July 28, 2019 9:00PM EST",
+    score_us: 13,
+    score_them: 2,
+    type: GameType.BRACKET
+  },
+  {
+    opponent: Teams.POP,
+    date: "July 28, 2019 10:50PM EST",
+    score_us: 13,
+    score_them: 8,
+    type: GameType.BRACKET
+  },
+  {
+    opponent: Teams.UNDERGROUND,
+    date: "July 28, 2019 2:30PM EST",
+    score_us: 12,
+    score_them: 10,
+    type: GameType.BRACKET
+  }
+];
 
 const GAMES_ESC_2019: Game[] = [];
 
@@ -94,7 +137,7 @@ export const TOURNAMENTS_2019: TournamentList = {
     },
     link:
       "https://play.usaultimate.org/events/TCT-Select-Flight-Invite-East-2019/",
-    result: undefined,
+    result: 1,
     sanctioned: true,
     games: GAMES_SFI_EAST_2019
   },
