@@ -93,7 +93,13 @@ export enum Badges {
   SECRET_ENCOURAGEMENT_FAIRY = "SECRET_ENCOURAGEMENT_FAIRY",
   DANCING_QUEEN = "DANCING_QUEEN",
   WIZARDS_UNITE = "WIZARDS_UNITE",
-  MAKEUP_MASTER = "MAKEUP_MASTER"
+  MAKEUP_MASTER = "MAKEUP_MASTER",
+  EMAIL_SUNSHINE = "EMAIL_SUNSHINE",
+  UP_DOG = "UP_DOG",
+  RIVANIMALS = "RIVANIMALS",
+  SLEEP_TIGHT = "SLEEP_TIGHT",
+  CELEBRITY_CHEF = "CELEBRITY_CHEF",
+  PAPARAZZI = "PAPARAZZI"
 }
 
 export const BADGES: { [key in Badges]: Badge } = {
@@ -633,5 +639,47 @@ export const BADGES: { [key in Badges]: Badge } = {
     description:
       "Take a video of you and another teammate(s) coordinated dancing (for at least 10 seconds) and post to slack. Groups may not exceed 6 players. Only one post needed for all participants badge credit.",
     createdBy: Players.YEE
+  },
+  EMAIL_SUNSHINE: {
+    title: "Email Sunshine",
+    image: "badge_sun.png",
+    description:
+      "Send an email (bcc tots) to any captain, coach or officer about why you appreciate the work they are doing outside of practices to help push this team to the next level.",
+    createdBy: Players.WALKER
+  },
+  UP_DOG: {
+    title: "UpDog",
+    image: "badge_partyhat.png",
+    description:
+      "Submit a picture to slack of yourself throwing a party for a pet in your life.",
+    createdBy: Players.DUFFY
+  },
+  RIVANIMALS: {
+    title: "Rivanimals",
+    image: "badge_paw.png",
+    description:
+      "Take a picture with a living animal that does not belong to you (i.e. you can't do one of your own pets) and post to slack. Once an animal species has been taken, nobody else can get credit for that species. (No more than 2 of each persons badge submissions can come from a zoo).",
+    createdBy: Players.SOTER
+  },
+  SLEEP_TIGHT: {
+    title: "Sleep Tight",
+    image: "badge_sheep.png",
+    description:
+      "Hit your stretch goal for sleep for an entire work week (ex: Bed by 10:30pm). Post evidence of completion to slack for badge credit - fitness tracker data, sleep logs, etc.",
+    createdBy: Players.NITZ
+  },
+  CELEBRITY_CHEF: {
+    title: "Celebrity Chef",
+    image: "badge_chef.png",
+    description:
+      "Post an original recipe for a healthy meal or snack. Once someone else makes your recipe and posts photo evidence to slack, you both will receive badge credit. You can receive this badge up to 3 times for recipe submission and 3 times for recipe making.",
+    createdBy: Players.CONERLY
+  },
+  PAPARAZZI: {
+    title: "Paparazzi Badge",
+    image: "badge_stalker.png",
+    description:
+      "Submit a photo or video of a teammate doing something or looking embarrassing on or off the field. Provide a witty caption.",
+    createdBy: Players.SCOTT
   }
 };
