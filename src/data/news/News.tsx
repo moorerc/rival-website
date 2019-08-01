@@ -435,5 +435,29 @@ export const ALL_NEWS: NewsItem[] = [
     date: "July 12, 2019",
     author: "Ultiworld",
     type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Select Flight Invite East 2019: Tournament Preview (Women’s)",
+    link:
+      "https://ultiworld.com/2019/07/26/select-flight-invite-east-2019-tournament-preview-womens/",
+    date: "July 26, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Select Flight Invite East 2019: Tournament Recap (Women’s)",
+    link:
+      "https://ultiworld.com/2019/07/31/select-flight-invite-east-2019-tournament-recap-womens/",
+    date: "July 31, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Club Update: Favorites Prevail at SFI East",
+    link:
+      "https://ultiworld.com/2019/07/31/club-update-favorites-prevail-sfi-east/",
+    date: "July 31, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
   }
 ];

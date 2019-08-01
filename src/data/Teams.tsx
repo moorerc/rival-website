@@ -15,6 +15,7 @@ export enum Teams {
   AUTONOMOUS = "autonomous",
   BACKHANDED = "backhanded",
   BELLE = "belle",
+  BENT = "bent",
   BRUTESQUAD = "brutesquad",
   DAYTON = "dayton",
   DISH = "dish",
@@ -40,9 +41,11 @@ export enum Teams {
   PHOENIX = "phoenix",
   POP = "pop",
   PPF = "ppf",
+  REBELLION = "rebellion",
   REVOLOUTION = "revoloution",
   RIOT = "riot",
   SIEGE = "siege",
+  SALTY = "salty",
   SCANDAL = "scandal",
   SCHWA = "schwa",
   SHOWDOWN = "showdown",
@@ -78,6 +81,11 @@ export const TEAMS: { [key in Teams]: Team } = {
   belle: {
     name: "Belle",
     location: { city: "Cincinnati", state: "OH" },
+    logo: ""
+  },
+  bent: {
+    name: "Bent",
+    location: { city: "New York", state: "NY" },
     logo: ""
   },
   brutesquad: {
@@ -201,6 +209,12 @@ export const TEAMS: { [key in Teams]: Team } = {
     location: { city: "Kitchener-Waterloo", state: "CAN" },
     logo: ""
   },
+  rebellion: {
+    name: "Rebellion",
+    location: { city: "Richmond", state: "VA" },
+    logo: "",
+    displayNameOverride: "Virginia Rebellion"
+  },
   revoloution: {
     name: "RevoLOUtion",
     location: { city: "St. Louis", state: "MO" },
@@ -212,6 +226,11 @@ export const TEAMS: { [key in Teams]: Team } = {
     logo: ""
   },
 
+  salty: {
+    name: "Salty",
+    location: { city: "Halifax", state: "" },
+    logo: ""
+  },
   siege: {
     name: "Siege",
     location: { city: "Boston", state: "MA" },
