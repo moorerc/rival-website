@@ -99,7 +99,11 @@ export enum Badges {
   RIVANIMALS = "RIVANIMALS",
   SLEEP_TIGHT = "SLEEP_TIGHT",
   CELEBRITY_CHEF = "CELEBRITY_CHEF",
-  PAPARAZZI = "PAPARAZZI"
+  PAPARAZZI = "PAPARAZZI",
+  SECRET_AGENT = "SECRET_AGENT",
+  PATIENT_PROFESSOR = "PATIENT_PROFESSOR",
+  DENTAL_HYGIENE = "DENTAL_HYGIENE",
+  FITNESS_GURU = "FITNESS_GURU"
 }
 
 export const BADGES: { [key in Badges]: Badge } = {
@@ -681,5 +685,33 @@ export const BADGES: { [key in Badges]: Badge } = {
     description:
       "Submit a photo or video of a teammate doing something or looking embarrassing on or off the field. Provide a witty caption.",
     createdBy: Players.SCOTT
+  },
+  SECRET_AGENT: {
+    title: "Secret Agent",
+    image: "badge_agent.png",
+    description:
+      "Go to the thrift store or the back of your closet and obtain an extremely random item. Secretly hide this item in a teammates bag during practice or a tournament weekend.  If caught while hiding the item it doesn't count. Take a picture in the act of hiding, and send it to tots to receive credit for the badge. Upon discovering the item in their belongings, the receiver can guess (up to 3 times) who the secret agent was. If they guess correctly, they can take a picture with themselves, the item, and the agent, and post to slack for credit.",
+    createdBy: Players.WALKER
+  },
+  PATIENT_PROFESSOR: {
+    title: "Patient Professor",
+    image: "badge_apple.png",
+    description:
+      "Submit a photo of yourself teaching someone about frisbee. Possible activities include: teaching a muggle to throw or coaching a team or a clinic.",
+    createdBy: Players.DUFFY
+  },
+  DENTAL_HYGIENE: {
+    title: "Dental Hygiene",
+    image: "badge_toothbrush.png",
+    description:
+      "Submit a picture or video to slack of you practicing dental hygiene with a teammate. Creativity is encouraged. Only one submission needed per group. And each unique group combo can only receive the badge once.",
+    createdBy: Players.SOTER
+  },
+  FITNESS_GURU: {
+    title: "Fitness Guru",
+    image: "badge_goal.png",
+    description:
+      "Set a fitness goal for yourself to be accomplished by the end of the season and post the goal to slack. Accomplish your goal, and post additional evidence to slack to receive badge credit. Ex: do a pull-up, run a sub 1 min 400, deadlift 300 lbs etc.",
+    createdBy: Players.CONERLY
   }
 };
