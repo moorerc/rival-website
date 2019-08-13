@@ -103,7 +103,10 @@ export enum Badges {
   SECRET_AGENT = "SECRET_AGENT",
   PATIENT_PROFESSOR = "PATIENT_PROFESSOR",
   DENTAL_HYGIENE = "DENTAL_HYGIENE",
-  FITNESS_GURU = "FITNESS_GURU"
+  FITNESS_GURU = "FITNESS_GURU",
+  BACKHANDED_BADGE = "BACKHANDED_BADGE",
+  CROSS_TRAINING_CHAMPION = "CROSS_TRAINING_CHAMPION",
+  HOUSE_WARFARE = "HOUSE_WARFARE"
 }
 
 export const BADGES: { [key in Badges]: Badge } = {
@@ -208,7 +211,7 @@ export const BADGES: { [key in Badges]: Badge } = {
     title: "Neon Night",
     image: "badge_moon.png",
     description:
-      "Wear neon to practice/pod/workout on 'Neon Night' 7/19. Post photo evidence to slack.",
+      "Wear neon to your pod/workout this week on 'Neon Night' 8/15. Post photo evidence to slack. Only one photo required per group.",
     createdBy: Players.MOORE
   },
   ALL_STAR_SUPPORTER: {
@@ -713,5 +716,26 @@ export const BADGES: { [key in Badges]: Badge } = {
     description:
       "Set a fitness goal for yourself to be accomplished by the end of the season and post the goal to slack. Accomplish your goal, and post additional evidence to slack to receive badge credit. Ex: do a pull-up, run a sub 1 min 400, deadlift 300 lbs etc.",
     createdBy: Players.CONERLY
+  },
+  BACKHANDED_BADGE: {
+    title: "Backhanded Badge",
+    image: "badge_like.png",
+    description:
+      "Report in slack when one of your teammates gives you a backhanded compliment. NOTE: Backhanded compliments can go either way -- Google says `backhanded compliment` is either a remark that seems to be an insult but could be understood as a compliment, or a remark that seems like a compliment but could be understood as an insult.",
+    createdBy: Players.SOTER
+  },
+  HOUSE_WARFARE: {
+    title: "House Warfare",
+    image: "badge_splash.png",
+    description:
+      "At the designated time (sharp!) be on the warm-up line with all your housemates, cleats on, ready to go, while wearing something of your house’s color. If all house members are ready and present (the ones expected to be there), and have some type of water-based weapon— they get a House Warfare badge AND free rein to attack anyone late for warm-up until they get on the line. All house members who are present receive badges.",
+    createdBy: Players.FAZEKAS
+  },
+  CROSS_TRAINING_CHAMPION: {
+    title: "Cross Training Champion",
+    image: "badge_climber.png",
+    description:
+      "Post a photo to slack of your participation in another sport / physical activity that’ll help improve your performance and overall fitness. Examples: biking, rock climbing, playing basketball, etc. Track workouts, lifting, etc. do NOT count.",
+    createdBy: Players.JAVERSAK
   }
 };

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@amcharts/amcharts3-react": "^3.1.0",
+    "@amcharts/amcharts4": "^4.5.14",
     "@blueprintjs/core": "^3.10.0",
     "@blueprintjs/icons": "^3.5.0",
     "@types/classnames": "^2.2.4",
