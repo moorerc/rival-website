@@ -52,10 +52,17 @@ export const rbq2019BadgesActivated: Badges[] = [
   Badges.CROSS_TRAINING_CHAMPION,
   Badges.RAK,
   Badges.NEON_NIGHT,
-  Badges.ICE_BUT_NICE
+  Badges.ICE_BUT_NICE,
+  // Update 5
+  Badges.ALBUM_ART,
+  Badges.RIDDLE_ME_THIS,
+  Badges.THICC_THIGHS,
+  Badges.STELLAR_STUDENT,
+  Badges.PERSONALITY_PERSUIT,
+  Badges.EAT_LIKE_SOPHIE
 ];
 
-export const rbq2019LastUpdated: string = "Aug 12 2019 20:30:00 EDT";
+export const rbq2019LastUpdated: string = "Aug 24 2019 12:18:00 PDT";
 export const rbq2019BadgesRecentlyReleased: Badges[] = [
   Badges.HOUSE_WARFARE,
   Badges.BACKHANDED_BADGE,
@@ -1363,7 +1370,7 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
     badge: Badges.EMAIL_SUNSHINE,
     player: Players.SCOTT,
     date: "Aug 1 2019 10:29:00 EDT",
-    notes: "kristen rocks!"
+    notes: "Thanks Kristen!"
   },
   {
     badge: Badges.BONDING_BADGE_BADGE,
@@ -1575,24 +1582,24 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
   //   date: "Jul 30 2019 15:25:00 PDT",
   //   notes: "Research - Jenny/Janine"
   // },
-  // {
-  //   badge: Badges.CELEBRITY_CHEF,
-  //   player: Players.BENDER,
-  //   date: "Jul 30 2019 15:27:00 PDT",
-  //   notes: "Protein Shake"
-  // },
   {
     badge: Badges.CELEBRITY_CHEF,
     player: Players.BENDER,
     date: "Jul 30 2019 15:27:00 PDT",
-    notes: "Made Jenny's Mocktails"
+    notes: "Protein Shake"
   },
-  // {
-  //   badge: Badges.CELEBRITY_CHEF,
-  //   player: Players.MENDOZA,
-  //   date: "Jul 30 2019 16:10:00 PDT",
-  //   notes: "Salsa Verde"
-  // },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.BENDER,
+    date: "Jul 30 2019 15:27:00 PDT",
+    notes: "Made Mocktails by Jenny"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.MENDOZA,
+    date: "Jul 30 2019 16:10:00 PDT",
+    notes: "Salsa Verde"
+  },
   {
     badge: Badges.WORKIN_IT,
     player: Players.LO,
@@ -2502,12 +2509,12 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
   //   date: "Aug 7 2019 8:26:00 EDT",
   //   notes: "Rainbow Veggies"
   // }
-  // {
-  //   badge: Badges.CELEBRITY_CHEF,
-  //   player: Players.FAZEKAS,
-  //   date: "Aug 7 2019 8:26:00 EDT",
-  //   notes: "Bean and corn salsa"
-  // }
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.FAZEKAS,
+    date: "Aug 7 2019 8:26:00 EDT",
+    notes: "Bean and corn salsa"
+  },
   {
     badge: Badges.FIFTY_PLATES,
     player: Players.SOPER,
@@ -2776,12 +2783,12 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
     date: "Aug 9 2019 15:33:00 EDT",
     notes: "Zoe Zzz"
   },
-  // {
-  //   badge: Badges.CELEBRITY_CHEF,
-  //   player: Players.SOTER,
-  //   date: "Aug 9 2019 14:44:00 EDT",
-  //   notes: "Caprese Salad"
-  // }
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.SOTER,
+    date: "Aug 9 2019 14:44:00 EDT",
+    notes: "Caprese Salad"
+  },
   {
     badge: Badges.GUESS_WHO,
     player: Players.JAVERSAK,
@@ -3218,5 +3225,1232 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
     player: Players.JAVERSAK,
     date: "July 30 2019 12:00:00 EDT",
     notes: "Cross Training Champion"
+  },
+  // Update 5
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.LEHMAN,
+    date: "Aug 13 2019 10:05:00 EDT",
+    notes: "Thanks tots!"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.SCOTT,
+    date: "Aug 14 2019 9:47:00 EDT",
+    notes: "Thanks tots!"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.SCOTT,
+    date: "Aug 14 2019 9:42:00 EDT",
+    notes: "Thanks Janine!"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.SOTER,
+    date: "Aug 20 2019 13:12:00 PDT",
+    notes: "Thanks Kristen!"
+  },
+  {
+    badge: Badges.SECRET_AGENT,
+    player: Players.SOTER,
+    date: "Aug 17 2019 18:03:00 PDT",
+    notes: "Gotcha Kristen!"
+  },
+  {
+    badge: Badges.SECRET_AGENT,
+    player: Players.WALKER,
+    date: "Aug 17 2019 11:39:00 PDT",
+    notes: "Gotcha TLo!"
+  },
+  {
+    badge: Badges.SECRET_ENCOURAGEMENT_FAIRY,
+    player: Players.MENDOZA,
+    date: "Aug 17 2019 10:46:00 PDT"
+    // notes: "Dear Soter"
+  },
+  {
+    badge: Badges.SECRET_ENCOURAGEMENT_FAIRY,
+    player: Players.MENDOZA,
+    date: "Aug 17 2019 10:46:00 PDT"
+    // notes: "Dear Duffy"
+  },
+  {
+    badge: Badges.SECRET_ENCOURAGEMENT_FAIRY,
+    player: Players.MENDOZA,
+    date: "Aug 17 2019 10:46:00 PDT"
+    // notes: "Dear Zoe"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.MENDOZA,
+    date: "Aug 12 2019 20:49:00 EDT",
+    notes: "Made Bean and Corn Salsa by Mack"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.MENDOZA,
+    date: "Aug 12 2019 20:49:00 EDT",
+    notes: "Made Caprese Salad by Soter"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.LO,
+    date: "Aug 12 2019 21:06:00 EDT",
+    notes: "Made Salsa Verde by Kermit"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.LEHMAN,
+    date: "Aug 13 2019 6:34:00 EDT",
+    notes: "Bike to work"
+  },
+  {
+    badge: Badges.WORKIN_IT,
+    player: Players.SOTER,
+    date: "Aug 13 2019 7:51:00 EDT",
+    notes: "Pilot study by day"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.BALL,
+    date: "Aug 13 2019 7:55:00 EDT"
+  },
+  {
+    badge: Badges.WORKIN_IT,
+    player: Players.PAINE,
+    date: "Aug 13 2019 9:27:00 EDT",
+    notes: "Photographer by day"
+  },
+  {
+    badge: Badges.HAPPY_HISTORIAN,
+    player: Players.SOTER,
+    date: "Aug 13 2019 9:31:00 EDT",
+    notes: "SS Layout D + Bookends against Showdown"
+  },
+  {
+    badge: Badges.WORKIN_IT,
+    player: Players.LEHMAN,
+    date: "Aug 13 2019 9:33:00 EDT",
+    notes: "Summer League Bracket Creator by day"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.SOTER,
+    date: "Aug 13 2019 11:17:00 EDT",
+    notes: "Soter/Duffy Qualtrics"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.DUFFY,
+    date: "Aug 13 2019 11:17:00 EDT",
+    notes: "Soter/Duffy Qualtrics"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.PERRY,
+    date: "Aug 13 2019 11:44:00 EDT",
+    notes: "Sleeping in and morning lattes"
+  },
+  {
+    badge: Badges.FILM_FANATIC,
+    player: Players.PERRY,
+    date: "Aug 13 2019 12:59:00 EDT",
+    notes: "Molly Brown Pull Play"
+  },
+  {
+    badge: Badges.HAPPY_HISTORIAN,
+    player: Players.MENDOZA,
+    date: "Aug 13 2019 13:11:00 EDT",
+    notes: "Brits catch vs Underground"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.BENDER,
+    date: "Aug 13 2019 13:26:00 EDT",
+    notes: "Lifting and stretching"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SCOTT,
+    date: "Aug 13 2019 15:32:00 EDT",
+    notes: "Submit - Janine"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.JAVERSAK,
+    date: "Aug 13 2019 15:32:00 EDT",
+    notes: "Guesser - Janine"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.SCOTT,
+    date: "Aug 13 2019 15:51:00 EDT",
+    notes: "Catch with the dog"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.SOTER,
+    date: "Aug 13 2019 17:58:00 EDT",
+    notes: "Walking"
+  },
+  {
+    badge: Badges.PATIENT_PROFESSOR,
+    player: Players.JAVERSAK,
+    date: "Aug 13 2019 18:34:00 EDT",
+    notes: "Guest Coaching Notorious"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.BENDER,
+    date: "Aug 13 2019 21:34:00 EDT",
+    notes: "Overheating Car"
+  },
+  {
+    badge: Badges.HAPPY_HISTORIAN,
+    player: Players.BENDER,
+    date: "Aug 13 2019 21:37:00 EDT",
+    notes: "Kermits Layout vs Underground"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.FAZEKAS,
+    date: "Aug 13 2019 21:37:00 EDT",
+    notes: "Mack/Iris - Dinner with Austine"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.JAVERSAK,
+    date: "Aug 13 2019 21:37:00 EDT",
+    notes: "Mack/Iris - Dinner with Austine"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.DUFFY,
+    date: "Aug 13 2019 22:15:00 EDT",
+    notes: "Duffy/Soter - Bubble Tea"
+  },
+  {
+    badge: Badges.BONDING_BADGE_BADGE,
+    player: Players.SOTER,
+    date: "Aug 13 2019 22:15:00 EDT",
+    notes: "Duffy/Soter - Bubble Tea"
+  },
+  {
+    badge: Badges.WORKIN_IT,
+    player: Players.BALL,
+    date: "Aug 14 2019 8:14:00 EDT",
+    notes: "Project & Rival planning by day"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.HARLEY,
+    date: "Aug 14 2019 8:24:00 EDT",
+    notes: "Biking"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.SCOTT,
+    date: "Aug 14 2019 9:53:00 EDT",
+    notes: "Soulmate - TLo"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.MOORE,
+    date: "Aug 14 2019 9:59:00 EDT",
+    notes: "Tots/SS"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.SCOTT,
+    date: "Aug 14 2019 9:59:00 EDT",
+    notes: "Tots/SS"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.SCOTT,
+    date: "Aug 14 2019 6:59:00 PDT",
+    notes: "Tots/SS/Griff"
+  },
+  {
+    badge: Badges.SWEATY_SELFIE,
+    player: Players.MENDOZA,
+    date: "Aug 14 2019 9:48:00 PDT"
+  },
+  {
+    badge: Badges.PATIENT_PROFESSOR,
+    player: Players.SCOTT,
+    date: "Aug 14 2019 11:32:00 PDT",
+    notes: "Teaching Co-Residents"
+  },
+  {
+    badge: Badges.PATIENT_PROFESSOR,
+    player: Players.SOTER,
+    date: "Aug 14 2019 11:50:00 PDT",
+    notes: "Teaching Department Buds"
+  },
+  {
+    badge: Badges.UP_DOG,
+    player: Players.SOTER,
+    date: "Aug 14 2019 11:50:00 PDT",
+    notes: "Party for Roo!"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.YEE,
+    date: "Aug 14 2019 12:34:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.JAVERSAK,
+    date: "Aug 14 2019 12:34:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.FAZEKAS,
+    date: "Aug 14 2019 12:34:00 PDT"
+  },
+  {
+    badge: Badges.HI_FIVE,
+    player: Players.JAVERSAK,
+    date: "Aug 14 2019 12:39:00 PDT",
+    notes: "Introducing Kari!"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.LO,
+    date: "Aug 14 2019 13:50:00 PDT",
+    notes: "Coffee for SS"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.PAINE,
+    date: "Aug 14 2019 14:40:00 PDT",
+    notes: "Podiatrist Visit"
+  },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.SCOTT,
+    date: "Aug 14 2019 16:52:00 PDT",
+    notes: "Soccer"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.NITZ,
+    date: "Aug 14 2019 17:03:00 PDT",
+    notes: "Walking home from sprints"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.PERRY,
+    date: "Aug 14 2019 17:04:00 PDT",
+    notes: "Walking home from grocery shopping"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.PERRY,
+    date: "Aug 14 2019 17:34:00 PDT",
+    notes: "Submit - Sophie"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.MOORE,
+    date: "Aug 14 2019 17:34:00 PDT",
+    notes: "Guesser - Sophie"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.PERRY,
+    date: "Aug 14 2019 17:48:00 PDT",
+    notes: "Submit - Harley"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.KNOWLES,
+    date: "Aug 14 2019 17:34:00 PDT",
+    notes: "Guesser - Harley"
+  },
+  // {
+  //   badge: Badges.CELEBRITY_CHEF,
+  //   player: Players.DUFFY,
+  //   date: "Aug 14 2019 17:59:00 PDT",
+  //   notes: "Change is Good Cocktail"
+  // },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.JAVERSAK,
+    date: "Aug 14 2019 19:16:00 PDT",
+    notes: "Lucy's Smoothie"
+  },
+  {
+    badge: Badges.WORKIN_IT,
+    player: Players.MOORE,
+    date: "Aug 15 2019 3:52:00 PDT",
+    notes: "Forward Deployed Software Engineer by day"
+  },
+  {
+    badge: Badges.WORKIN_IT,
+    player: Players.KNOWLES,
+    date: "Aug 15 2019 6:16:00 PDT",
+    notes: "Video/Radio Show Guest by day"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.DUFFY,
+    date: "Aug 15 2019 9:07:00 PDT",
+    notes: "Soulmate - Kermit"
+  },
+  {
+    badge: Badges.WORKIN_IT,
+    player: Players.MENDOZA,
+    date: "Aug 15 2019 9:22:00 PDT",
+    notes: "FTIR Method Developer by day"
+  },
+  {
+    badge: Badges.HI_FIVE,
+    player: Players.MENDOZA,
+    date: "Aug 15 2019 11:17:00 PDT",
+    notes: "Introducing Gordo!"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.MOORE,
+    date: "Aug 15 2019 17:19:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.PAINE,
+    date: "Aug 15 2019 17:19:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.SOTER,
+    date: "Aug 15 2019 17:19:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.DUFFY,
+    date: "Aug 15 2019 17:19:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.WRIGHT,
+    date: "Aug 15 2019 17:19:00 PDT"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.PAINE,
+    date: "Aug 15 2019 17:55:00 PDT",
+    notes: "Soter + Burger"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.SOTER,
+    date: "Aug 15 2019 17:55:00 PDT",
+    notes: "Kari + Burger"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.SOTER,
+    date: "Aug 15 2019 17:55:00 PDT",
+    notes: "Duffy + Burger"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.SOTER,
+    date: "Aug 15 2019 17:55:00 PDT",
+    notes: "Brit + Burger"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.WALKER,
+    date: "Aug 15 2019 17:56:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.KNOWLES,
+    date: "Aug 15 2019 17:56:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.FLEMING,
+    date: "Aug 15 2019 17:56:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.PERRY,
+    date: "Aug 15 2019 17:56:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.PRUITT,
+    date: "Aug 15 2019 17:56:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.SMIACH,
+    date: "Aug 15 2019 17:56:00 PDT"
+  },
+  {
+    badge: Badges.NEON_NIGHT,
+    player: Players.CONERLY,
+    date: "Aug 15 2019 17:56:00 PDT"
+  },
+  {
+    badge: Badges.ICE_BUT_NICE,
+    player: Players.SOTER,
+    date: "Aug 15 2019 19:28:00 PDT",
+    notes: "Pamplemousse -> Brit"
+  },
+  {
+    badge: Badges.ICE_BUT_NICE,
+    player: Players.SCOTT,
+    date: "Aug 16 2019 6:03:00 PDT",
+    notes: "Lime -> Janine"
+  },
+  {
+    badge: Badges.BORDER_PATROL,
+    player: Players.NITZ,
+    date: "Aug 16 2019 7:07:00 PDT",
+    notes: "Michigan / Indiana"
+  },
+  {
+    badge: Badges.BORDER_PATROL,
+    player: Players.NITZ,
+    date: "Aug 16 2019 7:24:00 PDT",
+    notes: "Indiana / Illinois"
+  },
+  {
+    badge: Badges.PATIENT_PROFESSOR,
+    player: Players.MENDOZA,
+    date: "Aug 16 2019 9:30:00 PDT",
+    notes: "Teaching Coworker"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.FAZEKAS,
+    date: "Aug 16 2019 9:52:00 PDT",
+    notes: "Janine + Brownie Brittle"
+  },
+  {
+    badge: Badges.BACKHANDED_BADGE,
+    player: Players.PERRY,
+    date: "Aug 16 2019 12:04:00 PDT",
+    notes: "Quote Janine"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.SCOTT,
+    date: "Aug 16 2019 14:34:00 PDT",
+    notes: "Kansas"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.SCOTT,
+    date: "Aug 16 2019 14:34:00 PDT",
+    notes: "Idaho"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.JAVERSAK,
+    date: "Aug 16 2019 15:23:00 PDT",
+    notes: "Libby + Ice Cream"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.JAVERSAK,
+    date: "Aug 16 2019 15:23:00 PDT",
+    notes: "Lucy + Ice Cream"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.JAVERSAK,
+    date: "Aug 16 2019 15:23:00 PDT",
+    notes: "Sharon + Ice Cream"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.BENDER,
+    date: "Aug 16 2019 15:24:00 PDT",
+    notes: "Iris + Ice Cream"
+  },
+  {
+    badge: Badges.HI_FIVE,
+    player: Players.MENDOZA,
+    date: "Aug 16 2019 15:57:00 PDT",
+    notes: "Introducing Maddie!"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.WALKER,
+    date: "Aug 16 2019 16:29:00 PDT",
+    notes: "Alabama"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.NITZ,
+    date: "Aug 16 2019 16:32:00 PDT",
+    notes: "Iowa"
+  },
+  {
+    badge: Badges.BORDER_PATROL,
+    player: Players.LO,
+    date: "Aug 16 2019 17:08:00 PDT",
+    notes: "Missouri / Iowa"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.BALL,
+    date: "Aug 16 2019 17:13:00 PDT",
+    notes: "Outdoors w/ the BEST Company"
+  },
+  {
+    badge: Badges.BACKHANDED_BADGE,
+    player: Players.JAVERSAK,
+    date: "Aug 16 2019 17:32:00 PDT",
+    notes: "Quote Lucy"
+  },
+  // ALRAEDY MAXED OUT
+  // {
+  //   badge: Badges.RUSTY_RAMPAGE,
+  //   player: Players.SOTER,
+  //   date: "Aug 16 2019 18:15:00 PDT",
+  //   notes: "Duffy + Cow Soup"
+  // },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.RIVANIMALS,
+  //   player: Players.PERRY,
+  //   date: "Aug 16 2019 18:41:00 PDT",
+  //   notes: "Mini Horses"
+  // },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.PERRY,
+    date: "Aug 16 2019 19:02:00 PDT",
+    notes: "Jenny/Champ/Mack"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.PRUITT,
+    date: "Aug 16 2019 19:02:00 PDT",
+    notes: "Jenny/Champ/Mack"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.FAZEKAS,
+    date: "Aug 16 2019 19:02:00 PDT",
+    notes: "Jenny/Champ/Mack"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.WRIGHT,
+    date: "Aug 16 2019 20:07:00 PDT",
+    notes: "Brit/Tots/Kari/Nitz"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.MOORE,
+    date: "Aug 16 2019 20:07:00 PDT",
+    notes: "Brit/Tots/Kari/Nitz"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.NITZ,
+    date: "Aug 16 2019 20:07:00 PDT",
+    notes: "Brit/Tots/Kari/Nitz"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.PAINE,
+    date: "Aug 16 2019 20:07:00 PDT",
+    notes: "Brit/Tots/Kari/Nitz"
+  },
+  {
+    badge: Badges.BORDER_PATROL,
+    player: Players.LO,
+    date: "Aug 16 2019 22:16:00 PDT",
+    notes: "Iowa / Illinois"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.BENDER,
+    date: "Aug 17 2019 4:48:00 PDT",
+    notes: "Lucy/Soter/Mantis"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.SOTER,
+    date: "Aug 17 2019 4:48:00 PDT",
+    notes: "Lucy/Soter/Mantis"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.SCHRODER,
+    date: "Aug 17 2019 4:48:00 PDT",
+    notes: "Lucy/Soter/Mantis"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.HECHT,
+    date: "Aug 17 2019 5:05:00 PDT",
+    notes: "Keeping teammates safe"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.FAZEKAS,
+    date: "Aug 17 2019 5:07:00 PDT",
+    notes: "Giving Jenny shorts"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.WALKER,
+    date: "Aug 17 2019 5:07:00 PDT",
+    notes: "Giving Jenny shorts"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.LO,
+    date: "Aug 17 2019 10:21:00 PDT",
+    notes: "Bringing Soter Hummus"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.MENDOZA,
+    date: "Aug 17 2019 10:33:00 PDT",
+    notes: "Maddie Zzz"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.MENDOZA,
+    date: "Aug 17 2019 10:33:00 PDT",
+    notes: "Grace Zzz"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.SOTER,
+    date: "Aug 17 2019 11:37:00 PDT",
+    notes: "Grace Zzz"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.SOTER,
+    date: "Aug 17 2019 13:37:00 PDT",
+    notes: "Soak up the Sun"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.DUFFY,
+    date: "Aug 17 2019 13:37:00 PDT",
+    notes: "Soak up the Sun"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.DUFFY,
+    date: "Aug 17 2019 13:40:00 PDT",
+    notes: "Umbrella"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.PUMP_IT_UP,
+  //   player: Players.SOTER,
+  //   date: "Aug 17 2019 13:40:00 PDT",
+  //   notes: "Umbrella"
+  // },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.LO,
+    date: "Aug 17 2019 13:54:00 PDT",
+    notes: "Any Man of Mine"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.SOPER,
+    date: "Aug 17 2019 13:54:00 PDT",
+    notes: "Any Man of Mine"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.SCHRODER,
+    date: "Aug 17 2019 14:03:00 PDT",
+    notes: "Soter Zzz"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.NITZ,
+    date: "Aug 17 2019 16:22:00 PDT",
+    notes: "Rhode Island"
+  },
+  {
+    badge: Badges.PAPARAZZI,
+    player: Players.JAVERSAK,
+    date: "Aug 17 2019 20:12:00 PDT",
+    notes: "Kristen in bed"
+  },
+  {
+    badge: Badges.PAPARAZZI,
+    player: Players.LO,
+    date: "Aug 17 2019 20:14:00 PDT",
+    notes: "Kristen in bed Pt 2"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.KNOWLES,
+    date: "Aug 17 2019 20:31:00 PDT",
+    notes: "Sophie/Soter"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.SOTER,
+    date: "Aug 17 2019 20:31:00 PDT",
+    notes: "Sophie/Soter"
+  },
+  {
+    badge: Badges.BACKHANDED_BADGE,
+    player: Players.WRIGHT,
+    date: "Aug 18 2019 5:01:00 PDT",
+    notes: "Quote Kari"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.CONERLY,
+    date: "Aug 18 2019 5:43:00 PDT",
+    notes: "Toilet Tampon"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.SOPER,
+    date: "Aug 18 2019 5:45:00 PDT",
+    notes: "Googly Eye Pigtails"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.LO,
+    date: "Aug 18 2019 5:45:00 PDT",
+    notes: "Googly Eye Pigtails"
+  },
+  {
+    badge: Badges.PAPARAZZI,
+    player: Players.MENDOZA,
+    date: "Aug 18 2019 6:05:00 PDT",
+    notes: "Diddys Disc Hat"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.MOORE,
+    date: "Aug 18 2019 6:09:00 PDT",
+    notes: "Tots Do"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.WALKER,
+    date: "Aug 18 2019 6:09:00 PDT",
+    notes: "Tots Do"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.PERRY,
+    date: "Aug 18 2019 6:09:00 PDT",
+    notes: "Tots Do"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.WRIGHT,
+    date: "Aug 18 2019 6:09:00 PDT",
+    notes: "Tots Do"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.NITZ,
+    date: "Aug 18 2019 6:09:00 PDT",
+    notes: "Tots Do"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.FAZEKAS,
+    date: "Aug 18 2019 6:09:00 PDT",
+    notes: "Tots Do"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.PRUITT,
+    date: "Aug 18 2019 6:09:00 PDT",
+    notes: "Tots Do"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.PAINE,
+    date: "Aug 18 2019 6:09:00 PDT",
+    notes: "Tots Do"
+  },
+  {
+    badge: Badges.BACKHANDED_BADGE,
+    player: Players.FAZEKAS,
+    date: "Aug 18 2019 6:10:00 PDT",
+    notes: "Quote Janine"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.SOTER,
+    date: "Aug 18 2019 6:42:00 PDT",
+    notes: "Grace Zzz"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.LO,
+    date: "Aug 18 2019 7:01:00 PDT",
+    notes: "Cold Brew for Tots"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.JAVERSAK,
+    date: "Aug 19 2019 10:55:00 PDT",
+    notes: "Walk to Ice Cream"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.KNOWLES,
+    date: "Aug 19 2019 13:46:00 PDT",
+    notes: "Dentist Visit"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.SCOTT,
+    date: "Aug 19 2019 14:55:00 PDT",
+    notes: "Made Caprese Salad by Soter"
+  },
+  // {
+  //   badge: Badges.CELEBRITY_CHEF,
+  //   player: Players.SCOTT,
+  //   date: "Aug 19 2019 15:16:00 PDT",
+  //   notes: "Oatmeal Choc Chip Cookies"
+  // }
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.LEHMAN,
+    date: "Aug 19 2019 18:35:00 PDT",
+    notes: "Made Caprese Salad by Soter"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.LEHMAN,
+    date: "Aug 19 2019 18:35:00 PDT",
+    notes: "Made Salsa Verde by Kermit"
+  },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.JAVERSAK,
+    date: "Aug 20 2019 6:35:00 PDT",
+    notes: "Rock Climbing"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.DUFFY,
+    date: "Aug 20 2019 7:00:00 PDT",
+    notes: "Stuck in the mud"
+  },
+  {
+    badge: Badges.HYDRATION,
+    player: Players.JAVERSAK,
+    date: "Aug 20 2019 8:30:00 PDT"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.MILLER,
+    date: "Aug 20 2019 8:35:00 PDT",
+    notes: "Beer for Breakfast"
+  },
+  {
+    badge: Badges.BORDER_PATROL,
+    player: Players.DUFFY,
+    date: "Aug 20 2019 10:11:00 PDT",
+    notes: "Wisconsin / Michigan"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.PERRY,
+    date: "Aug 20 2019 12:25:00 PDT",
+    notes: "E-bike time!"
+  },
+  // {
+  //   badge: Badges.CELEBRITY_CHEF,
+  //   player: Players.PERRY,
+  //   date: "Aug 20 2019 13:21:00 PDT",
+  //   notes: "Choc/PB/Banana Toast"
+  // },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.SOTER,
+    date: "Aug 20 2019 13:29:00 PDT",
+    notes: "Avocado Toast"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.MENDOZA,
+    date: "Aug 20 2019 17:21:00 PDT",
+    notes: "Submit - Grace"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.JAVERSAK,
+    date: "Aug 20 2019 17:21:00 PDT",
+    notes: "Guesser - Grace"
+  },
+  {
+    badge: Badges.ICE_BUT_NICE,
+    player: Players.WRIGHT,
+    date: "Aug 20 2019 17:23:00 PDT",
+    notes: "Strawberry -> TLo"
+  },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.SOTER,
+    date: "Aug 20 2019 19:55:00 PDT",
+    notes: "Yoga"
+  },
+  {
+    badge: Badges.SNAPCHAT_SOULMATES,
+    player: Players.SOPER,
+    date: "Aug 21 2019 5:42:00 PDT",
+    notes: "Soulmate - TLo"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.SOPER,
+    date: "Aug 21 2019 5:43:00 PDT",
+    notes: "Kristen - Zzz"
+  },
+  {
+    badge: Badges.BACKHANDED_BADGE,
+    player: Players.SOPER,
+    date: "Aug 20 2019 5:43:00 PDT",
+    notes: "Quote - Kari"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.WEEKLY_WELLNESS,
+  //   player: Players.SCOTT,
+  //   date: "Aug 21 2019 5:49:00 PDT",
+  //   notes: "Crosswords with Griff/JO"
+  // },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.KNOWLES,
+    date: "Aug 21 2019 6:08:00 PDT",
+    notes: "Biking"
+  },
+  {
+    badge: Badges.MAKEUP_MASTER,
+    player: Players.SCOTT,
+    date: "Aug 21 2019 6:08:00 PDT",
+    notes: "Tots Pony"
+  },
+  {
+    badge: Badges.HI_FIVE,
+    player: Players.SOTER,
+    date: "Aug 21 2019 7:34:00 PDT",
+    notes: "Introducing Mantis!"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.MOORE,
+    date: "Aug 21 2019 8:10:00 PDT",
+    notes: "Made Soter's Avocado Toast"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.MOORE,
+    date: "Aug 21 2019 8:10:00 PDT",
+    notes: "K10/Tots Tech Support"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.MOORE,
+    date: "Aug 21 2019 10:10:00 PDT",
+    notes: "Deconstructed Smoothie"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.LO,
+    date: "Aug 21 2019 10:18:00 PDT",
+    notes: "Personal Day"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.BENDER,
+    date: "Aug 21 2019 10:25:00 PDT",
+    notes: "Made Soter's Avocado Toast"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.BENDER,
+    date: "Aug 21 2019 10:37:00 PDT",
+    notes: "Made Soter's Caprese Salad"
+  },
+  {
+    badge: Badges.RULES_RECTIFIER,
+    player: Players.PERRY,
+    date: "Aug 21 2019 12:54:00 PDT",
+    notes: "Picks"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.SOTER,
+    date: "Aug 21 2019 13:10:00 PDT",
+    notes: "Muni"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.JAVERSAK,
+    date: "Aug 21 2019 13:23:00 PDT",
+    notes: "Made Soter's Avocado Toast"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.SOTER,
+    date: "Aug 21 2019 14:43:00 PDT",
+    notes: "Annual Hair Cut"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.SOPER,
+    date: "Aug 21 2019 15:39:00 PDT",
+    notes: "Made Soter's Caprese Salad"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.PERRY,
+    date: "Aug 21 2019 15:40:00 PDT",
+    notes: "Made Soter's Caprese Salad"
+  },
+  {
+    badge: Badges.PAPARAZZI,
+    player: Players.SCOTT,
+    date: "Aug 21 2019 17:13:00 PDT",
+    notes: "Kristen - No Disc Bag"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.PERRY,
+    date: "Aug 21 2019 17:44:00 PDT",
+    notes: "Made Tots's Deconstructed Smoothie"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SOTER,
+    date: "Aug 21 2019 20:02:00 PDT",
+    notes: "Submit - Iris"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.LO,
+    date: "Aug 21 2019 20:02:00 PDT",
+    notes: "Guess - Iris"
+  },
+  {
+    badge: Badges.HYDRATION,
+    player: Players.LO,
+    date: "Aug 21 2019 20:16:00 PDT"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.MENDOZA,
+    date: "Aug 22 2019 9:08:00 PDT",
+    notes: "Left work early"
+  },
+  {
+    badge: Badges.FILM_FANATIC,
+    player: Players.MENDOZA,
+    date: "Aug 22 2019 9:45:00 PDT",
+    notes: "Scandal Pull Play"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.SOTER,
+    date: "Aug 21 2019 15:33:00 PDT",
+    notes: "Ice Cream -> Sophie"
+  },
+  {
+    badge: Badges.HYDRATION,
+    player: Players.SCOTT,
+    date: "Aug 22 2019 19:41:00 PDT"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.SOTER,
+    date: "Aug 23 2019 18:01:00 PDT",
+    notes: "Bleeding Ears"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.YEE,
+    date: "Aug 24 2019 10:13:00 PDT",
+    notes: "Flowers -> Sophie"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.LEHMAN,
+    date: "Aug 24 2019 10:13:00 PDT",
+    notes: "Flowers -> Sophie"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.JAVERSAK,
+    date: "Aug 24 2019 10:13:00 PDT",
+    notes: "Flowers -> Sophie"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.MENDOZA,
+    date: "Aug 23 2019 9:25:00 PDT",
+    notes: "Thanks Brit!"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.MENDOZA,
+    date: "Aug 23 2019 9:08:00 PDT",
+    notes: "Thanks Kristen!"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.MENDOZA,
+    date: "Aug 23 2019 8:59:00 PDT",
+    notes: "Thanks Janine!"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.PERRY,
+    date: "Aug 21 2019 12:23:00 PDT",
+    notes: "Thanks Iris/Sophie!"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.PERRY,
+    date: "Aug 21 2019 12:16:00 PDT",
+    notes: "Thanks D!"
+  },
+  {
+    badge: Badges.EMAIL_SUNSHINE,
+    player: Players.PERRY,
+    date: "Aug 21 2019 12:02:00 PDT",
+    notes: "Thanks Kristen!"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.MOORE,
+    date: "Aug 1 2019 7:00:00 PDT",
+    notes: "Album Art"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.LO,
+    date: "July 31 2019 10:12:00 PDT",
+    notes: "Thicc Thighs"
+  },
+  {
+    badge: Badges.SUPERB_SUGGESTER,
+    player: Players.PERRY,
+    date: "Aug 6 2019 7:16:00 PDT",
+    notes: "Riddle Me This"
   }
 ];

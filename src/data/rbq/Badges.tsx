@@ -106,7 +106,10 @@ export enum Badges {
   FITNESS_GURU = "FITNESS_GURU",
   BACKHANDED_BADGE = "BACKHANDED_BADGE",
   CROSS_TRAINING_CHAMPION = "CROSS_TRAINING_CHAMPION",
-  HOUSE_WARFARE = "HOUSE_WARFARE"
+  HOUSE_WARFARE = "HOUSE_WARFARE",
+  ALBUM_ART = "ALBUM_ART",
+  THICC_THIGHS = "THICC_THIGHS",
+  RIDDLE_ME_THIS = "RIDDLE_ME_THIS"
 }
 
 export const BADGES: { [key in Badges]: Badge } = {
@@ -737,5 +740,26 @@ export const BADGES: { [key in Badges]: Badge } = {
     description:
       "Post a photo to slack of your participation in another sport / physical activity that’ll help improve your performance and overall fitness. Examples: biking, rock climbing, playing basketball, etc. Track workouts, lifting, etc. do NOT count.",
     createdBy: Players.JAVERSAK
+  },
+  ALBUM_ART: {
+    title: "Album Art",
+    image: "badge_cd.png",
+    description:
+      "Take a picture that could be used as the spotify album art for one of the 2019 roster release playlsits. Photo must include at least 3/4 of total playlist members to qualify. Only one submission needed for full group credit.  ",
+    createdBy: Players.MOORE
+  },
+  THICC_THIGHS: {
+    title: "Thicc Thighs",
+    image: "badge_pants.png",
+    description:
+      "Post a picture to slack of clothing you ripped and/or no longer fit into (as of this season) due to your rival training gains.",
+    createdBy: Players.LO
+  },
+  RIDDLE_ME_THIS: {
+    title: "Riddle Me This",
+    image: "badge_brain.png",
+    description:
+      "Post a riddle to slack. Teammates will solve and post answer - fastest correct answer earns a badge. Badge can be earned 3 times as poster and 3 times as solver.",
+    createdBy: Players.PERRY
   }
 };
