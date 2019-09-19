@@ -109,7 +109,10 @@ export enum Badges {
   HOUSE_WARFARE = "HOUSE_WARFARE",
   ALBUM_ART = "ALBUM_ART",
   THICC_THIGHS = "THICC_THIGHS",
-  RIDDLE_ME_THIS = "RIDDLE_ME_THIS"
+  RIDDLE_ME_THIS = "RIDDLE_ME_THIS",
+  // RIVAL_BOOK_CLUB = "RIVAL_BOOK_CLUB",
+  EXTRA_EXTRA = "EXTRA_EXTRA",
+  ECO_RIVAL = "ECO_RIVAL"
 }
 
 export const BADGES: { [key in Badges]: Badge } = {
@@ -510,13 +513,13 @@ export const BADGES: { [key in Badges]: Badge } = {
       "Ice your teammate with a La Croix (this La Croix must be marked with ICE and your name). Photo evidence (of hiding and/or discovery) required. Act fast - this badge can only be earned once per flavor.",
     createdBy: Players.SCOTT
   },
-  BOOK_CLUB: {
-    title: "Book Club",
-    image: "badge_worm.png",
-    description:
-      "Team book club of reading The Rosie Project by Graeme Simsion. To earn this badge post a picture of you reading it to slack and share a way that it relates to our team ;)",
-    createdBy: Players.HARLEY
-  },
+  // BOOK_CLUB: {
+  //   title: "Book Club",
+  //   image: "badge_worm.png",
+  //   description:
+  //     "Team book club of reading The Rosie Project by Graeme Simsion. To earn this badge post a picture of you reading it to slack and share a way that it relates to our team ;)",
+  //   createdBy: Players.HARLEY
+  // },
   FANTASTIC_FUNDRAISER: {
     title: "Fantastic Fundraiser",
     image: "badge_piggy.png",
@@ -575,7 +578,7 @@ export const BADGES: { [key in Badges]: Badge } = {
   },
   GOSSIP_GALORE: {
     title: "Gossip Galore",
-    image: "badge_chat.png",
+    image: "badge_gossip.png",
     description:
       "Hear about a story (must be this season / recent) of one of your teammates through the grapevine. Share the story via slack for badge credit.",
     createdBy: Players.HARLEY
@@ -745,7 +748,7 @@ export const BADGES: { [key in Badges]: Badge } = {
     title: "Album Art",
     image: "badge_cd.png",
     description:
-      "Take a picture that could be used as the spotify album art for one of the 2019 roster release playlsits. Photo must include at least 3/4 of total playlist members to qualify. Only one submission needed for full group credit.  ",
+      "Take a picture that could be used as the spotify album art for one of the 2019 roster release playlists. Photo must include at least 3/4 of total playlist members to qualify. Only one submission needed for full group credit.  ",
     createdBy: Players.MOORE
   },
   THICC_THIGHS: {
@@ -761,5 +764,25 @@ export const BADGES: { [key in Badges]: Badge } = {
     description:
       "Post a riddle to slack. Teammates will solve and post answer - fastest correct answer earns a badge. Badge can be earned 3 times as poster and 3 times as solver.",
     createdBy: Players.PERRY
+  },
+  BOOK_CLUB: {
+    title: "Book Club",
+    image: "badge_worm.png",
+    description:
+      "Post a picture of you with a book you just read and your rating (out of 5 stars) and quick explanation of why you liked/didn’t like it.",
+    createdBy: Players.PAINE
+  },
+  EXTRA_EXTRA: {
+    title: "Extra Extra Read All About It",
+    image: "badge_newspaper.png",
+    description: "Post to slack about something you did that was really extra.",
+    createdBy: Players.PAINE
+  },
+  ECO_RIVAL: {
+    title: "Eco-Rival",
+    image: "badge_sustainable.png",
+    description:
+      "Post a photo of yourself being sustainable! Ideas include: utilizing reusable containers, biking/walking instead of driving, recycling/composting, fixing something that is broken instead of buying new, eating local, being energy efficient, etc.",
+    createdBy: Players.LEHMAN
   }
 };

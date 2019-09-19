@@ -99,7 +99,102 @@ const GAMES_SFI_EAST_2019: Game[] = [
   }
 ];
 
-const GAMES_ESC_2019: Game[] = [];
+const GAMES_ESC_2019: Game[] = [
+  {
+    opponent: Teams.BENT,
+    date: "Aug 17, 2019 8:30AM CST",
+    score_us: 12,
+    score_them: 13,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.WICKED,
+    date: "Aug 17, 2019 10:30AM CST",
+    score_us: 11,
+    score_them: 4,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.UNDERGROUND,
+    date: "Aug 17, 2019 2:30PM CST",
+    score_us: 13,
+    score_them: 9,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.NEMESIS,
+    date: "Aug 18, 201 10:25AM CST",
+    score_us: 8,
+    score_them: 7,
+    type: GameType.BRACKET
+  },
+  {
+    opponent: Teams.PHOENIX,
+    date: "Aug 18, 2019 11:55AM CST",
+    score_us: 4,
+    score_them: 9,
+    type: GameType.BRACKET
+  },
+  {
+    opponent: Teams.SHOWDOWN,
+    date: "Aug 18, 2019 1:25PM CST",
+    score_us: 8,
+    score_them: 7,
+    type: GameType.CONSOLATION
+  },
+  {
+    opponent: Teams.OZONE,
+    date: "Aug 18, 2019 2:55SPM CST",
+    score_us: 10,
+    score_them: 9,
+    type: GameType.CONSOLATION
+  }
+];
+
+const GAMES_PCHAMPS_2019: Game[] = [
+  {
+    opponent: Teams.SCANDAL,
+    date: "Aug 31, 2019 10:30AM EST",
+    score_us: 11,
+    score_them: 14,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.SCHWA,
+    date: "Aug 31, 2019 12:30PM EST",
+    score_us: 11,
+    score_them: 14,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.MOLLYBROWN,
+    date: "Aug 31, 2019 2:30PM EST",
+    score_us: 8,
+    score_them: 15,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.RIOT,
+    date: "Sep 1, 2019 8:30AM EST",
+    score_us: 7,
+    score_them: 11,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.NIGHTLOCK,
+    date: "Sep 1, 2019 10:30AM EST",
+    score_us: 12,
+    score_them: 11,
+    type: GameType.CONSOLATION
+  },
+  {
+    opponent: Teams.PHOENIX,
+    date: "Sep 1, 2019 12:30PM EST",
+    score_us: 6,
+    score_them: 14,
+    type: GameType.CONSOLATION
+  },
+];
 
 const GAMES_REGIONALS_2019: Game[] = [];
 
@@ -155,16 +250,34 @@ export const TOURNAMENTS_2019: TournamentList = {
     },
     link:
       "https://play.usaultimate.org/events/TCT-Elite-Select-Challenge-2019/",
-    result: undefined,
+    result: 5,
     sanctioned: true,
     games: GAMES_ESC_2019
+  },
+  "2019-pchamps": {
+    id: "2019-pchamps",
+    name: "Pro Championships",
+    location: {
+      city: "Philadelphia",
+      state: "PA",
+      mapsLink: ""
+    },
+    date: {
+      start: "August 31, 2019",
+      end: "September 2, 2019"
+    },
+    link:
+      "https://play.usaultimate.org/events/TCT-Pro-Championships-2019/",
+    result: 8,
+    sanctioned: true,
+    games: GAMES_PCHAMPS_2019
   },
   "2019-regionals": {
     id: "2019-regionals",
     name: "Great Lakes Regionals",
     location: {
-      city: "Cincinnati",
-      state: "OH",
+      city: "Stevensville",
+      state: "MI",
       mapsLink: ""
     },
     date: {
