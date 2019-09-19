@@ -459,5 +459,37 @@ export const ALL_NEWS: NewsItem[] = [
     date: "July 31, 2019",
     author: "Ultiworld",
     type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Elite-Select Challenge 2019: Tournament Preview (Women’s)",
+    link:
+      "https://ultiworld.com/2019/08/15/elite-select-challenge-2019-tournament-preview-womens/",
+    date: "Aug 15, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Elite-Select Challenge 2019: Tournament Recap (Women’s)",
+    link:
+      "https://ultiworld.com/2019/08/21/elite-select-challenge-2019-tournament-recap-womens/",
+    date: "Aug 21, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Pro Championships 2019: Tournament Preview (Women’s)",
+    link:
+      "https://ultiworld.com/2019/08/29/pro-championships-2019-tournament-preview-womens/",
+    date: "Aug 29, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Pro Championships 2019: Day Two Recap (Women’s)",
+    link:
+      "https://ultiworld.com/2019/09/02/pro-championships-2019-day-two-recap-womens/",
+    date: "Sep 2, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
   }
 ];

@@ -37,11 +37,11 @@ var config = {
         title: "Washington",
         color: "rgba(75,216,181,0.8)"
       },
-      //   {
-      //     id: "US-DE",
-      //     title: "Delaware",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+      {
+        id: "US-DE",
+        title: "Delaware",
+        color: "rgba(75,216,181,0.8)"
+      },
       {
         id: "US-MN",
         title: "Minnesota",
@@ -62,11 +62,11 @@ var config = {
         title: "Virginia",
         color: "rgba(75,216,181,0.8)"
       },
-      //   {
-      //     id: "US-NH",
-      //     title: "New Hampshire",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+      {
+        id: "US-NH",
+        title: "New Hampshire",
+        color: "rgba(75,216,181,0.8)"
+      },
       {
         id: "US-TX",
         title: "Texas",
@@ -117,11 +117,11 @@ var config = {
         title: "Indiana",
         color: "rgba(75,216,181,0.8)"
       },
-      // {
-      //     "id": "US-TN",
-      //     "title": "Tennessee",
-      //     "color": "rgba(75,216,181,0.8)"
-      // },
+      {
+        id: "US-TN",
+        title: "Tennessee",
+        color: "rgba(75,216,181,0.8)"
+      },
       {
         id: "US-MA",
         title: "Massachusetts",
@@ -162,11 +162,11 @@ var config = {
         title: "West Virginia",
         color: "rgba(75,216,181,0.8)"
       },
-      //   {
-      //     id: "US-ME",
-      //     title: "Maine",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+      {
+        id: "US-ME",
+        title: "Maine",
+        color: "rgba(75,216,181,0.8)"
+      },
       //   {
       //     id: "US-NV",
       //     title: "Nevada",
@@ -212,11 +212,11 @@ var config = {
         title: "Kansas",
         color: "rgba(75,216,181,0.8)"
       },
-      //   {
-      //     id: "US-HI",
-      //     title: "Hawaii",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+      {
+        id: "US-HI",
+        title: "Hawaii",
+        color: "rgba(75,216,181,0.8)"
+      },
       {
         id: "US-NE",
         title: "Nebraska",
@@ -237,31 +237,26 @@ var config = {
       //     title: "Alaska",
       //     color: "rgba(75,216,181,0.8)"
       //   },
-      //   {
-      //     id: "US-CO",
-      //     title: "Colorado",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+      {
+        id: "US-CO",
+        title: "Colorado",
+        color: "rgba(75,216,181,0.8)"
+      },
       //   {
       //     id: "US-MS",
       //     title: "Mississippi",
       //     color: "rgba(75,216,181,0.8)"
       //   },
-      // {
-      //     "id": "US-IA",
-      //     "title": "Iowa",
-      //     "color": "rgba(75,216,181,0.8)"
-      // },
       {
         id: "US-ID",
         title: "Idaho",
         color: "rgba(75,216,181,0.8)"
       },
-      //   {
-      //     id: "US-MT",
-      //     title: "Montana",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+      {
+        id: "US-MT",
+        title: "Montana",
+        color: "rgba(75,216,181,0.8)"
+      },
       //   {
       //     id: "US-NM",
       //     title: "New Mexico",

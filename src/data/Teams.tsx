@@ -36,6 +36,7 @@ export enum Teams {
   MAEVE = "maeve",
   MOLLYBROWN = "mollybrown",
   NEMESIS = "nemesis",
+  NIGHTLOCK = "nightlock",
   NOTOROIOUSCLE = "notoriouscle",
   OZONE = "ozone",
   PHOENIX = "phoenix",
@@ -180,6 +181,11 @@ export const TEAMS: { [key in Teams]: Team } = {
   nemesis: {
     name: "Nemesis",
     location: { city: "Chicago", state: "IL" },
+    logo: ""
+  },
+  nightlock: {
+    name: "Nightlock",
+    location: { city: "San Francisco", state: "CA"},
     logo: ""
   },
   notoriouscle: {
