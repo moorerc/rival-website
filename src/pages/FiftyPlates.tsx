@@ -202,11 +202,11 @@ var config = {
         title: "Arizona",
         color: "rgba(75,216,181,0.8)"
       },
-      //   {
-      //     id: "US-OK",
-      //     title: "Oklahoma",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+        {
+          id: "US-OK",
+          title: "Oklahoma",
+          color: "rgba(75,216,181,0.8)"
+        },
       {
         id: "US-KS",
         title: "Kansas",
@@ -232,21 +232,21 @@ var config = {
       //     "title": "North Dakota",
       //     "color": "rgba(75,216,181,0.8)"
       // },
-      //   {
-      //     id: "US-AK",
-      //     title: "Alaska",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+        {
+          id: "US-AK",
+          title: "Alaska",
+          color: "rgba(75,216,181,0.8)"
+        },
       {
         id: "US-CO",
         title: "Colorado",
         color: "rgba(75,216,181,0.8)"
       },
-      //   {
-      //     id: "US-MS",
-      //     title: "Mississippi",
-      //     color: "rgba(75,216,181,0.8)"
-      //   },
+        {
+          id: "US-MS",
+          title: "Mississippi",
+          color: "rgba(75,216,181,0.8)"
+        },
       {
         id: "US-ID",
         title: "Idaho",

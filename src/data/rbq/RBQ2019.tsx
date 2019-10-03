@@ -68,7 +68,7 @@ export const rbq2019BadgesActivated: Badges[] = [
   Badges.GOSSIP_GALORE
 ];
 
-export const rbq2019LastUpdated: string = "Sep 3 2019 21:00:00 PDT";
+export const rbq2019LastUpdated: string = "Oct 3 2019 16:00:00 PDT";
 export const rbq2019BadgesRecentlyReleased: Badges[] = [
   Badges.BOOK_CLUB,
   Badges.EXTRA_EXTRA,
