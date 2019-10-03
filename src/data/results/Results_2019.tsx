@@ -196,9 +196,50 @@ const GAMES_PCHAMPS_2019: Game[] = [
   },
 ];
 
-const GAMES_REGIONALS_2019: Game[] = [];
-
-const GAMES_NATIONALS_2019: Game[] = [];
+const GAMES_REGIONALS_2019: Game[] = [
+  {
+    opponent: Teams.HELIX,
+    date: "Sep 21, 2019 12:50PM EST",
+    score_us: 13,
+    score_them: 0,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.AUTONOMOUS,
+    date: "Sep 21, 2019 2:30PM EST",
+    score_us: 13,
+    score_them: 1,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.INDYROGUE,
+    date: "Sep 21, 2019 4:10PM EST",
+    score_us: 13,
+    score_them: 7,
+    type: GameType.POOL
+  },
+  {
+    opponent: Teams.SURESHOT,
+    date: "Sep 22, 2019 9:30AM EST",
+    score_us: 15,
+    score_them: 0,
+    type: GameType.BRACKET
+  },
+  {
+    opponent: Teams.DISH,
+    date: "Sep 22, 2019 11:30AM EST",
+    score_us: 15,
+    score_them: 4,
+    type: GameType.BRACKET
+  },
+  {
+    opponent: Teams.NEMESIS,
+    date: "Sep 22, 2019 1:30PM EST",
+    score_us: 8,
+    score_them: 10,
+    type: GameType.BRACKET
+  },
+];
 
 export const TOURNAMENTS_2019: TournamentList = {
   "2019-pec": {
@@ -276,7 +317,7 @@ export const TOURNAMENTS_2019: TournamentList = {
     id: "2019-regionals",
     name: "Great Lakes Regionals",
     location: {
-      city: "Stevensville",
+      city: "Holland",
       state: "MI",
       mapsLink: ""
     },
@@ -286,26 +327,8 @@ export const TOURNAMENTS_2019: TournamentList = {
     },
     link:
       "https://play.usaultimate.org/events/Great-Lakes-Womens-Club-Regional-Championship-2019/",
-    result: undefined,
+    result: 2,
     sanctioned: true,
     games: GAMES_REGIONALS_2019
-  },
-  "2019-nationals": {
-    id: "2019-nationals",
-    name: "National Championships",
-    location: {
-      city: "San Diego",
-      state: "CA",
-      mapsLink: ""
-    },
-    date: {
-      start: "October 24, 2019",
-      end: "October 27, 2019"
-    },
-    link:
-      "https://play.usaultimate.org/events/USA-Ultimate-National-Championships-2019/",
-    result: undefined,
-    sanctioned: true,
-    games: GAMES_NATIONALS_2019
   }
 };

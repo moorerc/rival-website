@@ -491,5 +491,29 @@ export const ALL_NEWS: NewsItem[] = [
     date: "Sep 2, 2019",
     author: "Ultiworld",
     type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Club Regionals 2019: Mega-Preview (Women’s)",
+    link:
+      "https://ultiworld.com/2019/09/20/club-regionals-2019-mega-preview-womens/",
+    date: "Sep 20, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Ultiworld Staff Picks: Club Regionals 2019",
+    link:
+      "https://ultiworld.com/2019/09/20/ultiworld-staff-picks-club-regionals-2019/",
+    date: "Sep 20, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
+  },
+  {
+    title: "Club Regionals 2019 Roundup",
+    link:
+      "https://ultiworld.com/2019/09/25/club-regionals-2019-roundup/",
+    date: "Sep 25, 2019",
+    author: "Ultiworld",
+    type: NEWS_TYPE.ARTICLE
   }
 ];
