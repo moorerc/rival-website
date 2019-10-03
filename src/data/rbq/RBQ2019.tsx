@@ -4526,12 +4526,13 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
     date: "Aug 24 2019 20:32:00 PDT",
     notes: "Harley/Diddy"
   },
-  {
-    badge: Badges.FIFTY_PLATES,
-    player: Players.PRUITT,
-    date: "Aug 25 2019 7:44:00 PDT",
-    notes: "Tennessee"
-  },
+  // taken by libby
+  // {
+  //   badge: Badges.FIFTY_PLATES,
+  //   player: Players.PRUITT,
+  //   date: "Aug 25 2019 7:44:00 PDT",
+  //   notes: "Tennessee"
+  // },
   {
     badge: Badges.FIFTY_PLATES,
     player: Players.PRUITT,
@@ -5053,12 +5054,12 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
     date: "Aug 29 2019 15:36:00 PDT",
     notes: "Biking to biking meeting"
   },
-  // {
-  //   badge: Badges.CELEBRITY_CHEF,
-  //   player: Players.LEHMAN,
-  //   date: "Aug 29 2019 18:01:00 PDT",
-  //   notes: "Shishito Peppers"
-  // }
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.LEHMAN,
+    date: "Aug 29 2019 18:01:00 PDT",
+    notes: "Shishito Peppers"
+  },
   {
     badge: Badges.WEEKLY_WELLNESS,
     player: Players.NITZ,
@@ -5331,5 +5332,757 @@ export const rbq2019BadgesEarned: BadgeEarned[] = [
     player: Players.LEHMAN,
     date: "Aug 13 2019 10:02:00 EDT",
     notes: "Eco-Rival"
-  }
+  },
+  // Update 7
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.CONERLY,
+    date: "Sep 4 2019 7:55:00 EDT",
+    notes: "Reusable Straw"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.CONERLY,
+    date: "Sep 4 2019 7:55:00 EDT",
+    notes: "Lights Off"
+  },
+  {
+    badge: Badges.BOOK_CLUB,
+    player: Players.CONERLY,
+    date: "Sep 4 2019 8:00:00 EDT",
+    notes: "12 Million Black Voices"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.BALL,
+    date: "Sep 4 2019 8:18:00 EDT",
+    notes: "Reusable Coffee Mug"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.BALL,
+    date: "Sep 4 2019 8:18:00 EDT",
+    notes: "Reusable Plates"
+  },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.MENDOZA,
+    date: "Sep 4 2019 8:40:00 EDT",
+    notes: "Snorkeling"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.SOPER,
+    date: "Sep 4 2019 9:03:00 EDT",
+    notes: "Reusable Coffee Mug"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.NITZ,
+    date: "Sep 4 2019 12:14:00 EDT",
+    notes: "Metal Fork"
+  },
+  {
+    badge: Badges.HYDRATION,
+    player: Players.MENDOZA,
+    date: "Sep 4 2019 16:24:00 EDT",
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.SCOTT,
+    date: "Sep 5 2019 7:31:00 EDT",
+    notes: "Taking the Stairs"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.MOORE,
+    date: "Sep 5 2019 8:47:00 EDT",
+    notes: "Walk to work"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.CONERLY,
+    date: "Sep 5 2019 12:07:00 EDT",
+    notes: "Submit - Libby"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SOPER,
+    date: "Sep 5 2019 12:07:00 EDT",
+    notes: "Guesser - Libby"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.CONERLY,
+    date: "Sep 5 2019 12:12:00 EDT",
+    notes: "Submit - Diddy"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.GUESS_WHO,
+  //   player: Players.JAVERSAK,
+  //   date: "Sep 5 2019 12:12:00 EDT",
+  //   notes: "Guesser - Diddy"
+  // },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.CONERLY,
+    date: "Sep 5 2019 12:16:00 EDT",
+    notes: "Submit - Maddie"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.GUESS_WHO,
+  //   player: Players.LO,
+  //   date: "Sep 5 2019 12:16:00 EDT",
+  //   notes: "Guesser - Maddie"
+  // },
+  {
+    badge: Badges.HAPPY_HISTORIAN,
+    player: Players.CONERLY,
+    date: "Sep 5 2019 12:27:00 EDT",
+    notes: "Libby's Pulls"
+  },
+  // {
+  //   badge: Badges.CELEBRITY_CHEF,
+  //   player: Players.SOPER,
+  //   date: "Sep 5 2019 13:30:00 EDT",
+  //   notes: "Salmon on the Skillet"
+  // },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.JAVERSAK,
+    date: "Sep 5 2019 13:33:00 EDT",
+    notes: "Submit - Diddy"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.GUESS_WHO,
+  //   player: Players.LO,
+  //   date: "Sep 5 2019 13:33:00 EDT",
+  //   notes: "Guesser - Diddy"
+  // },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.MILLER,
+    date: "Sep 5 2019 13:59:00 EDT",
+    notes: "Roller Blading w/ Dog and Sis"
+  },
+  {
+    badge: Badges.WORKIN_IT,
+    player: Players.SCOTT,
+    date: "Sep 5 2019 14:08:00 EDT",
+    notes: "Teacher by day"
+  },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.MENDOZA,
+    date: "Sep 5 2019 14:11:00 EDT",
+    notes: "Glacier Hiking"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.NITZ,
+    date: "Sep 5 2019 14:46:00 EDT",
+    notes: "Coffee Mug"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.BALL,
+    date: "Sep 5 2019 14:38:00 EDT",
+    notes: "Nalgene"
+  },
+  {
+    badge: Badges.SLEEP_TIGHT,
+    player: Players.SCOTT,
+    date: "Sep 5 2019 15:46:00 EDT",
+    notes: "8/30 - 9/5"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.HARLEY,
+    date: "Sep 6 2019 6:46:00 EDT",
+    notes: "Bike to Work w/ Stevie"
+  },
+  {
+    badge: Badges.TRAVELER_TRIVIA,
+    player: Players.LO,
+    date: "Sep 6 2019 20:57:00 EDT",
+    notes: "Traveler - Liberty Memorial"
+  },
+  {
+    badge: Badges.TRAVELER_TRIVIA,
+    player: Players.JAVERSAK,
+    date: "Sep 6 2019 20:57:00 EDT",
+    notes: "Guesser - Liberty Memorial"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.JAVERSAK,
+    date: "Sep 6 2019 20:58:00 EDT",
+    notes: "Walking"
+  },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.MOORE,
+    date: "Sep 6 2019 21:37:00 EDT",
+    notes: "Soul Cycle"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.SCOTT,
+    date: "Sep 6 2019 21:50:00 EDT",
+    notes: "Ziploc Saver"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.LEHMAN,
+    date: "Sep 6 2019 21:58:00 EDT",
+    notes: "Reusable Bag"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.MOORE,
+    date: "Sep 6 2019 22:03:00 EDT",
+    notes: "K10/SS Salad"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.HECHT,
+    date: "Sep 6 2019 22:08:00 EDT",
+    notes: "Bonus - Mexico"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.LEHMAN,
+    date: "Sep 6 2019 23:25:00 EDT",
+    notes: "Composting"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.MOORE,
+    date: "Sep 6 2019 23:49:00 EDT",
+    notes: "Reusable Bags"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.MENDOZA,
+    date: "Sep 7 2019 8:24:00 EDT",
+    notes: "Reusable Water Bottle"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.MENDOZA,
+    date: "Sep 7 2019 9:24:00 EDT",
+    notes: "Bus Life"
+  },
+  {
+    badge: Badges.TRAVELER_TRIVIA,
+    player: Players.MENDOZA,
+    date: "Sep 7 2019 12:22:00 EDT",
+    notes: "Traveler - Blue Lagoon"
+  },
+  {
+    badge: Badges.TRAVELER_TRIVIA,
+    player: Players.SOTER,
+    date: "Sep 7 2019 12:22:00 EDT",
+    notes: "Guesser - Blue Lagoon"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.HECHT,
+    date: "Sep 7 2019 13:43:00 EDT",
+    notes: "Scooter to Zumba"
+  },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.LEHMAN,
+    date: "Sep 7 2019 14:40:00 EDT",
+    notes: "60 Mile Bike"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.BALL,
+    date: "Sep 7 2019 16:01:00 EDT",
+    notes: "Yard work"
+  },
+  {
+    badge: Badges.CROSS_TRAINING_CHAMPION,
+    player: Players.CONERLY,
+    date: "Sep 7 2019 16:45:00 EDT",
+    notes: "Swimming"
+  },
+  {
+    badge: Badges.PATIENT_PROFESSOR,
+    player: Players.LEHMAN,
+    date: "Sep 7 2019 17:41:00 EDT",
+    notes: "Oberlin Coaching"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.LO,
+    date: "Sep 7 2019 22:31:00 EDT",
+    notes: "Reusable Shopping Bags"
+  },
+  // {
+  //   badge: Badges.CELEBRITY_CHEF,
+  //   player: Players.PAINE,
+  //   date: "Sep 7 2019 22:31:00 EDT",
+  //   notes: "So Fresh So Easy Chicken Thing"
+  // },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.SOTER,
+    date: "Sep 7 2019 23:18:00 EDT",
+    notes: "Farm Share"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.LO,
+    date: "Sep 8 2019 12:45:00 EDT",
+    notes: "Bike to Farmers Market"
+  },
+  {
+    badge: Badges.TRAVELER_TRIVIA,
+    player: Players.SCOTT,
+    date: "Sep 8 2019 13:31:00 EDT",
+    notes: "Traveler - Minihaha Falls"
+  },
+  {
+    badge: Badges.TRAVELER_TRIVIA,
+    player: Players.SOTER,
+    date: "Sep 8 2019 13:31:00 EDT",
+    notes: "Guesser - Minihaha Falls"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.BALL,
+    date: "Sep 8 2019 14:01:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.BALL,
+    date: "Sep 8 2019 14:01:00 EDT",
+    notes: "Middle School Years"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.BALL,
+    date: "Sep 8 2019 14:01:00 EDT",
+    notes: "High School Years"
+  },
+  {
+    badge: Badges.HYDRATION,
+    player: Players.SCOTT,
+    date: "Sep 8 2019 14:07:00 EDT",
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.MOORE,
+    date: "Sep 8 2019 15:05:00 EDT",
+    notes: "Powder Sugar Everywhere"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.LO,
+    date: "Sep 8 2019 15:31:00 EDT",
+    notes: "Libby's Shishitos"
+  },
+  {
+    badge: Badges.PATIENT_PROFESSOR,
+    player: Players.PAINE,
+    date: "Sep 8 2019 18:58:00 EDT",
+    notes: "Park Rando"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.SOTER,
+    date: "Sep 8 2019 19:47:00 EDT",
+    notes: "Reusable Bags"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.BENDER,
+    date: "Sep 9 2019 7:19:00 EDT",
+    notes: "Car broke down"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.SOTER,
+    date: "Sep 9 2019 7:38:00 EDT",
+    notes: "Reusable Zip Locks"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.MENDOZA,
+    date: "Sep 9 2019 10:07:00 EDT",
+    notes: "Reusable Mugs"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.BENDER,
+    date: "Sep 9 2019 11:16:00 EDT",
+    notes: "Reusable Lunch Containers"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.PERRY,
+    date: "Sep 9 2019 20:06:00 EDT",
+    notes: "Food Scraps for Thor"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.PERRY,
+    date: "Sep 10 2019 13:59:00 EDT",
+    notes: "Reusable Rival Mug"
+  },
+  {
+    badge: Badges.HAPPY_HISTORIAN,
+    player: Players.LEHMAN,
+    date: "Sep 10 2019 14:07:00 EDT",
+    notes: "Iris/Sharon Pul-ups"
+  },
+  {
+    badge: Badges.CHILDHOOD_CHARM,
+    player: Players.LO,
+    date: "Sep 11 2019 10:55:00 EDT",
+    notes: "Baby/Toddler Years"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.SCOTT,
+    date: "Sep 11 2019 16:22:00 EDT",
+    notes: "Composting"
+  },
+  // {
+  //   badge: Badges.CELEBRITY_CHEF,
+  //   player: Players.SCOTT,
+  //   date: "Sep 11 2019 20:25:00 EDT",
+  //   notes: "Cinnamon Raisin Flackers"
+  // },
+  {
+    badge: Badges.RIDDLE_ME_THIS,
+    player: Players.PERRY,
+    date: "Sep 12 2019 11:43:00 EDT",
+    notes: "Submit - Penny"
+  },
+  {
+    badge: Badges.RIDDLE_ME_THIS,
+    player: Players.MOORE,
+    date: "Sep 12 2019 11:43:00 EDT",
+    notes: "Guesser - Penny"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.LEHMAN,
+    date: "Sep 13 2019 18:22:00 EDT",
+    notes: "Mississippi"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.KNOWLES,
+    date: "Sep 13 2019 19:13:00 EDT",
+    notes: "Alaska"
+  },
+  {
+    badge: Badges.ACTIVE_COMMUTER,
+    player: Players.YEE,
+    date: "Sep 14 2019 8:08:00 EDT",
+    notes: "Biking to Haunted Theater"
+  },
+  {
+    badge: Badges.SLEEP_TIGHT,
+    player: Players.DUFFY,
+    date: "Sep 14 2019 8:39:00 EDT",
+    notes: "9/08 - 9/15"
+  },
+  {
+    badge: Badges.RULES_RECTIFIER,
+    player: Players.DUFFY,
+    date: "Sep 14 2019 8:50:00 EDT",
+    notes: "Spirit of the Game"
+  },
+  {
+    badge: Badges.EAT_LIKE_SOPHIE,
+    player: Players.KNOWLES,
+    date: "Sep 14 2019 9:06:00 EDT",
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.MILLER,
+    date: "Sep 14 2019 9:26:00 EDT",
+    notes: "Maddie Zzz"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.LEHMAN,
+    date: "Sep 14 2019 9:43:00 EDT",
+    notes: "Iris Zzz"
+  },
+  {
+    badge: Badges.SLEEPING_BEAUTY,
+    player: Players.LEHMAN,
+    date: "Sep 14 2019 9:43:00 EDT",
+    notes: "Sharon Zzz"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.LEHMAN,
+    date: "Sep 14 2019 10:52:00 EDT",
+    notes: "Tennessee"
+  },
+  {
+    badge: Badges.FIFTY_PLATES,
+    player: Players.PRUITT,
+    date: "Sep 14 2019 10:53:00 EDT",
+    notes: "Oklahoma"
+  },
+  {
+    badge: Badges.SNACK_ATTACK,
+    player: Players.SCOTT,
+    date: "Sep 15 2019 8:53:00 EDT",
+    notes: "Energy Balls"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.SOPER,
+    date: "Sep 15 2019 9:41:00 EDT",
+    notes: "Diddy/SS/Harley/Tots/Mantis"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.SCOTT,
+    date: "Sep 15 2019 9:41:00 EDT",
+    notes: "Diddy/SS/Harley/Tots/Mantis"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.HARLEY,
+    date: "Sep 15 2019 9:41:00 EDT",
+    notes: "Diddy/SS/Harley/Tots/Mantis"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.MOORE,
+    date: "Sep 15 2019 9:41:00 EDT",
+    notes: "Diddy/SS/Harley/Tots/Mantis"
+  },
+  {
+    badge: Badges.DENTAL_HYGIENE,
+    player: Players.SCHRODER,
+    date: "Sep 15 2019 9:41:00 EDT",
+    notes: "Diddy/SS/Harley/Tots/Mantis"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.LO,
+    date: "Sep 15 2019 15:34:00 EDT",
+    notes: "Submit - Iris"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.GORDON,
+    date: "Sep 15 2019 15:34:00 EDT",
+    notes: "Guesser - Iris"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.PAINE,
+    date: "Sep 15 2019 20:53:00 EDT",
+    notes: "Soter + Cronuts"
+  },
+  {
+    badge: Badges.RUSTY_RAMPAGE,
+    player: Players.SCOTT,
+    date: "Sep 15 2019 20:54:00 EDT",
+    notes: "TLo + Cronuts"
+  },
+  // ALREADY MAXED OUT
+  // {
+  //   badge: Badges.EPIC_FAIL,
+  //   player: Players.SOTER,
+  //   date: "Sep 16 2019 17:34:00 EDT",
+  //   notes: "Fell asleep in yoga"
+  // },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.GORDON,
+    date: "Sep 16 2019 17:53:00 EDT",
+    notes: "Coffee spills"
+  },
+  // {
+  //   badge: Badges.CELEBRITY_CHEF,
+  //   player: Players.LEHMAN,
+  //   date: "Sep 17 2019 12:26:00 EDT",
+  //   notes: "Tomato Cobbler"
+  // },
+  {
+    badge: Badges.THICC_THIGHS,
+    player: Players.SOTER,
+    date: "Sep 18 2019 5:02:00 PDT",
+    notes: "Pant struggles"
+  },
+  {
+    badge: Badges.PERSONALITY_PERSUIT,
+    player: Players.PAINE,
+    date: "Sep 18 2019 6:16:00 PDT",
+    notes: "Enneagram 1"
+  },
+  {
+    badge: Badges.BOOK_CLUB,
+    player: Players.SOTER,
+    date: "Sep 18 2019 6:18:00 PDT",
+    notes: "Born a Crime"
+  },
+  {
+    badge: Badges.PERSONALITY_PERSUIT,
+    player: Players.LEHMAN,
+    date: "Sep 18 2019 11:32:00 PDT",
+    notes: "Enneagram 3"
+  },
+  {
+    badge: Badges.PERSONALITY_PERSUIT,
+    player: Players.LO,
+    date: "Sep 18 2019 11:49:00 PDT",
+    notes: "Enneagram 2"
+  },
+  {
+    badge: Badges.RIVANIMALS,
+    player: Players.LEHMAN,
+    date: "Sep 18 2019 12:21:00 PDT",
+    notes: "Cockroach"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.JAVERSAK,
+    date: "Sep 18 2019 14:32:00 PDT",
+    notes: "Reusable Bag"
+  },
+  {
+    badge: Badges.WEEKLY_WELLNESS,
+    player: Players.WRIGHT,
+    date: "Sep 19 2019 9:28:00 PDT",
+    notes: "Pizza"
+  },
+  {
+    badge: Badges.FILM_FANATIC,
+    player: Players.PERRY,
+    date: "Sep 19 2019 9:46:00 PDT",
+    notes: "Nemesis Zipper"
+  },
+  {
+    badge: Badges.CHEER_MASTER,
+    player: Players.PERRY,
+    date: "Sep 19 2019 19:23:00 PDT",
+    notes: "Viral"
+  },
+  {
+    badge: Badges.CELEBRITY_CHEF,
+    player: Players.LO,
+    date: "Sep 19 2019 20:09:00 PDT",
+    notes: "Made Tots' Salad"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SOTER,
+    date: "Sep 20 2019 14:56:00 PDT",
+    notes: "Submit - Lucy"
+  },
+  {
+    badge: Badges.GUESS_WHO,
+    player: Players.SOPER,
+    date: "Sep 20 2019 14:56:00 PDT",
+    notes: "Gusser - Lucy"
+  },
+  {
+    badge: Badges.ECO_RIVAL,
+    player: Players.JAVERSAK,
+    date: "Sep 20 2019 16:24:00 PDT",
+    notes: "Reusable Spork"
+  },
+  {
+    badge: Badges.PAPARAZZI,
+    player: Players.SOTER,
+    date: "Sep 20 2019 16:28:00 PDT",
+    notes: "Sweaty"
+  },
+  {
+    badge: Badges.BRIDGE_THE_GAP,
+    player: Players.SOTER,
+    date: "Sep 20 2019 16:40:00 PDT",
+    notes: "Soter/Kermit"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.JAVERSAK,
+    date: "Sep 20 2019 17:13:00 PDT",
+    notes: "Beautiful"
+  },
+  {
+    badge: Badges.PUMP_IT_UP,
+    player: Players.YEE,
+    date: "Sep 20 2019 17:13:00 PDT",
+    notes: "Beautiful"
+  },
+  {
+    badge: Badges.RAK,
+    player: Players.HECHT,
+    date: "Sep 21 2019 12:35:00 PDT",
+    notes: "Sheet protector for D"
+  },
+  {
+    badge: Badges.HI_FIVE,
+    player: Players.SOTER,
+    date: "Sep 21 2019 18:51:00 PDT",
+    notes: "Introducing Sophie"
+  },
+  {
+    badge: Badges.PAPARAZZI,
+    player: Players.SCOTT,
+    date: "Sep 21 2019 19:07:00 PDT",
+    notes: "Janine w/ cake in bed"
+  },
+  {
+    badge: Badges.EPIC_FAIL,
+    player: Players.NITZ,
+    date: "Sep 23 2019 14:45:00 PDT",
+    notes: "Underwear packing fail"
+  },
+  {
+    badge: Badges.SECRET_ENCOURAGEMENT_FAIRY,
+    player: Players.SCOTT,
+    date: "Sep 15 2019 9:29:00 PDT",
+    // notes: "soter"
+  },
+  {
+    badge: Badges.SECRET_ENCOURAGEMENT_FAIRY,
+    player: Players.SCOTT,
+    date: "Sep 15 2019 9:29:00 PDT",
+    // notes: "tlo"
+  },
+  {
+    badge: Badges.SECRET_AGENT,
+    player: Players.PERRY,
+    date: "Sep 21 2019 12:56:00 PDT",
+    notes: "gotcha Sophie"
+  },
+  {
+    badge: Badges.SECRET_ENCOURAGEMENT_FAIRY,
+    player: Players.SOTER,
+    date: "Sep 22 2019 5:05:00 PDT",
+    // notes: "lucy"
+  },
+  {
+    badge: Badges.SECRET_ENCOURAGEMENT_FAIRY,
+    player: Players.SOTER,
+    date: "Sep 22 2019 5:05:00 PDT",
+    // notes: "mack"
+  },
+  {
+    badge: Badges.SECRET_ENCOURAGEMENT_FAIRY,
+    player: Players.SOTER,
+    date: "Sep 22 2019 5:05:00 PDT",
+    // notes: "champ"
+  },
 ];
