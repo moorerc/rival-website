@@ -11,6 +11,7 @@ import { RosterNineteen } from "./pages/RosterNineteen";
 import "./styles/App.css";
 import * as classNames from "classnames";
 import CoreValues from "./pages/CoreValues";
+import { ScottSecretSanta } from "./pages/ScottSecretSanta"
 
 export default class App extends React.Component {
   render() {
@@ -35,6 +36,7 @@ export default class App extends React.Component {
               <Route path="/fiftyplates" component={FiftyPlates} />
               <Route path="/corevalues" component={CoreValues} />
               <Route path="/roster2019" component={RosterNineteen} />
+              <Route path="/sss2019" component={ScottSecretSanta} />
             </React.Fragment>
           </BrowserRouter>
         </div>
