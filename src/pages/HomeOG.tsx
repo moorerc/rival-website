@@ -7,6 +7,7 @@ import { isMobile } from "react-device-detect";
 import MobileNavBar from "src/components/navigation/MobileNavBar";
 import * as classNames from "classnames";
 import SocialMediaLinks from "src/components/basic/SocialMediaLinks";
+import { Classes } from "@blueprintjs/core";
 
 export default class Home extends React.Component {
   render() {
@@ -20,6 +21,7 @@ export default class Home extends React.Component {
           })}
         >
           <div className="logo-image" />
+          {this.renderTryoutsCallout()}
           {isMobile ? (
             <MobileNavBar pageName="home" />
           ) : (
@@ -29,4 +31,19 @@ export default class Home extends React.Component {
       </React.Fragment>
     );
   }
+
+  private renderTryoutsCallout() {
+    return (
+      <div
+        className={classNames("home-callout", Classes.ELEVATION_3)}
+        onClick={this.navigateToInterestForm}
+      >
+        Sign up for our 2020 interest list!
+      </div>
+    );
+  }
+
+  private navigateToInterestForm = () => {
+    window.open("https://forms.gle/SsJ2QAVRFnFMi4uu6", "_blank");
+  };
 }

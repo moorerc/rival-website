@@ -1,5 +1,6 @@
 @import "../../node_modules/@blueprintjs/core/lib/css/blueprint.css";
 @import "../../node_modules/@blueprintjs/core/lib/less/variables.less";
+@import "./variables.less";
 
 .rival-website-app {
   display: block;
@@ -39,10 +40,32 @@
   align-items: center;
   justify-content: center;
 
+  .home-callout {
+    background-color: @rival-gold;
+    color: @white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-family: "PT Sans", sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
   &.-mobile {
     > .logo-image {
       max-height: 30%;
       margin-bottom: 0px;
+    }
+
+    > .home-callout {
+      font-size: 8px;
+      margin-top: 20px;
     }
 
     > .construction-callout {
@@ -83,7 +106,6 @@
 
 .construction-empty-state {
   color: @gray3;
-  font-family: "Oswald", sans-serif;
 
   .bp3-heading {
     color: @gray3;
