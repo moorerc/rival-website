@@ -7,7 +7,7 @@ import * as _ from "lodash";
 import * as moment from "moment";
 import { Tournament } from "src/data/Tournaments";
 import { getImageUrlForTournament } from "../basic/Helpers";
-import * as classNames from "classnames";
+import classNames from "classnames";
 
 export namespace ResultsCard {
   export interface Props {

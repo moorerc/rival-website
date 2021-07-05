@@ -13,7 +13,7 @@ import { BADGES, Badges } from "../data/rbq/Badges";
 import { Players } from "../data/Players";
 import { isMobile } from "react-device-detect";
 import "../styles/BadgeQuest.css";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import RBQBodyMobile from "src/components/badgequest/RBQBodyMobile";
 import {
   BADGES_ACTIVATED_THIS_SEASON,

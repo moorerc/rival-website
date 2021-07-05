@@ -16,12 +16,12 @@ import { RosterList, RIVAL_ROSTERS } from "../data/RosterList";
 // } from "src/components/basic/Helpers";
 // import RosterUserAvatar from "src/components/roster/RosterUserAvatar";
 // import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 import MobileRosterBody from "src/components/roster/MobileRosterBody";
 import { RouteComponentProps } from "react-router-dom";
-import { connect, Dispatch } from "react-redux";
-import { RootState } from "src/state/store";
+import { connect } from "react-redux";
+import { AppDispatch, RootState } from "src/state/store";
 import { SELECT_ROSTER } from "src/state/actions";
 import RosterBody from "src/components/roster/RosterBody";
 
@@ -370,7 +370,7 @@ const mapStateToProps = (state: RootState): Roster.StateProps => {
 };
 
 const mapDispatchToProps = (
-  dispatch: Dispatch<RootState>
+  dispatch: AppDispatch
 ): Roster.ConnectedActions => ({
   selectRoster: (roster: RosterList) => {
     dispatch(SELECT_ROSTER(roster));

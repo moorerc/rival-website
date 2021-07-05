@@ -4,7 +4,7 @@ import "../../styles/TournamentCard.css";
 import { Card, Tag, Intent } from "@blueprintjs/core";
 
 import * as _ from "lodash";
-import * as classNames from "classnames";
+import classNames from "classnames";
 
 import { Tournament } from "src/data/Tournaments";
 import { Game, GameType } from "src/data/Games";

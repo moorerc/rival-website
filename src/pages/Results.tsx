@@ -3,7 +3,7 @@ import "../styles/App.css";
 import "../styles/Results.css";
 
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { isMobile } from "react-device-detect";
 import MobileResultsBody from "src/components/results/MobileResultsBody";
 import { RosterList } from "src/data/RosterList";
@@ -14,9 +14,9 @@ import {
 } from "src/data/Tournaments";
 import * as _ from "lodash";
 import * as moment from "moment";
-import { connect, Dispatch } from "react-redux";
+import { connect } from "react-redux";
 import { SELECT_ROSTER } from "src/state/actions";
-import { RootState } from "src/state/store";
+import { AppDispatch, RootState } from "src/state/store";
 import { TEAMS } from "src/data/Teams";
 import ResultsBody from "src/components/results/ResultsBody";
 
@@ -146,7 +146,7 @@ const mapStateToProps = (state: RootState): Results.StateProps => {
 };
 
 const mapDispatchToProps = (
-  dispatch: Dispatch<RootState>
+  dispatch: AppDispatch
 ): Results.ConnectedActions => ({
   selectRoster: (roster: RosterList) => {
     dispatch(SELECT_ROSTER(roster));

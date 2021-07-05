@@ -1,7 +1,6 @@
 import * as React from "react";
 import "../../styles/RosterNineteenBody.css";
 
-// import * as classNames from "classnames";
 import * as _ from "lodash";
 import { Button, Icon } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";

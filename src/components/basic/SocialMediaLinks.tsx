@@ -2,7 +2,7 @@ import * as React from "react";
 import "../../styles/App.css";
 
 import SocialMediaButton from "../basic/SocialMediaButton";
-import * as classNames from "classnames";
+import classNames from "classnames";
 
 export interface SocialMediaSite {
   name: string;

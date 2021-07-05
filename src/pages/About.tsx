@@ -4,7 +4,7 @@ import "../styles/About.css";
 
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 import { isMobile } from "react-device-detect";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import MobileAboutUsBody from "src/components/aboutus/MobileAboutUsBody";
 import AboutUsBody from "src/components/aboutus/AboutUsBody";
 

@@ -3,7 +3,7 @@ import "../../styles/App.css";
 
 import { Callout, Intent } from "@blueprintjs/core";
 import { isMobile, isBrowser } from "react-device-detect";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { IconNames } from "@blueprintjs/icons";
 import PageBackgroundImage from "./PageBackgroundImage";
 

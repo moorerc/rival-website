@@ -1,5 +1,5 @@
 import { Tag, Icon } from "@blueprintjs/core";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 import "../../styles/App.css";
 import "../../styles/RosterUserAvatar.css";

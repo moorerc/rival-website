@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../../styles/RosterNineteenBody.css";
 
-import * as classNames from "classnames";
+import classNames from "classnames";
 import * as _ from "lodash";
 import { Playlist } from "src/data/roster-nineteen/RosterNinteenData";
 
