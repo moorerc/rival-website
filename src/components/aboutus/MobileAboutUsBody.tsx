@@ -87,9 +87,6 @@ export default class MobileAboutUsBody extends React.Component<
               <span className="spacer" />
             </div>
             <div className="sponsors-container">
-              {/* <div className="sponsors-text">
-                Rival Ultimate Is Proudly Sponsored By
-              </div> */}
               <div className="sponsors-logos">
                 <img
                   src="img/sponsor-logos/otf.png"

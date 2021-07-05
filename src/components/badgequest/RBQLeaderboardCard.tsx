@@ -41,7 +41,6 @@ export default class RBQLeaderboardCard extends React.Component<
           <div className="subtitle">
             <Icon icon="badge" iconSize={12} />
             {badgesEarned.length + " badges earned"}
-            {/* {"badges earned: " + badgesEarned.length} */}
           </div>
         </div>
         <div className="rbq-placement-tag">

@@ -40,7 +40,6 @@ export default class TrackRow extends React.Component<TrackRow.Props> {
         <div className="table-col col-artist">
           {getDisplayNameForPlayer(track.artist)}
         </div>
-        {/* <div className="table-col col-duration">5 years ago</div> */}
       </div>
     );
   }

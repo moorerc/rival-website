@@ -9,11 +9,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  //   border: 1px solid yellow;
 
   > .body-top {
     background-color: @spot-black;
-    // border: 1px solid cornflowerblue;
     flex: 1 1 auto;
     display: flex;
     flex-direction: row;
@@ -53,7 +51,6 @@
     }
 
     .content {
-      //   border: 1px solid yellow;
       padding: 20px 0;
       height: 100%;
       flex: 1 1 auto;
@@ -61,28 +58,21 @@
     }
 
     .content-left {
-      //   border: 1px solid white;
       display: flex;
       flex: 0 1 auto;
       height: 100%;
       width: 40%;
-      //   margin-right: 20px;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       margin-right: 10px;
 
       .playlist-cover-container {
-        // border: 1px solid blue;
-        // height: 350px;
         height: 100%;
         width: 100%;
         max-height: 300px;
         max-width: 300px;
         width: 100%;
-        // border-radius: 3px;
-        // margin: 5px 0 10px 0;
-        // text-align: center;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -92,7 +82,6 @@
 
     .playlist-text {
       margin-bottom: 25px;
-      //   border: 1px solid orange;
       width: 100%;
       font-family: "Proxima Nova";
 
@@ -100,13 +89,11 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 10px;
-        // font-family: "Proxima Nova";
       }
 
       .playlist-title {
         font-size: 34px;
         color: @white;
-        // font-family: "Proxima Nova";
       }
 
       .playlist-description {
@@ -115,7 +102,6 @@
     }
 
     .content-right {
-      //   border: 1px soild gray;
       flex: 1 1 auto;
       display: flex;
       flex-direction: column;
@@ -123,7 +109,6 @@
       padding-right: 15px;
 
       .tracks-table {
-        // border: 1px solid blue;
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
@@ -131,7 +116,6 @@
       }
 
       .tracks-table-body {
-        // border: 1px solid green;
         overflow-y: scroll;
       }
 
@@ -218,12 +202,10 @@
         }
 
         .col-track {
-          // margin-left: 10px;
           width: 70px;
           color: @spot-gray;
 
           &.-center {
-            // text-align: center;
             padding-left: 12px;
           }
         }
@@ -232,7 +214,6 @@
   }
 
   > .body-bottom {
-    // border: 1px solid orange;
     flex: 0 0 auto;
     height: 250px;
     display: flex;
@@ -240,10 +221,6 @@
     overflow-x: auto;
     align-items: center;
     margin: 0 20px;
-
-    // :first-child {
-    //   padding-left: 0 !important;
-    // }
 
     .album-cover {
       padding: 10px;
@@ -260,9 +237,6 @@
       .album-cover-image {
         height: 150px;
         width: 150px;
-        // border-radius: 3px;
-        // margin: 5px 0 10px 0;
-        // text-align: center;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -279,7 +253,6 @@
 
         &.-long-title {
           margin-top: 7px;
-          // font-size: 12px;
         }
       }
     }

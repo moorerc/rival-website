@@ -2,20 +2,11 @@ import * as React from "react";
 import "../styles/App.css";
 import "../styles/Roster.css";
 
-// import { Button } from "@blueprintjs/core";
-// import { IconNames } from "@blueprintjs/icons";
 import { isMobile } from "react-device-detect";
 
 import * as _ from "lodash";
 import { Players } from "../data/Players";
 import { RosterList, RIVAL_ROSTERS } from "../data/RosterList";
-// import PlayerDetailsPanel from "src/components/roster/PlayerDetailsPanel";
-// import {
-//   getImageUrlForRoster,
-//   getImageUrlForPlayerAction
-// } from "src/components/basic/Helpers";
-// import RosterUserAvatar from "src/components/roster/RosterUserAvatar";
-// import RosterDetailsPanel from "src/components/roster/RosterDetailsPanel";
 import classNames from "classnames";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 import MobileRosterBody from "src/components/roster/MobileRosterBody";
@@ -65,10 +56,6 @@ class RosterInternal extends React.Component<Roster.Props, Roster.State> {
   }
 
   render() {
-    // const roster = this.props.selectedRoster;
-    // const firstYear = roster === RIVAL_ROSTERS[0];
-    // const lastYear = roster === RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1];
-
     return (
       <React.Fragment>
         <div
@@ -126,159 +113,6 @@ class RosterInternal extends React.Component<Roster.Props, Roster.State> {
       />
     );
   }
-
-  // private renderBrowserBody(firstYear: boolean, lastYear: boolean) {
-  //   return (
-  //     <React.Fragment>
-  //       <div className="body-top">
-  //         <div className="section-side">
-  //           <Button
-  //             className="roster-control-button"
-  //             icon={IconNames.ARROW_LEFT}
-  //             minimal={true}
-  //             onClick={this.previousRoster}
-  //             disabled={firstYear}
-  //           />
-  //         </div>
-  //         <div className="section-middle">
-  //           {this.renderImagePanel()}
-  //           {this.renderInfoPanel()}
-  //         </div>
-  //         <div className="section-side">
-  //           <Button
-  //             className="roster-control-button"
-  //             icon={IconNames.ARROW_RIGHT}
-  //             minimal={true}
-  //             onClick={this.nextRoster}
-  //             disabled={lastYear}
-  //           />
-  //         </div>
-  //       </div>
-  //       <div className="body-bottom">
-  //         {this.renderPlayersSection()}
-  //         {this.renderOthersSection()}
-  //       </div>
-  //     </React.Fragment>
-  //   );
-  // }
-
-  // private renderOthersSection = () => {
-  //   const roster = this.props.selectedRoster;
-  //   return (
-  //     <div className="players-section">
-  //       <div className="row">
-  //         {_.map(roster.coaches, (player: Players, key: any) => (
-  //           <RosterUserAvatar
-  //             playerId={player}
-  //             player={PLAYERS[player]}
-  //             key={key}
-  //             rosterId={roster.id}
-  //             onClick={() => this.selectPlayer(player)}
-  //             noColor={this.state.selectedPlayer !== player}
-  //           />
-  //         ))}
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
-  // private renderPlayersSection = () => {
-  //   const roster = this.props.selectedRoster;
-  //   const rows = _.chunk(roster.players, roster.players.length / 3);
-  //   const topRow = rows[0];
-  //   const middleRow =
-  //     rows.length > 3
-  //       ? rows[1].concat(rows[2].slice(0, rows[3].length))
-  //       : rows[1];
-  //   const lastRow =
-  //     rows.length > 3
-  //       ? rows[2].slice(rows[3].length, rows[2].length).concat(rows[3])
-  //       : rows[2];
-
-  //   return (
-  //     <div className="players-section">
-  //       <div className="row">
-  //         {_.map(topRow, (player: Players, key: any) => (
-  //           <RosterUserAvatar
-  //             playerId={player}
-  //             player={PLAYERS[player]}
-  //             key={key}
-  //             rosterId={roster.id}
-  //             onClick={() => this.selectPlayer(player)}
-  //             noColor={
-  //               this.state.selectedPlayer !== player ||
-  //               this.state.rosterViewMode !== RosterViewMode.PLAYER_INFO
-  //             }
-  //           />
-  //         ))}
-  //       </div>
-  //       <div className="row">
-  //         {_.map(middleRow, (player: Players, key: any) => (
-  //           <RosterUserAvatar
-  //             playerId={player}
-  //             player={PLAYERS[player]}
-  //             key={key}
-  //             rosterId={roster.id}
-  //             onClick={() => this.selectPlayer(player)}
-  //             noColor={this.state.selectedPlayer !== player}
-  //           />
-  //         ))}
-  //       </div>
-  //       <div className="row">
-  //         {_.map(lastRow, (player: Players, key: any) => (
-  //           <RosterUserAvatar
-  //             playerId={player}
-  //             player={PLAYERS[player]}
-  //             key={key}
-  //             rosterId={roster.id}
-  //             onClick={() => this.selectPlayer(player)}
-  //             noColor={this.state.selectedPlayer !== player}
-  //           />
-  //         ))}
-  //       </div>
-  //     </div>
-  //   );
-  // };
-
-  // private renderImagePanel = () => {
-  //   const roster = this.props.selectedRoster;
-  //   const player = this.state.selectedPlayer;
-
-  //   let imageUrl = "";
-  //   if (this.state.topPanelMode === TopPanelMode.PLAYER_VIEW && player) {
-  //     imageUrl = getImageUrlForPlayerAction(roster.id, player);
-  //   } else {
-  //     imageUrl = getImageUrlForRoster(roster.id);
-  //   }
-
-  //   return (
-  //     <div className="image-panel">
-  //       <div
-  //         className="roster-team-photo"
-  //         style={{ backgroundImage: "url(" + imageUrl + ")" }}
-  //       />
-  //     </div>
-  //   );
-  // };
-
-  // private renderInfoPanel = () => {
-  //   const roster = this.props.selectedRoster;
-  //   const player = this.state.selectedPlayer;
-  //   const playerView = this.state.topPanelMode === TopPanelMode.PLAYER_VIEW;
-
-  //   return (
-  //     <div className="info-panel">
-  //       <RosterDetailsPanel
-  //         roster={roster}
-  //         shrunk={playerView}
-  //         onSelectRoster={this.handleSelectRoster}
-  //       />
-  //       {playerView && player && (
-  //         <PlayerDetailsPanel player={PLAYERS[player]} rosterId={roster.id} />
-  //       )}
-  //     </div>
-  //   );
-  // };
 
   private handleSelectRoster = (roster: RosterList) => {
     this.setState({

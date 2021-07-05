@@ -136,7 +136,6 @@ class RosterNineteenInternal extends React.Component<
     daysTotal: number
   ) => {
     return (
-      <React.Fragment>
         <div className="controls-bar-mobile">
           <div className="progress-bar">
             <ProgressBar value={progressVal} animate={false} stripes={false} />
@@ -165,35 +164,7 @@ class RosterNineteenInternal extends React.Component<
               onClick={this.handleClickPlay}
             />
           </div>
-          {/* <Icon
-            className="control-icon"
-            icon={IconNames.RANDOM}
-            iconSize={12}
-          />
-          <Icon className="control-icon" icon={IconNames.STEP_BACKWARD} />
-          <Icon
-            className="control-icon -play"
-            icon={IconNames.PLAY}
-            iconSize={18}
-            onClick={this.handleClickPlay}
-          />
-          <Icon className="control-icon" icon={IconNames.STEP_FORWARD} />
-          <Icon
-            className="control-icon"
-            icon={IconNames.REFRESH}
-            iconSize={12}
-          /> */}
         </div>
-        {/* <div className="progress-bar">
-          <span className="duration-marker">{daysPassed}</span>
-          <ProgressBar value={progressVal} animate={false} stripes={false} />
-          <span className="duration-marker">{daysTotal}</span>
-        </div> */}
-        {/* <div className="main-track-title">
-          Moving Up the Charts
-          <span className="main-track-artist">by Rival 2019</span>
-        </div> */}
-      </React.Fragment>
     );
   };
 

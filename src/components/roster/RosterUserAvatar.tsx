@@ -24,7 +24,6 @@ export default class RosterUserAvatar extends React.Component<
     const playerImage = getImageUrlForPlayer(rosterId, playerId);
 
     const isCoach = isPlayerACoach(rosterId, playerId);
-    // const isCaptain = isPlayerACaptain(rosterId, playerId);
 
     return (
       <div className="roster-user-avatar">
