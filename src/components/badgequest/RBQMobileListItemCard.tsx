@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../../styles/RBQMobileListItemCard.css";
 import { Card, Elevation, Tag, Collapse, Icon } from "@blueprintjs/core";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { IconNames } from "@blueprintjs/icons";
 
 export namespace RBQMobileListItemCard {

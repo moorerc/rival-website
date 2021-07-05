@@ -17,7 +17,7 @@ import {
 } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 
-import * as classNames from "classnames";
+import classNames from "classnames";
 import * as _ from "lodash";
 // import PlayersList from "src/components/roster/PlayersList";
 import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";

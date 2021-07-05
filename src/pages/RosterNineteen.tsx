@@ -2,7 +2,7 @@ import * as React from "react";
 import "../styles/App.css";
 import "../styles/RosterNineteen.css";
 
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { isMobile } from "react-device-detect";
 import * as _ from "lodash";
 import RosterNineteenBody from "src/components/roster-nineteen/RosterNineteenBody";

@@ -17,7 +17,7 @@ import {
 } from "./RBQHelpers";
 import { Players, PLAYERS } from "src/data/Players";
 import { RBQDetailsView } from "src/pages/BadgeQuest";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { RBQ_ROSTER } from "src/data/rbq/RBQData";
 
 export namespace RBQMobileDetailsHeader {

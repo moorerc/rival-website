@@ -5,7 +5,7 @@ import WebNavBar from "../components/navigation/WebNavBar";
 import PageBackgroundImage from "../components/basic/PageBackgroundImage";
 import { isMobile } from "react-device-detect";
 import MobileNavBar from "src/components/navigation/MobileNavBar";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import SocialMediaLinks from "src/components/basic/SocialMediaLinks";
 import { Classes } from "@blueprintjs/core";
 

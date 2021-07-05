@@ -1,7 +1,6 @@
 import * as React from "react";
 import "../../styles/RosterBody.css";
 
-// import * as classNames from "classnames";
 import * as _ from "lodash";
 import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";
 import { RosterViewMode } from "src/pages/Roster";
@@ -24,7 +23,7 @@ import {
   ButtonGroup,
   Icon
 } from "@blueprintjs/core";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import RosterUserAvatar from "./RosterUserAvatar";
 import { IconNames } from "@blueprintjs/icons";
 import PlayersListWeb from "./PlayersListWeb";

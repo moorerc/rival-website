@@ -4,14 +4,14 @@ import "../styles/News.css";
 
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 import { isMobile } from "react-device-detect";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import * as _ from "lodash";
 import * as moment from "moment";
 import MobileNewsBody from "src/components/news/MobileNewsBody";
 import { RosterList } from "src/data/RosterList";
 import { ALL_NEWS, NewsItem } from "src/data/news/News";
-import { RootState } from "src/state/store";
-import { Dispatch, connect } from "react-redux";
+import { AppDispatch, RootState } from "src/state/store";
+import { connect } from "react-redux";
 import { SELECT_ROSTER } from "src/state/actions";
 import NewsBody from "src/components/news/NewsBody";
 
@@ -116,7 +116,7 @@ const mapStateToProps = (state: RootState): News.StateProps => {
 };
 
 const mapDispatchToProps = (
-  dispatch: Dispatch<RootState>
+  dispatch: AppDispatch
 ): News.ConnectedActions => ({
   selectRoster: (roster: RosterList) => {
     dispatch(SELECT_ROSTER(roster));

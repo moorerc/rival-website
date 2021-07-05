@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../../styles/SSSBodyMobile.css";
 
-import * as classNames from "classnames";
+import classNames from "classnames";
 import * as _ from "lodash";
 import { SHOWS, Show, SSSNavTab } from "../../data/sss/SSS";
 import { IconNames } from "@blueprintjs/icons";

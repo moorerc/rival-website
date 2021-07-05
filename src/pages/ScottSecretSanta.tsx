@@ -2,13 +2,13 @@ import * as React from "react";
 import "../styles/App.css";
 import "../styles/ScottSecretSanta.css";
 
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { isMobile } from "react-device-detect";
 import * as _ from "lodash";
 import { Link } from "react-router-dom";
 import SSSBody from "../components/sss/SSSBody";
-import { connect, Dispatch } from "react-redux";
-import { RootState } from "../state/store";
+import { connect } from "react-redux";
+import { AppDispatch, RootState } from "../state/store";
 import { SELECT_SSS_TAB } from "../state/actions";
 import { SSSNavTab } from "../data/sss/SSS";
 import SSSBodyMobile from "../components/sss/SSSBodyMobile";
@@ -137,7 +137,7 @@ const mapStateToProps = (state: RootState): ScottSecretSanta.StateProps => {
 };
 
 const mapDispatchToProps = (
-  dispatch: Dispatch<RootState>
+  dispatch: AppDispatch
 ): ScottSecretSanta.ConnectedActions => ({
   selectTab: (tab: SSSNavTab) => {
     dispatch(SELECT_SSS_TAB(tab));

@@ -9,7 +9,7 @@ import { Results } from "./pages/Results";
 import { Roster } from "./pages/Roster";
 import { RosterNineteen } from "./pages/RosterNineteen";
 import "./styles/App.css";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import CoreValues from "./pages/CoreValues";
 import { ScottSecretSanta } from "./pages/ScottSecretSanta"
 

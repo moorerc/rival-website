@@ -3,7 +3,7 @@ import "../styles/App.css";
 import "../styles/CoreValues.css";
 
 import { isMobileOnly } from "react-device-detect";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { Slider } from "@blueprintjs/core";
 
 export namespace CoreValues {

@@ -4,7 +4,7 @@ import "../../styles/SSSBody.css";
 import * as _ from "lodash";
 import "../../styles/SSSRules.css";
 import { SSS_RULES } from "src/data/sss/SSS";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { isMobile } from "react-device-detect";
 
 export namespace SSSRules {

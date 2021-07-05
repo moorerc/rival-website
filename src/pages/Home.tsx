@@ -4,7 +4,7 @@ import "../styles/Home.css";
 
 import { Callout, Intent } from "@blueprintjs/core";
 import { isMobile, isBrowser } from "react-device-detect";
-import * as classNames from "classnames";
+import classNames from "classnames";
 import { IconNames } from "@blueprintjs/icons";
 import CombinedNavBar from "src/components/navigation/CombinedNavBar";
 import MobileHomeBody from "src/components/home/MobileHomeBody";
