@@ -36,14 +36,14 @@ export default class Home extends React.Component {
     return (
       <div
         className={classNames("home-callout", Classes.ELEVATION_3)}
-        onClick={this.navigateToInterestForm}
+        onClick={this.navigateToTryoutForm}
       >
-        Sign up for our 2020 interest list!
+        Register for our 2021 tryouts!
       </div>
     );
   }
 
-  private navigateToInterestForm = () => {
-    window.open("https://forms.gle/SsJ2QAVRFnFMi4uu6", "_blank");
+  private navigateToTryoutForm = () => {
+    window.open("https://forms.gle/XREQhFx7fYXnE21PA", "_blank");
   };
 }
