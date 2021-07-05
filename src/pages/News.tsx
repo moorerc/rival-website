@@ -62,7 +62,6 @@ class NewsInternal extends React.Component<News.Props, News.State> {
       >
         <CombinedNavBar pageName="news" />
         <div className="news-page-body">
-          {/* <a className="twitter-timeline" href="https://twitter.com/RivalUltimate?ref_src=twsrc%5Etfw" /> */}
           {isMobile ? (
             <MobileNewsBody
               news={news}

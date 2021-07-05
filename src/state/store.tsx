@@ -1,12 +1,7 @@
-// import { combineReducers, loggingMiddleware, Reducer } from "redoodle";
 import { useDispatch } from "react-redux";
 import { combineReducers, Reducer } from "redoodle";
 import { createStore, Store } from "redux";
 import { INITIAL_STATE, reduceRivalWebsiteAppState } from "./rivalWebsiteAppReducer";
-
-// export interface RootState {
-//     rivalWebsiteAppState: RivalWebsiteAppState;
-// }
 
 const rootReducer= combineReducers({
     rivalWebsiteAppState: reduceRivalWebsiteAppState,

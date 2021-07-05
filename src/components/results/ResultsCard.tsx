@@ -25,7 +25,6 @@ export default class ResultsCard extends React.Component<ResultsCard.Props> {
       <Card className="results-card" elevation={1} onClick={this.props.onClick}>
         <div
           className="results-card-image"
-          //   onClick={this.handleOpenLink}
         >
           <div
             className="tournamentLogo"
@@ -42,7 +41,6 @@ export default class ResultsCard extends React.Component<ResultsCard.Props> {
           <div className="divider" />
           <div className="subtitle">
             <span className="-left">
-              {/* <Icon icon={IconNames.MAP_MARKER} iconSize={8} /> */}
               {tournament.location.city + ", " + tournament.location.state}
             </span>
             <span className="-right">
@@ -64,33 +62,9 @@ export default class ResultsCard extends React.Component<ResultsCard.Props> {
             </span>
           </div>
         </div>
-        {/* <div className="card-left">
-          <div className="results-card-icon">
-            <div
-              className="tournamentLogo"
-              style={{ backgroundImage: "url(" + imageUrl + ")" }}
-            />
-          </div>
-        </div>
-        <div className="card-right">
-          <div className="title">
-            <Text ellipsize={true}>{tournament.name}</Text>
-          </div>
-          <div className="divider" />
-          <div className="subtitle">
-            <div className="subtitle-left">{"By: " + "something"}</div>
-            <div className="subtitle-right">
-              {moment(tournament.date.start).format("LL")}
-            </div>
-          </div>
-        </div> */}
       </Card>
     );
   }
-
-  //   private handleOpenLink = () => {
-  //     window.open(this.props.newsItem.link, "_blank");
-  //   };
 
   private getDisplayDate(start: string, end: string) {
     if (moment(start).format("MMM") === moment(end).format("MMM")) {

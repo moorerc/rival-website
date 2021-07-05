@@ -27,9 +27,6 @@ export class RBQMobileNavBar extends React.Component<RBQMobileNavBar.Props> {
             icon={IconNames.HOME}
             onClick={() => {
               selectTab(RBQTab.HOME);
-              //   if (this.scrollContainerRef.current) {
-              //     this.scrollContainerRef.current.scrollTop = 0;
-              //   }
             }}
             active={selectedTab === RBQTab.HOME}
           />
@@ -37,9 +34,6 @@ export class RBQMobileNavBar extends React.Component<RBQMobileNavBar.Props> {
             icon={IconNames.CROWN}
             onClick={() => {
               selectTab(RBQTab.LEADERBOARD);
-              //   if (this.scrollContainerRef.current) {
-              //     this.scrollContainerRef.current.scrollTop = 0;
-              //   }
             }}
             active={selectedTab === RBQTab.LEADERBOARD}
           />
@@ -47,9 +41,6 @@ export class RBQMobileNavBar extends React.Component<RBQMobileNavBar.Props> {
             icon={IconNames.BADGE}
             onClick={() => {
               selectTab(RBQTab.BADGES);
-              //   if (this.scrollContainerRef.current) {
-              //     this.scrollContainerRef.current.scrollTop = 0;
-              //   }
             }}
             active={selectedTab === RBQTab.BADGES}
           />
@@ -57,9 +48,6 @@ export class RBQMobileNavBar extends React.Component<RBQMobileNavBar.Props> {
             icon={IconNames.INFO_SIGN}
             onClick={() => {
               selectTab(RBQTab.DETAILS);
-              //   if (this.scrollContainerRef.current) {
-              //     this.scrollContainerRef.current.scrollTop = 0;
-              //   }
             }}
             active={selectedTab === RBQTab.DETAILS}
           />

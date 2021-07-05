@@ -8,8 +8,6 @@ import {
   RIVAL_2019_PLAYLIST
 } from "src/data/roster-nineteen/RosterNinteenData";
 import AlbumCover from "./AlbumCover";
-// import { Tabs, Tab } from "@blueprintjs/core";
-// import { IconNames } from "@blueprintjs/icons";
 import TrackRowMobile from "./TrackRowMobile";
 import { IconNames } from "@blueprintjs/icons";
 import { Icon } from "@blueprintjs/core";
@@ -54,54 +52,6 @@ export default class RosterNineteenMobileBody extends React.Component<
       </div>
     );
   }
-
-  // render() {
-  //   // const { playlist } = this.props;
-  //   // const firstPlaylist = playlist === PLAYLISTS[0];
-  //   // const lastPlaylist = playlist === PLAYLISTS[PLAYLISTS.length - 1];
-
-  //   return (
-  //     <React.Fragment>
-  //       {/* {this.renderViewModeButtonGroup()}
-  //       <div
-  //         className="roster-nineteen-mobile-body"
-  //         ref={this.scrollContainerRef}
-  //       >
-  //         {this.state.mode === RosterNineteenMode.LIST
-  //           ? this.renderListView()
-  //           : this.renderPlaylistView()}
-  //       </div> */}
-  //       <Tabs selectedTabId={this.state.mode} onChange={this.handleChangeMode}>
-  //         <Tab
-  //           id={RosterNineteenMode.LIST}
-  //           title="Playlists"
-  //           panel={this.renderListView()}
-  //           // onClick={() => this.handleChangeMode(RosterNineteenMode.LIST)}
-  //         />
-  //         <Tab
-  //           id={RosterNineteenMode.PLAYLIST}
-  //           title="Album"
-  //           panel={this.renderPlaylistView()}
-  //         />
-  //       </Tabs>
-  //     </React.Fragment>
-  //   );
-  // }
-
-  // <div
-  //   className="roster-nineteen-mobile-body"
-  //   ref={this.scrollContainerRef}
-  // >
-  //   {PLAYLISTS.map((p, index) => (
-  //     <AlbumCover
-  //       playlist={p}
-  //       includeTitle={true}
-  //       isSelected={false}
-  //       onClick={this.handleSelectPlaylist}
-  //       key={"playlist_" + index}
-  //     />
-  //   ))}
-  // </div>
 
   private renderListView = () => {
     return (
@@ -166,39 +116,6 @@ export default class RosterNineteenMobileBody extends React.Component<
       </div>
     );
   };
-
-  // private renderViewModeButtonGroup() {
-  //   const { mode } = this.state;
-
-  //   return (
-  //     <ButtonGroup
-  //       minimal={true}
-  //       fill={true}
-  //       className="mobile-roster-button-group"
-  //     >
-  //       <Button
-  //         icon={IconNames.PROPERTIES}
-  //         active={mode === RosterNineteenMode.LIST}
-  //         onClick={() => {
-  //           this.handleChangeMode(RosterNineteenMode.LIST);
-  //           if (this.scrollContainerRef.current) {
-  //             this.scrollContainerRef.current.scrollTop = 0;
-  //           }
-  //         }}
-  //       />
-  //       <Button
-  //         icon={IconNames.MUSIC}
-  //         active={mode === RosterNineteenMode.PLAYLIST}
-  //         onClick={() => {
-  //           this.handleChangeMode(RosterNineteenMode.PLAYLIST);
-  //           if (this.scrollContainerRef.current) {
-  //             this.scrollContainerRef.current.scrollTop = 0;
-  //           }
-  //         }}
-  //       />
-  //     </ButtonGroup>
-  //   );
-  // }
 
   private handleChangeMode = (newMode: RosterNineteenMode) => {
     this.setState({ mode: newMode });

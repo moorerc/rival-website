@@ -16,9 +16,6 @@ export default class PlayerDetailsPanel extends React.Component<
 > {
   render() {
     const { player } = this.props;
-    // const playerImage = getImageUrlForPlayer(rosterId, playerId);
-    // const playerActionImage = getImageUrlForPlayerAction(rosterId, playerId);
-
     return (
       <div className="player-details-panel">
         <Card
@@ -35,13 +32,6 @@ export default class PlayerDetailsPanel extends React.Component<
             />
           </div>
           <ButtonGroup className="panel-footer">
-            {/* <Button className="footer-button" text="USAU Roster" icon={<Icon icon={IconNames.GLOBE} iconSize={10} />} /> */}
-            {/* <Button className="footer-button" text="Sched/Results" icon={<Icon icon={IconNames.CALENDAR} iconSize={10}/>}>
-                        <Link
-                            className="web-nav-bar-item-text"
-                            to={"/results"}
-                        />
-                    </Button> */}
           </ButtonGroup>
         </Card>
       </div>

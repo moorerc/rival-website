@@ -19,7 +19,6 @@ import { IconNames } from "@blueprintjs/icons";
 
 import classNames from "classnames";
 import * as _ from "lodash";
-// import PlayersList from "src/components/roster/PlayersList";
 import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";
 import { RosterViewMode } from "src/pages/Roster";
 import PlayersList from "./PlayersList";
@@ -55,10 +54,6 @@ export default class MobileRosterBody extends React.Component<
   private scrollContainerRef = React.createRef<HTMLDivElement>();
 
   render() {
-    // const { roster } = this.props;
-    // const firstYear = roster === RIVAL_ROSTERS[0];
-    // const lastYear = roster === RIVAL_ROSTERS[RIVAL_ROSTERS.length - 1];
-
     return (
       <React.Fragment>
         {this.renderViewModeButtonGroup()}
@@ -186,7 +181,6 @@ export default class MobileRosterBody extends React.Component<
           icon={<Icon icon={IconNames.CALENDAR} iconSize={10} />}
           text="Sched/Results"
           className="footer-button"
-          // disabled={true}
           onClick={this.props.viewResults}
         />
       </ButtonGroup>
@@ -329,36 +323,6 @@ export default class MobileRosterBody extends React.Component<
             </div>
           </div>
         </Card>
-        {/* <Card className="panel-section">
-          <div className="panel-section-title">
-            <div className="title-text">Fun Facts</div>
-            <div className="title-divider" />
-          </div>
-          <div className="leadership-section">
-            <div className="section-label">Profession:</div>
-            <div className="section-items">
-              <Tag intent={Intent.NONE} minimal={true} className="section-tag">
-                Engineer
-              </Tag>
-            </div>
-          </div>
-          <div className="leadership-section">
-            <div className="section-label">Spirit Animal:</div>
-            <div className="section-items">
-              <Tag intent={Intent.NONE} minimal={true} className="section-tag">
-                Gecko
-              </Tag>
-            </div>
-          </div>
-          <div className="leadership-section">
-            <div className="section-label">Autobiography Title:</div>
-            <div className="section-items">
-              <Tag intent={Intent.NONE} minimal={true} className="section-tag">
-                Coming soon
-              </Tag>
-            </div>
-          </div>
-        </Card> */}
       </React.Fragment>
     );
   };

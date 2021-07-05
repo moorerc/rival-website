@@ -27,7 +27,6 @@ import classNames from "classnames";
 import RosterUserAvatar from "./RosterUserAvatar";
 import { IconNames } from "@blueprintjs/icons";
 import PlayersListWeb from "./PlayersListWeb";
-// import RosterDetailsPanel from "./RosterDetailsPanel";
 
 export namespace RosterBody {
   export interface Props {
@@ -46,7 +45,6 @@ export namespace RosterBody {
 }
 
 export default class RosterBody extends React.Component<RosterBody.Props> {
-  //   private scrollContainerRef = React.createRef<HTMLDivElement>();
 
   render() {
     const { roster, rosterViewMode } = this.props;
@@ -150,9 +148,6 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
                 icon={IconNames.GRID_VIEW}
                 onClick={() => {
                   this.props.selectRosterViewMode(RosterViewMode.ROSTER_INFO);
-                  // if (this.scrollContainerRef.current) {
-                  //   this.scrollContainerRef.current.scrollTop = 0;
-                  // }
                 }}
                 active={rosterViewMode === RosterViewMode.ROSTER_INFO}
                 minimal={true}
@@ -164,9 +159,6 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
                   this.props.selectRosterViewMode(
                     RosterViewMode.ROSTER_PLAYERS
                   );
-                  //   if (this.scrollContainerRef.current) {
-                  //     this.scrollContainerRef.current.scrollTop = 0;
-                  //   }
                 }}
                 active={rosterViewMode === RosterViewMode.ROSTER_PLAYERS}
                 minimal={true}
@@ -176,9 +168,6 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
                 icon={IconNames.USER}
                 onClick={() => {
                   this.props.selectRosterViewMode(RosterViewMode.PLAYER_INFO);
-                  //   if (this.scrollContainerRef.current) {
-                  //     this.scrollContainerRef.current.scrollTop = 0;
-                  //   }
                 }}
                 active={rosterViewMode === RosterViewMode.PLAYER_INFO}
                 minimal={true}
@@ -206,8 +195,6 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
   private renderPlayersGrid() {
     const {
       roster
-      // selectedPlayer
-      // rosterViewMode
     } = this.props;
     const fullRoster = roster.players.concat(roster.coaches);
 
@@ -220,7 +207,6 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
             key={key}
             rosterId={roster.id}
             onClick={() => this.props.selectPlayer(player)}
-            // noColor={true}
           />
         ))}
       </div>
@@ -392,7 +378,6 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
           intent={Intent.SUCCESS}
           minimal={true}
           className="season-result-tag"
-          //   large={true}
         >
           {roster.results.wins}
         </Tag>
@@ -400,7 +385,6 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
           intent={Intent.DANGER}
           minimal={true}
           className="season-result-tag"
-          //   large={true}
         >
           {roster.results.losses}
         </Tag>
@@ -409,7 +393,6 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
             intent={Intent.PRIMARY}
             minimal={true}
             className="season-result-tag"
-            //   large={true}
           >
             {roster.results.finish}
           </Tag>

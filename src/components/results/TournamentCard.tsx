@@ -48,7 +48,6 @@ export default class TournamentCard extends React.Component<
             <div className="divider" />
             <div className="subtitle">
               <span className="-left">
-                {/* <Icon icon={IconNames.MAP_MARKER} iconSize={8} /> */}
                 {tournament.location.city + ", " + tournament.location.state}
               </span>
               <span className="-right">
@@ -71,18 +70,6 @@ export default class TournamentCard extends React.Component<
               {this.getDisplayRankSuffix(tournament.result)}
             </span>
           </div>
-          {/* <div className="actions">
-            <Button
-              small={true}
-              minimal={true}
-              icon={<Icon icon={IconNames.MAP_MARKER} iconSize={10} />}
-            />
-            <Button
-              small={true}
-              minimal={true}
-              icon={<Icon icon={IconNames.GLOBE} iconSize={10} />}
-            />
-          </div> */}
         </div>
         <div className="card-picture">
           <div
@@ -130,11 +117,6 @@ export default class TournamentCard extends React.Component<
             );
           })}
         </div>
-        {/* <div className="footer">
-          <Button minimal={true} icon={IconNames.MAP_MARKER} text="Open Map" />
-          <Button minimal={true} icon={IconNames.CALENDAR} text="Calendar" />
-          <Button minimal={true} icon={IconNames.GLOBE} text="Full Results" />
-        </div> */}
       </Card>
     );
   }
