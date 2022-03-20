@@ -38,12 +38,12 @@ export default class Home extends React.Component {
         className={classNames("home-callout", Classes.ELEVATION_3)}
         onClick={this.navigateToTryoutForm}
       >
-        Register for our 2021 tryouts!
+        Register for our 2022 tryouts!
       </div>
     );
   }
 
   private navigateToTryoutForm = () => {
-    window.open("https://forms.gle/XREQhFx7fYXnE21PA", "_blank");
+    window.open("https://forms.gle/4P7GR3F1Cd3yhLPv9", "_blank");
   };
 }
