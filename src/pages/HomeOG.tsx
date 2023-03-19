@@ -1,13 +1,13 @@
 import * as React from "react";
 import "../styles/App.css";
 
-import WebNavBar from "../components/navigation/WebNavBar";
-import PageBackgroundImage from "../components/basic/PageBackgroundImage";
-import { isMobile } from "react-device-detect";
-import MobileNavBar from "src/components/navigation/MobileNavBar";
-import classNames from "classnames";
-import SocialMediaLinks from "src/components/basic/SocialMediaLinks";
 import { Classes } from "@blueprintjs/core";
+import classNames from "classnames";
+import { isMobile } from "react-device-detect";
+import SocialMediaLinks from "src/components/basic/SocialMediaLinks";
+import MobileNavBar from "src/components/navigation/MobileNavBar";
+import PageBackgroundImage from "../components/basic/PageBackgroundImage";
+import WebNavBar from "../components/navigation/WebNavBar";
 
 export default class Home extends React.Component {
   render() {
@@ -17,7 +17,7 @@ export default class Home extends React.Component {
         <PageBackgroundImage backgroundImage="/img/background-imgs/homebg.jpg" />
         <div
           className={classNames("rival-website-page rival-home-page", {
-            "-mobile": isMobile
+            "-mobile": isMobile,
           })}
         >
           <div className="logo-image" />
@@ -38,12 +38,12 @@ export default class Home extends React.Component {
         className={classNames("home-callout", Classes.ELEVATION_3)}
         onClick={this.navigateToTryoutForm}
       >
-        Register for our 2022 tryouts!
+        Register for our 2023 tryouts!
       </div>
     );
   }
 
   private navigateToTryoutForm = () => {
-    window.open("https://forms.gle/4P7GR3F1Cd3yhLPv9", "_blank");
+    window.open("https://t.co/SSylf2mCHp", "_blank");
   };
 }

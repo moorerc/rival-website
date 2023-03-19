@@ -1,23 +1,22 @@
 import * as React from "react";
 import "../../styles/ResultsBody.css";
 
-import * as _ from "lodash";
 import {
-  Card,
-  ButtonGroup,
-  Popover,
   Button,
-  Position,
+  ButtonGroup,
+  Card,
   InputGroup,
   Menu,
   MenuItem,
-  NonIdealState
+  NonIdealState,
+  Popover,
+  Position,
 } from "@blueprintjs/core";
-import { RIVAL_ROSTERS, RosterList } from "src/data/RosterList";
 import { IconNames } from "@blueprintjs/icons";
+import { RIVAL_ROSTERS, RosterList } from "src/data/RosterList";
 import { Tournament } from "src/data/Tournaments";
-import TournamentCard from "./TournamentCard";
 import ResultsCard from "./ResultsCard";
+import TournamentCard from "./TournamentCard";
 
 export namespace ResultsBody {
   export interface Props {
@@ -44,7 +43,7 @@ export default class ResultsBody extends React.Component<
   constructor(props: ResultsBody.Props) {
     super(props);
     this.state = {
-      selectedTournament: this.props.tournaments[2] // sfi east
+      selectedTournament: this.props.tournaments[0],
     };
   }
 
@@ -66,7 +65,7 @@ export default class ResultsBody extends React.Component<
             </div>
             {this.renderViewModeButtonGroup()}
             <Card className="results-body-card" ref={this.scrollContainerRef}>
-              {tournaments.map(tournament => (
+              {tournaments.map((tournament) => (
                 <ResultsCard
                   key={tournament.id}
                   tournament={tournament}
@@ -139,7 +138,7 @@ export default class ResultsBody extends React.Component<
     return (
       <Menu>
         <MenuItem text="All Results" onClick={this.handleShowAll} />
-        {RIVAL_ROSTERS.map(roster => (
+        {RIVAL_ROSTERS.map((roster) => (
           <MenuItem
             key={roster.id}
             text={roster.displayName}

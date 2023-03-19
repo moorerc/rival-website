@@ -1,32 +1,32 @@
 import * as React from "react";
 import "../../styles/RosterBody.css";
 
-import * as _ from "lodash";
-import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";
-import { RosterViewMode } from "src/pages/Roster";
-import { Players, PLAYERS } from "src/data/Players";
 import {
-  getImageUrlForRoster,
-  getDisplayNameForPlayer,
-  getImageUrlForPlayerAction,
-  getYearsOnRival,
-  isPlayerACoach,
-  openLinkInNewTab
-} from "../basic/Helpers";
-import {
-  Classes,
-  Card,
-  Tooltip,
-  Tag,
-  Intent,
   Button,
   ButtonGroup,
-  Icon
+  Card,
+  Classes,
+  Icon,
+  Intent,
+  Tag,
+  Tooltip,
 } from "@blueprintjs/core";
-import classNames from "classnames";
-import RosterUserAvatar from "./RosterUserAvatar";
 import { IconNames } from "@blueprintjs/icons";
+import classNames from "classnames";
+import * as _ from "lodash";
+import { Players, PLAYERS } from "src/data/Players";
+import { RIVAL_ROSTERS, RosterList } from "src/data/RosterList";
+import { RosterViewMode } from "src/pages/Roster";
+import {
+  getDisplayNameForPlayer,
+  getImageUrlForPlayerAction,
+  getImageUrlForRoster,
+  getYearsOnRival,
+  isPlayerACoach,
+  openLinkInNewTab,
+} from "../basic/Helpers";
 import PlayersListWeb from "./PlayersListWeb";
+import RosterUserAvatar from "./RosterUserAvatar";
 
 export namespace RosterBody {
   export interface Props {
@@ -45,7 +45,6 @@ export namespace RosterBody {
 }
 
 export default class RosterBody extends React.Component<RosterBody.Props> {
-
   render() {
     const { roster, rosterViewMode } = this.props;
     const firstYear = roster === RIVAL_ROSTERS[0];
@@ -175,7 +174,7 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
             </ButtonGroup>
             <Card
               className={classNames("roster-section-card players-card", {
-                "-no-padding": rosterViewMode === RosterViewMode.ROSTER_PLAYERS
+                "-no-padding": rosterViewMode === RosterViewMode.ROSTER_PLAYERS,
               })}
             >
               {rosterViewMode === RosterViewMode.ROSTER_INFO &&
@@ -193,9 +192,7 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
   }
 
   private renderPlayersGrid() {
-    const {
-      roster
-    } = this.props;
+    const { roster } = this.props;
     const fullRoster = roster.players.concat(roster.coaches);
 
     return (
@@ -251,7 +248,9 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
                 roster.year === 2015 ||
                 roster.year === 2016 ||
                 roster.year === 2017 ||
-                roster.year === 2019
+                roster.year === 2019 ||
+                roster.year === 2021 ||
+                roster.year === 2022,
             })}
           >
             <div
@@ -311,7 +310,7 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
               <div className="roster-section-card">
                 <div className="section-card-label">Years on Rival</div>
                 <div className="section-card-value">
-                  {_.map(yearsOnRival, year => (
+                  {_.map(yearsOnRival, (year) => (
                     <Tag
                       intent={Intent.WARNING}
                       minimal={true}
@@ -335,7 +334,7 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
 
     return (
       <div className="section-card-value">
-        {roster.captains.map(captain => (
+        {roster.captains.map((captain) => (
           <Tooltip
             key={roster.id + "_" + captain}
             content={getDisplayNameForPlayer(PLAYERS[captain])}
@@ -350,7 +349,7 @@ export default class RosterBody extends React.Component<RosterBody.Props> {
             />
           </Tooltip>
         ))}
-        {roster.coaches.map(coach => (
+        {roster.coaches.map((coach) => (
           <Tooltip
             key={roster.id + "_" + coach}
             content={getDisplayNameForPlayer(PLAYERS[coach])}

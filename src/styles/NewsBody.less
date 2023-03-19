@@ -4,11 +4,12 @@
 @import "./variables.less";
 
 .news-body {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 
   .body-top {
     display: flex;
@@ -21,6 +22,7 @@
     border-top: 3px solid @light-gray1;
     border-bottom: 3px solid @light-gray1;
     height: 100%;
+    overflow-y: hidden;
 
     > .top-left {
       flex: 1 1 auto;
@@ -126,7 +128,8 @@
   }
 
   .body-bottom {
-    min-height: 12%;
+    min-height: 8%;
+    flex: 0 0 auto;
   }
 
   .section-title {

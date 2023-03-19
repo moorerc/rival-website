@@ -1,21 +1,20 @@
 import * as React from "react";
 import "../../styles/NewsBody.css";
 
-import * as _ from "lodash";
 import {
-  Card,
-  NonIdealState,
-  ButtonGroup,
-  Popover,
   Button,
-  Position,
+  ButtonGroup,
+  Card,
   InputGroup,
   Menu,
-  MenuItem
+  MenuItem,
+  NonIdealState,
+  Popover,
+  Position,
 } from "@blueprintjs/core";
-import { NewsItem } from "src/data/news/News";
-import { RosterList, RIVAL_ROSTERS } from "src/data/RosterList";
 import { IconNames } from "@blueprintjs/icons";
+import { NewsItem } from "src/data/news/News";
+import { RIVAL_ROSTERS, RosterList } from "src/data/RosterList";
 import NewsCard from "./NewsCard";
 import PhotoGrid from "./PhotoGrid";
 
@@ -43,7 +42,25 @@ const PHOTO_GRID_IMAGES = {
     imageD: "/img/photo-grids/all_2016_practice.jpg",
     imageE: "/img/photo-grids/all_2017_coaches.jpg",
     imageF: "/img/photo-grids/all_2016_kristen.jpg",
-    imageG: "/img/photo-grids/all_2018_beach2.jpg"
+    imageG: "/img/photo-grids/all_2018_beach2.jpg",
+  },
+  "rival-2022": {
+    imageA: "/img/photo-grids/2022_huddle.jpg",
+    imageB: "/img/photo-grids/2022_milk.jpg",
+    imageC: "/img/photo-grids/2022_water.jpg",
+    imageD: "/img/photo-grids/2022_puzzle.jpg",
+    imageE: "/img/photo-grids/2022_field.jpg",
+    imageF: "/img/photo-grids/2022_cookies.jpg",
+    imageG: "/img/photo-grids/2022_beach.jpg",
+  },
+  "rival-2021": {
+    imageA: "/img/photo-grids/2021_esc.jpg",
+    imageB: "/img/photo-grids/2021_newbies.jpg",
+    imageC: "/img/photo-grids/2021_sectionals.jpg",
+    imageD: "/img/photo-grids/2021_mids.jpg",
+    imageE: "/img/photo-grids/2021_watermelon.jpg",
+    imageF: "/img/photo-grids/2021_spirit.jpg",
+    imageG: "/img/photo-grids/2021_beach.jpg",
   },
   "rival-2019": {
     imageA: "/img/photo-grids/2019_cbuspod.jpg",
@@ -52,7 +69,7 @@ const PHOTO_GRID_IMAGES = {
     imageD: "/img/photo-grids/2019_tflag.jpg",
     imageE: "/img/photo-grids/2019_lflag.jpg",
     imageF: "/img/photo-grids/2019_iriswhiteboard.jpg",
-    imageG: "/img/photo-grids/2019_stark.jpg"
+    imageG: "/img/photo-grids/2019_stark.jpg",
   },
   "rival-2018": {
     imageA: "/img/photo-grids/2018_harley.jpg",
@@ -61,7 +78,7 @@ const PHOTO_GRID_IMAGES = {
     imageD: "/img/photo-grids/2018_allstars2.jpg",
     imageE: "/img/photo-grids/2018_cheer.jpg",
     imageF: "/img/photo-grids/2018_iris.jpg",
-    imageG: "/img/photo-grids/2018_gryffindor.jpg"
+    imageG: "/img/photo-grids/2018_gryffindor.jpg",
   },
   "rival-2017": {
     imageA: "/img/photo-grids/2017_huddle.jpg",
@@ -70,7 +87,7 @@ const PHOTO_GRID_IMAGES = {
     imageD: "/img/photo-grids/2017_massage.jpg",
     imageE: "/img/photo-grids/2017_balloons.jpg",
     imageF: "/img/photo-grids/2017_slide.jpg",
-    imageG: "/img/photo-grids/2017_selfie.jpg"
+    imageG: "/img/photo-grids/2017_selfie.jpg",
   },
   "rival-2016": {
     imageA: "/img/photo-grids/2016_hearts_3.jpg",
@@ -79,7 +96,7 @@ const PHOTO_GRID_IMAGES = {
     imageD: "/img/photo-grids/2016_winning.jpg",
     imageE: "/img/photo-grids/2016_practice.jpg",
     imageF: "/img/photo-grids/2016_killin_it.jpg",
-    imageG: "/img/photo-grids/2016_stack.jpg"
+    imageG: "/img/photo-grids/2016_stack.jpg",
   },
   "rival-2015": {
     imageA: "/img/photo-grids/2015_team_beach.jpg",
@@ -88,8 +105,8 @@ const PHOTO_GRID_IMAGES = {
     imageD: "/img/photo-grids/2015_rival_practice.jpg",
     imageE: "/img/photo-grids/2015_rival_highfive.jpg",
     imageF: "/img/photo-grids/2015_is_janine.jpg",
-    imageG: "/img/photo-grids/2015_rival_sunset.jpg"
-  }
+    imageG: "/img/photo-grids/2015_rival_sunset.jpg",
+  },
 };
 
 export default class NewsBody extends React.Component<
@@ -97,7 +114,7 @@ export default class NewsBody extends React.Component<
   NewsBody.State
 > {
   state: NewsBody.State = {
-    selectedNewsItem: undefined
+    selectedNewsItem: undefined,
   };
 
   private scrollContainerRef = React.createRef<any>();
@@ -195,7 +212,7 @@ export default class NewsBody extends React.Component<
           text="All News"
           onClick={() => this.props.changeShowAll(true)}
         />
-        {RIVAL_ROSTERS.map(roster => (
+        {RIVAL_ROSTERS.map((roster) => (
           <MenuItem
             key={roster.id}
             text={roster.displayName}
